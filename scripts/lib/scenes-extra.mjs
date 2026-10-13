@@ -259,16 +259,16 @@ export function extraScene(v, id, ctx) {
       const n = v.steps.length;
       return {
         html: `<div class="stack">${head}<div class="sl-label">${esc(v.label)}</div>
-          <div class="sl-track"><div class="sl-knob" id="${id}-k"></div>${v.steps.map((s, i) => `<div class="sl-tick" style="left:${(i / (n - 1)) * 100}%"><span>${esc(s.x)}</span></div>`).join("")}</div>
+          <div class="sl-track"><div class="sl-rail" id="${id}-k"><div class="sl-knob"></div></div>${v.steps.map((s, i) => `<div class="sl-tick" style="left:${(i / (n - 1)) * 100}%"><span>${esc(s.x)}</span></div>`).join("")}</div>
           <div class="sl-unit">${esc(v.unit)}</div>
-          <div class="sl-bar-wrap"><div class="sl-bar" id="${id}-bar" style="width:${(v.steps[0].value / max) * 75}%"></div><div class="sl-vals">${v.steps.map((s, i) => `<div class="sl-val" id="${id}-l${i}" style="opacity:${i ? 0 : 1}">${esc(s.label)}</div>`).join("")}</div></div>${subHtml}</div>`,
+          <div class="sl-bar-wrap"><div class="sl-bar" id="${id}-bar" style="transform:scaleX(${(v.steps[0].value / max).toFixed(4)})"></div><div class="sl-vals">${v.steps.map((s, i) => `<div class="sl-val" id="${id}-l${i}" style="opacity:${i ? 0 : 1}">${esc(s.label)}</div>`).join("")}</div></div>${subHtml}</div>`,
         js: (t, d) => {
           const out = headJs(t);
           const st = steps(n, t, d);
           v.steps.forEach((s, i) => {
             if (!i) return;
-            out.push(`tl.to("#${id}-k", { left: "${(i / (n - 1)) * 100}%", duration: 0.7, ease: "power2.inOut" }, ${f(st[i])});`);
-            out.push(`tl.to("#${id}-bar", { width: "${(s.value / max) * 75}%", duration: 0.7, ease: "power2.inOut" }, ${f(st[i])});`);
+            out.push(`tl.to("#${id}-k", { xPercent: ${((i / (n - 1)) * 100).toFixed(2)}, duration: 0.7, ease: "power2.inOut" }, ${f(st[i])});`);
+            out.push(`tl.to("#${id}-bar", { scaleX: ${(s.value / max).toFixed(4)}, duration: 0.7, ease: "power2.inOut" }, ${f(st[i])});`);
             out.push(`tl.set("#${id}-l${i - 1}", { opacity: 0 }, ${f(st[i] + 0.35)});`);
             out.push(`tl.set("#${id}-l${i}", { opacity: 1 }, ${f(st[i] + 0.35)});`);
           });
@@ -368,10 +368,11 @@ export const extraCSS = (A) => `
 .tank-list.in div { border-color: ${A.accentDark}; } .tank-list.out div { border-color: ${A.down}; }
 .sl-label, .sl-unit { font-size: 36px; font-weight: 800; }
 .sl-track { position: relative; height: 18px; background: ${A.line}; border-radius: 9px; margin: 34px 30px 64px; }
+.sl-rail { position: absolute; inset: 0; }
 .sl-knob { position: absolute; left: 0%; top: 50%; width: 54px; height: 54px; margin: -27px 0 0 -27px; border-radius: 50%; background: ${A.accent}; border: 5px solid ${A.ink}; z-index: 2; }
 .sl-tick { position: absolute; top: 34px; transform: translateX(-50%); font-size: 30px; font-weight: 700; color: ${A.muted}; }
 .sl-bar-wrap { display: flex; align-items: center; gap: 24px; height: 96px; }
-.sl-bar { height: 96px; background: ${A.accent}; border: 4px solid ${A.ink}; border-radius: 20px; }
+.sl-bar { width: 60%; flex: none; transform-origin: left center; height: 96px; background: ${A.accent}; border: 4px solid ${A.ink}; border-radius: 20px; }
 .sl-vals { position: relative; flex: 1; height: 80px; }
 .sl-val { position: absolute; left: 0; top: 0; font-size: 56px; font-weight: 800; white-space: nowrap; }
 .grid { display: grid; gap: 22px; width: 1120px; }
