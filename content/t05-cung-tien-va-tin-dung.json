@@ -1,0 +1,543 @@
+{
+  "id": "t05-cung-tien-va-tin-dung",
+  "episode": 5,
+  "title": "Cung tiền và tín dụng",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/cung-tien-va-tin-dung/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Cuối năm, tin tức đưa: Ngân hàng Nhà nước nới room tín dụng. Ngay hôm sau, cổ phiếu Ngân hàng Heo Đất tăng. Vậy room là gì, mà quan trọng đến thế?",
+      "visual": {
+        "type": "pair",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Nới room tín dụng?",
+        "items": [
+          {
+            "company": "heodat",
+            "rows": [
+              {
+                "k": "Tin cuối năm",
+                "v": "nới room"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Tăng giá"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta biết lãi suất là giá của tiền. Hôm nay, ô tiền tệ trên bảng điều khiển sáng thêm một đèn: lượng tiền và tín dụng.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất"
+        ],
+        "pose": "present",
+        "headline": "Bài 5: ô Tiền tệ",
+        "blink": "money"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Cung tiền, gọi là M2, là tổng lượng tiền trong nền kinh tế. Hãy hình dung nó như một bể nước.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Cung tiền M2",
+        "sub": "Tổng lượng tiền trong nền kinh tế"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Bể M2 gồm ba phần: tiền mặt đang lưu thông, tiền gửi không kỳ hạn, và tiền gửi có kỳ hạn ở ngân hàng.",
+      "visual": {
+        "type": "stack",
+        "pose": "present",
+        "headline": "M2 gồm ba phần",
+        "items": [
+          {
+            "label": "Tiền mặt",
+            "sub": "đang lưu thông"
+          },
+          {
+            "label": "Không kỳ hạn",
+            "sub": "tiền gửi thanh toán"
+          },
+          {
+            "label": "Có kỳ hạn",
+            "sub": "tiền gửi tiết kiệm"
+          }
+        ],
+        "result": "M2"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Điều bất ngờ là tiền được tạo ra khi ngân hàng cho vay. Khoản vay chuyển vào tài khoản người vay, và trở thành tiền gửi mới trong hệ thống.",
+      "visual": {
+        "type": "steps",
+        "pose": "point",
+        "expr": "surprised",
+        "headline": "Cho vay tạo ra tiền",
+        "items": [
+          {
+            "title": "Ngân hàng cho vay",
+            "tone": "key"
+          },
+          {
+            "title": "Tiền vào tài khoản người vay"
+          },
+          {
+            "title": "Thành tiền gửi mới",
+            "text": "M2 tăng",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Tiền cũng tăng khi Ngân hàng Nhà nước mua ngoại tệ, vì khi đó tiền đồng được bơm vào hệ thống.",
+      "visual": {
+        "type": "tank",
+        "pose": "present",
+        "headline": "Nước chảy vào bể",
+        "inflows": [
+          "Ngân hàng cho vay",
+          "NHNN mua ngoại tệ"
+        ],
+        "from": 0.4,
+        "to": 0.7
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Ngược lại, khi Ngân hàng Nhà nước bán ngoại tệ, hoặc hút tiền về qua thị trường mở như ở bài trước, bể tiền sẽ vơi bớt.",
+      "visual": {
+        "type": "tank",
+        "pose": "point",
+        "headline": "Nước chảy ra khỏi bể",
+        "inflows": [],
+        "outflows": [
+          "NHNN bán ngoại tệ",
+          "Hút tiền qua OMO"
+        ],
+        "from": 0.7,
+        "to": 0.5
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Nhưng nếu lượng tiền tăng nhanh hơn hàng hoá thực trong thời gian dài, đó chính là mầm mống lạm phát mà ta đã học ở bài ba.",
+      "visual": {
+        "type": "tank",
+        "pose": "headHold",
+        "expr": "worried",
+        "emote": "sweat",
+        "headline": "Bể quá đầy",
+        "inflows": [
+          "Tiền tăng quá nhanh"
+        ],
+        "outflows": [
+          "Lạm phát"
+        ],
+        "from": 0.7,
+        "to": 0.95
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Còn tăng trưởng tín dụng là tốc độ tăng của tổng dư nợ cho vay trong toàn hệ thống ngân hàng.",
+      "visual": {
+        "type": "title",
+        "pose": "present",
+        "headline": "Tăng trưởng tín dụng",
+        "sub": "Tốc độ tăng tổng dư nợ cho vay của hệ thống"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Mỗi năm, Ngân hàng Nhà nước đặt chỉ tiêu tăng trưởng tín dụng, rồi phân hạn mức cho từng ngân hàng dựa trên sức khoẻ tài chính. Hạn mức đó thường được gọi là room.",
+      "visual": {
+        "type": "grid",
+        "pose": "point",
+        "headline": "Room tín dụng",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Chỉ tiêu cả năm",
+            "text": "NHNN đặt cho toàn hệ thống",
+            "tone": "good"
+          },
+          {
+            "title": "Hạn mức từng ngân hàng",
+            "text": "theo sức khoẻ tài chính",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Ngân hàng có nợ xấu thấp và vốn mạnh thường được giao room cao hơn. Vì thế, mỗi lần nới room, thị trường thường chú ý ngay đến nhóm ngân hàng.",
+      "visual": {
+        "type": "compare",
+        "pose": "present",
+        "headline": "Room theo sức khoẻ",
+        "bars": [
+          {
+            "k": "Ngân hàng khoẻ",
+            "v": 16,
+            "label": "Room cao hơn"
+          },
+          {
+            "k": "Ngân hàng yếu",
+            "v": 8,
+            "label": "Room thấp hơn",
+            "tone": "warn"
+          }
+        ],
+        "note": "Minh hoạ"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Khi đọc số liệu tín dụng, có ba điểm cần chú ý.",
+      "visual": {
+        "type": "checklist",
+        "pose": "present",
+        "headline": "Ba điểm cần đọc",
+        "items": [
+          "So với chỉ tiêu cả năm",
+          "Tín dụng chảy vào đâu",
+          "So với tăng trưởng huy động"
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Một, so với chỉ tiêu cả năm, để biết dư địa còn lại. Hai, tín dụng chảy vào sản xuất, tiêu dùng hay bất động sản. Ba, so với huy động. Cho vay tăng nhanh hơn huy động quá lâu thì thanh khoản sẽ căng.",
+      "visual": {
+        "type": "versus",
+        "pose": "think",
+        "headline": "Cho vay và huy động",
+        "left": {
+          "title": "Cho vay",
+          "text": "Tăng nhanh hơn quá lâu"
+        },
+        "right": {
+          "title": "Huy động",
+          "text": "Không theo kịp, thanh khoản căng"
+        }
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Tín dụng tác động lên thị trường theo bốn tình huống thường gặp.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Bốn tình huống tín dụng",
+        "columns": [
+          "Tình huống",
+          "Hàm ý"
+        ],
+        "rows": [
+          [
+            "Tín dụng tăng tốt, lãi suất ổn định",
+            "Thuận lợi cho ngân hàng, doanh nghiệp"
+          ],
+          [
+            "Tín dụng chậm dù lãi suất thấp",
+            "Cầu vay yếu, kinh tế còn khó"
+          ],
+          [
+            "Tín dụng quá nóng",
+            "Rủi ro lạm phát, nợ xấu"
+          ],
+          [
+            "Tín dụng bị siết đột ngột",
+            "Ngành phụ thuộc vốn vay chịu áp lực"
+          ]
+        ],
+        "highlight": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Tín dụng tăng chậm dù lãi suất thấp cho thấy cầu vay yếu. Còn tín dụng quá nóng thì mang rủi ro lạm phát và nợ xấu về sau.",
+      "visual": {
+        "type": "table",
+        "pose": "think",
+        "expr": "worried",
+        "headline": "Bốn tình huống tín dụng",
+        "columns": [
+          "Tình huống",
+          "Hàm ý"
+        ],
+        "rows": [
+          [
+            "Tín dụng tăng tốt, lãi suất ổn định",
+            "Thuận lợi cho ngân hàng, doanh nghiệp"
+          ],
+          [
+            "Tín dụng chậm dù lãi suất thấp",
+            "Cầu vay yếu, kinh tế còn khó"
+          ],
+          [
+            "Tín dụng quá nóng",
+            "Rủi ro lạm phát, nợ xấu"
+          ],
+          [
+            "Tín dụng bị siết đột ngột",
+            "Ngành phụ thuộc vốn vay chịu áp lực"
+          ]
+        ],
+        "highlight": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Tình huống cuối là tín dụng bị siết đột ngột. Khi đó, các ngành phụ thuộc vốn vay chịu áp lực lớn nhất.",
+      "visual": {
+        "type": "table",
+        "pose": "shrug",
+        "headline": "Bốn tình huống tín dụng",
+        "columns": [
+          "Tình huống",
+          "Hàm ý"
+        ],
+        "rows": [
+          [
+            "Tín dụng tăng tốt, lãi suất ổn định",
+            "Thuận lợi cho ngân hàng, doanh nghiệp"
+          ],
+          [
+            "Tín dụng chậm dù lãi suất thấp",
+            "Cầu vay yếu, kinh tế còn khó"
+          ],
+          [
+            "Tín dụng quá nóng",
+            "Rủi ro lạm phát, nợ xấu"
+          ],
+          [
+            "Tín dụng bị siết đột ngột",
+            "Ngành phụ thuộc vốn vay chịu áp lực"
+          ]
+        ],
+        "highlight": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Quay lại Heo Đất. Ngân hàng được nới room thêm mười nghìn tỷ đồng, và cho vay hết phần room này.",
+      "visual": {
+        "type": "numbers",
+        "pose": "present",
+        "label": "Heo Đất (doanh nghiệp giả định)",
+        "items": [
+          {
+            "k": "Room nới thêm",
+            "v": "10.000 tỷ"
+          },
+          {
+            "k": "Biên lãi ròng (NIM)",
+            "v": "3,5%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Với biên lãi ròng ba phẩy năm phần trăm, phần cho vay thêm mang về khoảng ba trăm năm mươi tỷ đồng thu nhập lãi thuần mỗi năm. Đó là lý do cổ phiếu phản ứng ngay.",
+      "visual": {
+        "type": "calc",
+        "pose": "cheer",
+        "face": "excited",
+        "emote": "sparkle",
+        "expr": "10.000 tỷ × 3,5%",
+        "result": "≈ 350 tỷ/năm"
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Lưu ý, đây là con số trước chi phí dự phòng và chi phí hoạt động. Lợi nhuận thật còn tuỳ vào chất lượng của các khoản vay mới.",
+      "visual": {
+        "type": "warning",
+        "pose": "think",
+        "headline": "Chưa phải lợi nhuận",
+        "sub": "Còn chi phí dự phòng, chi phí hoạt động"
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Nhưng chiều ngược lại cũng xảy ra. Khi tín dụng vào bất động sản bị siết, Tổ Ấm Land khó vay để làm dự án, và người mua nhà cũng khó vay hơn.",
+      "visual": {
+        "type": "pair",
+        "pose": "facepalm",
+        "expr": "worried",
+        "headline": "Cùng một dòng tiền",
+        "items": [
+          {
+            "company": "heodat",
+            "rows": [
+              {
+                "k": "Room",
+                "v": "được nới"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Hưởng lợi"
+          },
+          {
+            "company": "toam",
+            "rows": [
+              {
+                "k": "Tín dụng BĐS",
+                "v": "bị siết"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Áp lực"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Nói ngắn gọn: lãi suất cho biết giá của tiền, còn tín dụng cho biết tiền có thực sự chảy vào nền kinh tế hay không.",
+      "visual": {
+        "type": "versus",
+        "pose": "hips",
+        "expr": "confident",
+        "headline": "Giá và lượng",
+        "left": {
+          "title": "Lãi suất",
+          "text": "Giá của tiền"
+        },
+        "right": {
+          "title": "Tín dụng",
+          "text": "Tiền có chảy vào kinh tế?"
+        }
+      }
+    },
+    {
+      "id": "s22",
+      "text": "Câu hỏi cho bạn: nhóm cổ phiếu nào nhạy trực tiếp nhất với tăng trưởng tín dụng? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Nhóm cổ phiếu nào nhạy trực tiếp nhất với tăng trưởng tín dụng?",
+        "options": [
+          "Ngân hàng",
+          "Điện, nước",
+          "Dược phẩm"
+        ]
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Ô tiền tệ trên bảng điều khiển đã sáng thêm đèn: tín dụng và M2.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất"
+        ],
+        "light": [
+          "Tín dụng, M2"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: Tín dụng, M2"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "An ghi vào sổ tay: so tín dụng với chỉ tiêu cả năm, và với huy động.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s25",
+      "text": "Ngân hàng Nhà nước mua đô la Mỹ cũng làm tăng cung tiền. Vậy tỷ giá vận hành ra sao? Bài sau, ta mở ô đối ngoại.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2"
+        ],
+        "headline": "Bài 6: Tỷ giá",
+        "blink": "external",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s26",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 6",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
