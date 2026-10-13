@@ -203,7 +203,7 @@ export const macroCSS = (A) => `
 .crow { width: 100%; display: flex; justify-content: space-between; font-size: 30px; padding-top: 10px; border-top: 3px dashed ${A.line}; }
 .crow b { font-weight: 800; }
 .cmove { font-size: 36px; font-weight: 800; padding: 10px 26px; border-radius: 40px; color: #fff; border: 4px solid ${A.ink}; }
-.cmove.down { background: #F0868A; } .cmove.downBig { background: ${A.down}; } .cmove.up { background: ${A.accentDark}; } .cmove.flat { background: ${A.muted}; }
+.cmove.down { background: #C9474C; } .cmove.downBig { background: ${A.down}; } .cmove.up { background: ${A.accentDark}; } .cmove.flat { background: ${A.muted}; }
 .versus { display: flex; align-items: stretch; gap: 30px; }
 .vcol { width: 500px; background: #fff; border: 4px solid ${A.ink}; border-radius: 28px; padding: 34px 36px; }
 .vcol.hi { background: ${A.accentSoft}; box-shadow: 8px 8px 0 ${A.ink}; }
