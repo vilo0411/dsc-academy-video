@@ -76,7 +76,10 @@ for (const file of files) {
     cached = JSON.parse(fs.readFileSync(cachedTimings, "utf8"));
   } catch {}
 
-  if (cached && cached.textHash === hash && fs.existsSync(path.join(cacheDir, "voice.wav"))) {
+  if (content.approved === false) {
+    step("tts", { ok: true, seconds: 0, out: "Kịch bản chưa duyệt (approved: false) — render bản xem thử không tiếng, chưa gọi API giọng đọc." });
+    status.preview = true;
+  } else if (cached && cached.textHash === hash && fs.existsSync(path.join(cacheDir, "voice.wav"))) {
     fs.copyFileSync(path.join(cacheDir, "voice.wav"), path.join(buildDir, "voice.wav"));
     fs.copyFileSync(cachedTimings, path.join(buildDir, "timings.json"));
     step("tts", { ok: true, seconds: 0, out: "Lời thoại không đổi — dùng lại giọng đọc đã có." });

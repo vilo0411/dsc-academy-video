@@ -9,12 +9,68 @@ import fs from "node:fs";
 import path from "node:path";
 import { loadEnv } from "./lib/env.mjs";
 import { synthesize, resample, trimSilence, floatToWav } from "./lib/tts-providers.mjs";
+import { splitScenes } from "./lib/split.mjs";
 
 loadEnv();
 const RATE = 24000;
 const GAP = 0.45; // giây nghỉ giữa hai cảnh
 
+// Gom các cảnh liên tiếp thành cụm (mỗi cụm một lần gọi API) để tiết kiệm lượt gọi free tier.
+function chunkScenes(scenes, maxChars) {
+  const chunks = [];
+  let cur = [];
+  let len = 0;
+  for (const s of scenes) {
+    if (cur.length && len + s.text.length > maxChars) {
+      chunks.push(cur);
+      cur = [];
+      len = 0;
+    }
+    cur.push(s);
+    len += s.text.length;
+  }
+  if (cur.length) chunks.push(cur);
+  return chunks;
+}
+
+// Chế độ cụm: đọc cả cụm một lần, rồi chia cảnh trong cụm theo khoảng lặng.
+async function synthChunked(scenes, voice, { gap, leadIn }) {
+  const chunks = chunkScenes(scenes, voice.chunkChars || 700);
+  const gapN = Math.round(gap * RATE);
+  const pieces = [];
+  for (const c of chunks) {
+    const { samples, sampleRate } = await synthesize(c.map((s) => s.text.trim()).join("\n\n"), voice);
+    const trimmed = trimSilence(resample(samples, sampleRate, RATE), RATE);
+    const rel = splitScenes(floatToWav(trimmed, RATE), c);
+    pieces.push({ samples: trimmed, rel });
+    process.stdout.write(`[${c.length}]`);
+  }
+  process.stdout.write("\n");
+  const leadN = Math.round(leadIn * RATE);
+  const total = leadN + pieces.reduce((a, p) => a + p.samples.length + gapN, 0);
+  const out = new Float32Array(total);
+  let pos = leadN;
+  const scenesT = [];
+  pieces.forEach((p, ci) => {
+    out.set(p.samples, pos);
+    const off = pos / RATE;
+    const chunkEnd = (pos + p.samples.length) / RATE;
+    p.rel.scenes.forEach((r, i) => {
+      const first = i === 0;
+      const last = i === p.rel.scenes.length - 1;
+      scenesT.push({
+        id: r.id,
+        start: Number((first ? (ci === 0 ? 0 : off - gap / 2) : off + r.start).toFixed(3)),
+        end: Number((last ? (ci === pieces.length - 1 ? total / RATE : chunkEnd + gap / 2) : off + r.end).toFixed(3)),
+      });
+    });
+    pos += p.samples.length + gapN;
+  });
+  return { wav: floatToWav(out, RATE), duration: Number((total / RATE).toFixed(3)), scenes: scenesT };
+}
+
 export async function synthScenes(scenes, voice, { gap = GAP, leadIn = 0.25 } = {}) {
+  if (voice.chunked) return synthChunked(scenes, voice, { gap, leadIn });
   const parts = [];
   for (const s of scenes) {
     if (s.silent) {

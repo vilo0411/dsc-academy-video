@@ -9,6 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { figureSVG, poseTween, breathe } from "./lib/figure.mjs";
 import { BRAND } from "./lib/brand.mjs";
+import { macroScene, macroCSS } from "./lib/scenes-macro.mjs";
 
 const contentPath = process.argv[2];
 if (!contentPath) {
@@ -30,7 +31,7 @@ if (fs.existsSync(timingsPath)) {
   let t = 0;
   const scenes = content.scenes.map((s) => {
     const syl = s.text.split(/\s+/).length;
-    const d = syl / 3.8 + 0.6;
+    const d = syl / 3.4 + 0.5;
     const out = { id: s.id, start: Number(t.toFixed(3)), end: Number((t + d).toFixed(3)) };
     t += d;
     return out;
@@ -220,8 +221,11 @@ function renderScene(scene, idx, o) {
           <p class="disclaimer" id="${id}-d">${esc(v.disclaimer)}</p></div>`,
         js: (t, d) => [pop(`#${id}-m`, t + 0.15), inn(`#${id}-h`, t + 0.45), inn(`#${id}-s`, t + 0.7), pop(`#${id}-c`, t + 1.0), inn(`#${id}-d`, t + 1.3)],
       };
-    default:
+    default: {
+      const m = macroScene(v, id, { inn, pop, steps, esc, f, A, o });
+      if (m) return m;
       throw new Error(`Kiểu cảnh chưa hỗ trợ: ${v.type} (cảnh ${scene.id})`);
+    }
   }
 }
 
@@ -338,6 +342,7 @@ html, body { width: ${W}px; height: ${H}px; overflow: hidden; background: ${A.pa
 .disclaimer { font-size: ${vertical ? 30 : 26}px; color: ${A.muted}; max-width: 900px; line-height: 1.4; }
 .cap { position: absolute; left: 0; right: 0; ${vertical ? "top: 1062px;" : "bottom: 54px;"} display: flex; justify-content: center; ${vertical ? "" : "padding-left: 520px;"} }
 .cap-text { display: inline-block; max-width: ${vertical ? 940 : 1240}px; background: ${A.ink}; color: #fff; font-size: ${vertical ? 46 : 40}px; font-weight: 600; line-height: 1.3; padding: 14px 30px; border-radius: 18px; text-align: center; }
+${macroCSS(A)}
 `;
 
   return `<!doctype html>
@@ -351,7 +356,7 @@ html, body { width: ${W}px; height: ${H}px; overflow: hidden; background: ${A.pa
   </head>
   <body>
     <div id="root" data-composition-id="main" data-start="0" data-duration="${f(TOTAL)}" data-width="${W}" data-height="${H}">
-      <div class="brand"><b>DSC</b> Academy <i>· ${esc(content.title)}</i></div>
+      <div class="brand"><b>DSC</b> Academy <i>· ${content.episode ? `Bài ${content.episode}/12 · ` : ""}${esc(content.title)}</i></div>
       <div id="fig-wrap">${figureSVG(A)}</div>
       ${sections.join("\n      ")}
       ${caps.join("\n      ")}
