@@ -1,0 +1,583 @@
+{
+  "id": "t08-chinh-sach-tai-khoa",
+  "episode": 8,
+  "title": "Tài khoá và đầu tư công",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/chinh-sach-tai-khoa/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Tin tức đưa: tuyến cao tốc mới chính thức khởi công. Cổ phiếu Xây dựng Cần Cẩu được chú ý ngay. Nhưng quý sau, lợi nhuận của công ty vẫn chưa tăng. Vì sao?",
+      "visual": {
+        "type": "pair",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Khởi công rồi, lãi đâu?",
+        "items": [
+          {
+            "company": "cancau",
+            "rows": [
+              {
+                "k": "Cao tốc",
+                "v": "khởi công"
+              },
+              {
+                "k": "Lợi nhuận quý sau",
+                "v": "chưa tăng"
+              }
+            ],
+            "move": "flat",
+            "moveLabel": "Vì sao?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta đã xem dòng vốn từ bên ngoài. Ở bài bốn, ta biết Ngân hàng Nhà nước điều hành chính sách tiền tệ. Hôm nay, ô cuối cùng trên bảng điều khiển sáng lên: tài khoá.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI"
+        ],
+        "pose": "present",
+        "headline": "Bài 8: ô Tài khoá",
+        "blink": "fiscal"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Nền kinh tế có hai tay lái. Tay lái tiền tệ do Ngân hàng Nhà nước cầm. Tay lái tài khoá do Chính phủ đề xuất và Quốc hội quyết định.",
+      "visual": {
+        "type": "versus",
+        "pose": "present",
+        "headline": "Hai tay lái",
+        "left": {
+          "title": "Tài khoá",
+          "text": "Chính phủ, Quốc hội"
+        },
+        "right": {
+          "title": "Tiền tệ",
+          "text": "Ngân hàng Nhà nước"
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Tài khoá dùng thuế, phí và chi ngân sách, trong đó có đầu tư công. Tiền tệ dùng lãi suất, cung tiền, tỷ giá và tín dụng.",
+      "visual": {
+        "type": "table",
+        "pose": "point",
+        "headline": "So sánh hai tay lái",
+        "columns": [
+          "",
+          "Tài khoá",
+          "Tiền tệ"
+        ],
+        "rows": [
+          [
+            "Ai điều hành",
+            "Chính phủ, Quốc hội",
+            "Ngân hàng Nhà nước"
+          ],
+          [
+            "Công cụ",
+            "Thuế, phí, chi ngân sách",
+            "Lãi suất, cung tiền, tín dụng"
+          ],
+          [
+            "Mở rộng",
+            "Giảm thuế, tăng chi",
+            "Hạ lãi suất, bơm tiền"
+          ],
+          [
+            "Thắt chặt",
+            "Tăng thuế, giảm chi",
+            "Tăng lãi suất, hút tiền"
+          ]
+        ],
+        "highlight": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Cả hai đều có thể mở rộng hoặc thắt chặt. Mở rộng tài khoá là giảm thuế hoặc tăng chi tiêu, để kích thích kinh tế.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "So sánh hai tay lái",
+        "columns": [
+          "",
+          "Tài khoá",
+          "Tiền tệ"
+        ],
+        "rows": [
+          [
+            "Ai điều hành",
+            "Chính phủ, Quốc hội",
+            "Ngân hàng Nhà nước"
+          ],
+          [
+            "Công cụ",
+            "Thuế, phí, chi ngân sách",
+            "Lãi suất, cung tiền, tín dụng"
+          ],
+          [
+            "Mở rộng",
+            "Giảm thuế, tăng chi",
+            "Hạ lãi suất, bơm tiền"
+          ],
+          [
+            "Thắt chặt",
+            "Tăng thuế, giảm chi",
+            "Tăng lãi suất, hút tiền"
+          ]
+        ],
+        "highlight": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Ví dụ, giảm thuế giá trị gia tăng giúp hàng hoá rẻ hơn, người dân chi tiêu nhiều hơn. Siêu thị Giỏ Tre sẽ thấy rõ điều đó.",
+      "visual": {
+        "type": "pair",
+        "pose": "cheer",
+        "emote": "sparkle",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Thuế GTGT",
+                "v": "giảm"
+              },
+              {
+                "k": "Sức mua",
+                "v": "tăng"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Hưởng lợi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Hai tay lái thường phối hợp với nhau. Khi kinh tế khó khăn, cả hai cùng nới lỏng. Khi kinh tế quá nóng, cả hai cùng thắt lại.",
+      "visual": {
+        "type": "cycle",
+        "pose": "point",
+        "active": 3,
+        "sub": "Suy thoái: cả hai tay lái cùng nới lỏng"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Một phần quan trọng của tài khoá là đầu tư công: Nhà nước dùng vốn ngân sách để xây hạ tầng như đường cao tốc, cầu, cảng biển, sân bay.",
+      "visual": {
+        "type": "chips",
+        "pose": "present",
+        "headline": "Đầu tư công",
+        "chips": [
+          "Cao tốc",
+          "Cầu",
+          "Cảng biển",
+          "Sân bay",
+          "Điện, nước"
+        ],
+        "highlight": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Khi theo dõi đầu tư công, điều quan trọng không phải kế hoạch vốn lớn đến đâu, mà là tỷ lệ giải ngân thực tế, tức bao nhiêu tiền đã thật sự được chi ra.",
+      "visual": {
+        "type": "compare",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Kế hoạch và giải ngân",
+        "bars": [
+          {
+            "k": "Kế hoạch vốn",
+            "v": 100,
+            "label": "100%",
+            "tone": "ink"
+          },
+          {
+            "k": "Giải ngân 6 tháng",
+            "v": 35,
+            "label": "35%"
+          }
+        ],
+        "note": "Số liệu giả định"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Cục Thống kê và Bộ Tài chính công bố tiến độ giải ngân định kỳ. Giải ngân thường dồn vào những tháng cuối năm.",
+      "visual": {
+        "type": "line",
+        "pose": "point",
+        "headline": "Giải ngân lũy kế trong năm",
+        "series": [
+          {
+            "name": "Tỷ lệ giải ngân lũy kế",
+            "points": [
+              2,
+              5,
+              9,
+              14,
+              20,
+              27,
+              34,
+              42,
+              51,
+              62,
+              76,
+              92
+            ],
+            "color": "accent"
+          }
+        ],
+        "yMin": 0,
+        "yMax": 100
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Giải ngân chậm thường vì vướng giải phóng mặt bằng, thủ tục, hoặc thiếu vật liệu. Kế hoạch vốn lớn mà giải ngân chậm thì tác động lên nền kinh tế cũng đến chậm.",
+      "visual": {
+        "type": "chips",
+        "pose": "shrug",
+        "expr": "worried",
+        "headline": "Vì sao giải ngân chậm?",
+        "chips": [
+          "Giải phóng mặt bằng",
+          "Thủ tục",
+          "Thiếu vật liệu"
+        ],
+        "highlight": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Đầu tư công tác động lên doanh nghiệp theo hai lớp thời gian.",
+      "visual": {
+        "type": "versus",
+        "pose": "present",
+        "headline": "Hai lớp tác động",
+        "left": {
+          "title": "Ngắn hạn",
+          "text": "Nhà thầu, vật liệu có đơn hàng"
+        },
+        "right": {
+          "title": "Dài hạn",
+          "text": "Logistics rẻ hơn, quỹ đất mở ra"
+        }
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Ngắn hạn, nhà thầu và doanh nghiệp vật liệu có thêm đơn hàng: thép, xi măng, đá, nhựa đường. Thép Lò Rèn bán thép cho công trình.",
+      "visual": {
+        "type": "pair",
+        "pose": "cheer",
+        "items": [
+          {
+            "company": "cancau",
+            "rows": [
+              {
+                "k": "Vai trò",
+                "v": "nhà thầu"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Có hợp đồng"
+          },
+          {
+            "company": "loren",
+            "rows": [
+              {
+                "k": "Vai trò",
+                "v": "bán thép"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Có đơn hàng"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Dài hạn, chi phí vận chuyển giảm, quỹ đất mới mở ra, và bất động sản dọc tuyến tăng giá trị. Tổ Ấm Land và khu công nghiệp Cổng Xanh đều có đất gần tuyến cao tốc.",
+      "visual": {
+        "type": "pair",
+        "pose": "present",
+        "items": [
+          {
+            "company": "toam",
+            "rows": [
+              {
+                "k": "Quỹ đất",
+                "v": "dọc tuyến"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Dài hạn"
+          },
+          {
+            "company": "congxanh",
+            "rows": [
+              {
+                "k": "Kết nối",
+                "v": "tốt hơn"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Dài hạn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Giờ quay lại câu hỏi đầu bài. Cần Cẩu chỉ ghi nhận doanh thu khi khối lượng công việc được nghiệm thu và thanh toán.",
+      "visual": {
+        "type": "steps",
+        "pose": "point",
+        "headline": "Từ khởi công đến doanh thu",
+        "items": [
+          {
+            "title": "Khởi công",
+            "tone": "key"
+          },
+          {
+            "title": "Thi công",
+            "text": "nhiều tháng"
+          },
+          {
+            "title": "Nghiệm thu, thanh toán"
+          },
+          {
+            "title": "Ghi nhận doanh thu",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Tin khởi công đến ngay, nhưng doanh thu đến sau nhiều tháng. Đó là lý do lợi nhuận chưa tăng, dù cổ phiếu đã được chú ý từ trước.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "items": [
+          {
+            "company": "cancau",
+            "rows": [
+              {
+                "k": "Tin tức",
+                "v": "đến ngay"
+              },
+              {
+                "k": "Doanh thu",
+                "v": "đến sau"
+              }
+            ],
+            "move": "flat",
+            "moveLabel": "Có độ trễ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Với doanh nghiệp xây dựng, hãy xem thêm giá trị hợp đồng chưa thực hiện, còn gọi là backlog. Con số này cho biết doanh thu có thể ghi nhận trong các quý tới.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Backlog",
+        "sub": "Giá trị hợp đồng chưa thực hiện"
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Còn một mặt trái. Khi chi tiêu vượt thu, ngân sách bị thâm hụt. Phần thiếu thường được bù bằng cách phát hành trái phiếu chính phủ.",
+      "visual": {
+        "type": "steps",
+        "pose": "think",
+        "expr": "worried",
+        "headline": "Thâm hụt ngân sách",
+        "items": [
+          {
+            "title": "Chi lớn hơn thu",
+            "tone": "bad"
+          },
+          {
+            "title": "Phát hành trái phiếu chính phủ"
+          },
+          {
+            "title": "Có thể kéo lợi suất lên",
+            "tone": "key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Phát hành nhiều có thể kéo lợi suất trái phiếu lên. Ta sẽ tìm hiểu kỹ ở bài mười.",
+      "visual": {
+        "type": "warning",
+        "pose": "point",
+        "headline": "Hẹn ở bài 10",
+        "sub": "Trái phiếu chính phủ và lợi suất"
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Câu hỏi cho bạn: giảm thuế giá trị gia tăng là ví dụ của loại chính sách nào? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Giảm thuế giá trị gia tăng là ví dụ của chính sách nào?",
+        "options": [
+          "Chính sách tài khoá mở rộng",
+          "Chính sách tiền tệ thắt chặt",
+          "Chính sách tỷ giá"
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Ô tài khoá sáng hai đèn: ngân sách và đầu tư công. Bây giờ, cả năm ô trên bảng điều khiển đều đã có ít nhất một đèn sáng.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI"
+        ],
+        "light": [
+          "Ngân sách",
+          "Đầu tư công"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Cả 5 ô đã sáng"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "An ghi vào sổ tay: theo dõi tỷ lệ giải ngân, không chỉ kế hoạch.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ",
+          "FDI giải ngân mới là tiền thật",
+          "Theo dõi tỷ lệ giải ngân, không chỉ kế hoạch"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Cả năm ô đã sáng. Nhưng GDP ra theo quý thì quá chậm. Có tín hiệu nào sớm hơn không? Bài sau, ta tìm hiểu PMI và các chỉ báo sớm.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công"
+        ],
+        "headline": "Bài 9: PMI, chỉ báo sớm",
+        "blink": "growth",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 9",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
