@@ -1,0 +1,539 @@
+{
+  "id": "t11-kinh-te-the-gioi-va-viet-nam",
+  "episode": 11,
+  "title": "Kinh tế thế giới và Việt Nam",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/kinh-te-the-gioi-va-viet-nam/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Tối nay, Cục Dự trữ Liên bang Mỹ họp. Ở Việt Nam, ban lãnh đạo Hàng không Cánh Diều lại thấp thỏm theo dõi. Một cuộc họp ở Mỹ thì liên quan gì đến hãng bay Việt?",
+      "visual": {
+        "type": "pair",
+        "pose": "headHold",
+        "emote": "question",
+        "headline": "Fed họp, Cánh Diều lo?",
+        "items": [
+          {
+            "company": "canhdieu",
+            "rows": [
+              {
+                "k": "Theo dõi",
+                "v": "cuộc họp Fed"
+              }
+            ],
+            "move": "flat",
+            "moveLabel": "Thấp thỏm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta học về lợi suất trái phiếu. Ở bài sáu, ta có cái cân năm yếu tố của tỷ giá. Hôm nay, ta bật đèn cuối cùng trên bảng điều khiển: vòng ngoài.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ",
+          "Trái phiếu"
+        ],
+        "pose": "present",
+        "headline": "Bài 11: Vòng ngoài",
+        "blink": "external"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Cục Dự trữ Liên bang Mỹ, gọi tắt là Fed, quyết định lãi suất của đô la Mỹ. Đây là đồng tiền trung tâm của thương mại và tài chính toàn cầu.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Fed",
+        "sub": "Quyết định lãi suất của đô la Mỹ"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Fed họp tám lần mỗi năm. Thị trường không chỉ nhìn quyết định lãi suất, mà còn nghe kỹ tín hiệu về lộ trình lãi suất sắp tới.",
+      "visual": {
+        "type": "numbers",
+        "pose": "point",
+        "label": "Cuộc họp của Fed",
+        "items": [
+          {
+            "k": "Số cuộc họp mỗi năm",
+            "v": "8"
+          },
+          {
+            "k": "Điều cần nghe",
+            "v": "lộ trình"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Để đo sức mạnh của đô la Mỹ, người ta dùng chỉ số DXY, so sánh đô la với một rổ sáu đồng tiền lớn, như euro, yên Nhật và bảng Anh.",
+      "visual": {
+        "type": "chips",
+        "pose": "present",
+        "headline": "DXY: đô la so với rổ 6 đồng",
+        "chips": [
+          "Euro",
+          "Yên Nhật",
+          "Bảng Anh",
+          "Đô la Canada",
+          "Krona Thuỵ Điển",
+          "Franc Thuỵ Sĩ"
+        ],
+        "highlight": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Khi DXY tăng, đô la Mỹ mạnh lên so với hầu hết các đồng tiền khác, và tiền đồng cũng thường chịu áp lực theo.",
+      "visual": {
+        "type": "trend",
+        "pose": "present",
+        "expr": "surprised",
+        "direction": "up",
+        "headline": "DXY tăng",
+        "sub": "Đô la Mỹ mạnh lên, tiền đồng chịu áp lực"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Khi Fed tăng lãi suất, tác động lan đến Việt Nam qua ba bước.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "numbered": true,
+        "headline": "Fed tăng lãi suất",
+        "items": [
+          {
+            "title": "Vốn rút về Mỹ",
+            "text": "tài sản đô la hấp dẫn"
+          },
+          {
+            "title": "Áp lực tỷ giá",
+            "text": "chênh lệch lãi suất hẹp"
+          },
+          {
+            "title": "NHNN khó xử",
+            "text": "có thể phải thắt chặt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Một, tài sản bằng đô la Mỹ hấp dẫn hơn, nên vốn rút khỏi các thị trường mới nổi. Hai, chênh lệch lãi suất giữa tiền đồng và đô la thu hẹp, tạo áp lực lên tỷ giá.",
+      "visual": {
+        "type": "scale",
+        "pose": "point",
+        "expr": "worried",
+        "headline": "Cái cân tỷ giá",
+        "tilt": "right",
+        "left": {
+          "title": "Tiền đồng",
+          "items": [
+            "Thặng dư thương mại",
+            "FDI, kiều hối"
+          ]
+        },
+        "right": {
+          "title": "Đô la Mỹ",
+          "items": [
+            "Chênh lệch lãi suất hẹp",
+            "DXY tăng",
+            "Khối ngoại bán ròng"
+          ]
+        },
+        "sub": "Fed tăng lãi suất: cân nghiêng về đô la"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Ba, Ngân hàng Nhà nước có thể phải tăng lãi suất hoặc hút tiền về để giữ tỷ giá, dù trong nước đang muốn hỗ trợ tăng trưởng.",
+      "visual": {
+        "type": "seesaw",
+        "pose": "shrug",
+        "headline": "Bài toán khó của NHNN",
+        "left": "Tỷ giá",
+        "right": "Lãi suất",
+        "dir": "leftDown",
+        "sub": "Giữ tỷ giá, lãi suất có thể phải tăng"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Năm hai nghìn không trăm hai mươi hai là một ví dụ. Fed tăng lãi suất nhanh, đô la Mỹ mạnh lên, và nhiều thị trường mới nổi, trong đó có Việt Nam, chịu áp lực về tỷ giá và lãi suất.",
+      "visual": {
+        "type": "warning",
+        "pose": "think",
+        "headline": "Bối cảnh năm 2022",
+        "sub": "Fed tăng lãi suất nhanh, đô la Mỹ mạnh lên"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Kênh thứ hai là giá hàng hoá thế giới. Khi giá tăng, bên bán hưởng lợi, bên mua bất lợi.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Giá hàng hoá tăng",
+        "columns": [
+          "Mặt hàng",
+          "Bên bán lợi",
+          "Bên mua thiệt"
+        ],
+        "rows": [
+          [
+            "Dầu thô",
+            "Khai thác dầu khí",
+            "Hàng không, vận tải"
+          ],
+          [
+            "Thép",
+            "Sản xuất thép",
+            "Xây dựng"
+          ],
+          [
+            "Phân bón",
+            "Sản xuất phân bón",
+            "Nông nghiệp"
+          ],
+          [
+            "Nông sản",
+            "Xuất khẩu nông sản",
+            "Chế biến thức ăn"
+          ]
+        ],
+        "highlight": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Ví dụ, giá thép tăng có lợi cho nhà sản xuất thép, nhưng bất lợi cho doanh nghiệp xây dựng. Như ở bài ba, điều quan trọng là khả năng chuyển chi phí sang giá bán.",
+      "visual": {
+        "type": "table",
+        "pose": "point",
+        "headline": "Giá hàng hoá tăng",
+        "columns": [
+          "Mặt hàng",
+          "Bên bán lợi",
+          "Bên mua thiệt"
+        ],
+        "rows": [
+          [
+            "Dầu thô",
+            "Khai thác dầu khí",
+            "Hàng không, vận tải"
+          ],
+          [
+            "Thép",
+            "Sản xuất thép",
+            "Xây dựng"
+          ],
+          [
+            "Phân bón",
+            "Sản xuất phân bón",
+            "Nông nghiệp"
+          ],
+          [
+            "Nông sản",
+            "Xuất khẩu nông sản",
+            "Chế biến thức ăn"
+          ]
+        ],
+        "highlight": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Kênh thứ ba là sức cầu của Mỹ và châu Âu, những thị trường mua nhiều hàng dệt may, gỗ, điện tử của Việt Nam. Chính sách thuế quan cũng có thể thay đổi lợi thế xuất khẩu rất nhanh.",
+      "visual": {
+        "type": "grid",
+        "pose": "present",
+        "headline": "Sức cầu bên ngoài",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Mỹ, châu Âu",
+            "text": "dệt may, gỗ, điện tử"
+          },
+          {
+            "title": "Thuế quan",
+            "text": "lợi thế đổi rất nhanh",
+            "tone": "warn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Giờ hãy xem chuỗi domino. Fed giữ lãi suất cao lâu hơn dự kiến. Đô la Mỹ mạnh lên. Khối ngoại bán ròng. Tỷ giá nhích lên.",
+      "visual": {
+        "type": "steps",
+        "pose": "point",
+        "headline": "Chuỗi domino",
+        "items": [
+          {
+            "title": "Fed giữ lãi suất cao",
+            "tone": "key"
+          },
+          {
+            "title": "DXY tăng"
+          },
+          {
+            "title": "Khối ngoại bán ròng"
+          },
+          {
+            "title": "Tỷ giá nhích lên",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Cánh Diều chịu áp lực sớm nhất: nợ đô la tăng khi quy đổi, như ở bài sáu, và giá dầu tính bằng đô la cũng đắt hơn.",
+      "visual": {
+        "type": "pair",
+        "pose": "facepalm",
+        "expr": "worried",
+        "items": [
+          {
+            "company": "canhdieu",
+            "rows": [
+              {
+                "k": "Nợ đô la",
+                "v": "tăng khi quy đổi"
+              },
+              {
+                "k": "Nhiên liệu",
+                "v": "tính bằng đô la"
+              }
+            ],
+            "move": "downBig",
+            "moveLabel": "Áp lực sớm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Đó là lý do Cánh Diều lo khi Fed họp. Còn Cá Bạc có doanh thu đô la, nên ít bị ảnh hưởng hơn.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "headline": "Cùng một cuộc họp Fed",
+        "items": [
+          {
+            "company": "canhdieu",
+            "move": "down",
+            "moveLabel": "Áp lực"
+          },
+          {
+            "company": "cabac",
+            "move": "flat",
+            "moveLabel": "Ít ảnh hưởng"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Thép Lò Rèn và Cần Cẩu thì chịu tác động trái chiều từ giá thép thế giới: một bên bán thép, một bên mua thép.",
+      "visual": {
+        "type": "pair",
+        "pose": "present",
+        "headline": "Giá thép thế giới tăng",
+        "items": [
+          {
+            "company": "loren",
+            "move": "up",
+            "moveLabel": "Bên bán"
+          },
+          {
+            "company": "cancau",
+            "move": "down",
+            "moveLabel": "Bên mua"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Tóm lại, vòng ngoài tác động qua ba kênh: lãi suất và đô la Mỹ, giá hàng hoá thế giới, và sức cầu của các thị trường xuất khẩu.",
+      "visual": {
+        "type": "checklist",
+        "pose": "present",
+        "headline": "Ba kênh từ vòng ngoài",
+        "items": [
+          "Fed và đô la Mỹ",
+          "Giá hàng hoá thế giới",
+          "Sức cầu Mỹ, châu Âu"
+        ]
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Câu hỏi cho bạn: chỉ số DXY đo lường điều gì? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Chỉ số DXY đo lường điều gì?",
+        "options": [
+          "Sức mạnh đô la Mỹ so với rổ sáu đồng tiền lớn",
+          "Lãi suất của Fed",
+          "Giá dầu thế giới"
+        ]
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Ô đối ngoại sáng đèn cuối cùng: Fed và đô la Mỹ. Bảng điều khiển của An giờ đã sáng đủ.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ",
+          "Trái phiếu"
+        ],
+        "light": [
+          "Fed, USD"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn cuối: Fed, USD"
+      }
+    },
+    {
+      "id": "s21",
+      "text": "An ghi vào sổ tay: Fed và đô la Mỹ ảnh hưởng tỷ giá và dòng vốn.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ",
+          "FDI giải ngân mới là tiền thật",
+          "Theo dõi tỷ lệ giải ngân, không chỉ kế hoạch",
+          "PMI trên 50 là mở rộng; xem đơn hàng mới",
+          "Lợi suất tăng thì P/E hợp lý giảm",
+          "Fed và đô la Mỹ ảnh hưởng tỷ giá, dòng vốn"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "An đã có đủ đồng hồ trong nước và vòng ngoài. Vậy dùng chúng hằng tuần như thế nào? Bài cuối, ta học cách đọc lịch kinh tế.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ",
+          "Trái phiếu",
+          "Fed, USD"
+        ],
+        "headline": "Bài 12: Lịch kinh tế",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 12",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
