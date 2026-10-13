@@ -1,0 +1,511 @@
+{
+  "id": "t07-can-can-thuong-mai-fdi",
+  "episode": 7,
+  "title": "Thương mại và FDI",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/can-can-thuong-mai-fdi/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Một tập đoàn điện tử nước ngoài vừa chọn khu công nghiệp Cổng Xanh để xây nhà máy. Ngoài chủ khu công nghiệp, còn ai được lợi?",
+      "visual": {
+        "type": "pair",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Nhà máy mới về KCN",
+        "items": [
+          {
+            "company": "congxanh",
+            "rows": [
+              {
+                "k": "Khách mới",
+                "v": "nhà máy điện tử"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Ai được lợi?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta thấy năm yếu tố trên cái cân tỷ giá. Ba trong số đó là dòng đô la chảy vào Việt Nam. Hôm nay, ta đi sâu vào ba dòng tiền ấy.",
+      "visual": {
+        "type": "scale",
+        "pose": "present",
+        "headline": "Nhắc lại: cái cân tỷ giá",
+        "tilt": "none",
+        "left": {
+          "title": "Tiền đồng",
+          "items": [
+            "Thặng dư thương mại",
+            "FDI, kiều hối"
+          ]
+        },
+        "right": {
+          "title": "Đô la Mỹ",
+          "items": [
+            "Chênh lệch lãi suất",
+            "Đô la Mỹ mạnh (DXY)",
+            "Khối ngoại bán ròng"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Dòng thứ nhất là cán cân thương mại: xuất khẩu trừ nhập khẩu hàng hoá. Số liệu được công bố hằng tháng. Thặng dư nghĩa là ngoại tệ chảy vào nhiều hơn chảy ra.",
+      "visual": {
+        "type": "stack",
+        "pose": "point",
+        "headline": "Cán cân thương mại",
+        "op": "−",
+        "items": [
+          {
+            "label": "Xuất khẩu",
+            "sub": "hàng hoá"
+          },
+          {
+            "label": "Nhập khẩu",
+            "sub": "hàng hoá"
+          }
+        ],
+        "result": "Cán cân"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Dòng thứ hai là vốn đầu tư trực tiếp nước ngoài, gọi tắt là FDI. Nhà đầu tư nước ngoài bỏ vốn xây nhà máy, và tham gia quản lý doanh nghiệp.",
+      "visual": {
+        "type": "title",
+        "pose": "present",
+        "headline": "FDI",
+        "sub": "Đầu tư trực tiếp: xây nhà máy, tham gia quản lý"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Dòng thứ ba là đầu tư gián tiếp: nhà đầu tư nước ngoài mua cổ phiếu, trái phiếu, hay chứng chỉ quỹ, nhưng không trực tiếp điều hành doanh nghiệp.",
+      "visual": {
+        "type": "versus",
+        "pose": "point",
+        "headline": "Hai loại vốn ngoại",
+        "left": {
+          "title": "Trực tiếp (FDI)",
+          "text": "Xây nhà máy, ở lại lâu dài"
+        },
+        "right": {
+          "title": "Gián tiếp",
+          "text": "Mua cổ phiếu, trái phiếu, quỹ"
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Ngoài ra còn kiều hối, là tiền người Việt ở nước ngoài gửi về. Đây cũng là một nguồn ngoại tệ khá ổn định mỗi năm.",
+      "visual": {
+        "type": "title",
+        "pose": "present",
+        "headline": "Kiều hối",
+        "sub": "Tiền người Việt ở nước ngoài gửi về"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Khi đọc số liệu xuất khẩu, hãy xem theo mặt hàng, như điện tử, dệt may, thuỷ sản, gỗ, và theo thị trường, như Mỹ, châu Âu và Trung Quốc.",
+      "visual": {
+        "type": "grid",
+        "pose": "present",
+        "headline": "Đọc số liệu xuất khẩu",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Theo mặt hàng",
+            "text": "điện tử, dệt may, thuỷ sản, gỗ"
+          },
+          {
+            "title": "Theo thị trường",
+            "text": "Mỹ, châu Âu, Trung Quốc"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Một chi tiết thú vị: nhập khẩu máy móc và linh kiện tăng thường là tín hiệu sản xuất sắp mở rộng. Nhập khẩu tăng chưa chắc đã là tin xấu.",
+      "visual": {
+        "type": "steps",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Nhập máy móc tăng",
+        "items": [
+          {
+            "title": "Nhập máy móc, linh kiện",
+            "tone": "key"
+          },
+          {
+            "title": "Nhà máy lắp đặt"
+          },
+          {
+            "title": "Sản xuất sắp mở rộng",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Và phần lớn kim ngạch xuất khẩu của Việt Nam đến từ khu vực có vốn đầu tư nước ngoài. Vì vậy, thương mại và FDI gắn chặt với nhau.",
+      "visual": {
+        "type": "title",
+        "pose": "hips",
+        "headline": "Thương mại gắn với FDI",
+        "sub": "Phần lớn xuất khẩu đến từ khu vực FDI"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Với FDI, có hai con số cần phân biệt. FDI đăng ký là lời hứa. FDI giải ngân, hay thực hiện, mới là tiền thật đã vào nền kinh tế.",
+      "visual": {
+        "type": "versus",
+        "pose": "point",
+        "expr": "confident",
+        "headline": "Đăng ký và giải ngân",
+        "left": {
+          "title": "Đăng ký",
+          "text": "Lời hứa"
+        },
+        "right": {
+          "title": "Giải ngân",
+          "text": "Tiền thật đã vào"
+        }
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Quay lại nhà máy điện tử. Vốn đăng ký là năm trăm triệu đô la, nhưng năm đầu chỉ giải ngân một trăm triệu đô la.",
+      "visual": {
+        "type": "compare",
+        "pose": "present",
+        "headline": "Vốn nhà máy (triệu USD)",
+        "bars": [
+          {
+            "k": "Đăng ký",
+            "v": 500,
+            "label": "500",
+            "tone": "ink"
+          },
+          {
+            "k": "Giải ngân năm đầu",
+            "v": 100,
+            "label": "100"
+          }
+        ],
+        "note": "Số liệu giả định"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Khi nhà máy về, nó kéo theo cả một chuỗi nhu cầu: thuê đất khu công nghiệp, nhà xưởng, logistics, điện, và nhà ở cho công nhân.",
+      "visual": {
+        "type": "chips",
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Nhà máy kéo theo nhu cầu",
+        "chips": [
+          "Thuê đất KCN",
+          "Nhà xưởng",
+          "Logistics",
+          "Điện",
+          "Nhà ở công nhân"
+        ],
+        "highlight": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Khu công nghiệp Cổng Xanh ký hợp đồng cho thuê đất. Doanh nghiệp vận tải và điện cũng có thêm khách hàng. Đó là câu trả lời cho câu hỏi đầu bài.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "items": [
+          {
+            "company": "congxanh",
+            "rows": [
+              {
+                "k": "Hợp đồng",
+                "v": "thuê đất mới"
+              },
+              {
+                "k": "Kéo theo",
+                "v": "logistics, điện"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Hưởng lợi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Còn Thuỷ sản Cá Bạc thì theo dõi sát đơn hàng xuất khẩu sang Mỹ và châu Âu, vì đó là thị trường chính của mình.",
+      "visual": {
+        "type": "pair",
+        "pose": "present",
+        "items": [
+          {
+            "company": "cabac",
+            "rows": [
+              {
+                "k": "Thị trường chính",
+                "v": "Mỹ, châu Âu"
+              },
+              {
+                "k": "Theo dõi",
+                "v": "đơn hàng mới"
+              }
+            ],
+            "move": "flat",
+            "moveLabel": "Theo dõi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Nếu đơn hàng từ Mỹ chậm lại, doanh thu của Cá Bạc thường giảm theo sau vài tháng. Vì vậy, số liệu xuất khẩu hằng tháng là tín hiệu sớm cho doanh nghiệp xuất khẩu.",
+      "visual": {
+        "type": "steps",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Tín hiệu sớm",
+        "items": [
+          {
+            "title": "Đơn hàng xuất khẩu",
+            "tone": "key"
+          },
+          {
+            "title": "Vài tháng sau"
+          },
+          {
+            "title": "Doanh thu Cá Bạc",
+            "text": "thay đổi theo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Vốn gián tiếp thì khác. Nó đến nhanh và đi cũng nhanh, nhạy với chênh lệch lãi suất, kỳ vọng tỷ giá, dòng tiền của các quỹ ETF, và triển vọng nâng hạng thị trường.",
+      "visual": {
+        "type": "chips",
+        "pose": "think",
+        "headline": "Vốn gián tiếp nhạy với",
+        "chips": [
+          "Chênh lệch lãi suất",
+          "Kỳ vọng tỷ giá",
+          "Quỹ ETF",
+          "Triển vọng nâng hạng"
+        ],
+        "highlight": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Quỹ ETF là quỹ mô phỏng một chỉ số. Còn nâng hạng thị trường là khi các tổ chức xếp hạng quốc tế đưa thị trường lên nhóm cao hơn, thu hút thêm vốn ngoại.",
+      "visual": {
+        "type": "grid",
+        "pose": "present",
+        "headline": "Hai thuật ngữ",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Quỹ ETF",
+            "text": "quỹ mô phỏng một chỉ số"
+          },
+          {
+            "title": "Nâng hạng",
+            "text": "lên nhóm thị trường cao hơn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Chiều ngược lại: khi lãi suất đô la Mỹ tăng, các quỹ ngoại có thể rút vốn. Cổ phiếu vốn hoá lớn và tỷ giá cùng chịu áp lực.",
+      "visual": {
+        "type": "steps",
+        "pose": "headHold",
+        "expr": "worried",
+        "emote": "sweat",
+        "headline": "Khi vốn ngoại rút ra",
+        "items": [
+          {
+            "title": "Lãi suất đô la Mỹ tăng",
+            "tone": "key"
+          },
+          {
+            "title": "Quỹ ngoại bán ròng"
+          },
+          {
+            "title": "Cổ phiếu lớn, tỷ giá",
+            "text": "chịu áp lực",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Tóm lại, có ba dòng đô la: thương mại, FDI, và vốn gián tiếp. Hai dòng đầu bền vững hơn, dòng thứ ba biến động nhanh hơn.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Ba dòng đô la",
+        "columns": [
+          "Dòng tiền",
+          "Tính chất"
+        ],
+        "rows": [
+          [
+            "Thương mại",
+            "Công bố hằng tháng"
+          ],
+          [
+            "FDI giải ngân",
+            "Bền vững, dài hạn"
+          ],
+          [
+            "Vốn gián tiếp",
+            "Đến nhanh, đi nhanh"
+          ]
+        ],
+        "highlight": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Câu hỏi cho bạn: chỉ số FDI nào phản ánh dòng tiền thực sự vào nền kinh tế? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Chỉ số FDI nào phản ánh dòng tiền thực sự vào nền kinh tế?",
+        "options": [
+          "FDI giải ngân",
+          "FDI đăng ký",
+          "Số dự án FDI mới"
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Ô đối ngoại trên bảng điều khiển sáng thêm hai đèn: thương mại và FDI.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá"
+        ],
+        "light": [
+          "Thương mại",
+          "FDI"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: Thương mại, FDI"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "An ghi vào sổ tay: FDI giải ngân mới là tiền thật.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ",
+          "FDI giải ngân mới là tiền thật"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Ngoài Ngân hàng Nhà nước, Chính phủ còn một tay lái khác để điều hành nền kinh tế. Bài sau, ta mở ô cuối cùng: tài khoá.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI"
+        ],
+        "headline": "Bài 8: Tài khoá",
+        "blink": "fiscal",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 8",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
