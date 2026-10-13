@@ -1,0 +1,466 @@
+{
+  "id": "t02-gdp-va-chu-ky-kinh-te",
+  "episode": 2,
+  "title": "GDP và chu kỳ kinh tế",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/gdp-va-chu-ky-kinh-te/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Quý vừa rồi, số liệu GDP vẫn còn yếu. Vậy mà cổ phiếu Ngân hàng Heo Đất đã tăng từ mấy tháng trước. Thị trường có vô lý không?",
+      "visual": {
+        "type": "pair",
+        "pose": "think",
+        "emote": "question",
+        "headline": "GDP còn yếu, cổ phiếu đã tăng?",
+        "items": [
+          {
+            "company": "heodat",
+            "rows": [
+              {
+                "k": "GDP quý",
+                "v": "còn yếu"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Đã tăng"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Ở bài trước, An biết vĩ mô tác động đến giá cổ phiếu qua hai kênh: lợi nhuận và định giá. Hôm nay, ta bật sáng ô đầu tiên trên bảng điều khiển: tăng trưởng.",
+      "visual": {
+        "type": "dashboard",
+        "show": [],
+        "lit": [],
+        "pose": "present",
+        "headline": "Bài 2: ô Tăng trưởng",
+        "blink": "growth"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "GDP, hay tổng sản phẩm trong nước, là tổng giá trị hàng hoá và dịch vụ cuối cùng được tạo ra trong một nước, trong một khoảng thời gian, thường là một quý hoặc một năm.",
+      "visual": {
+        "type": "title",
+        "pose": "present",
+        "headline": "GDP",
+        "sub": "Tổng giá trị hàng hoá, dịch vụ cuối cùng tạo ra trong nước"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Có ba cách đo GDP, và cả ba cho cùng một kết quả: theo chi tiêu, theo sản xuất, và theo thu nhập.",
+      "visual": {
+        "type": "grid",
+        "pose": "point",
+        "headline": "Ba cách đo, một kết quả",
+        "cols": 3,
+        "items": [
+          {
+            "title": "Chi tiêu",
+            "text": "Ai mua hàng hoá, dịch vụ"
+          },
+          {
+            "title": "Sản xuất",
+            "text": "Nông nghiệp, công nghiệp, dịch vụ"
+          },
+          {
+            "title": "Thu nhập",
+            "text": "Người lao động, doanh nghiệp, Nhà nước"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Cách dễ hình dung nhất là theo chi tiêu: tiêu dùng của hộ gia đình, cộng đầu tư, cộng chi tiêu của chính phủ, cộng xuất khẩu ròng, tức xuất khẩu trừ nhập khẩu.",
+      "visual": {
+        "type": "stack",
+        "pose": "present",
+        "headline": "GDP theo chi tiêu",
+        "items": [
+          {
+            "label": "Tiêu dùng",
+            "sub": "hộ gia đình"
+          },
+          {
+            "label": "Đầu tư",
+            "sub": "tư nhân, công, FDI"
+          },
+          {
+            "label": "Chi tiêu",
+            "sub": "chính phủ"
+          },
+          {
+            "label": "Xuất khẩu ròng",
+            "sub": "xuất trừ nhập"
+          }
+        ],
+        "result": "GDP"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Nhìn theo cách này, kinh tế Việt Nam dựa vào ba trụ: tiêu dùng trong nước, đầu tư gồm cả đầu tư công và vốn FDI, và xuất khẩu.",
+      "visual": {
+        "type": "grid",
+        "pose": "hips",
+        "headline": "Ba trụ của kinh tế Việt Nam",
+        "cols": 3,
+        "items": [
+          {
+            "title": "Tiêu dùng",
+            "text": "trong nước",
+            "tone": "good"
+          },
+          {
+            "title": "Đầu tư",
+            "text": "đầu tư công và FDI",
+            "tone": "good"
+          },
+          {
+            "title": "Xuất khẩu",
+            "text": "sang Mỹ, EU, Trung Quốc",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Cục Thống kê công bố GDP theo quý, thường vào đầu tháng sau khi quý kết thúc. Khi đọc, có bốn điểm cần chú ý.",
+      "visual": {
+        "type": "title",
+        "pose": "point",
+        "headline": "Đọc số liệu GDP",
+        "sub": "Công bố theo quý, đầu tháng sau khi hết quý"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Một, nhìn GDP thực, tức đã loại bỏ tác động của giá cả. Hai, so với cùng quý năm trước để bỏ yếu tố mùa vụ. Ba, xem khu vực nào kéo tăng trưởng. Bốn, so với mục tiêu Quốc hội đặt ra cho cả năm.",
+      "visual": {
+        "type": "checklist",
+        "pose": "present",
+        "headline": "Bốn điểm cần chú ý",
+        "items": [
+          "GDP thực, đã loại giá",
+          "So cùng quý năm trước",
+          "Khu vực nào kéo tăng trưởng",
+          "So với mục tiêu cả năm"
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Nhưng nền kinh tế không tăng theo đường thẳng. Nó dao động quanh xu hướng dài hạn, qua bốn giai đoạn của chu kỳ kinh tế.",
+      "visual": {
+        "type": "line",
+        "pose": "present",
+        "headline": "Kinh tế đi theo chu kỳ",
+        "series": [
+          {
+            "name": "Xu hướng dài hạn",
+            "points": [
+              2,
+              2.6,
+              3.2,
+              3.8,
+              4.4,
+              5,
+              5.6,
+              6.2,
+              6.8
+            ],
+            "color": "muted"
+          },
+          {
+            "name": "Thực tế",
+            "points": [
+              2,
+              3.6,
+              4.4,
+              3.4,
+              2.6,
+              4.2,
+              6.6,
+              6.4,
+              5.8
+            ],
+            "color": "accent"
+          }
+        ],
+        "yMin": 1,
+        "yMax": 7.5
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Phục hồi: tăng trưởng cải thiện từ đáy, lạm phát thấp, và lãi suất thường được giữ thấp để hỗ trợ.",
+      "visual": {
+        "type": "cycle",
+        "pose": "point",
+        "active": 0,
+        "sub": "Lãi suất thấp, hỗ trợ tăng trưởng"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Tăng trưởng: sản xuất, tiêu dùng và tín dụng tăng mạnh. Ngân hàng Nhà nước bắt đầu thận trọng với lạm phát.",
+      "visual": {
+        "type": "cycle",
+        "pose": "cheer",
+        "from": 0,
+        "active": 1,
+        "sub": "Bắt đầu thận trọng với lạm phát"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Đỉnh: kinh tế tăng trưởng nóng, lạm phát và chi phí đầu vào tăng cao. Chính sách tiền tệ thường được thắt chặt, lãi suất tăng.",
+      "visual": {
+        "type": "cycle",
+        "pose": "think",
+        "expr": "surprised",
+        "emote": "exclaim",
+        "from": 1,
+        "active": 2,
+        "sub": "Thắt chặt tiền tệ, tăng lãi suất"
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Suy thoái: tăng trưởng chậm lại, lợi nhuận doanh nghiệp giảm, và chính sách lại được nới lỏng để kích thích.",
+      "visual": {
+        "type": "cycle",
+        "pose": "shrug",
+        "expr": "worried",
+        "from": 2,
+        "active": 3,
+        "sub": "Nới lỏng trở lại để kích thích"
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Điểm quan trọng nhất: thị trường chứng khoán thường đi trước chu kỳ vài tháng, vì giá cổ phiếu phản ánh kỳ vọng về lợi nhuận tương lai.",
+      "visual": {
+        "type": "line",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Thị trường đi trước kinh tế",
+        "series": [
+          {
+            "name": "Kinh tế",
+            "points": [
+              4,
+              3,
+              2.2,
+              1.8,
+              2.4,
+              3.4,
+              4.4,
+              5.2,
+              5.6
+            ],
+            "color": "ink"
+          },
+          {
+            "name": "Chứng khoán",
+            "points": [
+              3,
+              2.2,
+              2,
+              2.8,
+              3.9,
+              4.9,
+              5.6,
+              5.9,
+              5.7
+            ],
+            "color": "accent"
+          }
+        ],
+        "yMin": 1,
+        "yMax": 6.5
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Đó là lý do cổ phiếu Heo Đất có thể tăng khi GDP còn yếu. Nhà đầu tư đang mua kỳ vọng về giai đoạn phục hồi phía trước.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "items": [
+          {
+            "company": "heodat",
+            "rows": [
+              {
+                "k": "GDP hiện tại",
+                "v": "còn yếu"
+              },
+              {
+                "k": "Kỳ vọng",
+                "v": "phục hồi"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Đi trước GDP"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Mỗi giai đoạn lại có nhóm ngành hưởng lợi khác nhau. Người ta gọi đó là luân chuyển ngành.",
+      "visual": {
+        "type": "cycle",
+        "pose": "present",
+        "reveal": true,
+        "sectors": true
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Đầu giai đoạn phục hồi, ngân hàng, chứng khoán và bất động sản thường dẫn dắt, nhờ lãi suất thấp và tín dụng tăng, như Heo Đất và Tổ Ấm Land.",
+      "visual": {
+        "type": "pair",
+        "pose": "point",
+        "headline": "Giai đoạn phục hồi",
+        "items": [
+          {
+            "company": "heodat",
+            "move": "up",
+            "moveLabel": "Dẫn dắt"
+          },
+          {
+            "company": "toam",
+            "move": "up",
+            "moveLabel": "Dẫn dắt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Khi kinh tế tăng trưởng, bán lẻ như Siêu thị Giỏ Tre được hưởng lợi. Ở đỉnh chu kỳ là năng lượng và nguyên vật liệu, như Thép Lò Rèn. Còn khi suy thoái, nhóm phòng thủ như điện, nước, hàng thiết yếu và y tế giữ vững hơn.",
+      "visual": {
+        "type": "pair",
+        "pose": "present",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Giai đoạn",
+                "v": "Tăng trưởng"
+              }
+            ]
+          },
+          {
+            "company": "loren",
+            "rows": [
+              {
+                "k": "Giai đoạn",
+                "v": "Đỉnh"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Nhưng đây chỉ là khung tham khảo, không phải quy luật cứng. Mỗi chu kỳ một khác, và chất lượng từng doanh nghiệp vẫn là yếu tố quyết định.",
+      "visual": {
+        "type": "warning",
+        "pose": "think",
+        "headline": "Khung tham khảo",
+        "sub": "Không phải quy luật cứng"
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Câu hỏi cho bạn: vì sao thị trường chứng khoán thường đi trước nền kinh tế? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Vì sao thị trường chứng khoán thường đi trước nền kinh tế?",
+        "options": [
+          "Nhà đầu tư định giá theo kỳ vọng lợi nhuận tương lai",
+          "Số liệu GDP luôn sai",
+          "Cổ phiếu chỉ phản ánh quá khứ"
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Ô tăng trưởng trên bảng điều khiển đã sáng đèn đầu tiên: GDP.",
+      "visual": {
+        "type": "dashboard",
+        "show": [],
+        "lit": [],
+        "light": [
+          "GDP"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: GDP"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "An ghi thêm dòng thứ hai vào sổ tay: thị trường đi trước kinh tế vài tháng.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Ở giai đoạn đỉnh, giá cả bắt đầu leo thang. Bài sau, ta tìm hiểu lạm phát và chỉ số CPI.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth"
+        ],
+        "lit": [
+          "GDP"
+        ],
+        "headline": "Bài 3: Lạm phát và CPI",
+        "blink": "prices",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 3",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}

@@ -10,6 +10,7 @@ import path from "node:path";
 import { figureSVG, poseTween, breathe, walkIn, blinks } from "./lib/figure.mjs";
 import { BRAND } from "./lib/brand.mjs";
 import { macroScene, macroCSS } from "./lib/scenes-macro.mjs";
+import { extraScene, extraCSS } from "./lib/scenes-extra.mjs";
 
 const contentPath = process.argv[2];
 if (!contentPath) {
@@ -172,7 +173,7 @@ function renderScene(scene, idx, o) {
       const max = Math.max(...v.bars.map((b) => b.v));
       return {
         html: `<div class="stack"><h2 class="h2" id="${id}-h">${esc(v.headline)}</h2>
-          ${v.bars.map((b, i) => `<div class="bar-row" id="${id}-r${i}"><span class="bk">${esc(b.k)}</span><div class="bar-track"><div class="bar" id="${id}-b${i}" style="width:${((b.v / max) * 100).toFixed(1)}%"><span>P/E ${b.v}</span></div></div></div>`).join("")}
+          ${v.bars.map((b, i) => `<div class="bar-row" id="${id}-r${i}"><span class="bk">${esc(b.k)}</span><div class="bar-track"><div class="bar" id="${id}-b${i}" style="width:${((b.v / max) * 100).toFixed(1)}%"><span>${esc(b.label ?? "P/E " + b.v)}</span></div></div></div>`).join("")}
           <p class="note" id="${id}-n">${esc(v.note || "")}</p></div>`,
         js: (t, d) => {
           const st = steps(v.bars.length, t + 0.3, d * 0.9);
@@ -222,7 +223,7 @@ function renderScene(scene, idx, o) {
         js: (t, d) => [pop(`#${id}-m`, t + 0.15), inn(`#${id}-h`, t + 0.45), inn(`#${id}-s`, t + 0.7), pop(`#${id}-c`, t + 1.0), inn(`#${id}-d`, t + 1.3)],
       };
     default: {
-      const m = macroScene(v, id, { inn, pop, steps, esc, f, A, o });
+      const m = macroScene(v, id, { inn, pop, steps, esc, f, A, o }) || extraScene(v, id, { inn, pop, steps, esc, f, A, o });
       if (m) return m;
       throw new Error(`Kiểu cảnh chưa hỗ trợ: ${v.type} (cảnh ${scene.id})`);
     }
@@ -343,6 +344,7 @@ html, body { width: ${W}px; height: ${H}px; overflow: hidden; background: ${A.pa
 .cap { position: absolute; left: 0; right: 0; ${vertical ? "top: 1062px;" : "bottom: 54px;"} display: flex; justify-content: center; ${vertical ? "" : "padding-left: 520px;"} }
 .cap-text { display: inline-block; max-width: ${vertical ? 940 : 1240}px; background: ${A.ink}; color: #fff; font-size: ${vertical ? 46 : 40}px; font-weight: 600; line-height: 1.3; padding: 14px 30px; border-radius: 18px; text-align: center; }
 ${macroCSS(A)}
+${extraCSS(A)}
 `;
 
   return `<!doctype html>

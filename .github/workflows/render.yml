@@ -58,8 +58,8 @@ jobs:
           ALL=$(ls content/*.json 2>/dev/null || true)
           if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
             FILES="$ALL"
-          elif git diff --name-only "$BEFORE" HEAD | grep -qE '^(scripts/|assets/|package.json|\.github/)'; then
-            FILES="$ALL"   # hệ thống dựng đổi: render lại tất cả (giọng đọc được dùng lại)
+          elif git log --format=%B "$BEFORE..HEAD" | grep -q '\[render-all\]'; then
+            FILES="$ALL"   # commit có [render-all]: render lại tất cả (giọng đọc được dùng lại)
           else
             FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- 'content/*.json')
           fi

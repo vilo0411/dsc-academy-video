@@ -12,6 +12,7 @@ export function macroScene(v, id, ctx) {
       const show = new Set(v.show || []);
       const reveal = v.reveal || [];
       const lit = new Set(v.lit || []);
+      const light = v.light || [];
       const tiles = DASHBOARD.map(
         (g, i) => `<div class="tile ${show.has(g.key) ? "on" : ""}" id="${id}-g${i}">
           <div class="tile-bar"></div><div class="tile-name">${esc(g.name)}</div>
@@ -34,6 +35,17 @@ export function macroScene(v, id, ctx) {
             out.push(`tl.fromTo("#${id}-g${i} .tile-bar", { opacity: 1, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 0.4, ease: "power2.out" }, ${f(st[r])});`);
             out.push(`tl.fromTo("#${id}-g${i}", { scale: 1 }, { scale: 1.06, duration: 0.2, yoyo: true, repeat: 1, ease: "sine.inOut" }, ${f(st[r])});`);
             DASHBOARD[i].items.forEach((_, k) => out.push(inn(`#${id}-g${i}i${k}`, st[r] + 0.2 + k * 0.12)));
+          });
+          // Đèn mới bật sáng trong tập này
+          light.forEach((item, k) => {
+            const i = DASHBOARD.findIndex((g) => g.items.includes(item));
+            if (i < 0) return;
+            const j = DASHBOARD[i].items.indexOf(item);
+            const tt = t + Math.max(1.2, d * 0.45) + k * 0.35;
+            out.push(`tl.to("#${id}-g${i}", { opacity: 1, duration: 0.3 }, ${f(tt - 0.3)});`);
+            out.push(`tl.to("#${id}-g${i} .tile-bar", { opacity: 1, duration: 0.3 }, ${f(tt - 0.3)});`);
+            out.push(`tl.to("#${id}-g${i}i${j}", { backgroundColor: "${A.accent}", borderColor: "${A.ink}", duration: 0.25 }, ${f(tt)});`);
+            out.push(`tl.fromTo("#${id}-g${i}i${j}", { scale: 1 }, { scale: 1.18, duration: 0.2, yoyo: true, repeat: 1 }, ${f(tt)});`);
           });
           if (v.blink) {
             const i = DASHBOARD.findIndex((g) => g.key === v.blink);
@@ -163,12 +175,13 @@ export function macroScene(v, id, ctx) {
     // fields: entries[] (dòng cuối là dòng mới của tập này)
     case "notebook": {
       const n = v.entries.length;
+      const first = Math.max(0, n - 5); // chỉ hiện 5 dòng gần nhất
       return {
         html: `<div class="notebook" id="${id}-n"><div class="nb-title">Sổ tay vĩ mô của An</div>
-          ${v.entries.map((e, i) => `<div class="nb-line ${i === n - 1 ? "new" : ""}" id="${id}-e${i}"><span>${i + 1}.</span><em>${esc(e)}</em></div>`).join("")}</div>`,
+          ${v.entries.map((e, i) => (i < first ? "" : `<div class="nb-line ${i === n - 1 ? "new" : ""}" id="${id}-e${i}"><span>${i + 1}.</span><em>${esc(e)}</em></div>`)).join("")}</div>`,
         js: (t, d) => [
           inn(`#${id}-n`, t + 0.1),
-          ...v.entries.slice(0, -1).map((_, i) => inn(`#${id}-e${i}`, t + 0.3 + i * 0.05)),
+          ...v.entries.slice(0, -1).map((_, i) => (i < first ? "" : inn(`#${id}-e${i}`, t + 0.3 + (i - first) * 0.08))),
           `tl.fromTo("#${id}-e${n - 1}", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.6, ease: "power2.out" }, ${f(t + d * 0.35)});`,
         ],
       };
@@ -216,11 +229,11 @@ export const macroCSS = (A) => `
 .qopt { display: flex; align-items: center; gap: 22px; font-size: 38px; font-weight: 600; background: #fff; border: 4px solid ${A.ink}; border-radius: 20px; padding: 18px 26px; }
 .qopt span { width: 60px; height: 60px; flex-shrink: 0; border-radius: 50%; background: ${A.ink}; color: ${A.accent}; display: flex; align-items: center; justify-content: center; font-weight: 800; }
 .qfoot { align-self: flex-start; font-size: 34px; font-weight: 800; background: ${A.accent}; border: 4px solid ${A.ink}; border-radius: 40px; padding: 12px 30px; }
-.notebook { width: 980px; background: #FFFDF5; border: 4px solid ${A.ink}; border-radius: 22px; box-shadow: 10px 10px 0 ${A.ink}; padding: 36px 50px 44px 96px; position: relative;
+.notebook { width: 1100px; background: #FFFDF5; border: 4px solid ${A.ink}; border-radius: 22px; box-shadow: 10px 10px 0 ${A.ink}; padding: 36px 50px 44px 96px; position: relative;
   background-image: repeating-linear-gradient(transparent 0 66px, ${A.line} 66px 69px); background-position: 0 96px; }
 .notebook::before { content: ""; position: absolute; left: 66px; top: 0; bottom: 0; width: 4px; background: #F0868A; }
 .nb-title { font-size: 40px; font-weight: 800; margin-bottom: 18px; }
-.nb-line { font-size: 34px; line-height: 69px; display: flex; gap: 16px; }
+.nb-line { font-size: 31px; line-height: 69px; white-space: nowrap; display: flex; gap: 16px; }
 .nb-line span { font-weight: 800; color: ${A.muted}; }
 .nb-line em { font-style: normal; }
 .nb-line.new em { font-weight: 700; background: linear-gradient(transparent 58%, ${A.accent} 58% 88%, transparent 88%); }
