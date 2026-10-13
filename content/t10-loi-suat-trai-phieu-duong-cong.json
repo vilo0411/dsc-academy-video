@@ -1,0 +1,541 @@
+{
+  "id": "t10-loi-suat-trai-phieu-duong-cong",
+  "episode": 10,
+  "title": "Lợi suất trái phiếu",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/loi-suat-trai-phieu-duong-cong/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Siêu thị Giỏ Tre không thay đổi gì: vẫn bán hàng như cũ, lợi nhuận kỳ vọng như cũ. Vậy mà giá trị hợp lý của nó giảm gần chín phần trăm. Vì sao?",
+      "visual": {
+        "type": "pair",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Không đổi gì, vẫn giảm?",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Kinh doanh",
+                "v": "như cũ"
+              },
+              {
+                "k": "Giá trị hợp lý",
+                "v": "−9%"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Vì sao?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta học cách đọc chỉ báo sớm. Ở bài tám, ta biết Chính phủ bù thâm hụt bằng cách phát hành trái phiếu. Hôm nay, ta tìm hiểu lợi suất của trái phiếu đó.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ"
+        ],
+        "pose": "present",
+        "headline": "Bài 10: Trái phiếu",
+        "blink": "money"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Trái phiếu là một khoản vay. Người mua trái phiếu cho tổ chức phát hành vay tiền, nhận lãi định kỳ, và được hoàn gốc khi đến hạn.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "headline": "Trái phiếu là khoản vay",
+        "items": [
+          {
+            "title": "Bỏ tiền mua",
+            "tone": "key"
+          },
+          {
+            "title": "Nhận lãi định kỳ"
+          },
+          {
+            "title": "Nhận lại gốc",
+            "text": "khi đáo hạn",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Lợi suất là tỷ suất sinh lời mỗi năm, nếu bạn mua trái phiếu ở giá hiện tại và giữ đến khi đáo hạn.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Lợi suất",
+        "sub": "Sinh lời mỗi năm nếu mua giá hiện tại, giữ đến hạn"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Giá trái phiếu và lợi suất luôn đi ngược chiều nhau, như một cái bập bênh. Vì tiền lãi và tiền gốc đã cố định, mua với giá thấp hơn thì tỷ suất sinh lời cao hơn.",
+      "visual": {
+        "type": "seesaw",
+        "pose": "point",
+        "headline": "Giá và lợi suất",
+        "left": "Giá",
+        "right": "Lợi suất",
+        "dir": "leftDown",
+        "sub": "Giá giảm thì lợi suất tăng"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Ví dụ, một trái phiếu trả lãi cố định năm phần trăm mỗi năm. Nếu lãi suất thị trường lên sáu phần trăm, không ai muốn mua nó với giá cũ, nên giá phải giảm.",
+      "visual": {
+        "type": "compare",
+        "pose": "shrug",
+        "headline": "Trái phiếu lãi 5%",
+        "bars": [
+          {
+            "k": "Lãi trái phiếu",
+            "v": 5,
+            "label": "5%",
+            "tone": "ink"
+          },
+          {
+            "k": "Lãi thị trường",
+            "v": 6,
+            "label": "6%"
+          }
+        ],
+        "note": "Ví dụ minh hoạ: giá trái phiếu phải giảm"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Ở Việt Nam, trái phiếu chính phủ do Kho bạc Nhà nước phát hành qua đấu thầu, phổ biến ở kỳ hạn năm, mười và mười lăm năm.",
+      "visual": {
+        "type": "chips",
+        "pose": "present",
+        "headline": "Trái phiếu chính phủ",
+        "chips": [
+          "Kho bạc Nhà nước",
+          "Đấu thầu",
+          "5 năm",
+          "10 năm",
+          "15 năm"
+        ],
+        "highlight": [
+          3
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Lợi suất kỳ hạn mười năm thường được dùng làm lãi suất phi rủi ro, tức mức sinh lời gần như chắc chắn, làm mốc so sánh cho mọi tài sản khác.",
+      "visual": {
+        "type": "title",
+        "pose": "hips",
+        "expr": "confident",
+        "headline": "Lợi suất 10 năm",
+        "sub": "Lãi suất phi rủi ro: mốc so sánh cho mọi tài sản"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Nếu vẽ lợi suất của các kỳ hạn từ ngắn đến dài, ta có đường cong lợi suất. Bình thường, đường này dốc lên, vì cho vay càng lâu thì đòi lãi càng cao.",
+      "visual": {
+        "type": "line",
+        "pose": "present",
+        "headline": "Đường cong lợi suất",
+        "series": [
+          {
+            "name": "Bình thường: dốc lên",
+            "points": [
+              2.0,
+              2.6,
+              3.1,
+              3.8,
+              4.1
+            ],
+            "color": "accent"
+          }
+        ],
+        "xLabels": [
+          "1 năm",
+          "3 năm",
+          "5 năm",
+          "10 năm",
+          "15 năm"
+        ],
+        "yMin": 1,
+        "yMax": 5
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Đường cong có bốn hình dạng: dốc lên, dốc hơn, phẳng, và đảo ngược, khi lợi suất ngắn hạn lại cao hơn dài hạn.",
+      "visual": {
+        "type": "grid",
+        "pose": "point",
+        "headline": "Bốn hình dạng",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Dốc lên",
+            "text": "bình thường",
+            "tone": "good"
+          },
+          {
+            "title": "Dốc hơn",
+            "text": "kỳ vọng tăng trưởng, lạm phát"
+          },
+          {
+            "title": "Phẳng",
+            "text": "ngắn hạn gần bằng dài hạn",
+            "tone": "warn"
+          },
+          {
+            "title": "Đảo ngược",
+            "text": "ngắn hạn cao hơn dài hạn",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Ở Mỹ, đường cong đảo ngược được theo dõi như một tín hiệu cảnh báo suy thoái. Nhưng nó không phải lúc nào cũng đúng, nên chỉ là một kim trên đồng hồ chu kỳ.",
+      "visual": {
+        "type": "line",
+        "pose": "think",
+        "expr": "worried",
+        "headline": "Đường cong đảo ngược",
+        "series": [
+          {
+            "name": "Bình thường",
+            "points": [
+              2.0,
+              2.6,
+              3.1,
+              3.8,
+              4.1
+            ],
+            "color": "muted"
+          },
+          {
+            "name": "Đảo ngược",
+            "points": [
+              4.6,
+              4.3,
+              4.0,
+              3.8,
+              3.7
+            ],
+            "color": "accent"
+          }
+        ],
+        "xLabels": [
+          "1 năm",
+          "3 năm",
+          "5 năm",
+          "10 năm",
+          "15 năm"
+        ],
+        "yMin": 1,
+        "yMax": 5
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Lợi suất ảnh hưởng đến cổ phiếu qua ba kênh: định giá, cạnh tranh dòng tiền, và chi phí vốn.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "numbered": true,
+        "headline": "Ba kênh tác động",
+        "items": [
+          {
+            "title": "Định giá",
+            "text": "tỷ suất chiết khấu"
+          },
+          {
+            "title": "Dòng tiền",
+            "text": "trái phiếu hấp dẫn hơn"
+          },
+          {
+            "title": "Chi phí vốn",
+            "text": "doanh nghiệp vay đắt hơn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Kênh quan trọng nhất là định giá. Lợi suất là nền của tỷ suất chiết khấu, nên lợi suất tăng thì P trên E hợp lý giảm, như ta đã thấy ở bài một và bài bốn.",
+      "visual": {
+        "type": "chain",
+        "pose": "point",
+        "highlight": "valuation",
+        "dir": "down",
+        "caption": "Lợi suất tăng → tỷ suất chiết khấu tăng → P/E hợp lý giảm"
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Hãy tính thử. Một trăm tỷ đồng lợi nhuận nhận được sau năm năm. Chiết khấu ở mức mười phần trăm, giá trị hôm nay là khoảng sáu mươi hai tỷ.",
+      "visual": {
+        "type": "calc",
+        "pose": "present",
+        "face": "thinking",
+        "expr": "100 tỷ ÷ 1,10⁵",
+        "result": "≈ 62 tỷ"
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Nếu lợi suất tăng và tỷ suất chiết khấu lên mười hai phần trăm, giá trị hôm nay chỉ còn khoảng năm mươi bảy tỷ. Giảm gần chín phần trăm.",
+      "visual": {
+        "type": "compare",
+        "pose": "point",
+        "expr": "surprised",
+        "emote": "exclaim",
+        "headline": "Giá trị hôm nay của 100 tỷ",
+        "bars": [
+          {
+            "k": "Chiết khấu 10%",
+            "v": 62,
+            "label": "≈ 62 tỷ",
+            "tone": "ink"
+          },
+          {
+            "k": "Chiết khấu 12%",
+            "v": 57,
+            "label": "≈ 57 tỷ",
+            "tone": "bad"
+          }
+        ],
+        "note": "Số liệu giả định"
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Đó là câu trả lời cho Giỏ Tre. Doanh nghiệp không đổi, nhưng thước đo dùng để định giá đã đổi.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Lợi nhuận",
+                "v": "không đổi"
+              },
+              {
+                "k": "Tỷ suất chiết khấu",
+                "v": "10% → 12%"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Định giá giảm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Lợi nhuận càng nằm xa trong tương lai thì càng nhạy với lợi suất. Vì vậy, cổ phiếu tăng trưởng thường nhạy hơn cổ phiếu giá trị.",
+      "visual": {
+        "type": "versus",
+        "pose": "present",
+        "headline": "Ai nhạy hơn?",
+        "left": {
+          "title": "Cổ phiếu tăng trưởng",
+          "text": "Lợi nhuận ở xa, nhạy hơn"
+        },
+        "right": {
+          "title": "Cổ phiếu giá trị",
+          "text": "Lợi nhuận gần, ít nhạy hơn"
+        }
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Kênh thứ hai: khi trái phiếu chính phủ cho lợi suất cao và gần như không rủi ro, một phần tiền sẽ rời cổ phiếu để sang trái phiếu.",
+      "visual": {
+        "type": "versus",
+        "pose": "shrug",
+        "headline": "Cạnh tranh dòng tiền",
+        "left": {
+          "title": "Cổ phiếu",
+          "text": "Rủi ro cao hơn"
+        },
+        "right": {
+          "title": "Trái phiếu",
+          "text": "Lợi suất cao, an toàn"
+        }
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Kênh thứ ba: lợi suất tăng kéo theo chi phí phát hành trái phiếu và vay vốn của doanh nghiệp tăng theo.",
+      "visual": {
+        "type": "chain",
+        "pose": "point",
+        "highlight": "profit",
+        "dir": "down",
+        "caption": "Lợi suất tăng → chi phí vay của doanh nghiệp tăng"
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Câu hỏi cho bạn: đường cong lợi suất đảo ngược là gì? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Đường cong lợi suất “đảo ngược” là gì?",
+        "options": [
+          "Lợi suất ngắn hạn cao hơn dài hạn",
+          "Lợi suất dài hạn cao hơn ngắn hạn",
+          "Giá và lợi suất cùng chiều"
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Ô tiền tệ trên bảng điều khiển đã sáng đủ ba đèn, với đèn mới: trái phiếu.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ"
+        ],
+        "light": [
+          "Trái phiếu"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: Trái phiếu"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "An ghi vào sổ tay: lợi suất tăng thì P trên E hợp lý giảm.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ",
+          "FDI giải ngân mới là tiền thật",
+          "Theo dõi tỷ lệ giải ngân, không chỉ kế hoạch",
+          "PMI trên 50 là mở rộng; xem đơn hàng mới",
+          "Lợi suất tăng thì P/E hợp lý giảm"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Lợi suất ở Mỹ và quyết định của Fed lan đến Việt Nam như thế nào? Bài sau, ta nhìn ra kinh tế thế giới.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ",
+          "Trái phiếu"
+        ],
+        "headline": "Bài 11: Kinh tế thế giới",
+        "blink": "external",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 11",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
