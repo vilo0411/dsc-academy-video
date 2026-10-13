@@ -56,9 +56,9 @@ for (const file of files) {
     fs.copyFileSync(cachedTimings, path.join(buildDir, "timings.json"));
     step("tts", { ok: true, seconds: 0, out: "Lời thoại không đổi — dùng lại giọng đọc đã có." });
   } else if (!process.env.GEMINI_API_KEY) {
-    step("tts", { ok: false, seconds: 0, out: "Thiếu secret GEMINI_API_KEY trong Settings → Secrets and variables → Actions." });
+    step("tts", { ok: false, seconds: 0, out: "Thiếu secret GEMINI_API_KEY trong Settings → Secrets and variables → Actions. Vẫn render bản không tiếng để kiểm tra hình." });
+    status.silent = true;
     failed++;
-    continue;
   } else {
     if (!step("tts", run(process.execPath, ["scripts/tts-gemini.mjs", file]))) {
       failed++;
@@ -95,7 +95,8 @@ for (const file of files) {
   try {
     status.output = { file: `out/${id}.mp4`, ...JSON.parse(probe.out).format };
   } catch {}
-  status.ok = true;
+  status.ok = !status.silent;
+  status.rendered = true;
   status.finishedAt = new Date().toISOString();
   save();
   console.log(`✓ ${id} → out/${id}.mp4`);
