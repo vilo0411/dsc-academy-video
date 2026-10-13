@@ -1,0 +1,530 @@
+{
+  "id": "t09-pmi-va-chi-bao-som",
+  "episode": 9,
+  "title": "PMI và chỉ báo sớm",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/pmi-va-chi-bao-som/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "An muốn biết nền kinh tế đã đổi chiều hay chưa. Nhưng số liệu GDP phải đợi hết quý mới có. Có cách nào biết sớm hơn không?",
+      "visual": {
+        "type": "calendar",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Đợi GDP thì quá lâu",
+        "month": "Tháng mẫu",
+        "events": [
+          {
+            "day": 30,
+            "label": "Hết quý",
+            "tone": "warn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, cả năm ô trên bảng điều khiển đã có đèn sáng. Hôm nay, ta quay lại đồng hồ chu kỳ ở bài hai, và tìm cách đọc nó sớm hơn.",
+      "visual": {
+        "type": "cycle",
+        "pose": "present",
+        "active": 3,
+        "sub": "Kim đồng hồ đang ở đâu?"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Chỉ báo kinh tế chia làm ba loại, theo thời điểm chúng thay đổi so với nền kinh tế: chỉ báo sớm, chỉ báo trùng khớp, và chỉ báo trễ.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "numbered": true,
+        "headline": "Ba loại chỉ báo",
+        "items": [
+          {
+            "title": "Chỉ báo sớm",
+            "text": "đổi chiều trước",
+            "tone": "key"
+          },
+          {
+            "title": "Trùng khớp",
+            "text": "đi cùng kinh tế"
+          },
+          {
+            "title": "Chỉ báo trễ",
+            "text": "xác nhận sau"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Chỉ báo sớm gồm PMI, đơn hàng mới, cấp phép xây dựng, và tín dụng như ở bài năm. Bản thân thị trường chứng khoán cũng là một chỉ báo sớm, như ta đã thấy ở bài hai.",
+      "visual": {
+        "type": "chips",
+        "pose": "point",
+        "headline": "Chỉ báo sớm",
+        "chips": [
+          "PMI",
+          "Đơn hàng mới",
+          "Cấp phép xây dựng",
+          "Tín dụng",
+          "Thị trường chứng khoán"
+        ],
+        "highlight": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Chỉ báo trùng khớp như sản xuất công nghiệp và bán lẻ. Còn chỉ báo trễ như thất nghiệp, hay lạm phát lõi ở bài ba, thường chỉ xác nhận khi xu hướng đã diễn ra.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Ba loại chỉ báo",
+        "columns": [
+          "Loại",
+          "Ví dụ"
+        ],
+        "rows": [
+          [
+            "Sớm",
+            "PMI, đơn hàng mới, tín dụng"
+          ],
+          [
+            "Trùng khớp",
+            "Sản xuất công nghiệp, bán lẻ"
+          ],
+          [
+            "Trễ",
+            "Thất nghiệp, lạm phát lõi"
+          ]
+        ],
+        "highlight": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Chỉ báo sớm được theo dõi nhiều nhất là PMI, tức chỉ số nhà quản trị mua hàng.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "PMI",
+        "sub": "Chỉ số nhà quản trị mua hàng"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "PMI ngành sản xuất Việt Nam do S và P Global công bố vào ngày làm việc đầu tiên mỗi tháng. Tức là chỉ sau vài ngày, ta đã có tín hiệu của cả tháng trước.",
+      "visual": {
+        "type": "calendar",
+        "pose": "point",
+        "headline": "PMI ra rất sớm",
+        "month": "Tháng mẫu",
+        "offset": 2,
+        "events": [
+          {
+            "day": 1,
+            "label": "PMI",
+            "tone": "ink"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Doanh nghiệp được hỏi: so với tháng trước, sản lượng, đơn hàng mới, việc làm, thời gian giao hàng và tồn kho tăng hay giảm.",
+      "visual": {
+        "type": "chips",
+        "pose": "present",
+        "headline": "Doanh nghiệp được hỏi về",
+        "chips": [
+          "Sản lượng",
+          "Đơn hàng mới",
+          "Việc làm",
+          "Thời gian giao hàng",
+          "Tồn kho"
+        ],
+        "highlight": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Có một chi tiết thú vị: thời gian giao hàng kéo dài thường cho thấy nhà cung cấp đang bận vì nhu cầu cao. Vì vậy, chỉ số này được tính theo chiều ngược lại.",
+      "visual": {
+        "type": "steps",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Giao hàng chậm hơn",
+        "items": [
+          {
+            "title": "Nhà cung cấp bận",
+            "tone": "key"
+          },
+          {
+            "title": "Nhu cầu đang cao"
+          },
+          {
+            "title": "Tính là tín hiệu tốt",
+            "tone": "good"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Cách đọc rất đơn giản. Mốc năm mươi là ranh giới. Trên năm mươi là mở rộng, dưới năm mươi là thu hẹp.",
+      "visual": {
+        "type": "gauge",
+        "pose": "point",
+        "headline": "Mốc 50",
+        "min": 40,
+        "max": 60,
+        "mid": 50,
+        "from": 50,
+        "value": 52,
+        "sub": "Trên 50: mở rộng"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Càng xa mốc năm mươi, thay đổi càng mạnh. PMI bốn mươi lăm nghĩa là thu hẹp mạnh hơn nhiều so với bốn mươi chín.",
+      "visual": {
+        "type": "gauge",
+        "pose": "shrug",
+        "expr": "worried",
+        "headline": "Càng xa 50, càng mạnh",
+        "min": 40,
+        "max": 60,
+        "mid": 50,
+        "from": 49,
+        "value": 45,
+        "sub": "Dưới 50: thu hẹp"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Ba lưu ý khi đọc PMI. Một, nhìn xu hướng nhiều tháng, đừng phản ứng với một tháng đơn lẻ.",
+      "visual": {
+        "type": "checklist",
+        "pose": "present",
+        "headline": "Ba lưu ý khi đọc PMI",
+        "items": [
+          "Xu hướng nhiều tháng",
+          "Đơn hàng mới đi trước",
+          "Giá đầu vào, đầu ra"
+        ]
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Hai, đơn hàng mới, nhất là đơn hàng xuất khẩu, thường đi trước sản lượng. Có đơn hàng thì vài tháng sau nhà máy mới chạy hết công suất.",
+      "visual": {
+        "type": "line",
+        "pose": "point",
+        "headline": "Đơn hàng đi trước sản lượng",
+        "series": [
+          {
+            "name": "Đơn hàng mới",
+            "points": [
+              47,
+              48,
+              50,
+              51.5,
+              52.5,
+              53,
+              53.2
+            ],
+            "color": "accent"
+          },
+          {
+            "name": "Sản lượng",
+            "points": [
+              47.5,
+              47.6,
+              48.2,
+              49.5,
+              51,
+              52.2,
+              52.8
+            ],
+            "color": "ink"
+          }
+        ],
+        "threshold": {
+          "value": 50,
+          "label": "Mốc 50"
+        },
+        "yMin": 45,
+        "yMax": 55
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Ba, chỉ số giá đầu vào và giá đầu ra gợi ý áp lực lạm phát sắp tới, nối với bài ba.",
+      "visual": {
+        "type": "chain",
+        "pose": "think",
+        "highlight": "profit",
+        "dir": "down",
+        "caption": "Giá đầu vào tăng nhanh hơn giá đầu ra → biên lợi nhuận bị ép"
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Ngoài PMI, hãy xem thêm sản xuất công nghiệp, nhập khẩu máy móc như ở bài bảy, lượng khách quốc tế, và doanh số bán lẻ.",
+      "visual": {
+        "type": "grid",
+        "pose": "present",
+        "headline": "Chỉ báo bổ sung",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Sản xuất công nghiệp",
+            "text": "hằng tháng"
+          },
+          {
+            "title": "Nhập máy móc",
+            "text": "nhắc bài 7"
+          },
+          {
+            "title": "Khách quốc tế",
+            "text": "du lịch, dịch vụ"
+          },
+          {
+            "title": "Bán lẻ",
+            "text": "sức mua trong nước"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Giờ hãy xem một ví dụ. PMI giả định đi từ bốn mươi tám, lên bốn mươi chín phẩy năm, rồi năm mươi mốt.",
+      "visual": {
+        "type": "line",
+        "pose": "present",
+        "headline": "PMI giả định",
+        "series": [
+          {
+            "name": "PMI",
+            "points": [
+              48,
+              49.5,
+              51
+            ],
+            "color": "accent"
+          }
+        ],
+        "threshold": {
+          "value": 50,
+          "label": "Mốc 50"
+        },
+        "valueLabels": true,
+        "yMin": 46,
+        "yMax": 53
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Quan trọng hơn, chỉ số đơn hàng mới đã vượt năm mươi hai đến ba tháng liền. Đây là tín hiệu phục hồi sớm, trước khi GDP kịp xác nhận.",
+      "visual": {
+        "type": "gauge",
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đơn hàng mới > 50",
+        "min": 40,
+        "max": 60,
+        "mid": 50,
+        "from": 48,
+        "value": 52.5,
+        "sub": "Liên tiếp nhiều tháng"
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Kim đồng hồ chu kỳ nhích từ suy thoái sang phục hồi. Và Thuỷ sản Cá Bạc thấy đơn hàng xuất khẩu mới bắt đầu tăng.",
+      "visual": {
+        "type": "cycle",
+        "pose": "point",
+        "from": 3,
+        "active": 0,
+        "sub": "Tín hiệu phục hồi sớm"
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Đó là câu trả lời cho An: muốn biết kinh tế đổi chiều sớm, hãy theo dõi chỉ báo sớm, đặc biệt là đơn hàng mới trong PMI.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "items": [
+          {
+            "company": "cabac",
+            "rows": [
+              {
+                "k": "Đơn hàng xuất khẩu",
+                "v": "tăng"
+              },
+              {
+                "k": "Tín hiệu",
+                "v": "đến trước GDP"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Phục hồi sớm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Nhưng nhớ rằng chỉ báo sớm cũng có thể báo sai. Hãy dùng nhiều chỉ báo cùng lúc, thay vì tin vào một con số.",
+      "visual": {
+        "type": "warning",
+        "pose": "think",
+        "headline": "Chỉ báo sớm cũng có thể sai",
+        "sub": "Dùng nhiều chỉ báo cùng lúc"
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Câu hỏi cho bạn: PMI ở mức bốn mươi tám có nghĩa là gì? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "PMI ở mức 48 có nghĩa là gì?",
+        "options": [
+          "Ngành sản xuất đang thu hẹp so với tháng trước",
+          "Kinh tế tăng trưởng 4,8%",
+          "48% doanh nghiệp có lãi"
+        ]
+      }
+    },
+    {
+      "id": "s22",
+      "text": "Ô tăng trưởng trên bảng điều khiển sáng thêm ba đèn: PMI, sản xuất và bán lẻ.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công"
+        ],
+        "light": [
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: PMI, sản xuất, bán lẻ"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "An ghi vào sổ tay: PMI trên năm mươi là mở rộng, và hãy xem đơn hàng mới.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ",
+          "FDI giải ngân mới là tiền thật",
+          "Theo dõi tỷ lệ giải ngân, không chỉ kế hoạch",
+          "PMI trên 50 là mở rộng; xem đơn hàng mới"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Thị trường trái phiếu cũng dự báo nền kinh tế theo cách riêng của nó. Bài sau, ta tìm hiểu lợi suất trái phiếu.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ"
+        ],
+        "headline": "Bài 10: Lợi suất trái phiếu",
+        "blink": "money",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s25",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 10",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
