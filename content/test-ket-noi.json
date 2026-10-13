@@ -1,0 +1,26 @@
+{
+  "id": "test-ket-noi",
+  "title": "Thử kết nối",
+  "series": "DSC Academy · Kinh tế vĩ mô cho nhà đầu tư",
+  "voice": {
+    "style": "Read aloud in a warm, clear, friendly Vietnamese voice at a moderate pace, like a teacher explaining to a beginner. Pause briefly between sentences.",
+    "voiceName": "Kore"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Xin chào, đây là video thử nghiệm của DSC Academy.",
+      "visual": { "type": "title", "pose": "wave", "headline": "Thử kết nối", "sub": "Gemini TTS + HyperFrames trên GitHub" }
+    },
+    {
+      "id": "s02",
+      "text": "Giọng đọc, hình ảnh và phụ đề đều được tạo tự động.",
+      "visual": { "type": "checklist", "pose": "point", "headline": "Tự động hoàn toàn", "items": ["Giọng đọc", "Hình ảnh", "Phụ đề"] }
+    },
+    {
+      "id": "s03",
+      "text": "Hẹn gặp bạn trong chuỗi bài kinh tế vĩ mô.",
+      "visual": { "type": "outro", "pose": "cheer", "headline": "Sắp ra mắt", "sub": "Kinh tế vĩ mô cho nhà đầu tư", "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư." }
+    }
+  ]
+}

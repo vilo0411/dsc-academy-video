@@ -1,0 +1,91 @@
+name: Render videos
+
+# Chạy khi có thay đổi kịch bản hoặc hệ thống dựng trên nhánh main.
+# Kết quả (video, giọng đọc đã tạo, báo cáo) được ghi vào nhánh "renders".
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+      - "scripts/**"
+      - "assets/**"
+      - "package.json"
+      - ".github/workflows/render.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Cài FFmpeg và cho phép Chrome headless
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0 || true
+
+      - name: Cài HyperFrames
+        run: npm install --no-audit --no-fund
+
+      - name: Lấy kết quả cũ từ nhánh renders (giọng đọc đã tạo)
+        run: |
+          mkdir -p prev cache
+          if git ls-remote --exit-code --heads origin renders >/dev/null 2>&1; then
+            git fetch --depth 1 origin renders
+            git archive FETCH_HEAD | tar -x -C prev
+            cp -r prev/cache/. cache/ 2>/dev/null || true
+          fi
+
+      - name: Chọn kịch bản cần render
+        id: pick
+        run: |
+          BEFORE="${{ github.event.before }}"
+          ALL=$(ls content/*.json 2>/dev/null || true)
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+            FILES="$ALL"
+          elif git diff --name-only "$BEFORE" HEAD | grep -qE '^(scripts/|assets/|package.json|\.github/)'; then
+            FILES="$ALL"   # hệ thống dựng đổi: render lại tất cả (giọng đọc được dùng lại)
+          else
+            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- 'content/*.json')
+          fi
+          echo "files=$(echo $FILES)" >> "$GITHUB_OUTPUT"
+          echo "Sẽ render: $FILES"
+
+      - name: Tạo giọng, dựng và render
+        if: steps.pick.outputs.files != ''
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npx hyperframes doctor || true; node scripts/ci.mjs ${{ steps.pick.outputs.files }}
+
+      - name: Ghi kết quả vào nhánh renders
+        if: always() && steps.pick.outputs.files != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p pub
+          cp -r prev/. pub/ 2>/dev/null || true
+          mkdir -p pub/out pub/cache pub/status
+          cp -r out/. pub/out/ 2>/dev/null || true
+          cp -r cache/. pub/cache/ 2>/dev/null || true
+          cp -r status/. pub/status/ 2>/dev/null || true
+          echo "${GITHUB_SHA}" > pub/LAST_COMMIT
+          cd pub
+          git init -q -b renders
+          git add -A
+          git -c user.name="render-bot" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -qm "render ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" renders
