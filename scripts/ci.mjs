@@ -41,6 +41,31 @@ for (const file of files) {
   const buildDir = path.join("build", id);
   const cacheDir = path.join("cache", id);
   fs.mkdirSync(buildDir, { recursive: true });
+
+  // Bài nghe thử giọng: luôn tạo mới, ghép nhiều phương án vào một video.
+  if (content.variants) {
+    if (!step("voice-test", run(process.execPath, ["scripts/voice-test.mjs", file]))) {
+      failed++;
+      continue;
+    }
+    try {
+      status.report = JSON.parse(fs.readFileSync(path.join(buildDir, "report.json"), "utf8"));
+    } catch {}
+    if (!step("build", run(process.execPath, ["scripts/build.mjs", path.join(buildDir, "content.json")]))) {
+      failed++;
+      continue;
+    }
+    const outVt = path.resolve("out", `${id}.mp4`);
+    if (!step("render", run("npx", ["hyperframes", "render", "--quality", "looks", "--output", outVt], { cwd: path.join(buildDir, "video-16x9") }))) {
+      failed++;
+      continue;
+    }
+    status.ok = true;
+    status.output = { file: `out/${id}.mp4` };
+    save();
+    continue;
+  }
+
   const hash = crypto
     .createHash("sha1")
     .update(JSON.stringify({ texts: content.scenes.map((s) => s.text), voice: content.voice, model: process.env.GEMINI_TTS_MODEL || "" }))
@@ -55,12 +80,12 @@ for (const file of files) {
     fs.copyFileSync(path.join(cacheDir, "voice.wav"), path.join(buildDir, "voice.wav"));
     fs.copyFileSync(cachedTimings, path.join(buildDir, "timings.json"));
     step("tts", { ok: true, seconds: 0, out: "Lời thoại không đổi — dùng lại giọng đọc đã có." });
-  } else if (!process.env.GEMINI_API_KEY) {
-    step("tts", { ok: false, seconds: 0, out: "Thiếu secret GEMINI_API_KEY trong Settings → Secrets and variables → Actions. Vẫn render bản không tiếng để kiểm tra hình." });
+  } else if (!(content.voice?.provider?.startsWith("cloud") ? process.env.GCP_SA_KEY : process.env.GEMINI_API_KEY)) {
+    step("tts", { ok: false, seconds: 0, out: "Thiếu secret (GEMINI_API_KEY hoặc GCP_SA_KEY) trong Settings → Secrets and variables → Actions. Vẫn render bản không tiếng để kiểm tra hình." });
     status.silent = true;
     failed++;
   } else {
-    if (!step("tts", run(process.execPath, ["scripts/tts-gemini.mjs", file]))) {
+    if (!step("tts", run(process.execPath, [content.voice?.provider ? "scripts/tts.mjs" : "scripts/tts-gemini.mjs", file]))) {
       failed++;
       continue;
     }

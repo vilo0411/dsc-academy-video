@@ -70,6 +70,7 @@ jobs:
         if: steps.pick.outputs.files != ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
         run: npx hyperframes doctor || true; node scripts/ci.mjs ${{ steps.pick.outputs.files }}
 
       - name: Ghi kết quả vào nhánh renders
