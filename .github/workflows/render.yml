@@ -54,14 +54,21 @@ jobs:
       - name: Chọn kịch bản cần render
         id: pick
         run: |
-          BEFORE="${{ github.event.before }}"
+          # So với commit đã render gần nhất (ghi trên nhánh renders), không phải lần push trước:
+          # lần chạy bị huỷ do xếp hàng sẽ không làm sót kịch bản.
+          BASE=$(cat prev/LAST_COMMIT 2>/dev/null || true)
           ALL=$(ls content/*.json 2>/dev/null || true)
-          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+          if [ -z "$BASE" ] || ! git cat-file -e "$BASE" 2>/dev/null; then
             FILES="$ALL"
-          elif git log --format=%B "$BEFORE..HEAD" | grep -q '\[render-all\]'; then
+          elif git log --format=%B "$BASE..HEAD" | grep -q '\[render-all\]'; then
             FILES="$ALL"   # commit có [render-all]: render lại tất cả (giọng đọc được dùng lại)
           else
-            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" HEAD -- 'content/*.json')
+            FILES=$(git diff --name-only --diff-filter=AM "$BASE" HEAD -- 'content/*.json')
+            # Thêm kịch bản chưa có video thành công trên nhánh renders (chưa render, hoặc lần trước lỗi)
+            for f in $ALL; do
+              node -e "const fs=require('fs');const id=JSON.parse(fs.readFileSync('$f')).id;let ok=false;try{ok=JSON.parse(fs.readFileSync('prev/status/'+id+'.json')).ok===true}catch{}process.exit(ok?0:1)" || FILES="$FILES $f"
+            done
+            FILES=$(echo $FILES | tr ' ' '\n' | sort -u | tr '\n' ' ')
           fi
           echo "files=$(echo $FILES)" >> "$GITHUB_OUTPUT"
           echo "Sẽ render: $FILES"
