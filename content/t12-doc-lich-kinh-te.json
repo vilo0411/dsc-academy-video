@@ -310,6 +310,29 @@
     },
     {
       "id": "s16",
+      "text": "Quy trình này không giúp bạn đoán đúng mọi lần. Nhưng nó giúp bạn có kế hoạch sẵn, và tránh quyết định vội vàng khi tin tức dồn dập.",
+      "visual": {
+        "type": "warning",
+        "pose": "think",
+        "headline": "Không phải để đoán đúng",
+        "sub": "Để có kế hoạch sẵn, tránh vội vàng"
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Hãy bắt đầu đơn giản: mỗi tuần dành mười lăm phút xem lịch kinh tế, và cập nhật bảng điều khiển của riêng bạn.",
+      "visual": {
+        "type": "checklist",
+        "pose": "present",
+        "headline": "Thói quen mỗi tuần",
+        "items": [
+          "15 phút xem lịch kinh tế",
+          "Cập nhật bảng điều khiển"
+        ]
+      }
+    },
+    {
+      "id": "s18",
       "text": "Hãy xem một ví dụ minh hoạ, không phải khuyến nghị. Lạm phát lõi tăng ba tháng liền, và tỷ giá chịu áp lực. Hai đèn này cùng báo khả năng chính sách thắt chặt.",
       "visual": {
         "type": "dashboard",
@@ -344,7 +367,7 @@
       }
     },
     {
-      "id": "s17",
+      "id": "s19",
       "text": "Trên danh sách theo dõi giả định, An giảm dần tỷ trọng Tổ Ấm Land vì doanh nghiệp vay nợ nhiều. An cũng hạn chế dùng margin, tức tiền vay để mua cổ phiếu.",
       "visual": {
         "type": "pair",
@@ -370,7 +393,7 @@
       }
     },
     {
-      "id": "s18",
+      "id": "s20",
       "text": "An ưu tiên doanh nghiệp nhiều tiền mặt ròng như Giỏ Tre. Và quan trọng nhất, An không bán tháo chỉ sau một bản tin.",
       "visual": {
         "type": "pair",
@@ -404,7 +427,7 @@
       }
     },
     {
-      "id": "s19",
+      "id": "s21",
       "text": "Câu hỏi cho bạn: cách dùng thông tin vĩ mô hợp lý nhất cho danh mục dài hạn là gì? Đáp án nằm trong bài viết bên dưới video.",
       "visual": {
         "type": "quiz",
@@ -419,7 +442,7 @@
       }
     },
     {
-      "id": "s20",
+      "id": "s22",
       "text": "An ghi dòng cuối cùng vào sổ tay: bốn bước, bối cảnh, biến số, kịch bản, tỷ trọng.",
       "visual": {
         "type": "notebook",
@@ -442,7 +465,7 @@
       }
     },
     {
-      "id": "s21",
+      "id": "s23",
       "text": "Từ bài một đến bài mười hai, ta đã đi qua năm nhóm chỉ báo: tăng trưởng, giá cả, tiền tệ, đối ngoại và tài khoá. Bảng điều khiển của An giờ đã sáng đủ.",
       "visual": {
         "type": "dashboard",
@@ -476,7 +499,7 @@
       }
     },
     {
-      "id": "s22",
+      "id": "s24",
       "text": "Vĩ mô không cho bạn biết ngày mai giá sẽ ra sao. Nhưng nó giúp bạn hiểu bối cảnh, và ra quyết định bình tĩnh hơn.",
       "visual": {
         "type": "title",
@@ -487,7 +510,7 @@
       }
     },
     {
-      "id": "s23",
+      "id": "s25",
       "text": "Hãy đọc bài viết bên dưới và làm bài thi cuối khoá để nhận huy hiệu Nhà quan sát vĩ mô nhé.",
       "visual": {
         "type": "outro",

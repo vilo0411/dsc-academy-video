@@ -97,6 +97,27 @@
     },
     {
       "id": "s06",
+      "text": "Từ máy móc, nguyên liệu đến xăng dầu, rất nhiều thứ Việt Nam nhập khẩu đều được thanh toán bằng đô la Mỹ.",
+      "visual": {
+        "type": "chips",
+        "pose": "point",
+        "headline": "Thanh toán bằng đô la Mỹ",
+        "chips": [
+          "Máy móc",
+          "Nguyên liệu",
+          "Xăng dầu",
+          "Linh kiện"
+        ],
+        "highlight": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "s07",
       "text": "Mỗi ngày, Ngân hàng Nhà nước công bố tỷ giá trung tâm. Các ngân hàng được giao dịch trong một biên độ quanh mức này.",
       "visual": {
         "type": "line",
@@ -129,7 +150,7 @@
       }
     },
     {
-      "id": "s07",
+      "id": "s08",
       "text": "Tỷ giá chịu tác động của năm yếu tố, giống như một cái cân. Bên tiền đồng mạnh lên có thặng dư thương mại, vốn FDI và kiều hối.",
       "visual": {
         "type": "scale",
@@ -154,7 +175,7 @@
       }
     },
     {
-      "id": "s08",
+      "id": "s09",
       "text": "Bên kia là chênh lệch lãi suất giữa tiền đồng và đô la Mỹ, sức mạnh của đô la Mỹ trên thế giới, đo bằng chỉ số DXY, và việc khối ngoại mua hay bán ròng cổ phiếu.",
       "visual": {
         "type": "scale",
@@ -181,7 +202,7 @@
       }
     },
     {
-      "id": "s09",
+      "id": "s10",
       "text": "Khi tỷ giá chịu áp lực, Ngân hàng Nhà nước có ba công cụ chính.",
       "visual": {
         "type": "steps",
@@ -205,7 +226,7 @@
       }
     },
     {
-      "id": "s10",
+      "id": "s11",
       "text": "Bán ngoại tệ từ dự trữ để tăng cung đô la. Phát hành tín phiếu để hút tiền đồng về, làm lãi suất ngắn hạn tăng, như ta đã thấy ở bài bốn. Hoặc điều chỉnh tỷ giá bán can thiệp.",
       "visual": {
         "type": "chain",
@@ -216,7 +237,7 @@
       }
     },
     {
-      "id": "s11",
+      "id": "s12",
       "text": "Vì thế, tỷ giá và lãi suất luôn cần được đọc cùng nhau. Giữ tỷ giá ổn định đôi khi phải trả giá bằng lãi suất cao hơn.",
       "visual": {
         "type": "seesaw",
@@ -230,7 +251,7 @@
       }
     },
     {
-      "id": "s12",
+      "id": "s13",
       "text": "Tiền đồng mất giá không xấu với tất cả. Doanh nghiệp xuất khẩu có doanh thu bằng đô la sẽ được lợi.",
       "visual": {
         "type": "versus",
@@ -247,7 +268,7 @@
       }
     },
     {
-      "id": "s13",
+      "id": "s14",
       "text": "Còn doanh nghiệp nhập khẩu nguyên liệu, hoặc có nợ vay bằng ngoại tệ, sẽ chịu thiệt.",
       "visual": {
         "type": "grid",
@@ -270,7 +291,7 @@
       }
     },
     {
-      "id": "s14",
+      "id": "s15",
       "text": "Chiều ngược lại cũng đúng. Khi tiền đồng lên giá, doanh nghiệp nhập khẩu và doanh nghiệp nợ đô la được lợi, còn nhà xuất khẩu kém cạnh tranh hơn.",
       "visual": {
         "type": "versus",
@@ -287,7 +308,7 @@
       }
     },
     {
-      "id": "s15",
+      "id": "s16",
       "text": "Hãy xem ba doanh nghiệp trong chuỗi bài. Thuỷ sản Cá Bạc xuất khẩu. Doanh thu đô la trước đây quy đổi được một nghìn tỷ đồng, nay thành một nghìn không trăm ba mươi tỷ.",
       "visual": {
         "type": "calc",
@@ -299,7 +320,7 @@
       }
     },
     {
-      "id": "s16",
+      "id": "s17",
       "text": "Hàng không Cánh Diều có khoản nợ đô la, quy đổi ra hai trăm năm mươi tỷ đồng. Tỷ giá tăng ba phần trăm, khoản nợ thành hai trăm năm mươi bảy phẩy năm tỷ.",
       "visual": {
         "type": "slider",
@@ -323,7 +344,7 @@
       }
     },
     {
-      "id": "s17",
+      "id": "s18",
       "text": "Phần chênh lệch bảy phẩy năm tỷ đồng được ghi nhận là lỗ tỷ giá. Bán vé không đổi, nhưng lợi nhuận vẫn giảm. Đó là câu trả lời cho câu hỏi đầu bài.",
       "visual": {
         "type": "pair",
@@ -349,7 +370,7 @@
       }
     },
     {
-      "id": "s18",
+      "id": "s19",
       "text": "Còn Thép Lò Rèn nhập quặng sắt bằng đô la, nên giá vốn tăng theo tỷ giá.",
       "visual": {
         "type": "pair",
@@ -382,7 +403,7 @@
       }
     },
     {
-      "id": "s19",
+      "id": "s20",
       "text": "Khi đọc tỷ giá, hãy hỏi: doanh nghiệp thu bằng đồng tiền nào, chi bằng đồng tiền nào, và nợ bằng đồng tiền nào?",
       "visual": {
         "type": "checklist",
@@ -397,7 +418,18 @@
       }
     },
     {
-      "id": "s20",
+      "id": "s21",
+      "text": "Một mẹo nhỏ: thuyết minh báo cáo tài chính thường ghi rõ khoản vay theo từng loại tiền. Đó là nơi đầu tiên nên tìm khi tỷ giá biến động.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Mẹo nhỏ",
+        "sub": "Xem thuyết minh báo cáo tài chính: vay bằng tiền gì?"
+      }
+    },
+    {
+      "id": "s22",
       "text": "Câu hỏi cho bạn: doanh nghiệp nào thường bất lợi khi tiền đồng mất giá? Đáp án nằm trong bài viết bên dưới video.",
       "visual": {
         "type": "quiz",
@@ -412,7 +444,7 @@
       }
     },
     {
-      "id": "s21",
+      "id": "s23",
       "text": "Ô đối ngoại trên bảng điều khiển đã sáng đèn đầu tiên: tỷ giá.",
       "visual": {
         "type": "dashboard",
@@ -437,7 +469,7 @@
       }
     },
     {
-      "id": "s22",
+      "id": "s24",
       "text": "An ghi vào sổ tay: đọc tỷ giá cùng lãi suất, và để ý doanh nghiệp nợ đô la Mỹ.",
       "visual": {
         "type": "notebook",
@@ -454,7 +486,7 @@
       }
     },
     {
-      "id": "s23",
+      "id": "s25",
       "text": "Ba trong năm yếu tố trên cái cân là dòng đô la chảy vào Việt Nam. Vậy đô la đến từ đâu? Bài sau, ta tìm hiểu thương mại và FDI.",
       "visual": {
         "type": "dashboard",
@@ -479,7 +511,7 @@
       }
     },
     {
-      "id": "s24",
+      "id": "s26",
       "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
       "visual": {
         "type": "outro",
@@ -489,6 +521,5 @@
         "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
       }
     }
-  ],
-  "renderRev": 2
+  ]
 }

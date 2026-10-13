@@ -179,6 +179,19 @@
     },
     {
       "id": "s10",
+      "text": "Số liệu tín dụng được Ngân hàng Nhà nước cập nhật định kỳ trong năm, qua các buổi họp báo và thông tin trên website của mình.",
+      "visual": {
+        "type": "checklist",
+        "pose": "point",
+        "headline": "Xem số liệu tín dụng ở đâu?",
+        "items": [
+          "Họp báo của NHNN",
+          "Website NHNN"
+        ]
+      }
+    },
+    {
+      "id": "s11",
       "text": "Mỗi năm, Ngân hàng Nhà nước đặt chỉ tiêu tăng trưởng tín dụng, rồi phân hạn mức cho từng ngân hàng dựa trên sức khoẻ tài chính. Hạn mức đó thường được gọi là room.",
       "visual": {
         "type": "grid",
@@ -200,7 +213,7 @@
       }
     },
     {
-      "id": "s11",
+      "id": "s12",
       "text": "Ngân hàng có nợ xấu thấp và vốn mạnh thường được giao room cao hơn. Vì thế, mỗi lần nới room, thị trường thường chú ý ngay đến nhóm ngân hàng.",
       "visual": {
         "type": "compare",
@@ -223,7 +236,7 @@
       }
     },
     {
-      "id": "s12",
+      "id": "s13",
       "text": "Khi đọc số liệu tín dụng, có ba điểm cần chú ý.",
       "visual": {
         "type": "checklist",
@@ -237,7 +250,7 @@
       }
     },
     {
-      "id": "s13",
+      "id": "s14",
       "text": "Một, so với chỉ tiêu cả năm, để biết dư địa còn lại. Hai, tín dụng chảy vào sản xuất, tiêu dùng hay bất động sản. Ba, so với huy động. Cho vay tăng nhanh hơn huy động quá lâu thì thanh khoản sẽ căng.",
       "visual": {
         "type": "versus",
@@ -254,7 +267,7 @@
       }
     },
     {
-      "id": "s14",
+      "id": "s15",
       "text": "Tín dụng tác động lên thị trường theo bốn tình huống thường gặp.",
       "visual": {
         "type": "table",
@@ -288,7 +301,7 @@
       }
     },
     {
-      "id": "s15",
+      "id": "s16",
       "text": "Tín dụng tăng chậm dù lãi suất thấp cho thấy cầu vay yếu. Còn tín dụng quá nóng thì mang rủi ro lạm phát và nợ xấu về sau.",
       "visual": {
         "type": "table",
@@ -324,7 +337,7 @@
       }
     },
     {
-      "id": "s16",
+      "id": "s17",
       "text": "Tình huống cuối là tín dụng bị siết đột ngột. Khi đó, các ngành phụ thuộc vốn vay chịu áp lực lớn nhất.",
       "visual": {
         "type": "table",
@@ -358,7 +371,7 @@
       }
     },
     {
-      "id": "s17",
+      "id": "s18",
       "text": "Quay lại Heo Đất. Ngân hàng được nới room thêm mười nghìn tỷ đồng, và cho vay hết phần room này.",
       "visual": {
         "type": "numbers",
@@ -377,7 +390,7 @@
       }
     },
     {
-      "id": "s18",
+      "id": "s19",
       "text": "Với biên lãi ròng ba phẩy năm phần trăm, phần cho vay thêm mang về khoảng ba trăm năm mươi tỷ đồng thu nhập lãi thuần mỗi năm. Đó là lý do cổ phiếu phản ứng ngay.",
       "visual": {
         "type": "calc",
@@ -389,7 +402,7 @@
       }
     },
     {
-      "id": "s19",
+      "id": "s20",
       "text": "Lưu ý, đây là con số trước chi phí dự phòng và chi phí hoạt động. Lợi nhuận thật còn tuỳ vào chất lượng của các khoản vay mới.",
       "visual": {
         "type": "warning",
@@ -399,7 +412,21 @@
       }
     },
     {
-      "id": "s20",
+      "id": "s21",
+      "text": "Lần tới khi nghe tin nới room, hãy hỏi thêm: ngân hàng nào được nới, và họ có cho vay hết phần room đó được không?",
+      "visual": {
+        "type": "checklist",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Khi nghe tin nới room",
+        "items": [
+          "Ngân hàng nào được nới?",
+          "Có cho vay hết được không?"
+        ]
+      }
+    },
+    {
+      "id": "s22",
       "text": "Nhưng chiều ngược lại cũng xảy ra. Khi tín dụng vào bất động sản bị siết, Tổ Ấm Land khó vay để làm dự án, và người mua nhà cũng khó vay hơn.",
       "visual": {
         "type": "pair",
@@ -433,7 +460,7 @@
       }
     },
     {
-      "id": "s21",
+      "id": "s23",
       "text": "Nói ngắn gọn: lãi suất cho biết giá của tiền, còn tín dụng cho biết tiền có thực sự chảy vào nền kinh tế hay không.",
       "visual": {
         "type": "versus",
@@ -451,7 +478,7 @@
       }
     },
     {
-      "id": "s22",
+      "id": "s24",
       "text": "Câu hỏi cho bạn: nhóm cổ phiếu nào nhạy trực tiếp nhất với tăng trưởng tín dụng? Đáp án nằm trong bài viết bên dưới video.",
       "visual": {
         "type": "quiz",
@@ -466,7 +493,7 @@
       }
     },
     {
-      "id": "s23",
+      "id": "s25",
       "text": "Ô tiền tệ trên bảng điều khiển đã sáng thêm đèn: tín dụng và M2.",
       "visual": {
         "type": "dashboard",
@@ -490,7 +517,7 @@
       }
     },
     {
-      "id": "s24",
+      "id": "s26",
       "text": "An ghi vào sổ tay: so tín dụng với chỉ tiêu cả năm, và với huy động.",
       "visual": {
         "type": "notebook",
@@ -506,7 +533,7 @@
       }
     },
     {
-      "id": "s25",
+      "id": "s27",
       "text": "Ngân hàng Nhà nước mua đô la Mỹ cũng làm tăng cung tiền. Vậy tỷ giá vận hành ra sao? Bài sau, ta mở ô đối ngoại.",
       "visual": {
         "type": "dashboard",
@@ -529,7 +556,7 @@
       }
     },
     {
-      "id": "s26",
+      "id": "s28",
       "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
       "visual": {
         "type": "outro",

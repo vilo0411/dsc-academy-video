@@ -175,6 +175,26 @@
     },
     {
       "id": "s09",
+      "text": "Lợi suất trái phiếu chính phủ có thể theo dõi qua kết quả các phiên đấu thầu được công bố định kỳ, và qua giao dịch trên thị trường thứ cấp.",
+      "visual": {
+        "type": "grid",
+        "pose": "point",
+        "headline": "Theo dõi lợi suất",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Kết quả đấu thầu",
+            "text": "công bố định kỳ"
+          },
+          {
+            "title": "Thị trường thứ cấp",
+            "text": "giao dịch hằng ngày"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10",
       "text": "Nếu vẽ lợi suất của các kỳ hạn từ ngắn đến dài, ta có đường cong lợi suất. Bình thường, đường này dốc lên, vì cho vay càng lâu thì đòi lãi càng cao.",
       "visual": {
         "type": "line",
@@ -205,7 +225,7 @@
       }
     },
     {
-      "id": "s10",
+      "id": "s11",
       "text": "Đường cong có bốn hình dạng: dốc lên, dốc hơn, phẳng, và đảo ngược, khi lợi suất ngắn hạn lại cao hơn dài hạn.",
       "visual": {
         "type": "grid",
@@ -236,7 +256,7 @@
       }
     },
     {
-      "id": "s11",
+      "id": "s12",
       "text": "Ở Mỹ, đường cong đảo ngược được theo dõi như một tín hiệu cảnh báo suy thoái. Nhưng nó không phải lúc nào cũng đúng, nên chỉ là một kim trên đồng hồ chu kỳ.",
       "visual": {
         "type": "line",
@@ -279,7 +299,7 @@
       }
     },
     {
-      "id": "s12",
+      "id": "s13",
       "text": "Lợi suất ảnh hưởng đến cổ phiếu qua ba kênh: định giá, cạnh tranh dòng tiền, và chi phí vốn.",
       "visual": {
         "type": "steps",
@@ -303,7 +323,7 @@
       }
     },
     {
-      "id": "s13",
+      "id": "s14",
       "text": "Kênh quan trọng nhất là định giá. Lợi suất là nền của tỷ suất chiết khấu, nên lợi suất tăng thì P trên E hợp lý giảm, như ta đã thấy ở bài một và bài bốn.",
       "visual": {
         "type": "chain",
@@ -314,7 +334,7 @@
       }
     },
     {
-      "id": "s14",
+      "id": "s15",
       "text": "Hãy tính thử. Một trăm tỷ đồng lợi nhuận nhận được sau năm năm. Chiết khấu ở mức mười phần trăm, giá trị hôm nay là khoảng sáu mươi hai tỷ.",
       "visual": {
         "type": "calc",
@@ -325,7 +345,7 @@
       }
     },
     {
-      "id": "s15",
+      "id": "s16",
       "text": "Nếu lợi suất tăng và tỷ suất chiết khấu lên mười hai phần trăm, giá trị hôm nay chỉ còn khoảng năm mươi bảy tỷ. Giảm gần chín phần trăm.",
       "visual": {
         "type": "compare",
@@ -351,7 +371,7 @@
       }
     },
     {
-      "id": "s16",
+      "id": "s17",
       "text": "Đó là câu trả lời cho Giỏ Tre. Doanh nghiệp không đổi, nhưng thước đo dùng để định giá đã đổi.",
       "visual": {
         "type": "pair",
@@ -377,7 +397,7 @@
       }
     },
     {
-      "id": "s17",
+      "id": "s18",
       "text": "Lợi nhuận càng nằm xa trong tương lai thì càng nhạy với lợi suất. Vì vậy, cổ phiếu tăng trưởng thường nhạy hơn cổ phiếu giá trị.",
       "visual": {
         "type": "versus",
@@ -394,7 +414,7 @@
       }
     },
     {
-      "id": "s18",
+      "id": "s19",
       "text": "Kênh thứ hai: khi trái phiếu chính phủ cho lợi suất cao và gần như không rủi ro, một phần tiền sẽ rời cổ phiếu để sang trái phiếu.",
       "visual": {
         "type": "versus",
@@ -411,7 +431,27 @@
       }
     },
     {
-      "id": "s19",
+      "id": "s20",
+      "text": "Ngân hàng và công ty bảo hiểm còn nắm giữ nhiều trái phiếu chính phủ, nên lợi suất ảnh hưởng trực tiếp đến kết quả đầu tư của họ.",
+      "visual": {
+        "type": "grid",
+        "pose": "present",
+        "headline": "Ai nắm nhiều trái phiếu?",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Ngân hàng",
+            "text": "danh mục trái phiếu lớn"
+          },
+          {
+            "title": "Bảo hiểm",
+            "text": "đầu tư dài hạn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s21",
       "text": "Kênh thứ ba: lợi suất tăng kéo theo chi phí phát hành trái phiếu và vay vốn của doanh nghiệp tăng theo.",
       "visual": {
         "type": "chain",
@@ -422,7 +462,7 @@
       }
     },
     {
-      "id": "s20",
+      "id": "s22",
       "text": "Câu hỏi cho bạn: đường cong lợi suất đảo ngược là gì? Đáp án nằm trong bài viết bên dưới video.",
       "visual": {
         "type": "quiz",
@@ -437,7 +477,7 @@
       }
     },
     {
-      "id": "s21",
+      "id": "s23",
       "text": "Ô tiền tệ trên bảng điều khiển đã sáng đủ ba đèn, với đèn mới: trái phiếu.",
       "visual": {
         "type": "dashboard",
@@ -472,7 +512,7 @@
       }
     },
     {
-      "id": "s22",
+      "id": "s24",
       "text": "An ghi vào sổ tay: lợi suất tăng thì P trên E hợp lý giảm.",
       "visual": {
         "type": "notebook",
@@ -493,7 +533,7 @@
       }
     },
     {
-      "id": "s23",
+      "id": "s25",
       "text": "Lợi suất ở Mỹ và quyết định của Fed lan đến Việt Nam như thế nào? Bài sau, ta nhìn ra kinh tế thế giới.",
       "visual": {
         "type": "dashboard",
@@ -527,7 +567,7 @@
       }
     },
     {
-      "id": "s24",
+      "id": "s26",
       "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
       "visual": {
         "type": "outro",

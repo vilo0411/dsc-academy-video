@@ -210,6 +210,23 @@
     },
     {
       "id": "s11",
+      "text": "Bài học là: khi Fed và kinh tế trong nước cần hai hướng khác nhau, Ngân hàng Nhà nước phải cân bằng giữa ổn định tỷ giá và hỗ trợ tăng trưởng.",
+      "visual": {
+        "type": "versus",
+        "pose": "think",
+        "headline": "Bài toán cân bằng",
+        "left": {
+          "title": "Ổn định tỷ giá",
+          "text": "có thể cần lãi suất cao hơn"
+        },
+        "right": {
+          "title": "Hỗ trợ tăng trưởng",
+          "text": "cần lãi suất thấp"
+        }
+      }
+    },
+    {
+      "id": "s12",
       "text": "Kênh thứ hai là giá hàng hoá thế giới. Khi giá tăng, bên bán hưởng lợi, bên mua bất lợi.",
       "visual": {
         "type": "table",
@@ -248,7 +265,7 @@
       }
     },
     {
-      "id": "s12",
+      "id": "s13",
       "text": "Ví dụ, giá thép tăng có lợi cho nhà sản xuất thép, nhưng bất lợi cho doanh nghiệp xây dựng. Như ở bài ba, điều quan trọng là khả năng chuyển chi phí sang giá bán.",
       "visual": {
         "type": "table",
@@ -289,7 +306,7 @@
       }
     },
     {
-      "id": "s13",
+      "id": "s14",
       "text": "Kênh thứ ba là sức cầu của Mỹ và châu Âu, những thị trường mua nhiều hàng dệt may, gỗ, điện tử của Việt Nam. Chính sách thuế quan cũng có thể thay đổi lợi thế xuất khẩu rất nhanh.",
       "visual": {
         "type": "grid",
@@ -310,7 +327,29 @@
       }
     },
     {
-      "id": "s14",
+      "id": "s15",
+      "text": "Vì vậy, các số liệu như doanh số bán lẻ của Mỹ hay PMI của châu Âu cũng là chỉ báo sớm cho đơn hàng xuất khẩu của Việt Nam.",
+      "visual": {
+        "type": "steps",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Chỉ báo sớm từ bên ngoài",
+        "items": [
+          {
+            "title": "Bán lẻ Mỹ, PMI châu Âu",
+            "tone": "key"
+          },
+          {
+            "title": "Sức cầu nhập khẩu"
+          },
+          {
+            "title": "Đơn hàng xuất khẩu Việt Nam"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
       "text": "Giờ hãy xem chuỗi domino. Fed giữ lãi suất cao lâu hơn dự kiến. Đô la Mỹ mạnh lên. Khối ngoại bán ròng. Tỷ giá nhích lên.",
       "visual": {
         "type": "steps",
@@ -335,7 +374,7 @@
       }
     },
     {
-      "id": "s15",
+      "id": "s17",
       "text": "Cánh Diều chịu áp lực sớm nhất: nợ đô la tăng khi quy đổi, như ở bài sáu, và giá dầu tính bằng đô la cũng đắt hơn.",
       "visual": {
         "type": "pair",
@@ -361,7 +400,7 @@
       }
     },
     {
-      "id": "s16",
+      "id": "s18",
       "text": "Đó là lý do Cánh Diều lo khi Fed họp. Còn Cá Bạc có doanh thu đô la, nên ít bị ảnh hưởng hơn.",
       "visual": {
         "type": "pair",
@@ -383,7 +422,7 @@
       }
     },
     {
-      "id": "s17",
+      "id": "s19",
       "text": "Thép Lò Rèn và Cần Cẩu thì chịu tác động trái chiều từ giá thép thế giới: một bên bán thép, một bên mua thép.",
       "visual": {
         "type": "pair",
@@ -404,7 +443,7 @@
       }
     },
     {
-      "id": "s18",
+      "id": "s20",
       "text": "Tóm lại, vòng ngoài tác động qua ba kênh: lãi suất và đô la Mỹ, giá hàng hoá thế giới, và sức cầu của các thị trường xuất khẩu.",
       "visual": {
         "type": "checklist",
@@ -418,7 +457,7 @@
       }
     },
     {
-      "id": "s19",
+      "id": "s21",
       "text": "Câu hỏi cho bạn: chỉ số DXY đo lường điều gì? Đáp án nằm trong bài viết bên dưới video.",
       "visual": {
         "type": "quiz",
@@ -433,7 +472,7 @@
       }
     },
     {
-      "id": "s20",
+      "id": "s22",
       "text": "Ô đối ngoại sáng đèn cuối cùng: Fed và đô la Mỹ. Bảng điều khiển của An giờ đã sáng đủ.",
       "visual": {
         "type": "dashboard",
@@ -469,7 +508,7 @@
       }
     },
     {
-      "id": "s21",
+      "id": "s23",
       "text": "An ghi vào sổ tay: Fed và đô la Mỹ ảnh hưởng tỷ giá và dòng vốn.",
       "visual": {
         "type": "notebook",
@@ -491,7 +530,7 @@
       }
     },
     {
-      "id": "s22",
+      "id": "s24",
       "text": "An đã có đủ đồng hồ trong nước và vòng ngoài. Vậy dùng chúng hằng tuần như thế nào? Bài cuối, ta học cách đọc lịch kinh tế.",
       "visual": {
         "type": "dashboard",
@@ -525,7 +564,7 @@
       }
     },
     {
-      "id": "s23",
+      "id": "s25",
       "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
       "visual": {
         "type": "outro",
