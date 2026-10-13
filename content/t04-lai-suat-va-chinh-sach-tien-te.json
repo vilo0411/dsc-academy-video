@@ -1,0 +1,509 @@
+{
+  "id": "t04-lai-suat-va-chinh-sach-tien-te",
+  "episode": 4,
+  "title": "Lãi suất và NHNN",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/lai-suat-va-chinh-sach-tien-te/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Tin mới: Ngân hàng Nhà nước tăng lãi suất điều hành. Trong danh sách theo dõi của An, cổ phiếu Tổ Ấm Land giảm mạnh nhất. Vì sao lại là nó?",
+      "visual": {
+        "type": "pair",
+        "pose": "facepalm",
+        "emote": "exclaim",
+        "headline": "NHNN tăng lãi suất",
+        "items": [
+          {
+            "company": "toam",
+            "rows": [
+              {
+                "k": "Trong danh sách",
+                "v": "giảm mạnh nhất"
+              }
+            ],
+            "move": "downBig",
+            "moveLabel": "Giảm mạnh"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta biết lạm phát cao khiến Ngân hàng Nhà nước có xu hướng thắt chặt. Hôm nay, ta bật sáng ô tiền tệ trên bảng điều khiển.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi"
+        ],
+        "pose": "present",
+        "headline": "Bài 4: ô Tiền tệ",
+        "blink": "money"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Lãi suất là giá của tiền. Khi lãi suất thay đổi, chi phí vay vốn của doanh nghiệp và sức hấp dẫn của tiết kiệm cũng thay đổi theo.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Lãi suất là giá của tiền",
+        "sub": "Thay đổi chi phí vay và sức hấp dẫn của tiết kiệm"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Ngân hàng Nhà nước điều hành bằng lãi suất điều hành, gồm lãi suất tái cấp vốn và lãi suất tái chiết khấu. Đây giống như lãi suất gốc của cả hệ thống.",
+      "visual": {
+        "type": "grid",
+        "pose": "present",
+        "headline": "Lãi suất điều hành",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Tái cấp vốn",
+            "text": "NHNN cho ngân hàng vay khi thiếu vốn"
+          },
+          {
+            "title": "Tái chiết khấu",
+            "text": "NHNN chiết khấu giấy tờ có giá"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Hai mức này tạo thành một hành lang. Lãi suất liên ngân hàng, tức lãi suất các ngân hàng cho nhau vay, thường dao động bên trong hành lang, nên là chỉ báo hằng ngày về thanh khoản của hệ thống.",
+      "visual": {
+        "type": "line",
+        "pose": "point",
+        "headline": "Hành lang lãi suất",
+        "series": [
+          {
+            "name": "Lãi suất liên ngân hàng",
+            "points": [
+              3.8,
+              4.3,
+              3.6,
+              4.1,
+              4.6,
+              3.9,
+              3.4,
+              4.0,
+              4.4
+            ],
+            "color": "ink"
+          }
+        ],
+        "band": {
+          "lo": 3,
+          "hi": 5,
+          "label": "Hành lang"
+        },
+        "yMin": 2,
+        "yMax": 6
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Khi Ngân hàng Nhà nước điều chỉnh lãi suất gốc, lãi suất cho vay và huy động trong hệ thống thường thay đổi theo, sau một độ trễ.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "headline": "Lãi suất lan truyền",
+        "items": [
+          {
+            "title": "NHNN đổi lãi suất điều hành",
+            "tone": "key"
+          },
+          {
+            "title": "Lãi suất liên ngân hàng"
+          },
+          {
+            "title": "Lãi suất cho vay, huy động",
+            "text": "sau một độ trễ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Ngân hàng Nhà nước còn có các công cụ khác. Nghiệp vụ thị trường mở, gọi tắt là OMO, được dùng hằng ngày để bơm tiền vào hoặc hút tiền về.",
+      "visual": {
+        "type": "table",
+        "pose": "point",
+        "headline": "Bộ công cụ của NHNN",
+        "columns": [
+          "Công cụ",
+          "Cách hoạt động"
+        ],
+        "rows": [
+          [
+            "Tái cấp vốn",
+            "Định hướng mức trần lãi suất"
+          ],
+          [
+            "Tái chiết khấu",
+            "Thường là mức sàn của hành lang"
+          ],
+          [
+            "Thị trường mở (OMO)",
+            "Bơm hoặc hút tiền hằng ngày"
+          ],
+          [
+            "Dự trữ bắt buộc",
+            "Tăng tỷ lệ thì giảm tiền cho vay được"
+          ],
+          [
+            "Trần lãi suất huy động",
+            "Ổn định mặt bằng lãi suất"
+          ]
+        ],
+        "highlight": [
+          2
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Dự trữ bắt buộc là phần tiền gửi ngân hàng phải giữ lại. Tăng tỷ lệ này thì lượng tiền có thể cho vay giảm. Còn trần lãi suất huy động giới hạn mức lãi ngân hàng được trả cho tiền gửi ngắn hạn.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Bộ công cụ của NHNN",
+        "columns": [
+          "Công cụ",
+          "Cách hoạt động"
+        ],
+        "rows": [
+          [
+            "Tái cấp vốn",
+            "Định hướng mức trần lãi suất"
+          ],
+          [
+            "Tái chiết khấu",
+            "Thường là mức sàn của hành lang"
+          ],
+          [
+            "Thị trường mở (OMO)",
+            "Bơm hoặc hút tiền hằng ngày"
+          ],
+          [
+            "Dự trữ bắt buộc",
+            "Tăng tỷ lệ thì giảm tiền cho vay được"
+          ],
+          [
+            "Trần lãi suất huy động",
+            "Ổn định mặt bằng lãi suất"
+          ]
+        ],
+        "highlight": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Muốn theo dõi, hãy xem quyết định trên website Ngân hàng Nhà nước, cùng lãi suất liên ngân hàng qua đêm và khối lượng OMO mỗi ngày.",
+      "visual": {
+        "type": "checklist",
+        "pose": "point",
+        "headline": "Theo dõi ở đâu?",
+        "items": [
+          "Quyết định trên web NHNN",
+          "Lãi suất liên ngân hàng",
+          "Khối lượng OMO hằng ngày"
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Vậy lãi suất đi vào thị trường chứng khoán ra sao? Có ba kênh.",
+      "visual": {
+        "type": "steps",
+        "pose": "think",
+        "emote": "question",
+        "numbered": true,
+        "headline": "Ba kênh truyền dẫn",
+        "items": [
+          {
+            "title": "Chi phí vốn",
+            "text": "vay đắt hơn"
+          },
+          {
+            "title": "Định giá",
+            "text": "tỷ suất chiết khấu tăng"
+          },
+          {
+            "title": "Dòng tiền",
+            "text": "tiết kiệm hấp dẫn hơn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Một, chi phí vốn. Lãi suất tăng thì doanh nghiệp đi vay phải trả lãi nhiều hơn, và lợi nhuận giảm.",
+      "visual": {
+        "type": "chain",
+        "pose": "shrug",
+        "highlight": "profit",
+        "dir": "down",
+        "caption": "Lãi suất tăng → chi phí vốn tăng → lợi nhuận giảm"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Hai, định giá. Lãi suất là nền của tỷ suất chiết khấu. Lãi suất tăng thì giá trị hiện tại của lợi nhuận tương lai giảm, và chỉ số P trên E hợp lý cũng giảm theo.",
+      "visual": {
+        "type": "chain",
+        "pose": "point",
+        "expr": "worried",
+        "highlight": "valuation",
+        "dir": "down",
+        "caption": "Tỷ suất chiết khấu tăng → P/E hợp lý giảm"
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Ba, dòng tiền. Khi gửi tiết kiệm cho lãi cao hơn, một phần tiền rời khỏi cổ phiếu để về kênh an toàn hơn.",
+      "visual": {
+        "type": "versus",
+        "pose": "present",
+        "headline": "Dòng tiền dịch chuyển",
+        "left": {
+          "title": "Cổ phiếu",
+          "text": "Rủi ro cao hơn, kém hấp dẫn đi"
+        },
+        "right": {
+          "title": "Tiết kiệm",
+          "text": "Lãi suất tăng, an toàn hơn"
+        }
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Giờ hãy nhìn Tổ Ấm Land. Công ty có lợi nhuận trước lãi vay bốn trăm tỷ đồng mỗi năm, và đang vay hai nghìn tỷ đồng.",
+      "visual": {
+        "type": "numbers",
+        "pose": "present",
+        "label": "Tổ Ấm Land (doanh nghiệp giả định)",
+        "items": [
+          {
+            "k": "Lợi nhuận trước lãi vay",
+            "v": "400 tỷ"
+          },
+          {
+            "k": "Nợ vay",
+            "v": "2.000 tỷ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Lãi suất tám phần trăm thì tiền lãi là một trăm sáu mươi tỷ, còn lại hai trăm bốn mươi tỷ lợi nhuận trước thuế. Lãi suất lên mười phần trăm, còn hai trăm tỷ. Lên mười hai phần trăm, chỉ còn một trăm sáu mươi tỷ.",
+      "visual": {
+        "type": "slider",
+        "pose": "point",
+        "expr": "surprised",
+        "headline": "Tổ Ấm Land",
+        "label": "Lãi suất vay",
+        "unit": "Lợi nhuận trước thuế",
+        "steps": [
+          {
+            "x": "8%",
+            "value": 240,
+            "label": "240 tỷ"
+          },
+          {
+            "x": "10%",
+            "value": 200,
+            "label": "200 tỷ"
+          },
+          {
+            "x": "12%",
+            "value": 160,
+            "label": "160 tỷ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Lãi suất tăng bốn điểm phần trăm, lợi nhuận mất một phần ba. Doanh nghiệp càng vay nhiều so với lợi nhuận, lợi nhuận càng nhạy với lãi suất. Đó là lý do Tổ Ấm Land giảm mạnh nhất.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "items": [
+          {
+            "company": "toam",
+            "rows": [
+              {
+                "k": "Nợ / lợi nhuận",
+                "v": "gấp 5 lần"
+              },
+              {
+                "k": "Lãi suất +4 điểm",
+                "v": "lợi nhuận −1/3"
+              }
+            ],
+            "move": "downBig",
+            "moveLabel": "Nhạy nhất"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Bất động sản còn chịu tác động kép: chủ đầu tư vay đắt hơn, và người mua nhà cũng khó vay hơn.",
+      "visual": {
+        "type": "grid",
+        "pose": "headHold",
+        "expr": "worried",
+        "headline": "Bất động sản: tác động kép",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Chủ đầu tư",
+            "text": "chi phí vốn tăng",
+            "tone": "bad"
+          },
+          {
+            "title": "Người mua nhà",
+            "text": "khó vay mua nhà hơn",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Còn ngân hàng như Heo Đất thì không đơn giản là được hay mất. Điều quan trọng là biên lãi ròng, gọi tắt là NIM: lãi suất cho vay và lãi suất huy động điều chỉnh nhanh chậm ra sao.",
+      "visual": {
+        "type": "pair",
+        "pose": "think",
+        "items": [
+          {
+            "company": "heodat",
+            "rows": [
+              {
+                "k": "NIM",
+                "v": "3,5%"
+              },
+              {
+                "k": "Phụ thuộc",
+                "v": "tốc độ điều chỉnh"
+              }
+            ],
+            "move": "flat",
+            "moveLabel": "Tuỳ NIM"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Câu hỏi cho bạn: ngành nào thường chịu tác động bất lợi rõ nhất khi lãi suất tăng? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Ngành nào thường chịu bất lợi rõ nhất khi lãi suất tăng?",
+        "options": [
+          "Bất động sản",
+          "Bảo hiểm",
+          "Doanh nghiệp nhiều tiền mặt ròng"
+        ]
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Ô tiền tệ trên bảng điều khiển đã sáng đèn đầu tiên: lãi suất.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi"
+        ],
+        "light": [
+          "Lãi suất"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: Lãi suất"
+      }
+    },
+    {
+      "id": "s21",
+      "text": "An ghi vào sổ tay: lãi suất là giá của tiền, và doanh nghiệp vay nhiều thì nhạy nhất.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "Lãi suất là giá của tiền. Vậy trong nền kinh tế có bao nhiêu tiền, và tiền chảy đi đâu? Bài sau, ta tìm hiểu cung tiền và tín dụng.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất"
+        ],
+        "headline": "Bài 5: Cung tiền và tín dụng",
+        "blink": "money",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 5",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}

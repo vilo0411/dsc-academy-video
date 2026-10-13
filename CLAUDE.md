@@ -36,7 +36,7 @@ Chuỗi vĩ mô (`scripts/lib/scenes-macro.mjs`):
 Nhân vật An (`scripts/lib/figure.mjs`):
 
 - `visual.pose`: idle, point, pointUp, present, wave, cheer, think, shrug, hips, headHold, facepalm.
-- `visual.expr` (tuỳ chọn, mặc định theo tư thế): happy, excited, surprised, worried, sad, thinking, confused, confident, neutral.
+- `visual.expr` (tuỳ chọn, mặc định theo tư thế; với cảnh `calc` dùng `visual.face` vì `expr` là phép tính): happy, excited, surprised, worried, sad, thinking, confused, confident, neutral.
 - `visual.emote` (tuỳ chọn): question, exclaim, bulb, sweat, sparkle.
 - Đổi tư thế/biểu cảm theo cảm xúc của câu thoại; tránh lặp một tư thế quá 3 cảnh liền.
 

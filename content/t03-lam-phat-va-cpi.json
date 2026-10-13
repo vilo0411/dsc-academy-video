@@ -1,0 +1,472 @@
+{
+  "id": "t03-lam-phat-va-cpi",
+  "episode": 3,
+  "title": "Lạm phát và CPI",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/lam-phat-va-cpi/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Mười năm trước, một bát phở giá khoảng ba mươi nghìn đồng. Bây giờ, cùng bát phở đó có thể đã năm mươi nghìn. Bát phở không to hơn, chỉ là đồng tiền mua được ít hơn.",
+      "visual": {
+        "type": "compare",
+        "pose": "think",
+        "expr": "surprised",
+        "headline": "Một bát phở",
+        "bars": [
+          {
+            "k": "10 năm trước",
+            "v": 30,
+            "label": "30.000đ",
+            "tone": "ink"
+          },
+          {
+            "k": "Bây giờ",
+            "v": 50,
+            "label": "50.000đ"
+          }
+        ],
+        "note": "Giá minh hoạ"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta thấy ở giai đoạn đỉnh của chu kỳ, giá cả bắt đầu leo thang. Hôm nay, ta bật sáng ô thứ hai trên bảng điều khiển: giá cả.",
+      "visual": {
+        "type": "cycle",
+        "pose": "point",
+        "active": 2,
+        "sub": "Giai đoạn đỉnh: giá cả leo thang"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Lạm phát là khi mặt bằng giá chung của hàng hoá và dịch vụ tăng liên tục trong một thời gian, làm giảm sức mua của đồng tiền.",
+      "visual": {
+        "type": "title",
+        "pose": "present",
+        "headline": "Lạm phát",
+        "sub": "Mặt bằng giá chung tăng liên tục, sức mua giảm"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Lạm phát thấp và ổn định là bình thường khi kinh tế tăng trưởng. Vấn đề chỉ xuất hiện khi lạm phát quá cao, quá thấp, hoặc khó đoán.",
+      "visual": {
+        "type": "grid",
+        "pose": "hips",
+        "headline": "Khi nào lạm phát là vấn đề?",
+        "cols": 3,
+        "items": [
+          {
+            "title": "Quá cao",
+            "text": "sức mua giảm nhanh",
+            "tone": "bad"
+          },
+          {
+            "title": "Quá thấp",
+            "text": "giảm phát, kinh tế trì trệ",
+            "tone": "bad"
+          },
+          {
+            "title": "Khó đoán",
+            "text": "khó lập kế hoạch",
+            "tone": "warn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Lạm phát đến từ hai nguồn chính. Lạm phát do cầu kéo, khi chi tiêu tăng nhanh hơn khả năng sản xuất, thường đi kèm tín dụng và cung tiền tăng mạnh.",
+      "visual": {
+        "type": "versus",
+        "pose": "point",
+        "headline": "Hai nguồn gốc",
+        "left": {
+          "title": "Cầu kéo",
+          "text": "Chi tiêu tăng nhanh hơn khả năng sản xuất"
+        },
+        "right": {
+          "title": "Chi phí đẩy",
+          "text": "Xăng dầu, nguyên liệu, tiền lương tăng"
+        }
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Và lạm phát do chi phí đẩy, khi xăng dầu, nguyên liệu hay tiền lương tăng, và doanh nghiệp chuyển phần tăng đó sang giá bán.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "headline": "Chi phí đẩy",
+        "items": [
+          {
+            "title": "Xăng dầu, nguyên liệu tăng"
+          },
+          {
+            "title": "Chi phí sản xuất tăng"
+          },
+          {
+            "title": "Giá bán tăng",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Để đo lạm phát, ta dùng chỉ số giá tiêu dùng, gọi tắt là CPI. CPI theo dõi giá của một giỏ hàng hoá và dịch vụ tiêu biểu mà các gia đình thường mua.",
+      "visual": {
+        "type": "title",
+        "pose": "present",
+        "headline": "CPI",
+        "sub": "Chỉ số giá tiêu dùng: giá của một giỏ hàng tiêu biểu"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Ở Việt Nam, giỏ CPI gồm mười một nhóm hàng, như hàng ăn và dịch vụ ăn uống, nhà ở và vật liệu xây dựng, giao thông, giáo dục, y tế. Mỗi nhóm có quyền số riêng, phản ánh mức chi tiêu của các gia đình.",
+      "visual": {
+        "type": "chips",
+        "pose": "point",
+        "headline": "Giỏ CPI: 11 nhóm hàng",
+        "chips": [
+          "Hàng ăn, dịch vụ ăn uống",
+          "Đồ uống, thuốc lá",
+          "May mặc, giày dép",
+          "Nhà ở, điện nước, vật liệu",
+          "Thiết bị gia đình",
+          "Thuốc, dịch vụ y tế",
+          "Giao thông",
+          "Bưu chính, viễn thông",
+          "Giáo dục",
+          "Văn hoá, giải trí, du lịch",
+          "Hàng hoá, dịch vụ khác"
+        ],
+        "highlight": [
+          0,
+          3,
+          5,
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Cục Thống kê công bố CPI hằng tháng, vào đầu tháng sau. Có ba cách so sánh cần phân biệt.",
+      "visual": {
+        "type": "title",
+        "pose": "point",
+        "headline": "Đọc số liệu CPI",
+        "sub": "Công bố hằng tháng, đầu tháng sau"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "So với tháng trước cho thấy biến động ngắn hạn, dễ bị ảnh hưởng bởi mùa vụ như dịp Tết. So với cùng kỳ năm trước là thước đo được theo dõi nhiều nhất. Còn bình quân từ đầu năm dùng để đối chiếu với mục tiêu lạm phát cả năm.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Ba cách so sánh CPI",
+        "columns": [
+          "So với",
+          "Dùng để"
+        ],
+        "rows": [
+          [
+            "Tháng trước",
+            "Biến động ngắn hạn, dễ nhiễu mùa vụ"
+          ],
+          [
+            "Cùng kỳ năm trước",
+            "Thước đo được theo dõi nhiều nhất"
+          ],
+          [
+            "Bình quân từ đầu năm",
+            "Đối chiếu mục tiêu cả năm"
+          ]
+        ],
+        "highlight": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Nhưng giá thực phẩm tươi sống hay xăng dầu có thể lên xuống rất mạnh, che mất xu hướng thật. Vì vậy, người ta dùng thêm lạm phát lõi.",
+      "visual": {
+        "type": "chips",
+        "pose": "think",
+        "headline": "Lạm phát lõi bỏ ra ngoài",
+        "chips": [
+          "Thực phẩm tươi sống",
+          "Năng lượng",
+          "Giá Nhà nước quản lý",
+          "Các mặt hàng còn lại"
+        ],
+        "highlight": [
+          3
+        ],
+        "dim": true
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Lạm phát lõi loại bỏ những nhóm biến động mạnh đó để thấy xu hướng giá nền. Khi lạm phát lõi tăng bền vững, áp lực giá đã lan rộng, và ngân hàng trung ương có thể phải hành động.",
+      "visual": {
+        "type": "line",
+        "pose": "point",
+        "headline": "Lõi: xu hướng giá nền",
+        "series": [
+          {
+            "name": "CPI chung",
+            "points": [
+              3.2,
+              4.4,
+              2.6,
+              4.8,
+              3.0,
+              4.6,
+              3.4,
+              5.0
+            ],
+            "color": "muted"
+          },
+          {
+            "name": "Lạm phát lõi",
+            "points": [
+              3.0,
+              3.1,
+              3.3,
+              3.4,
+              3.6,
+              3.8,
+              4.0,
+              4.2
+            ],
+            "color": "accent"
+          }
+        ],
+        "yMin": 2,
+        "yMax": 5.5
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Lạm phát đi vào giá cổ phiếu qua ba kênh: lãi suất, biên lợi nhuận, và định giá.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "numbered": true,
+        "headline": "Ba kênh tác động",
+        "items": [
+          {
+            "title": "Lãi suất",
+            "text": "kênh mạnh nhất"
+          },
+          {
+            "title": "Biên lợi nhuận",
+            "text": "chi phí tăng"
+          },
+          {
+            "title": "Định giá",
+            "text": "lợi suất thực tăng"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Kênh mạnh nhất là lãi suất. Lạm phát cao khiến Ngân hàng Nhà nước có xu hướng thắt chặt, kéo lãi suất đi lên. Ta sẽ nói kỹ ở bài sau.",
+      "visual": {
+        "type": "chain",
+        "pose": "point",
+        "expr": "worried",
+        "highlight": "valuation",
+        "dir": "down",
+        "caption": "Lạm phát cao → lãi suất tăng → định giá giảm"
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Kênh thứ hai là biên lợi nhuận. Doanh nghiệp không chuyển được chi phí tăng sang giá bán thì phần lãi sẽ bị thu hẹp.",
+      "visual": {
+        "type": "chain",
+        "pose": "shrug",
+        "highlight": "profit",
+        "dir": "down",
+        "caption": "Không chuyển được chi phí → lợi nhuận giảm"
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Kênh thứ ba là định giá. Khi lợi suất thực, tức lãi suất trừ đi lạm phát, tăng lên, mức định giá hợp lý của cổ phiếu sẽ giảm.",
+      "visual": {
+        "type": "calc",
+        "pose": "present",
+        "face": "thinking",
+        "expr": "Lãi suất − Lạm phát",
+        "result": "Lợi suất thực"
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Ví dụ, giá thép thế giới tăng hai mươi phần trăm. Thép Lò Rèn bán được giá cao hơn, nên doanh thu tăng theo.",
+      "visual": {
+        "type": "pair",
+        "pose": "cheer",
+        "emote": "sparkle",
+        "items": [
+          {
+            "company": "loren",
+            "rows": [
+              {
+                "k": "Giá thép",
+                "v": "+20%"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Doanh thu tăng"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Nhưng Xây dựng Cần Cẩu thì khác. Thép chiếm ba mươi phần trăm chi phí công trình, nên chi phí tăng sáu phần trăm, trong khi giá hợp đồng đã cố định. Biên lãi gộp từ mười phần trăm còn khoảng bốn phẩy sáu phần trăm.",
+      "visual": {
+        "type": "compare",
+        "pose": "headHold",
+        "expr": "worried",
+        "emote": "sweat",
+        "headline": "Cần Cẩu: biên lãi gộp",
+        "bars": [
+          {
+            "k": "Trước",
+            "v": 10,
+            "label": "10%"
+          },
+          {
+            "k": "Sau",
+            "v": 4.6,
+            "label": "4,6%",
+            "tone": "bad"
+          }
+        ],
+        "note": "Doanh nghiệp giả định"
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Cùng một mức lạm phát, hai doanh nghiệp bị ảnh hưởng trái chiều. Khi đọc lạm phát, hãy hỏi: doanh nghiệp đứng ở phía bán, hay phía mua?",
+      "visual": {
+        "type": "pair",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Phía bán hay phía mua?",
+        "items": [
+          {
+            "company": "loren",
+            "move": "up",
+            "moveLabel": "Phía bán"
+          },
+          {
+            "company": "cancau",
+            "move": "down",
+            "moveLabel": "Phía mua"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Câu hỏi cho bạn: CPI tăng bốn phần trăm so với cùng kỳ năm trước nghĩa là gì? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "question": "CPI tăng 4% so với cùng kỳ năm trước nghĩa là gì?",
+        "options": [
+          "Giá tiêu dùng cao hơn khoảng 4% so với một năm trước",
+          "Thu nhập tăng 4%",
+          "GDP tăng 4%"
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Ô giá cả trên bảng điều khiển đã sáng hai đèn: CPI và lạm phát lõi.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth"
+        ],
+        "lit": [
+          "GDP"
+        ],
+        "light": [
+          "CPI",
+          "Lạm phát lõi"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: CPI, lạm phát lõi"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "An ghi vào sổ tay dòng thứ ba: xem lạm phát lõi để thấy xu hướng giá nền.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Lạm phát cao kéo dài thì ai sẽ đạp phanh? Bài sau, ta tìm hiểu Ngân hàng Nhà nước và lãi suất.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi"
+        ],
+        "headline": "Bài 4: Lãi suất và NHNN",
+        "blink": "money",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 4",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}

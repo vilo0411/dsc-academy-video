@@ -173,7 +173,7 @@ function renderScene(scene, idx, o) {
       const max = Math.max(...v.bars.map((b) => b.v));
       return {
         html: `<div class="stack"><h2 class="h2" id="${id}-h">${esc(v.headline)}</h2>
-          ${v.bars.map((b, i) => `<div class="bar-row" id="${id}-r${i}"><span class="bk">${esc(b.k)}</span><div class="bar-track"><div class="bar" id="${id}-b${i}" style="width:${((b.v / max) * 100).toFixed(1)}%"><span>${esc(b.label ?? "P/E " + b.v)}</span></div></div></div>`).join("")}
+          ${v.bars.map((b, i) => `<div class="bar-row" id="${id}-r${i}"><span class="bk">${esc(b.k)}</span><div class="bar-track"><div class="bar ${b.tone || ""}" id="${id}-b${i}" style="width:${((b.v / max) * 100).toFixed(1)}%"><span>${esc(b.label ?? "P/E " + b.v)}</span></div></div></div>`).join("")}
           <p class="note" id="${id}-n">${esc(v.note || "")}</p></div>`,
         js: (t, d) => {
           const st = steps(v.bars.length, t + 0.3, d * 0.9);
@@ -259,7 +259,7 @@ function build(orientation) {
     }
     let pose = scene.visual.pose || "idle";
     if (vertical && pose === "point") pose = "pointUp";
-    js.push(...poseTween(pose, Math.max(i === 0 ? 0.7 : 0, start - 0.05), { expr: scene.visual.expr, emote: scene.visual.emote, end }));
+    js.push(...poseTween(pose, Math.max(i === 0 ? 0.7 : 0, start - 0.05), { expr: scene.visual.face || (scene.visual.type === "calc" ? undefined : scene.visual.expr), emote: scene.visual.emote, end }));
 
     // phụ đề: chia đoạn theo số ký tự trong khoảng thời gian đọc của cảnh
     const chunks = chunkCaption(scene.text, capMax);
@@ -333,6 +333,7 @@ html, body { width: ${W}px; height: ${H}px; overflow: hidden; background: ${A.pa
 .bk { width: ${vertical ? 270 : 280}px; font-size: ${vertical ? 44 : 46}px; font-weight: 600; flex-shrink: 0; }
 .bar-track { flex: 1; height: 96px; }
 .bar { height: 100%; background: ${A.accent}; border: 4px solid ${A.ink}; border-radius: 20px; transform-origin: left center; display: flex; align-items: center; justify-content: flex-end; padding-right: 26px; font-size: 40px; font-weight: 800; white-space: nowrap; min-width: 220px; }
+.bar.bad { background: #F6B6B8; } .bar.warn { background: #FFE08A; } .bar.ink { background: #C9D3E8; }
 .note { font-size: 30px; color: ${A.muted}; }
 .sign { width: ${vertical ? 300 : 260}px; height: auto; }
 .check-row { display: flex; align-items: center; gap: 30px; font-size: ${vertical ? 56 : 60}px; font-weight: 600; }
