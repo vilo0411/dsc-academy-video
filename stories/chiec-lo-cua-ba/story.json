@@ -1,0 +1,184 @@
+{
+  "id": "story-chiec-lo-cua-ba",
+  "title": "Chiếc lọ của bà",
+  "logline": "Minh tìm thấy tờ một trăm nghìn bà cất từ mười năm trước và hiểu ra lạm phát là gì.",
+  "brand": "DSC Academy",
+  "aspect": "16:9",
+  "style": "Warm Vietnamese storybook illustration, soft watercolor and gouache textures, hand-drawn ink outlines, warm afternoon light, muted earthy palette with teal accents, gentle film grain, cinematic composition, no text, no logos, no watermark",
+  "voice": {
+    "provider": "cloud-gemini",
+    "voice": "Kore",
+    "style": "You are a warm Vietnamese storyteller narrating a short animated film. Speak natural southern-leaning Vietnamese, calm and intimate, with gentle pauses and soft emphasis.",
+    "model": "gemini-2.5-pro-tts"
+  },
+  "characters": {
+    "minh": {
+      "name": "Minh",
+      "look": "Vietnamese man, 25 years old, slim, short black hair with a soft side part, round thin-rimmed glasses, light blue short-sleeve shirt, beige chinos, canvas backpack",
+      "voice": {
+        "provider": "cloud-gemini",
+        "voice": "Puck",
+        "style": "Speak as a cheerful young Vietnamese man in his twenties, natural and casual, talking to his grandmother.",
+        "model": "gemini-2.5-pro-tts"
+      }
+    },
+    "ba": {
+      "name": "Bà Tư",
+      "look": "Vietnamese grandmother, about 75 years old, small and slightly stooped, silver hair in a low bun, kind wrinkled face, plum-purple áo bà ba with tiny white flowers, black trousers, jade bracelet",
+      "voice": {
+        "provider": "cloud-gemini",
+        "voice": "Gacrux",
+        "style": "Speak as a gentle elderly Vietnamese grandmother from the south, slow, warm and a little amused.",
+        "model": "gemini-2.5-pro-tts"
+      }
+    }
+  },
+  "places": {
+    "house": "Old Vietnamese tube house in Saigon, wooden cabinet, tiled floor with patterned cement tiles, sunlight through a window with iron grille, potted plants",
+    "street": "Narrow Saigon alley at late afternoon, motorbikes parked, small street-side phở stall with a steaming pot, red plastic stools, hanging bulbs"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Mười năm trước, bà Tư nhét vào chiếc lọ sành một tờ một trăm nghìn đồng, dặn rằng để dành mua quà cho cháu.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba"
+        ],
+        "place": "house",
+        "prompt": "Close-up of the grandmother's hands rolling a 100,000 VND banknote and slipping it into a small brown glazed ceramic jar on a wooden cabinet, nostalgic soft light, slightly faded colors suggesting the past",
+        "camera": "zoomIn"
+      },
+      "title": "Chiếc lọ của bà"
+    },
+    {
+      "id": "s02",
+      "text": "Mười năm sau, Minh dọn nhà giúp bà và tìm thấy chiếc lọ phủ đầy bụi.",
+      "shot": {
+        "mode": "video",
+        "cast": [
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "Minh kneels by the wooden cabinet, wipes dust off the small brown ceramic jar, lifts the lid and peeks inside with curiosity",
+        "motion": "Slow push-in, dust particles floating in the sunbeam, Minh gently lifts the jar lid, subtle natural movement, no dialogue",
+        "camera": "zoomIn"
+      }
+    },
+    {
+      "id": "s03",
+      "speaker": "minh",
+      "text": "Bà ơi, trong lọ có tiền nè! Của bà cất hồi nào vậy?",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "Medium shot, Minh holds up a slightly yellowed 100,000 VND banknote, smiling with surprise, looking off-screen toward his grandmother",
+        "camera": "panRight"
+      }
+    },
+    {
+      "id": "s04",
+      "speaker": "ba",
+      "text": "Hồi đó, chừng ấy đủ cho con ăn hai tô phở, còn dư ly chè đó.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba"
+        ],
+        "place": "house",
+        "prompt": "Medium close-up, the grandmother sits on a wooden chair, laughing softly, eyes crinkled with memory, warm backlight",
+        "camera": "zoomOut"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Tò mò, Minh mang tờ tiền ra quán phở đầu hẻm.",
+      "shot": {
+        "mode": "video",
+        "cast": [
+          "minh"
+        ],
+        "place": "street",
+        "prompt": "Wide shot, Minh walks down the narrow alley toward the steaming street-side phở stall holding the banknote",
+        "motion": "Tracking shot following Minh from behind as he walks toward the phở stall, steam rising, bulbs swaying slightly, a motorbike passes in the background",
+        "camera": "still"
+      }
+    },
+    {
+      "id": "s06",
+      "speaker": "minh",
+      "text": "Giờ tờ này chỉ đủ một tô, mà không có chè luôn bà ơi.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "minh"
+        ],
+        "place": "street",
+        "prompt": "Minh sits on a red plastic stool with one bowl of phở in front of him, the banknote on the table, wry funny expression, talking on his phone",
+        "camera": "panLeft"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Tờ tiền vẫn y nguyên. Thứ thay đổi là giá cả quanh nó. Người ta gọi đó là lạm phát.",
+      "shot": {
+        "mode": "image",
+        "cast": [],
+        "place": "street",
+        "prompt": "Symbolic shot: the same 100,000 VND banknote on the table between two bowls of phở, one bowl vivid and near, the other fading like a memory, steam curling",
+        "camera": "zoomIn"
+      },
+      "keyword": "Lạm phát"
+    },
+    {
+      "id": "s08",
+      "speaker": "ba",
+      "text": "Vậy tiền để trong lọ, tự nó teo lại hả con?",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba",
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "Two-shot at home, Minh back from the alley showing the banknote, the grandmother peers at it with a puzzled, playful frown",
+        "camera": "panRight"
+      }
+    },
+    {
+      "id": "s09",
+      "speaker": "minh",
+      "text": "Không phải teo đâu bà, mà là mua được ít hơn. Con sẽ tìm hiểu kỹ cách giữ sức mua của đồng tiền.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba",
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "Minh sits beside his grandmother, gently explaining with a notebook, she nods, warm evening light, cozy atmosphere",
+        "camera": "zoomOut"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Lạm phát là gì, và đọc chỉ số giá tiêu dùng ra sao? Mời bạn đọc bài viết bên dưới video.",
+      "shot": {
+        "mode": "image",
+        "cast": [],
+        "place": "house",
+        "prompt": "The small brown ceramic jar back on the wooden cabinet, empty, sunset light through the window grille, peaceful ending",
+        "camera": "zoomOut"
+      },
+      "end": {
+        "headline": "Lạm phát là gì?",
+        "cta": "Đọc bài viết bên dưới",
+        "disclaimer": "Câu chuyện và giá cả trong video là giả định, chỉ nhằm minh hoạ. Không phải khuyến nghị đầu tư."
+      }
+    }
+  ]
+}

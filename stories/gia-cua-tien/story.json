@@ -1,0 +1,198 @@
+{
+  "id": "story-gia-cua-tien",
+  "title": "Giá của tiền",
+  "logline": "Bà Tư đi gửi tiết kiệm, Minh nhận tin khoản vay tăng lãi, và hai bà cháu hiểu lãi suất là giá của tiền.",
+  "brand": "DSC Academy",
+  "aspect": "16:9",
+  "style": "Warm Vietnamese storybook illustration, soft watercolor and gouache textures, hand-drawn ink outlines, warm afternoon light, muted earthy palette with teal accents, gentle film grain, cinematic composition, no text, no logos, no watermark",
+  "voice": {
+    "provider": "cloud-gemini",
+    "voice": "Kore",
+    "style": "You are a warm Vietnamese storyteller narrating a short animated film. Speak natural southern-leaning Vietnamese, calm and intimate, with gentle pauses and soft emphasis.",
+    "model": "gemini-2.5-pro-tts"
+  },
+  "characters": {
+    "minh": {
+      "name": "Minh",
+      "look": "Vietnamese man, 25 years old, slim, short black hair with a soft side part, round thin-rimmed glasses, light blue short-sleeve shirt, beige chinos, canvas backpack",
+      "voice": {
+        "provider": "cloud-gemini",
+        "voice": "Puck",
+        "style": "Speak as a cheerful young Vietnamese man in his twenties, natural and casual, talking to his grandmother.",
+        "model": "gemini-2.5-pro-tts"
+      }
+    },
+    "ba": {
+      "name": "Bà Tư",
+      "look": "Vietnamese grandmother, about 75 years old, small and slightly stooped, silver hair in a low bun, kind wrinkled face, plum-purple áo bà ba with tiny white flowers, black trousers, jade bracelet",
+      "voice": {
+        "provider": "cloud-gemini",
+        "voice": "Gacrux",
+        "style": "Speak as a gentle elderly Vietnamese grandmother from the south, slow, warm and a little amused.",
+        "model": "gemini-2.5-pro-tts"
+      }
+    }
+  },
+  "places": {
+    "house": "Old Vietnamese tube house in Saigon, wooden cabinet, tiled floor with patterned cement tiles, sunlight through a window with iron grille, potted plants",
+    "street": "Narrow Saigon alley at late afternoon, motorbikes parked, small street-side phở stall with a steaming pot, red plastic stools, hanging bulbs",
+    "bank": "Small neighborhood bank branch interior in Saigon, simple wooden counter with a glass partition, plain cream walls, ceiling fans, potted plants, a few waiting chairs, no logos, no signage, no readable text"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "title": "Giá của tiền",
+      "text": "Sau chuyện chiếc lọ, bà Tư quyết định không cất tiền trong lọ nữa. Bà nhờ Minh chở ra ngân hàng đầu phố.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba",
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "The grandmother hands Minh a small cloth pouch of savings at the front door, the now-empty small brown glazed ceramic jar visible on the cabinet behind them, morning light, Minh smiling with his motorbike key",
+        "camera": "zoomIn"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Sáng hôm đó, hai bà cháu len qua con hẻm quen.",
+      "shot": {
+        "mode": "video",
+        "cast": [
+          "minh",
+          "ba"
+        ],
+        "place": "street",
+        "prompt": "Minh rides a small motorbike slowly through the narrow alley with his grandmother sitting sideways on the back seat, both wearing simple helmets",
+        "motion": "Side tracking shot moving with the motorbike at walking speed, morning light, neighbors and plants passing by, gentle natural movement, no dialogue",
+        "camera": "still"
+      }
+    },
+    {
+      "id": "s03",
+      "speaker": "ba",
+      "text": "Cô nhân viên nói năm nay lãi gửi cao hơn năm ngoái. Tiền mà cũng có lúc lên giá, xuống giá hả con?",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba",
+          "minh"
+        ],
+        "place": "bank",
+        "prompt": "At the bank counter, the grandmother turns to Minh with a curious, amused look, holding a small savings booklet, Minh standing beside her",
+        "camera": "panRight"
+      }
+    },
+    {
+      "id": "s04",
+      "speaker": "minh",
+      "text": "Đúng rồi bà. Bà cho ngân hàng mượn tiền, thì ngân hàng trả bà tiền công. Tiền công đó chính là lãi.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "minh"
+        ],
+        "place": "bank",
+        "prompt": "Medium shot, Minh explains cheerfully with an open hand gesture, sitting on a waiting chair in the bank, soft daylight",
+        "camera": "zoomIn"
+      }
+    },
+    {
+      "id": "s05",
+      "keyword": "Lãi suất",
+      "text": "Người cần tiền phải trả giá để được dùng tiền. Người có tiền thì nhận cái giá đó. Mức giá ấy gọi là lãi suất, tức giá của tiền.",
+      "shot": {
+        "mode": "image",
+        "cast": [],
+        "place": "bank",
+        "prompt": "Symbolic still life: an old balance scale on a wooden table, a small stack of banknotes on one side and a small brass clock on the other side, warm light, quiet and thoughtful",
+        "camera": "zoomIn"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Tối đó, Minh nhận tin nhắn: khoản vay mua xe của cậu được tính lại lãi, mỗi tháng phải trả thêm một chút.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "Evening at home, Minh sits on a wooden stool looking at his phone screen with a worried frown, his motorbike parked inside the doorway, warm lamp light",
+        "camera": "zoomIn"
+      }
+    },
+    {
+      "id": "s07",
+      "speaker": "minh",
+      "text": "Bà được thêm lãi, còn con phải trả thêm lãi. Cùng một giá tiền mà nhà mình một người vui, một người lo.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba",
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "Two-shot in the evening living room, Minh shows his phone to his grandmother with a rueful laugh, she holds her savings booklet and smiles teasingly",
+        "camera": "panLeft"
+      }
+    },
+    {
+      "id": "s08",
+      "speaker": "ba",
+      "text": "Vậy ai định ra cái giá đó vậy con?",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba"
+        ],
+        "place": "house",
+        "prompt": "Medium close-up, the grandmother tilts her head with genuine curiosity, eyebrows raised, warm lamp light",
+        "camera": "zoomOut"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Ngân hàng Nhà nước điều hành mức lãi suất gốc của cả hệ thống. Khi mức gốc thay đổi, lãi gửi và lãi vay thường đổi theo, sau một độ trễ.",
+      "shot": {
+        "mode": "video",
+        "cast": [],
+        "prompt": "Symbolic shot: a single drop of water falls into a calm round stone basin in a quiet courtyard, ripples spread outward and gently rock several small floating leaves near the edge",
+        "motion": "Static close camera, slow motion drop, concentric ripples travelling outward and reaching the leaves one after another, calm ambient sound, no dialogue",
+        "camera": "still"
+      }
+    },
+    {
+      "id": "s10",
+      "speaker": "minh",
+      "text": "Nên muốn hiểu túi tiền nhà mình, con phải để ý lãi suất nữa, chứ không chỉ giá tô phở đâu bà.",
+      "shot": {
+        "mode": "image",
+        "cast": [
+          "ba",
+          "minh"
+        ],
+        "place": "house",
+        "prompt": "Minh and his grandmother sit together at a small table with tea, he points at a simple hand-drawn ripple sketch in his notebook, she laughs, cozy evening light",
+        "camera": "zoomOut"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Lãi suất là gì, và Ngân hàng Nhà nước điều hành nó ra sao? Mời bạn đọc bài viết bên dưới video.",
+      "shot": {
+        "mode": "image",
+        "cast": [],
+        "place": "house",
+        "prompt": "The empty small brown glazed ceramic jar on the wooden cabinet next to a small savings booklet with a plain cover and no writing, evening lamp light, peaceful ending",
+        "camera": "zoomOut"
+      },
+      "end": {
+        "headline": "Lãi suất là giá của tiền",
+        "cta": "Đọc bài viết bên dưới",
+        "disclaimer": "Câu chuyện trong video là giả định, chỉ nhằm minh hoạ. Không phải khuyến nghị đầu tư hay khuyến nghị gửi tiền, vay vốn."
+      }
+    }
+  ]
+}

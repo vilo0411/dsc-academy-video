@@ -11,6 +11,7 @@ import { figureSVG, poseTween, breathe, walkIn, blinks } from "./lib/figure.mjs"
 import { BRAND } from "./lib/brand.mjs";
 import { macroScene, macroCSS } from "./lib/scenes-macro.mjs";
 import { extraScene, extraCSS } from "./lib/scenes-extra.mjs";
+import { chunkCaption } from "./lib/captions.mjs";
 
 const contentPath = process.argv[2];
 if (!contentPath) {
@@ -47,25 +48,6 @@ const TOTAL = Number((timings.duration + OUTRO_HOLD).toFixed(3));
 const esc = (s) =>
   String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const f = (n) => Number(n).toFixed(3);
-
-function chunkCaption(text, maxChars) {
-  const words = text.split(/\s+/);
-  const chunks = [];
-  let cur = "";
-  for (const w of words) {
-    if ((cur + " " + w).trim().length > maxChars && cur) {
-      chunks.push(cur);
-      cur = w;
-    } else cur = (cur + " " + w).trim();
-    // ngắt sau dấu câu nếu đoạn đã đủ dài
-    if (/[,.?!:]$/.test(w) && cur.length > maxChars * 0.55) {
-      chunks.push(cur);
-      cur = "";
-    }
-  }
-  if (cur) chunks.push(cur);
-  return chunks;
-}
 
 // ---------- Các kiểu cảnh ----------
 // Mỗi hàm trả { html, js(t0, dur) } — html nằm trong <section class="clip">, js là các tween GSAP.

@@ -6,3 +6,7 @@ cache/
 status/
 prev/
 pub/
+
+# Phim kể chuyện: ảnh/video nặng, giữ trên máy
+stories/*/media/
+.DS_Store

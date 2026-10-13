@@ -4,14 +4,19 @@
   "private": true,
   "description": "Demo tự động hoá video người que cho nội dung giáo dục DSC (Claude Code + Gemini TTS + HyperFrames)",
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "make": "node scripts/make.mjs",
     "tts": "node scripts/tts-gemini.mjs",
     "import-voice": "node scripts/import-voice.mjs",
     "build": "node scripts/build.mjs",
     "render": "node scripts/render.mjs",
-    "ci": "node scripts/ci.mjs"
+    "ci": "node scripts/ci.mjs",
+    "story": "node scripts/story.mjs",
+    "story:images": "node scripts/story-images.mjs",
+    "story:import": "node scripts/story-import.mjs"
   },
   "devDependencies": {
     "hyperframes": "latest"
