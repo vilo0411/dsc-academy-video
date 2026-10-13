@@ -1,0 +1,501 @@
+{
+  "id": "t12-doc-lich-kinh-te",
+  "episode": 12,
+  "title": "Đọc lịch kinh tế",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/doc-lich-kinh-te/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Số liệu công bố: tăng trưởng quý này tốt hơn cùng kỳ năm trước. Vậy mà thị trường lại giảm. An bối rối: tin tốt sao giá lại giảm?",
+      "visual": {
+        "type": "split",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Tin tốt, giá lại giảm?",
+        "a": "Tăng trưởng tốt hơn năm trước",
+        "b": "Thị trường giảm"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Qua mười một bài, bảng điều khiển của An đã sáng đủ đèn, và sổ tay đã có mười một dòng. Bài cuối này, ta ghép tất cả lại thành một thói quen hằng tuần.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ",
+          "Trái phiếu",
+          "Fed, USD"
+        ],
+        "pose": "present",
+        "headline": "Bảng điều khiển đã đủ"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Công cụ đầu tiên là lịch kinh tế. Lịch ghi ngày giờ công bố từng số liệu, kèm theo số kỳ trước và số dự báo.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Một dòng trên lịch kinh tế",
+        "columns": [
+          "Số liệu",
+          "Kỳ trước",
+          "Dự báo",
+          "Thực tế"
+        ],
+        "rows": [
+          [
+            "GDP quý",
+            "6,0%",
+            "6,5%",
+            "6,2%"
+          ]
+        ],
+        "note": "Số liệu giả định"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Lịch trong nước: PMI ra ngày làm việc đầu tiên của tháng. CPI, sản xuất công nghiệp, bán lẻ, xuất nhập khẩu và FDI ra vào đầu tháng sau.",
+      "visual": {
+        "type": "calendar",
+        "pose": "point",
+        "headline": "Lịch trong nước",
+        "month": "Tháng mẫu",
+        "offset": 2,
+        "events": [
+          {
+            "day": 1,
+            "label": "PMI",
+            "tone": "ink"
+          },
+          {
+            "day": 6,
+            "label": "CPI, SX, XNK"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "GDP ra vào đầu tháng sau khi hết quý. Còn lãi suất và tỷ giá thì theo dõi qua thông báo của Ngân hàng Nhà nước.",
+      "visual": {
+        "type": "grid",
+        "pose": "present",
+        "headline": "Lịch trong nước",
+        "cols": 2,
+        "items": [
+          {
+            "title": "GDP",
+            "text": "đầu tháng sau khi hết quý"
+          },
+          {
+            "title": "Lãi suất, tỷ giá",
+            "text": "theo thông báo của NHNN"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Lịch quốc tế: Fed họp tám lần mỗi năm. Hãy theo dõi thêm lạm phát và việc làm của Mỹ, cùng PMI và GDP của Trung Quốc.",
+      "visual": {
+        "type": "chips",
+        "pose": "point",
+        "headline": "Lịch quốc tế",
+        "chips": [
+          "Fed họp 8 lần/năm",
+          "CPI Mỹ",
+          "Việc làm Mỹ",
+          "PMI Trung Quốc",
+          "GDP Trung Quốc"
+        ],
+        "highlight": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Điều quan trọng nhất khi đọc lịch: thị trường đã phản ánh kỳ vọng vào giá từ trước. Giá phản ứng mạnh khi số liệu lệch khỏi dự báo.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "So với dự báo",
+        "sub": "Giá phản ứng với phần chênh lệch so với kỳ vọng"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Vì vậy, khi đọc lịch, đừng chỉ hỏi số liệu tốt hay xấu. Hãy hỏi: nó tốt hơn, hay kém hơn so với dự báo của thị trường?",
+      "visual": {
+        "type": "split",
+        "pose": "think",
+        "headline": "Câu hỏi đúng",
+        "a": "Tốt hơn dự báo?",
+        "b": "Kém hơn dự báo?"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Quay lại câu hỏi đầu bài. Tăng trưởng sáu phẩy hai phần trăm cao hơn năm trước, nhưng thấp hơn mức sáu phẩy năm mà thị trường dự báo. So với kỳ vọng, đó là tin kém.",
+      "visual": {
+        "type": "compare",
+        "pose": "hips",
+        "expr": "confident",
+        "headline": "GDP quý (giả định)",
+        "bars": [
+          {
+            "k": "Năm trước",
+            "v": 6.0,
+            "label": "6,0%",
+            "tone": "ink"
+          },
+          {
+            "k": "Dự báo",
+            "v": 6.5,
+            "label": "6,5%"
+          },
+          {
+            "k": "Thực tế",
+            "v": 6.2,
+            "label": "6,2%",
+            "tone": "warn"
+          }
+        ],
+        "note": "Cao hơn năm trước, thấp hơn kỳ vọng"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Ngược lại cũng có lúc lạ: số liệu tốt hơn kỳ vọng nhưng quá nóng, khiến thị trường lo thắt chặt. Hoặc số liệu kém, nhưng làm tăng khả năng nới lỏng.",
+      "visual": {
+        "type": "split",
+        "pose": "shrug",
+        "headline": "Không phải lúc nào cũng thẳng",
+        "a": "Quá nóng: lo thắt chặt",
+        "b": "Kém: mong nới lỏng"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Giờ hãy biến sổ tay của An thành quy trình bốn bước.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ",
+          "FDI giải ngân mới là tiền thật",
+          "Theo dõi tỷ lệ giải ngân, không chỉ kế hoạch",
+          "PMI trên 50 là mở rộng; xem đơn hàng mới",
+          "Lợi suất tăng thì P/E hợp lý giảm",
+          "Fed và đô la Mỹ ảnh hưởng tỷ giá, dòng vốn"
+        ],
+        "pose": "present",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Bước một, xác định bối cảnh: kim đồng hồ chu kỳ đang ở đâu, và chính sách đang nới lỏng hay thắt chặt.",
+      "visual": {
+        "type": "cycle",
+        "pose": "point",
+        "active": 1,
+        "sub": "Bước 1: kinh tế ở giai đoạn nào? Chính sách đi hướng nào?"
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Bước hai, lập danh sách biến số theo danh mục. Nắm cổ phiếu ngân hàng thì theo dõi tín dụng và lãi suất. Nắm doanh nghiệp xuất khẩu thì theo dõi tỷ giá, đơn hàng, và kinh tế Mỹ, châu Âu.",
+      "visual": {
+        "type": "table",
+        "pose": "present",
+        "headline": "Bước 2: biến số theo danh mục",
+        "columns": [
+          "Nắm cổ phiếu",
+          "Theo dõi"
+        ],
+        "rows": [
+          [
+            "Ngân hàng",
+            "Tín dụng, lãi suất"
+          ],
+          [
+            "Xuất khẩu",
+            "Tỷ giá, đơn hàng, Mỹ và châu Âu"
+          ],
+          [
+            "Bất động sản",
+            "Lãi suất, tín dụng, đầu tư công"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Bước ba, đặt kịch bản trước khi số liệu công bố: nếu tốt hơn dự báo thì sao, nếu kém hơn thì sao. Có kịch bản sẵn, bạn sẽ bớt phản ứng theo cảm xúc.",
+      "visual": {
+        "type": "split",
+        "pose": "think",
+        "headline": "Bước 3: đặt kịch bản trước",
+        "a": "Nếu tốt hơn dự báo…",
+        "b": "Nếu kém hơn dự báo…"
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Bước bốn, điều chỉnh tỷ trọng dần dần, không phản ứng theo từng bản tin.",
+      "visual": {
+        "type": "steps",
+        "pose": "hips",
+        "expr": "confident",
+        "numbered": true,
+        "headline": "Quy trình bốn bước",
+        "items": [
+          {
+            "title": "Bối cảnh"
+          },
+          {
+            "title": "Biến số"
+          },
+          {
+            "title": "Kịch bản"
+          },
+          {
+            "title": "Tỷ trọng",
+            "text": "điều chỉnh dần",
+            "tone": "key"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Hãy xem một ví dụ minh hoạ, không phải khuyến nghị. Lạm phát lõi tăng ba tháng liền, và tỷ giá chịu áp lực. Hai đèn này cùng báo khả năng chính sách thắt chặt.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ",
+          "Trái phiếu",
+          "Fed, USD"
+        ],
+        "headline": "Ví dụ minh hoạ",
+        "blink": "prices",
+        "pose": "point",
+        "expr": "worried"
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Trên danh sách theo dõi giả định, An giảm dần tỷ trọng Tổ Ấm Land vì doanh nghiệp vay nợ nhiều. An cũng hạn chế dùng margin, tức tiền vay để mua cổ phiếu.",
+      "visual": {
+        "type": "pair",
+        "pose": "present",
+        "headline": "Minh hoạ, không khuyến nghị",
+        "items": [
+          {
+            "company": "toam",
+            "rows": [
+              {
+                "k": "Nợ vay",
+                "v": "nhiều"
+              },
+              {
+                "k": "Tỷ trọng",
+                "v": "giảm dần"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Nhạy lãi suất"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "An ưu tiên doanh nghiệp nhiều tiền mặt ròng như Giỏ Tre. Và quan trọng nhất, An không bán tháo chỉ sau một bản tin.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "headline": "Minh hoạ, không khuyến nghị",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Tiền mặt ròng",
+                "v": "nhiều"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Ít nhạy hơn"
+          },
+          {
+            "company": "toam",
+            "rows": [
+              {
+                "k": "Nợ vay",
+                "v": "nhiều"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Nhạy hơn"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Câu hỏi cho bạn: cách dùng thông tin vĩ mô hợp lý nhất cho danh mục dài hạn là gì? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Cách dùng thông tin vĩ mô hợp lý nhất cho danh mục dài hạn?",
+        "options": [
+          "Đặt kịch bản trước, điều chỉnh tỷ trọng dần",
+          "Mua bán ngay theo từng bản tin",
+          "Bỏ qua hoàn toàn thông tin vĩ mô"
+        ]
+      }
+    },
+    {
+      "id": "s20",
+      "text": "An ghi dòng cuối cùng vào sổ tay: bốn bước, bối cảnh, biến số, kịch bản, tỷ trọng.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ",
+          "FDI giải ngân mới là tiền thật",
+          "Theo dõi tỷ lệ giải ngân, không chỉ kế hoạch",
+          "PMI trên 50 là mở rộng; xem đơn hàng mới",
+          "Lợi suất tăng thì P/E hợp lý giảm",
+          "Fed và đô la Mỹ ảnh hưởng tỷ giá, dòng vốn",
+          "4 bước: bối cảnh, biến số, kịch bản, tỷ trọng"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Từ bài một đến bài mười hai, ta đã đi qua năm nhóm chỉ báo: tăng trưởng, giá cả, tiền tệ, đối ngoại và tài khoá. Bảng điều khiển của An giờ đã sáng đủ.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá",
+          "Thương mại",
+          "FDI",
+          "Ngân sách",
+          "Đầu tư công",
+          "PMI",
+          "Sản xuất",
+          "Bán lẻ",
+          "Trái phiếu",
+          "Fed, USD"
+        ],
+        "headline": "Khoá học hoàn thành",
+        "pose": "cheer",
+        "emote": "sparkle"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "Vĩ mô không cho bạn biết ngày mai giá sẽ ra sao. Nhưng nó giúp bạn hiểu bối cảnh, và ra quyết định bình tĩnh hơn.",
+      "visual": {
+        "type": "title",
+        "pose": "wave",
+        "expr": "happy",
+        "headline": "Hiểu bối cảnh",
+        "sub": "Để ra quyết định bình tĩnh hơn"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Hãy đọc bài viết bên dưới và làm bài thi cuối khoá để nhận huy hiệu Nhà quan sát vĩ mô nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hoàn thành khoá học",
+        "sub": "Làm bài thi cuối khoá bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
