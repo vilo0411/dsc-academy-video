@@ -1,0 +1,493 @@
+{
+  "id": "t06-ty-gia-va-ngoai-hoi",
+  "episode": 6,
+  "title": "Tỷ giá và ngoại hối",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/ty-gia-va-ngoai-hoi/",
+  "articleUpdated": "2026-10-12",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Quý này, Hàng không Cánh Diều vẫn bán vé đều như mọi khi. Vậy mà báo cáo lại ghi lỗ. Thủ phạm là một con số: tỷ giá tăng ba phần trăm.",
+      "visual": {
+        "type": "pair",
+        "pose": "facepalm",
+        "emote": "question",
+        "headline": "Bán vé như cũ, vẫn lỗ?",
+        "items": [
+          {
+            "company": "canhdieu",
+            "rows": [
+              {
+                "k": "Số vé bán",
+                "v": "như cũ"
+              },
+              {
+                "k": "Tỷ giá",
+                "v": "+3%"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Báo lỗ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Bài trước, ta biết khi Ngân hàng Nhà nước mua ngoại tệ, cung tiền tăng. Hôm nay, ta mở ô đối ngoại trên bảng điều khiển.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2"
+        ],
+        "pose": "present",
+        "headline": "Bài 6: ô Đối ngoại",
+        "blink": "external"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Tỷ giá là giá của một đồng tiền, tính bằng một đồng tiền khác. Ở Việt Nam, khi nói tỷ giá, ta thường nói về giá đô la Mỹ tính bằng tiền đồng.",
+      "visual": {
+        "type": "title",
+        "pose": "pointUp",
+        "emote": "bulb",
+        "headline": "Tỷ giá",
+        "sub": "Giá đô la Mỹ tính bằng tiền đồng"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Lưu ý cách đọc: tỷ giá tăng nghĩa là cần nhiều tiền đồng hơn để mua một đô la. Tức là tiền đồng mất giá.",
+      "visual": {
+        "type": "calc",
+        "pose": "point",
+        "face": "surprised",
+        "expr": "Tỷ giá +3%",
+        "result": "VND mất giá"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Việt Nam là nền kinh tế mở, xuất nhập khẩu rất lớn so với quy mô nền kinh tế. Vì vậy, tỷ giá chạm đến rất nhiều doanh nghiệp.",
+      "visual": {
+        "type": "title",
+        "pose": "present",
+        "headline": "Kinh tế mở",
+        "sub": "Tỷ giá chạm đến rất nhiều doanh nghiệp"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Mỗi ngày, Ngân hàng Nhà nước công bố tỷ giá trung tâm. Các ngân hàng được giao dịch trong một biên độ quanh mức này.",
+      "visual": {
+        "type": "line",
+        "pose": "point",
+        "headline": "Tỷ giá trung tâm và biên độ",
+        "series": [
+          {
+            "name": "Tỷ giá giao dịch",
+            "points": [
+              3.6,
+              4.2,
+              3.9,
+              4.6,
+              4.1,
+              3.5,
+              4.0,
+              4.4,
+              4.8
+            ],
+            "color": "ink"
+          }
+        ],
+        "band": {
+          "lo": 2.4,
+          "hi": 5.6,
+          "label": "Biên độ"
+        },
+        "yMin": 1.5,
+        "yMax": 6.5
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Tỷ giá chịu tác động của năm yếu tố, giống như một cái cân. Bên tiền đồng mạnh lên có thặng dư thương mại, vốn FDI và kiều hối.",
+      "visual": {
+        "type": "scale",
+        "pose": "present",
+        "headline": "Cái cân tỷ giá",
+        "tilt": "none",
+        "left": {
+          "title": "Tiền đồng",
+          "items": [
+            "Thặng dư thương mại",
+            "FDI, kiều hối"
+          ]
+        },
+        "right": {
+          "title": "Đô la Mỹ",
+          "items": [
+            "Chênh lệch lãi suất",
+            "Đô la Mỹ mạnh (DXY)",
+            "Khối ngoại bán ròng"
+          ]
+        }
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Bên kia là chênh lệch lãi suất giữa tiền đồng và đô la Mỹ, sức mạnh của đô la Mỹ trên thế giới, đo bằng chỉ số DXY, và việc khối ngoại mua hay bán ròng cổ phiếu.",
+      "visual": {
+        "type": "scale",
+        "pose": "think",
+        "expr": "worried",
+        "headline": "Cái cân tỷ giá",
+        "tilt": "right",
+        "left": {
+          "title": "Tiền đồng",
+          "items": [
+            "Thặng dư thương mại",
+            "FDI, kiều hối"
+          ]
+        },
+        "right": {
+          "title": "Đô la Mỹ",
+          "items": [
+            "Chênh lệch lãi suất",
+            "Đô la Mỹ mạnh (DXY)",
+            "Khối ngoại bán ròng"
+          ]
+        },
+        "sub": "Cân nghiêng: tỷ giá chịu áp lực tăng"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Khi tỷ giá chịu áp lực, Ngân hàng Nhà nước có ba công cụ chính.",
+      "visual": {
+        "type": "steps",
+        "pose": "present",
+        "numbered": true,
+        "headline": "Ba công cụ của NHNN",
+        "items": [
+          {
+            "title": "Bán ngoại tệ",
+            "text": "từ dự trữ"
+          },
+          {
+            "title": "Hút tiền đồng",
+            "text": "qua tín phiếu"
+          },
+          {
+            "title": "Điều chỉnh tỷ giá",
+            "text": "bán can thiệp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Bán ngoại tệ từ dự trữ để tăng cung đô la. Phát hành tín phiếu để hút tiền đồng về, làm lãi suất ngắn hạn tăng, như ta đã thấy ở bài bốn. Hoặc điều chỉnh tỷ giá bán can thiệp.",
+      "visual": {
+        "type": "chain",
+        "pose": "point",
+        "highlight": "valuation",
+        "dir": "down",
+        "caption": "Hút tiền đồng → lãi suất ngắn hạn tăng → định giá chịu áp lực"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Vì thế, tỷ giá và lãi suất luôn cần được đọc cùng nhau. Giữ tỷ giá ổn định đôi khi phải trả giá bằng lãi suất cao hơn.",
+      "visual": {
+        "type": "seesaw",
+        "pose": "hips",
+        "expr": "confident",
+        "headline": "Đọc cùng nhau",
+        "left": "Tỷ giá",
+        "right": "Lãi suất",
+        "dir": "leftDown",
+        "sub": "Giữ tỷ giá, lãi suất có thể phải tăng"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Tiền đồng mất giá không xấu với tất cả. Doanh nghiệp xuất khẩu có doanh thu bằng đô la sẽ được lợi.",
+      "visual": {
+        "type": "versus",
+        "pose": "present",
+        "headline": "Tiền đồng mất giá",
+        "left": {
+          "title": "Được lợi",
+          "text": "Xuất khẩu, doanh thu đô la"
+        },
+        "right": {
+          "title": "Bất lợi",
+          "text": "Nhập nguyên liệu, nợ ngoại tệ"
+        }
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Còn doanh nghiệp nhập khẩu nguyên liệu, hoặc có nợ vay bằng ngoại tệ, sẽ chịu thiệt.",
+      "visual": {
+        "type": "grid",
+        "pose": "headHold",
+        "expr": "worried",
+        "headline": "Ai chịu thiệt?",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Nhập nguyên liệu",
+            "text": "giá vốn tăng",
+            "tone": "bad"
+          },
+          {
+            "title": "Nợ ngoại tệ",
+            "text": "nợ quy đổi tăng",
+            "tone": "bad"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Chiều ngược lại cũng đúng. Khi tiền đồng lên giá, doanh nghiệp nhập khẩu và doanh nghiệp nợ đô la được lợi, còn nhà xuất khẩu kém cạnh tranh hơn.",
+      "visual": {
+        "type": "versus",
+        "pose": "point",
+        "headline": "Tiền đồng lên giá",
+        "left": {
+          "title": "Được lợi",
+          "text": "Nhập khẩu, nợ đô la"
+        },
+        "right": {
+          "title": "Bất lợi",
+          "text": "Xuất khẩu kém cạnh tranh"
+        }
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Hãy xem ba doanh nghiệp trong chuỗi bài. Thuỷ sản Cá Bạc xuất khẩu. Doanh thu đô la trước đây quy đổi được một nghìn tỷ đồng, nay thành một nghìn không trăm ba mươi tỷ.",
+      "visual": {
+        "type": "calc",
+        "pose": "cheer",
+        "face": "excited",
+        "emote": "sparkle",
+        "expr": "1.000 tỷ × 1,03",
+        "result": "+30 tỷ"
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Hàng không Cánh Diều có khoản nợ đô la, quy đổi ra hai trăm năm mươi tỷ đồng. Tỷ giá tăng ba phần trăm, khoản nợ thành hai trăm năm mươi bảy phẩy năm tỷ.",
+      "visual": {
+        "type": "slider",
+        "pose": "point",
+        "expr": "surprised",
+        "headline": "Nợ đô la của Cánh Diều",
+        "label": "Tỷ giá",
+        "unit": "Nợ quy đổi",
+        "steps": [
+          {
+            "x": "Trước",
+            "value": 250,
+            "label": "250 tỷ"
+          },
+          {
+            "x": "+3%",
+            "value": 257.5,
+            "label": "257,5 tỷ"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Phần chênh lệch bảy phẩy năm tỷ đồng được ghi nhận là lỗ tỷ giá. Bán vé không đổi, nhưng lợi nhuận vẫn giảm. Đó là câu trả lời cho câu hỏi đầu bài.",
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "expr": "confident",
+        "items": [
+          {
+            "company": "canhdieu",
+            "rows": [
+              {
+                "k": "Lỗ tỷ giá",
+                "v": "7,5 tỷ"
+              },
+              {
+                "k": "Bán vé",
+                "v": "không đổi"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Lợi nhuận giảm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Còn Thép Lò Rèn nhập quặng sắt bằng đô la, nên giá vốn tăng theo tỷ giá.",
+      "visual": {
+        "type": "pair",
+        "pose": "shrug",
+        "headline": "Cùng một tỷ giá",
+        "items": [
+          {
+            "company": "cabac",
+            "rows": [
+              {
+                "k": "Thu bằng",
+                "v": "đô la"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "Được lợi"
+          },
+          {
+            "company": "loren",
+            "rows": [
+              {
+                "k": "Nhập quặng bằng",
+                "v": "đô la"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Giá vốn tăng"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Khi đọc tỷ giá, hãy hỏi: doanh nghiệp thu bằng đồng tiền nào, chi bằng đồng tiền nào, và nợ bằng đồng tiền nào?",
+      "visual": {
+        "type": "checklist",
+        "pose": "think",
+        "emote": "question",
+        "headline": "Ba câu hỏi về tỷ giá",
+        "items": [
+          "Thu bằng đồng tiền nào?",
+          "Chi bằng đồng tiền nào?",
+          "Nợ bằng đồng tiền nào?"
+        ]
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Câu hỏi cho bạn: doanh nghiệp nào thường bất lợi khi tiền đồng mất giá? Đáp án nằm trong bài viết bên dưới video.",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "emote": "question",
+        "question": "Doanh nghiệp nào thường bất lợi khi tiền đồng mất giá?",
+        "options": [
+          "Doanh nghiệp có nhiều nợ vay bằng đô la Mỹ",
+          "Doanh nghiệp xuất khẩu thuỷ sản",
+          "Doanh nghiệp có doanh thu bằng đô la Mỹ"
+        ]
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Ô đối ngoại trên bảng điều khiển đã sáng đèn đầu tiên: tỷ giá.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2"
+        ],
+        "light": [
+          "Tỷ giá"
+        ],
+        "pose": "cheer",
+        "emote": "sparkle",
+        "headline": "Đèn mới: Tỷ giá"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "An ghi vào sổ tay: đọc tỷ giá cùng lãi suất, và để ý doanh nghiệp nợ đô la Mỹ.",
+      "visual": {
+        "type": "notebook",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá",
+          "Thị trường đi trước kinh tế vài tháng",
+          "Xem lạm phát lõi để thấy xu hướng giá nền",
+          "Lãi suất là giá của tiền; DN vay nhiều nhạy nhất",
+          "So tín dụng với chỉ tiêu cả năm và với huy động",
+          "Đọc tỷ giá cùng lãi suất; để ý nợ đô la Mỹ"
+        ],
+        "pose": "idle",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Ba trong năm yếu tố trên cái cân là dòng đô la chảy vào Việt Nam. Vậy đô la đến từ đâu? Bài sau, ta tìm hiểu thương mại và FDI.",
+      "visual": {
+        "type": "dashboard",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external"
+        ],
+        "lit": [
+          "GDP",
+          "CPI",
+          "Lạm phát lõi",
+          "Lãi suất",
+          "Tín dụng, M2",
+          "Tỷ giá"
+        ],
+        "headline": "Bài 7: Thương mại và FDI",
+        "blink": "external",
+        "pose": "point",
+        "expr": "excited"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 7",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}
