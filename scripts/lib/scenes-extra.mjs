@@ -261,10 +261,11 @@ export function extraScene(v, id, ctx) {
         html: `<div class="stack">${head}<div class="sl-label">${esc(v.label)}</div>
           <div class="sl-track"><div class="sl-rail" id="${id}-k"><div class="sl-knob"></div></div>${v.steps.map((s, i) => `<div class="sl-tick" style="left:${(i / (n - 1)) * 100}%"><span>${esc(s.x)}</span></div>`).join("")}</div>
           <div class="sl-unit">${esc(v.unit)}</div>
-          <div class="sl-bar-wrap"><div class="sl-bar" id="${id}-bar" style="transform:scaleX(${(v.steps[0].value / max).toFixed(4)})"></div><div class="sl-vals">${v.steps.map((s, i) => `<div class="sl-val" id="${id}-l${i}" style="opacity:${i ? 0 : 1}">${esc(s.label)}</div>`).join("")}</div></div>${subHtml}</div>`,
+          <div class="sl-bar-wrap"><div class="sl-bar" id="${id}-bar"></div><div class="sl-vals">${v.steps.map((s, i) => `<div class="sl-val" id="${id}-l${i}" style="opacity:${i ? 0 : 1}">${esc(s.label)}</div>`).join("")}</div></div>${subHtml}</div>`,
         js: (t, d) => {
           const out = headJs(t);
           const st = steps(n, t, d);
+          out.push(`tl.set("#${id}-bar", { scaleX: ${(v.steps[0].value / max).toFixed(4)} }, 0);`);
           v.steps.forEach((s, i) => {
             if (!i) return;
             out.push(`tl.to("#${id}-k", { xPercent: ${((i / (n - 1)) * 100).toFixed(2)}, duration: 0.7, ease: "power2.inOut" }, ${f(st[i])});`);
