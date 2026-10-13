@@ -1,50 +1,47 @@
 # Quy trình làm video người que DSC Academy
 
-Dự án này sinh video giáo dục đầu tư dạng người que cho Công ty Chứng khoán DSC. Khi người dùng yêu cầu làm video về một chủ đề, làm theo đúng các bước dưới đây.
+Dự án sinh video giáo dục đầu tư dạng người que cho Công ty Chứng khoán DSC. Chuỗi hiện tại: **Kinh tế vĩ mô cho nhà đầu tư** (12 tập, mỗi tập 3–4 phút, gắn ở đầu bài viết cùng số trên DSC Academy). Sổ tay sản xuất (giọng đọc, dàn doanh nghiệp giả định, số liệu cố định, đề cương 12 tập) là nguồn chuẩn; dữ liệu dùng chung nằm ở `scripts/lib/series.mjs`.
 
 ## 1. Viết kịch bản
 
-Tạo `content/<slug>.json`, dùng các file trong `content/` làm mẫu.
+Tạo `content/tNN-<slug>.json`, dùng `content/t01-vi-mo-la-gi.json` làm mẫu (giữ nguyên khối `voice`).
 
-- Dài 60–90 giây, khoảng 9–12 cảnh. Mỗi cảnh 1–2 câu, tối đa khoảng 30 từ.
-- Cảnh đầu là câu hỏi hoặc tình huống gây tò mò (hook). Cảnh cuối là `outro`, luôn kèm `disclaimer`.
-- Viết số theo cách đọc trong `text`, ví dụ "năm mươi nghìn đồng". Số dạng chữ số chỉ đặt trong `visual`.
-- Giọng văn thân thiện, dễ hiểu cho người mới. Thuật ngữ tiếng Anh phải giải thích ngay.
+- 3–4 phút: khoảng 600–750 âm tiết, 20–30 cảnh. Theo khung 8 phần: mở đầu, tập trước, khái niệm, đọc số liệu, chuỗi tác động, ví dụ, tóm tắt và quiz, gieo tập sau và CTA.
+- Viết số theo cách đọc trong `text` ("năm mươi nghìn đồng"); chữ số chỉ đặt trong `visual`. Viết đủ "Ngân hàng Nhà nước", "đô la Mỹ".
+- CTA luôn là mời đọc bài viết bên dưới video. Cảnh cuối là `outro`, luôn có `disclaimer`.
+- Người dùng đã đồng ý **không cần duyệt kịch bản trước**: đẩy lên `main` là GitHub tự tạo giọng và render. Chỉ đặt `"approved": false` khi muốn xem thử hình mà không tốn lượt gọi API giọng đọc.
 
 ## 2. Quy tắc nội dung (bắt buộc)
 
 - Không nêu tên hay mã cổ phiếu thật, không khuyến nghị mua/bán, không dự báo giá, không cam kết lợi nhuận.
-- Ví dụ dùng công ty giả định ("Công ty A") và ghi rõ "ví dụ minh hoạ" hoặc "số liệu giả định".
-- Kiến thức phải chính xác. Nếu không chắc, hỏi người dùng thay vì đoán.
-- Sau khi viết xong, **dừng lại và đưa kịch bản cho người dùng duyệt** trước khi tạo giọng đọc.
+- Chỉ dùng doanh nghiệp giả định trong `scripts/lib/series.mjs` với đúng số liệu cố định của sổ tay; luôn có nhãn "giả định".
+- Kiến thức phải khớp bài viết cùng số. Nếu không chắc, hỏi người dùng thay vì đoán.
 
-## 3. Các kiểu cảnh (`visual.type`)
+## 3. Kiểu cảnh (`visual.type`)
 
-| type | Trường | Dùng khi |
-| --- | --- | --- |
-| `title` | headline, sub | Mở đầu |
-| `formula` | left, top, bottom | Công thức dạng phân số |
-| `numbers` | label, items[{k,v}] | Liệt kê 2–3 con số |
-| `calc` | expr, result | Phép tính và kết quả |
-| `coins` | pay, get, caption | So sánh tiền bỏ ra/nhận về |
-| `trend` | direction (up/down), headline, sub | Xu hướng tăng/giảm |
-| `split` | headline, a, b | Hai khả năng đối lập |
-| `compare` | headline, bars[{k,v}], note | So sánh 2–4 giá trị (bar ngang) |
-| `warning` | headline, sub | Cảnh báo, lưu ý |
-| `checklist` | headline, items[] (tối đa 4) | Tóm tắt các điểm |
-| `outro` | headline, sub, disclaimer | Kết thúc |
+Cơ bản: `title`, `formula`, `numbers`, `calc`, `coins`, `trend`, `split`, `compare`, `warning`, `checklist`, `outro` (xem `renderScene` trong `scripts/build.mjs`).
 
-`visual.pose` (tư thế nhân vật): `idle`, `point`, `wave`, `cheer`, `think`, `shrug`.
+Chuỗi vĩ mô (`scripts/lib/scenes-macro.mjs`):
 
-Giữ chữ trong `visual` ngắn: headline ≤ 28 ký tự, mỗi mục ≤ 30 ký tự. Muốn thêm kiểu cảnh mới thì viết thêm một `case` trong `renderScene` ở `scripts/build.mjs`.
+| type | Trường |
+| --- | --- |
+| `dashboard` | headline?, show[], reveal[], blink, lit[] — khoá nhóm: growth, prices, money, external, fiscal |
+| `chain` | headline?, highlight: profit/valuation/both/none, dir: up/down, caption? |
+| `pair` | headline?, items[{company, rows[{k,v}], move: up/down/downBig/flat, moveLabel}] |
+| `versus` | headline?, left{title,text}, right{title,text} |
+| `tide` | headline, sub |
+| `quiz` | question, options[3], footer? |
+| `notebook` | entries[] (dòng cuối là dòng mới của tập) |
+
+Nhân vật An (`scripts/lib/figure.mjs`):
+
+- `visual.pose`: idle, point, pointUp, present, wave, cheer, think, shrug, hips, headHold, facepalm.
+- `visual.expr` (tuỳ chọn, mặc định theo tư thế): happy, excited, surprised, worried, sad, thinking, confused, confident, neutral.
+- `visual.emote` (tuỳ chọn): question, exclaim, bulb, sweat, sparkle.
+- Đổi tư thế/biểu cảm theo cảm xúc của câu thoại; tránh lặp một tư thế quá 3 cảnh liền.
 
 ## 4. Chạy
 
-```bash
-npm run tts -- content/<slug>.json      # cần GEMINI_API_KEY trong .env
-npm run build -- content/<slug>.json
-npx hyperframes check                   # chạy trong build/<slug>/video-16x9 và video-9x16
-npm run render -- content/<slug>.json draft
-```
+Trên GitHub (mặc định): đẩy file kịch bản lên `main`. Video ở `out/<id>.mp4`, báo cáo ở `status/<id>.json` trên nhánh `renders`.
 
-Xem vài frame bằng `npx hyperframes snapshot` để kiểm tra chữ không tràn, rồi mới render bản `looks`. Không tự đăng video; giao file trong `out/` cho người dùng.
+Trên máy: `npm run tts -- content/<file>.json` (cần `GEMINI_API_KEY`), `npm run build -- content/<file>.json`, rồi `npx hyperframes check` và `npm run render -- content/<file>.json` trong thư mục dự án. Không tự đăng video; giao file cho người dùng.

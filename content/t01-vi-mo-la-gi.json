@@ -5,7 +5,6 @@
   "series": "Kinh tế vĩ mô cho nhà đầu tư",
   "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/vi-mo-la-gi/",
   "articleUpdated": "2026-10-12",
-  "approved": false,
   "voice": {
     "provider": "gemini-api",
     "model": "gemini-3.1-flash-tts-preview",
@@ -18,117 +17,359 @@
     {
       "id": "s01",
       "text": "Hai siêu thị Giỏ Tre và Giỏ Mây bán cùng mặt hàng, cùng quy mô, trên cùng một con phố.",
-      "visual": { "type": "pair", "pose": "idle", "items": [ { "company": "giotre", "rows": [ { "k": "Mặt hàng", "v": "Giống nhau" }, { "k": "Quy mô", "v": "Giống nhau" } ] }, { "company": "giomay", "rows": [ { "k": "Mặt hàng", "v": "Giống nhau" }, { "k": "Quy mô", "v": "Giống nhau" } ] } ] }
+      "visual": {
+        "type": "pair",
+        "pose": "idle",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Mặt hàng",
+                "v": "Giống nhau"
+              },
+              {
+                "k": "Quy mô",
+                "v": "Giống nhau"
+              }
+            ]
+          },
+          {
+            "company": "giomay",
+            "rows": [
+              {
+                "k": "Mặt hàng",
+                "v": "Giống nhau"
+              },
+              {
+                "k": "Quy mô",
+                "v": "Giống nhau"
+              }
+            ]
+          }
+        ],
+        "expr": "happy"
+      }
     },
     {
       "id": "s02",
       "text": "Một ngày, tin tức báo kinh tế đang chững lại. Cổ phiếu của cả hai đều giảm, nhưng Giỏ Mây giảm mạnh hơn hẳn.",
-      "visual": { "type": "pair", "pose": "shrug", "headline": "Kinh tế chững lại", "items": [ { "company": "giotre", "move": "down", "moveLabel": "Giảm nhẹ" }, { "company": "giomay", "move": "downBig", "moveLabel": "Giảm mạnh" } ] }
+      "visual": {
+        "type": "pair",
+        "pose": "headHold",
+        "headline": "Kinh tế chững lại",
+        "items": [
+          {
+            "company": "giotre",
+            "move": "down",
+            "moveLabel": "Giảm nhẹ"
+          },
+          {
+            "company": "giomay",
+            "move": "downBig",
+            "moveLabel": "Giảm mạnh"
+          }
+        ],
+        "expr": "worried",
+        "emote": "sweat"
+      }
     },
     {
       "id": "s03",
       "text": "Cùng một tin tức, vì sao kết quả lại khác nhau? Câu trả lời bắt đầu từ kinh tế vĩ mô.",
-      "visual": { "type": "title", "pose": "think", "headline": "Vì sao?", "sub": "Câu trả lời bắt đầu từ kinh tế vĩ mô" }
+      "visual": {
+        "type": "title",
+        "pose": "think",
+        "headline": "Vì sao?",
+        "sub": "Câu trả lời bắt đầu từ kinh tế vĩ mô",
+        "emote": "question"
+      }
     },
     {
       "id": "s04",
       "text": "Đây là An, một nhà đầu tư mới. Trong mười hai bài của chuỗi Kinh tế vĩ mô cho nhà đầu tư, An sẽ cùng bạn đi từng bước.",
-      "visual": { "type": "title", "pose": "wave", "headline": "Kinh tế vĩ mô", "sub": "cho nhà đầu tư · 12 bài cùng An" }
+      "visual": {
+        "type": "title",
+        "pose": "wave",
+        "headline": "Kinh tế vĩ mô",
+        "sub": "cho nhà đầu tư · 12 bài cùng An"
+      }
     },
     {
       "id": "s05",
       "text": "Sau mỗi bài, An bật sáng thêm một ô trên bảng điều khiển vĩ mô. Hôm nay, ta xem cả bảng trông như thế nào.",
-      "visual": { "type": "dashboard", "pose": "point", "headline": "Bảng điều khiển vĩ mô" }
+      "visual": {
+        "type": "dashboard",
+        "pose": "present",
+        "headline": "Bảng điều khiển vĩ mô"
+      }
     },
     {
       "id": "s06",
       "text": "Trước hết, vi mô và vĩ mô khác nhau ra sao? Vi mô nhìn vào từng chủ thể, như một doanh nghiệp định giá sản phẩm, hay một gia đình quyết định chi tiêu. Còn vĩ mô nhìn toàn cảnh nền kinh tế: tăng trưởng, mặt bằng giá, lãi suất và tỷ giá.",
-      "visual": { "type": "versus", "pose": "point", "left": { "title": "Vi mô", "text": "Từng doanh nghiệp, từng hộ gia đình" }, "right": { "title": "Vĩ mô", "text": "Cả nền kinh tế: tăng trưởng, giá cả, lãi suất, tỷ giá" } }
+      "visual": {
+        "type": "versus",
+        "pose": "present",
+        "left": {
+          "title": "Vi mô",
+          "text": "Từng doanh nghiệp, từng hộ gia đình"
+        },
+        "right": {
+          "title": "Vĩ mô",
+          "text": "Cả nền kinh tế: tăng trưởng, giá cả, lãi suất, tỷ giá"
+        }
+      }
     },
     {
       "id": "s07",
       "text": "Hãy hình dung vĩ mô như con nước. Nước lên, thuyền nào cũng được nâng lên. Nước rút, thuyền nào cũng hạ xuống. Vĩ mô không quyết định tất cả, nhưng chạm đến mọi doanh nghiệp.",
-      "visual": { "type": "tide", "pose": "think", "headline": "Vĩ mô như con nước", "sub": "Không quyết định tất cả, nhưng chạm đến mọi doanh nghiệp" }
+      "visual": {
+        "type": "tide",
+        "pose": "think",
+        "headline": "Vĩ mô như con nước",
+        "sub": "Không quyết định tất cả, nhưng chạm đến mọi doanh nghiệp",
+        "expr": "thinking"
+      }
     },
     {
       "id": "s08",
       "text": "Các biến số vĩ mô được chia thành năm nhóm. Nhóm tăng trưởng gồm GDP, sản xuất công nghiệp, PMI và bán lẻ. Nhóm giá cả gồm CPI và lạm phát.",
-      "visual": { "type": "dashboard", "pose": "point", "reveal": ["growth", "prices"] }
+      "visual": {
+        "type": "dashboard",
+        "pose": "point",
+        "reveal": [
+          "growth",
+          "prices"
+        ]
+      }
     },
     {
       "id": "s09",
       "text": "Nhóm tiền tệ gồm lãi suất, cung tiền và tín dụng. Nhóm đối ngoại gồm tỷ giá, cán cân thương mại và vốn FDI. Cuối cùng là tài khoá, gồm thu chi ngân sách và đầu tư công.",
-      "visual": { "type": "dashboard", "pose": "point", "show": ["growth", "prices"], "reveal": ["money", "external", "fiscal"] }
+      "visual": {
+        "type": "dashboard",
+        "pose": "point",
+        "show": [
+          "growth",
+          "prices"
+        ],
+        "reveal": [
+          "money",
+          "external",
+          "fiscal"
+        ]
+      }
     },
     {
       "id": "s10",
       "text": "Vậy vĩ mô đi vào giá cổ phiếu bằng đường nào? Về dài hạn, giá cổ phiếu do hai yếu tố quyết định: lợi nhuận doanh nghiệp và mức định giá.",
-      "visual": { "type": "chain", "pose": "point", "headline": "Vĩ mô đi vào giá cổ phiếu" }
+      "visual": {
+        "type": "chain",
+        "pose": "pointUp",
+        "headline": "Vĩ mô đi vào giá cổ phiếu",
+        "emote": "bulb"
+      }
     },
     {
       "id": "s11",
       "text": "Mức định giá thường được đo bằng chỉ số P trên E, tức giá cổ phiếu chia cho lợi nhuận trên mỗi cổ phiếu. Hiểu đơn giản, đó là số tiền nhà đầu tư sẵn sàng trả cho một đồng lợi nhuận.",
-      "visual": { "type": "formula", "pose": "point", "left": "P/E", "top": "Giá cổ phiếu (P)", "bottom": "Lợi nhuận mỗi cổ phiếu (EPS)" }
+      "visual": {
+        "type": "formula",
+        "pose": "present",
+        "left": "P/E",
+        "top": "Giá cổ phiếu (P)",
+        "bottom": "Lợi nhuận mỗi cổ phiếu (EPS)"
+      }
     },
     {
       "id": "s12",
       "text": "Khi kinh tế tăng trưởng tốt, người dân chi tiêu nhiều hơn, doanh nghiệp bán được hàng, và lợi nhuận tăng.",
-      "visual": { "type": "chain", "pose": "cheer", "highlight": "profit", "dir": "up", "caption": "Tăng trưởng tốt → lợi nhuận tăng" }
+      "visual": {
+        "type": "chain",
+        "pose": "cheer",
+        "highlight": "profit",
+        "dir": "up",
+        "caption": "Tăng trưởng tốt → lợi nhuận tăng",
+        "emote": "sparkle"
+      }
     },
     {
       "id": "s13",
       "text": "Khi lãi suất thấp, vay vốn rẻ hơn và gửi tiết kiệm kém hấp dẫn, nên nhà đầu tư sẵn sàng trả giá cao hơn cho cổ phiếu.",
-      "visual": { "type": "chain", "pose": "point", "highlight": "valuation", "dir": "up", "caption": "Lãi suất thấp → định giá cao hơn" }
+      "visual": {
+        "type": "chain",
+        "pose": "point",
+        "highlight": "valuation",
+        "dir": "up",
+        "caption": "Lãi suất thấp → định giá cao hơn",
+        "expr": "excited"
+      }
     },
     {
       "id": "s14",
       "text": "Ngược lại, khi lạm phát cao đi kèm lãi suất cao, cả lợi nhuận lẫn định giá có thể cùng giảm.",
-      "visual": { "type": "chain", "pose": "shrug", "highlight": "both", "dir": "down", "caption": "Lạm phát và lãi suất cao → cả hai cùng giảm" }
+      "visual": {
+        "type": "chain",
+        "pose": "shrug",
+        "highlight": "both",
+        "dir": "down",
+        "caption": "Lạm phát và lãi suất cao → cả hai cùng giảm",
+        "expr": "worried",
+        "emote": "exclaim"
+      }
     },
     {
       "id": "s15",
       "text": "Quay lại hai siêu thị. Khi kinh tế chững lại, doanh thu của cả hai cùng giảm như nhau.",
-      "visual": { "type": "pair", "pose": "point", "items": [ { "company": "giotre", "rows": [ { "k": "Doanh thu", "v": "▼ giảm" } ] }, { "company": "giomay", "rows": [ { "k": "Doanh thu", "v": "▼ giảm" } ] } ] }
+      "visual": {
+        "type": "pair",
+        "pose": "present",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Doanh thu",
+                "v": "▼ giảm"
+              }
+            ]
+          },
+          {
+            "company": "giomay",
+            "rows": [
+              {
+                "k": "Doanh thu",
+                "v": "▼ giảm"
+              }
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "s16",
       "text": "Nhưng Giỏ Mây đang vay năm trăm tỷ đồng. Với lãi suất tám phần trăm, mỗi năm họ phải trả bốn mươi tỷ đồng tiền lãi, dù bán được nhiều hay ít.",
-      "visual": { "type": "calc", "pose": "point", "expr": "500 tỷ × 8%", "result": "40 tỷ/năm" }
+      "visual": {
+        "type": "calc",
+        "pose": "point",
+        "expr": "surprised",
+        "result": "40 tỷ/năm"
+      }
     },
     {
       "id": "s17",
       "text": "Còn Giỏ Tre gần như không vay nợ. Vì vậy, cùng một cơn gió vĩ mô, lợi nhuận của Giỏ Mây bị bào mòn nhanh hơn, và cổ phiếu giảm mạnh hơn.",
-      "visual": { "type": "pair", "pose": "think", "items": [ { "company": "giotre", "rows": [ { "k": "Nợ vay", "v": "0" }, { "k": "Tiền lãi/năm", "v": "0" } ], "move": "down", "moveLabel": "Giảm nhẹ" }, { "company": "giomay", "rows": [ { "k": "Nợ vay", "v": "500 tỷ" }, { "k": "Tiền lãi/năm", "v": "40 tỷ" } ], "move": "downBig", "moveLabel": "Giảm mạnh" } ] }
+      "visual": {
+        "type": "pair",
+        "pose": "hips",
+        "items": [
+          {
+            "company": "giotre",
+            "rows": [
+              {
+                "k": "Nợ vay",
+                "v": "0"
+              },
+              {
+                "k": "Tiền lãi/năm",
+                "v": "0"
+              }
+            ],
+            "move": "down",
+            "moveLabel": "Giảm nhẹ"
+          },
+          {
+            "company": "giomay",
+            "rows": [
+              {
+                "k": "Nợ vay",
+                "v": "500 tỷ"
+              },
+              {
+                "k": "Tiền lãi/năm",
+                "v": "40 tỷ"
+              }
+            ],
+            "move": "downBig",
+            "moveLabel": "Giảm mạnh"
+          }
+        ],
+        "expr": "confident"
+      }
     },
     {
       "id": "s18",
       "text": "Để theo dõi vĩ mô, bạn cần ba thói quen. Một, xem xu hướng, so với kỳ trước và cùng kỳ năm trước. Hai, hiểu chuỗi tác động đến ngành và doanh nghiệp. Ba, so số liệu thực tế với kỳ vọng của thị trường.",
-      "visual": { "type": "checklist", "pose": "point", "headline": "Ba thói quen đọc vĩ mô", "items": ["Xem xu hướng", "Hiểu chuỗi tác động", "So với kỳ vọng"] }
+      "visual": {
+        "type": "checklist",
+        "pose": "present",
+        "headline": "Ba thói quen đọc vĩ mô",
+        "items": [
+          "Xem xu hướng",
+          "Hiểu chuỗi tác động",
+          "So với kỳ vọng"
+        ]
+      }
     },
     {
       "id": "s19",
       "text": "Bạn không cần dự báo đúng mọi con số. Điều quan trọng là đọc đúng xu hướng.",
-      "visual": { "type": "title", "pose": "cheer", "headline": "Đọc đúng xu hướng", "sub": "Không cần dự báo đúng mọi con số" }
+      "visual": {
+        "type": "title",
+        "pose": "cheer",
+        "headline": "Đọc đúng xu hướng",
+        "sub": "Không cần dự báo đúng mọi con số",
+        "emote": "sparkle"
+      }
     },
     {
       "id": "s20",
       "text": "Câu hỏi cho bạn: vĩ mô tác động đến giá cổ phiếu qua hai kênh chính nào? Đáp án nằm trong bài viết ngay bên dưới video.",
-      "visual": { "type": "quiz", "pose": "think", "question": "Vĩ mô tác động đến giá cổ phiếu qua hai kênh chính nào?", "options": ["Lợi nhuận và mức định giá", "Số cổ đông và giá trị sổ sách", "Thời tiết và mùa vụ"] }
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "question": "Vĩ mô tác động đến giá cổ phiếu qua hai kênh chính nào?",
+        "options": [
+          "Lợi nhuận và mức định giá",
+          "Số cổ đông và giá trị sổ sách",
+          "Thời tiết và mùa vụ"
+        ],
+        "emote": "question"
+      }
     },
     {
       "id": "s21",
       "text": "An ghi vào sổ tay dòng đầu tiên: vĩ mô tác động qua hai kênh, lợi nhuận và định giá.",
-      "visual": { "type": "notebook", "pose": "cheer", "entries": ["Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá"] }
+      "visual": {
+        "type": "notebook",
+        "pose": "idle",
+        "entries": [
+          "Vĩ mô tác động qua 2 kênh: lợi nhuận và định giá"
+        ],
+        "expr": "excited"
+      }
     },
     {
       "id": "s22",
       "text": "Bài sau, ta bật sáng ô đầu tiên: nền kinh tế đang lớn nhanh hay chậm lại? Đó là câu chuyện của GDP và chu kỳ kinh tế.",
-      "visual": { "type": "dashboard", "pose": "point", "headline": "Bài 2: GDP và chu kỳ kinh tế", "blink": "growth" }
+      "visual": {
+        "type": "dashboard",
+        "pose": "point",
+        "headline": "Bài 2: GDP và chu kỳ kinh tế",
+        "blink": "growth",
+        "expr": "excited"
+      }
     },
     {
       "id": "s23",
       "text": "Hãy đọc tiếp bài viết bên dưới để xem chi tiết và làm bài quiz nhé.",
-      "visual": { "type": "outro", "pose": "wave", "headline": "Hẹn gặp ở Bài 2", "sub": "Chi tiết và quiz ngay bên dưới video", "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định." }
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn gặp ở Bài 2",
+        "sub": "Chi tiết và quiz ngay bên dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
     }
   ]
 }

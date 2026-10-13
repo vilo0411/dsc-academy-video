@@ -7,7 +7,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
-import { figureSVG, poseTween, breathe } from "./lib/figure.mjs";
+import { figureSVG, poseTween, breathe, walkIn, blinks } from "./lib/figure.mjs";
 import { BRAND } from "./lib/brand.mjs";
 import { macroScene, macroCSS } from "./lib/scenes-macro.mjs";
 
@@ -258,7 +258,7 @@ function build(orientation) {
     }
     let pose = scene.visual.pose || "idle";
     if (vertical && pose === "point") pose = "pointUp";
-    js.push(...poseTween(pose, Math.max(0, start - 0.05)));
+    js.push(...poseTween(pose, Math.max(i === 0 ? 0.7 : 0, start - 0.05), { expr: scene.visual.expr, emote: scene.visual.emote, end }));
 
     // phụ đề: chia đoạn theo số ký tự trong khoảng thời gian đọc của cảnh
     const chunks = chunkCaption(scene.text, capMax);
@@ -273,7 +273,7 @@ function build(orientation) {
       ct += cd;
     });
   });
-  js.push(...breathe(TOTAL));
+  js.push(...breathe(TOTAL), ...walkIn(), ...blinks(TOTAL));
   js.unshift(`tl.fromTo("#fig-wrap", { opacity: 0, x: ${vertical ? 0 : -80}, y: ${vertical ? 80 : 0} }, { opacity: 1, x: 0, y: 0, duration: 0.7, ease: "power3.out" }, 0);`);
 
   const audio = timings.audio
