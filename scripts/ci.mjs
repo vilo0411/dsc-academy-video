@@ -18,7 +18,7 @@ if (!files.length) {
 fs.mkdirSync("status", { recursive: true });
 fs.mkdirSync("out", { recursive: true });
 
-const tail = (s, n = 4000) => (s || "").slice(-n);
+const tail = (s, n = 4000) => { s = s || ""; return s.length <= n * 2 ? s : s.slice(0, n) + "\n…\n" + s.slice(-n); };
 function run(cmd, args, opts = {}) {
   const t0 = Date.now();
   const r = spawnSync(cmd, args, { encoding: "utf8", maxBuffer: 64 * 1024 * 1024, ...opts });
