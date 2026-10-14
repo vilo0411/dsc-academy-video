@@ -11,6 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { P, HALFTONE_DEFS, artSVG, artAspect } from "./lib/essay-art.mjs";
+import { synthSfx, mixdown, hasFfmpeg } from "./lib/sound.mjs";
 
 const contentPath = process.argv[2];
 const content = JSON.parse(fs.readFileSync(contentPath, "utf8"));
@@ -53,42 +54,7 @@ function torn(amp = 1.2, n = 18) {
 }
 const TONES = { cream: P.cream, paper: P.paper, tan: P.tan, manila: P.manila, white: "#FBF8F1", red: P.red, mustard: P.mustard, ink: P.ink, gray: "#CFC9BC" };
 
-// ---------- Âm thanh hiệu ứng (tổng hợp, ghi ra sfx.wav) ----------
-const SR = 44100;
-const sfxEvents = []; // { t, kind }
-function synthSfx(total) {
-  const out = new Float32Array(Math.ceil((total + 1) * SR));
-  let s = 99;
-  const noise = () => ((s = (s * 16807) % 2147483647) / 2147483647) * 2 - 1;
-  for (const { t, kind } of sfxEvents) {
-    const i0 = Math.floor(t * SR);
-    const spec = {
-      slide: { dur: 0.16, gain: 0.22, lp: 0.25, tone: 0 },
-      drop: { dur: 0.09, gain: 0.3, lp: 0.35, tone: 0 },
-      stamp: { dur: 0.22, gain: 0.55, lp: 0.08, tone: 70 },
-      tape: { dur: 0.12, gain: 0.16, lp: 0.6, tone: 0 },
-      tick: { dur: 0.025, gain: 0.12, lp: 0.7, tone: 0 },
-      zip: { dur: 0.45, gain: 0.12, lp: 0.4, tone: 0 },
-    }[kind];
-    if (!spec) continue;
-    const n = Math.floor(spec.dur * SR);
-    let y = 0;
-    for (let k = 0; k < n && i0 + k < out.length; k++) {
-      const u = k / n;
-      const env = kind === "zip" ? Math.sin(Math.PI * u) : Math.pow(1 - u, kind === "stamp" ? 3 : 2);
-      y += spec.lp * (noise() - y);
-      let v = y;
-      if (spec.tone) v = 0.6 * Math.sin((2 * Math.PI * spec.tone * k) / SR) + 0.4 * y;
-      out[i0 + k] += v * env * spec.gain;
-    }
-  }
-  const buf = Buffer.alloc(44 + out.length * 2);
-  buf.write("RIFF", 0); buf.writeUInt32LE(36 + out.length * 2, 4); buf.write("WAVE", 8); buf.write("fmt ", 12);
-  buf.writeUInt32LE(16, 16); buf.writeUInt16LE(1, 20); buf.writeUInt16LE(1, 22); buf.writeUInt32LE(SR, 24);
-  buf.writeUInt32LE(SR * 2, 28); buf.writeUInt16LE(2, 32); buf.writeUInt16LE(16, 34); buf.write("data", 36); buf.writeUInt32LE(out.length * 2, 40);
-  for (let i = 0; i < out.length; i++) buf.writeInt16LE(Math.max(-1, Math.min(1, out[i])) * 32767, 44 + i * 2);
-  return buf;
-}
+const sfxEvents = []; // { t, kind, gain?, dur? } — xem scripts/lib/sound.mjs
 
 // ---------- Mảnh cắt dán ----------
 // Chung: x, y (góc trên trái, px), w, rot (độ), at (0–1: thời điểm vào trong phần lời của cảnh).
@@ -201,7 +167,9 @@ content.scenes.forEach((scene, i) => {
     const t = t0 + (p.pc.at != null ? p.pc.at * speak * AT : (k / Math.max(1, pcs.length)) * span);
     const r = p.rot;
     js.push(`tl.set("${sel}", { rotation: ${r}, opacity: 0 }, 0);`);
-    sfxEvents.push({ t, kind: p.sfx });
+    const SFX_AT = { stamp: [["stamp", 0.15]], tape: [["tape", 0]], drop: [["tap", 0.22]], counter: [["tap", 0.22]], type: [["slide", 0, 0.5]], chart: [["slide", 0, 0.6]] };
+    for (const [kind, dt, g] of SFX_AT[p.enter] || [["slide", 0], ["tap", 0.4, 0.7]]) sfxEvents.push({ t: t + dt, kind, gain: g });
+    if (p.pc.hit) sfxEvents.push({ t: t + 0.1, kind: "hit", gain: 0.7 });
     switch (p.enter) {
       case "stamp":
         js.push(`tl.fromTo("${sel}", { opacity: 0, scale: 1.6, rotation: ${r - 8} }, { opacity: 1, scale: 1, rotation: ${r}, duration: 0.18, ease: "steps(3)" }, ${f(t)});`);
@@ -224,7 +192,7 @@ content.scenes.forEach((scene, i) => {
       for (let g = 0; g < p.groups; g++) {
         const tg = t + 0.3 + g * 0.045;
         js.push(`tl.set("${sel}-g${g}", { opacity: 1 }, ${f(tg)});`);
-        if (g % 3 === 0) sfxEvents.push({ t: tg, kind: "tick" });
+        sfxEvents.push({ t: tg + (g % 3) * 0.006, kind: "key", gain: g % 4 === 0 ? 1 : 0.7 });
       }
     }
     if (p.enter === "counter") {
@@ -234,10 +202,12 @@ content.scenes.forEach((scene, i) => {
         const tc = t + 0.3 + (c * tSpan) / steps;
         js.push(`tl.set("${sel}-v${c - 1}", { opacity: 0 }, ${f(tc)});`, `tl.set("${sel}-v${c}", { opacity: 1 }, ${f(tc)});`);
         sfxEvents.push({ t: tc, kind: "tick" });
+        if (c === steps && p.pc.hit !== false) sfxEvents.push({ t: tc, kind: "hit" });
       }
     }
     if (p.enter === "chart") {
       js.push(`tl.to("${sel}-p", { attr: { "stroke-dashoffset": 0 }, duration: ${f(Math.min(2.4, speak * 0.5))}, ease: "steps(14)" }, ${f(t + 0.4)});`);
+      sfxEvents.push({ t: t + 0.4, kind: "pen", dur: Math.min(2.4, speak * 0.5) });
     }
     // Poster sống: rung rất nhẹ theo nhịp bậc thang.
     if (k % 2 === 0 && p.enter !== "stamp") {
@@ -253,9 +223,10 @@ content.scenes.forEach((scene, i) => {
       sfxEvents.push({ t, kind: "zip" });
     } else {
       js.push(`tl.to("#${a.id}", { attr: { "stroke-dashoffset": 0 }, duration: 0.45, ease: "steps(7)" }, ${f(t)});`);
-      sfxEvents.push({ t, kind: "slide" });
+      sfxEvents.push({ t, kind: "pen", dur: 0.45 });
     }
   });
+  if (i > 0) sfxEvents.push({ t: Math.max(0, start - 0.2), kind: "whoosh" });
 
   // Phụ đề
   if (content.captions !== false) {
@@ -299,10 +270,29 @@ let NEWS = "";
 }
 
 
+// Âm thanh: trộn giọng + tiếng động + nhạc nền thành một track (ffmpeg); không có ffmpeg thì để từng track riêng.
 const audioTags = [];
-if (timings.audio) audioTags.push(`<audio id="voiceover" src="${timings.audio}" data-start="0" data-duration="${f(timings.duration)}" data-track-index="2" data-volume="1"></audio>`);
-fs.writeFileSync(path.join(buildDir, "sfx.wav"), synthSfx(TOTAL));
-audioTags.push(`<audio id="sfx" src="sfx.wav" data-start="0" data-duration="${f(TOTAL)}" data-track-index="4" data-volume="0.55"></audio>`);
+fs.writeFileSync(path.join(buildDir, "sfx.wav"), synthSfx(sfxEvents, TOTAL));
+const musicPath = path.join(buildDir, "music.wav");
+let audioFiles = [];
+if (hasFfmpeg()) {
+  mixdown({
+    voice: timings.audio ? path.join(buildDir, timings.audio) : null,
+    sfx: path.join(buildDir, "sfx.wav"),
+    music: fs.existsSync(musicPath) ? musicPath : null,
+    total: TOTAL,
+    musicVol: content.music?.volume ?? 0.3,
+    sfxVol: content.sfxVolume ?? 1,
+    out: path.join(buildDir, "mix.wav"),
+  });
+  audioTags.push(`<audio id="mix" src="mix.wav" data-start="0" data-duration="${f(TOTAL)}" data-track-index="2" data-volume="1"></audio>`);
+  audioFiles = ["mix.wav"];
+  console.log(`Âm thanh: giọng ${timings.audio ? "có" : "chưa có"}, nhạc nền ${fs.existsSync(musicPath) ? "có" : "không"}, ${sfxEvents.length} tiếng động.`);
+} else {
+  if (timings.audio) audioTags.push(`<audio id="voiceover" src="${timings.audio}" data-start="0" data-duration="${f(timings.duration)}" data-track-index="2" data-volume="1"></audio>`);
+  audioTags.push(`<audio id="sfx" src="sfx.wav" data-start="0" data-duration="${f(TOTAL)}" data-track-index="4" data-volume="0.8"></audio>`);
+  audioFiles = [timings.audio, "sfx.wav"].filter(Boolean);
+}
 
 const noise = `url("data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.22  0 0 0 0.32 0'/></filter><rect width='400' height='400' filter='url(#n)'/></svg>`)}")`;
 const fiber = `url("data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><filter id='n'><feTurbulence type='turbulence' baseFrequency='0.012 0.04' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.33  0 0 0 0 0.2  0 0 0 0.18 0'/></filter><rect width='600' height='600' filter='url(#n)'/></svg>`)}")`;
@@ -378,7 +368,6 @@ fs.mkdirSync(path.join(dir, "fonts"), { recursive: true });
 fs.mkdirSync(path.join(dir, "vendor"), { recursive: true });
 for (const fnt of fs.readdirSync("assets/fonts-essay").filter((x) => x.endsWith(".ttf"))) fs.copyFileSync(path.join("assets/fonts-essay", fnt), path.join(dir, "fonts", fnt));
 fs.copyFileSync("assets/vendor/gsap.min.js", path.join(dir, "vendor", "gsap.min.js"));
-if (timings.audio) fs.copyFileSync(path.join(buildDir, timings.audio), path.join(dir, timings.audio));
-fs.copyFileSync(path.join(buildDir, "sfx.wav"), path.join(dir, "sfx.wav"));
+for (const a of audioFiles) fs.copyFileSync(path.join(buildDir, a), path.join(dir, a));
 fs.writeFileSync(path.join(dir, "index.html"), html);
 console.log(`Đã tạo ${dir}/index.html (${TOTAL}s, ${content.scenes.length} cảnh)`);

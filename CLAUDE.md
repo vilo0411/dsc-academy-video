@@ -55,3 +55,4 @@ Kịch bản đặt `"format": "essay"` → CI dựng bằng `scripts/build-essa
   `scrap` (x,y,w,h,tone), `art` (name: banknote, bundle, stove, flame, logs, bread, coin, helmet, scale, ticket, basket, bowl, calendar; t, sub, tone), `label` (text,size,tone: red/mustard/ink/cream), `type` (chữ đánh máy), `stamp`, `tape`, `counter` (values[]), `chart` (points, band, caption).
 - `visual.strings[]` (dây đỏ: from, to, sag, at), `visual.marks[]` (nét bút đỏ: circle hoặc line).
 - Không vẽ khuôn mặt người thật; trẻ em chỉ thể hiện bằng đồ vật. Hình mới thêm vào `scripts/lib/essay-art.mjs`.
+- Âm thanh: `music` {prompt, negative, seed, volume} → CI tạo nhạc nền không lời bằng Lyria (`scripts/music.mjs`, cần `GCP_SA_KEY`, có cache). `scripts/lib/sound.mjs` tổng hợp tiếng giấy/con dấu/máy chữ/whoosh và trộn bằng ffmpeg: nhạc tự hạ khi có lời, chuẩn hoá -16 LUFS. Đặt `hit: true` trên một mảnh để có tiếng nhấn mạnh trầm; `counter` mặc định có tiếng nhấn ở số cuối.

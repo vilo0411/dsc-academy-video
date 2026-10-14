@@ -103,6 +103,12 @@ for (const file of files) {
     status.timings = JSON.parse(fs.readFileSync(path.join(buildDir, "timings.json"), "utf8"));
   } catch {}
 
+  // Nhạc nền (Lyria trên Vertex AI) cho video essay — không chặn nếu lỗi, video vẫn có giọng và tiếng động.
+  if (content.format === "essay" && content.music?.prompt) {
+    const r = run(process.execPath, ["scripts/music.mjs", file]);
+    status.steps.push({ name: "music", ok: r.ok, seconds: r.seconds, log: r.out, blocking: false });
+    save();
+  }
   if (!step("build", run(process.execPath, [content.format === "essay" ? "scripts/build-essay.mjs" : "scripts/build.mjs", file]))) {
     failed++;
     continue;

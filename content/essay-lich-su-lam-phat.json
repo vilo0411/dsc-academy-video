@@ -17,6 +17,12 @@
     "chunkChars": 700,
     "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
   },
+  "music": {
+    "prompt": "Curious minimalist documentary underscore for a history explainer video: soft felt piano ostinato, pizzicato strings, light ticking clock percussion, warm analog tape texture, gentle and inquisitive mood, steady 92 BPM, no big build-ups, instrumental",
+    "negative": "vocals, singing, lyrics, heavy drums, EDM, distorted guitar",
+    "seed": 11,
+    "volume": 0.3
+  },
   "scenes": [
     {
       "id": "s01",
@@ -85,7 +91,8 @@
             "size": 170,
             "tone": "red",
             "rot": -3,
-            "at": 0.08
+            "at": 0.08,
+            "hit": true
           },
           {
             "kind": "tape",
@@ -794,7 +801,8 @@
             "y": 200,
             "size": 190,
             "tone": "red",
-            "rot": -2
+            "rot": -2,
+            "hit": true
           },
           {
             "kind": "type",
@@ -1004,5 +1012,5 @@
       }
     }
   ],
-  "renderRev": 2
+  "renderRev": 3
 }
