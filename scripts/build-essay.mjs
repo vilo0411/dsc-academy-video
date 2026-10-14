@@ -192,12 +192,13 @@ content.scenes.forEach((scene, i) => {
 
   // Thời điểm vào: rải đều trong 65% đầu phần lời (hoặc theo pc.at).
   const t0 = tm.start + 0.05;
-  const span = Math.max(1.2, speak * 0.65);
+  const span = Math.max(1.0, speak * 0.5);
+  const AT = 0.7; // nén mốc "at" để tấm cắt dán lắp xong trước khi câu nói kết thúc
   js.push(`// ${scene.id}`);
   js.push(`tl.fromTo("#${sid}-cam", { scale: 1 }, { scale: ${v.zoom ?? 1.045}, duration: ${f(dur)}, ease: "none" }, ${f(start)});`);
   pcs.forEach((p, k) => {
     const sel = `#${p.id}`;
-    const t = t0 + (p.pc.at != null ? p.pc.at * speak : (k / Math.max(1, pcs.length)) * span);
+    const t = t0 + (p.pc.at != null ? p.pc.at * speak * AT : (k / Math.max(1, pcs.length)) * span);
     const r = p.rot;
     js.push(`tl.set("${sel}", { rotation: ${r}, opacity: 0 }, 0);`);
     sfxEvents.push({ t, kind: p.sfx });
@@ -228,7 +229,7 @@ content.scenes.forEach((scene, i) => {
     }
     if (p.enter === "counter") {
       const steps = p.n - 1;
-      const tSpan = Math.max(0.6, Math.min(2.2, speak * 0.75 - (t - tm.start) - 0.3));
+      const tSpan = Math.max(0.5, Math.min(2.0, speak * 0.6 - (t - tm.start) - 0.3));
       for (let c = 1; c <= steps; c++) {
         const tc = t + 0.3 + (c * tSpan) / steps;
         js.push(`tl.set("${sel}-v${c - 1}", { opacity: 0 }, ${f(tc)});`, `tl.set("${sel}-v${c}", { opacity: 1 }, ${f(tc)});`);
@@ -244,7 +245,7 @@ content.scenes.forEach((scene, i) => {
     }
   });
   ov.anims.forEach((a) => {
-    const t = tm.start + a.at * speak;
+    const t = tm.start + a.at * speak * AT;
     if (a.kind === "string") {
       js.push(`tl.set("#${a.id}-pin0", { opacity: 1 }, ${f(t - 0.15)});`);
       js.push(`tl.to("#${a.id}", { attr: { "stroke-dashoffset": 0 }, duration: 0.5, ease: "steps(8)" }, ${f(t)});`);
