@@ -188,7 +188,7 @@ content.scenes.forEach((scene, i) => {
   const pcs = (v.pieces || []).map((pc, k) => ({ pc, ...piece(pc, `${sid}-p${k}`, scene.id), id: `${sid}-p${k}` }));
   const ov = overlay(v, sid);
   sections.push(`<section id="scene-${i}" class="clip scene bg-${v.bg || "news"}" data-start="${f(start)}" data-duration="${f(dur)}" data-track-index="1">
-    <div class="cam" id="${sid}-cam">${v.bg === "news" || !v.bg ? `<div class="newsprint">@@NEWS@@</div>` : ""}${pcs.map((p) => p.html).join("")}${ov.svg}</div></section>`);
+    <div class="cam" id="${sid}-cam">${v.bg === "news" || !v.bg ? `<div class="newsprint"></div>` : ""}${pcs.map((p) => p.html).join("")}${ov.svg}</div></section>`);
 
   // Thời điểm vào: rải đều trong 65% đầu phần lời (hoặc theo pc.at).
   const t0 = tm.start + 0.05;
@@ -210,12 +210,12 @@ content.scenes.forEach((scene, i) => {
         break;
       case "drop":
       case "counter":
-        js.push(`tl.fromTo("${sel}", { opacity: 0, y: -60, rotation: ${r + 6} }, { opacity: 1, y: 0, rotation: ${r}, duration: 0.25, ease: "steps(4)" }, ${f(t)});`);
+        js.push(`tl.set("${sel}", { opacity: 1 }, ${f(t)});`, `tl.fromTo("${sel}", { y: -60, rotation: ${r + 6} }, { y: 0, rotation: ${r}, duration: 0.25, ease: "steps(4)", immediateRender: false }, ${f(t)});`);
         break;
       default: {
         const dx = p.pc.from === "left" ? -260 : p.pc.from === "top" ? 0 : p.pc.from === "bottom" ? 0 : 260;
         const dy = p.pc.from === "top" ? -220 : p.pc.from === "bottom" ? 220 : 30;
-        js.push(`tl.fromTo("${sel}", { opacity: 0, x: ${dx}, y: ${dy}, rotation: ${r + (dx > 0 ? 7 : -7)} }, { opacity: 1, x: 0, y: 0, rotation: ${r}, duration: 0.42, ease: "steps(6)" }, ${f(t)});`);
+        js.push(`tl.set("${sel}", { opacity: 1 }, ${f(t)});`, `tl.fromTo("${sel}", { x: ${dx}, y: ${dy}, rotation: ${r + (dx > 0 ? 7 : -7)} }, { x: 0, y: 0, rotation: ${r}, duration: 0.42, ease: "steps(6)", immediateRender: false }, ${f(t)});`);
         js.push(`tl.to("${sel}", { rotation: ${r - 1.2}, duration: 0.12, ease: "steps(1)", yoyo: true, repeat: 1 }, ${f(t + 0.42)});`);
       }
     }
@@ -277,20 +277,26 @@ content.scenes.forEach((scene, i) => {
 });
 
 // Nền giấy báo: cột chữ mờ (chữ giả, chỉ để tạo kết cấu).
+// Nền giấy báo: cột chữ giả vẽ thành ảnh nền SVG (chỉ là kết cấu, không phải chữ cần đọc).
 let NEWS = "";
 {
   const words = "giá thị trường đồng tiền hôm nay báo cáo phiên chợ lương thực hàng hoá nhà máy ngân khố tin tức tuần qua bản tin kinh tế mới nhất".split(" ");
   let r = 3;
   const pick = () => words[(r = (r * 48271) % 2147483647) % words.length];
-  const cols = [];
-  for (let c = 0; c < 6; c++) {
-    let txt = "";
-    for (let k = 0; k < 260; k++) txt += pick() + " ";
-    cols.push(`<div class="ncol"><b>${pick().toUpperCase()} ${pick().toUpperCase()}</b>${txt}</div>`);
+  const colW = 290, gap = 34, lh = 26;
+  let svg = "";
+  for (let c = 0; c < 7; c++) {
+    const x = 20 + c * (colW + gap);
+    svg += `<text x='${x}' y='70' font-family='serif' font-weight='700' font-size='46' textLength='${colW}' lengthAdjust='spacingAndGlyphs'>${pick().toUpperCase()} ${pick().toUpperCase()}</text>`;
+    for (let y = 120; y < 1160; y += lh) {
+      let line = "";
+      while (line.length < 34) line += pick() + " ";
+      svg += `<text x='${x}' y='${y}' font-family='serif' font-size='19' textLength='${colW}' lengthAdjust='spacingAndGlyphs'>${line.trim()}</text>`;
+    }
   }
-  NEWS = cols.join("");
+  NEWS = `url("data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='2300' height='1180'><g fill='rgba(40,35,28,0.17)'>${svg}</g></svg>`)}")`;
 }
-for (let i = 0; i < sections.length; i++) sections[i] = sections[i].replace("@@NEWS@@", NEWS);
+
 
 const audioTags = [];
 if (timings.audio) audioTags.push(`<audio id="voiceover" src="${timings.audio}" data-start="0" data-duration="${f(timings.duration)}" data-track-index="2" data-volume="1"></audio>`);
@@ -314,8 +320,7 @@ html, body { width: ${W}px; height: ${H}px; overflow: hidden; background: ${P.in
 .bg-kraft .cam { background: ${fiber}, ${noise}, #CDB383; }
 .bg-dark .cam { background: ${noise}, radial-gradient(circle at 50% 40%, #3A352E, #191714 75%); }
 .bg-grid .cam { background: linear-gradient(rgba(70,110,150,.18) 2px, transparent 2px) 0 0/60px 60px, linear-gradient(90deg, rgba(70,110,150,.18) 2px, transparent 2px) 0 0/60px 60px, ${noise}, #F3EEDF; }
-.newsprint { position: absolute; inset: -40px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 34px; padding: 40px; font-family: "Old Standard"; font-size: 19px; line-height: 1.35; color: rgba(40,35,28,.16); text-align: justify; overflow: hidden; }
-.newsprint b { display: block; font-size: 44px; line-height: 1.05; margin-bottom: 14px; color: rgba(40,35,28,.2); }
+.newsprint { position: absolute; left: -40px; top: -40px; width: 2300px; height: 1180px; background: ${NEWS} no-repeat; }
 .pc { position: absolute; filter: drop-shadow(5px 8px 0 rgba(20,16,10,.28)); }
 .pc svg { display: block; width: 100%; height: auto; }
 .scrap-in { width: 100%; background-image: ${noise}; }

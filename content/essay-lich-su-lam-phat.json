@@ -15,12 +15,12 @@
     "voice": "Kore",
     "chunked": true,
     "chunkChars": 700,
-    "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally with a measured, slightly slower pace and a warm, curious tone. Let dates and numbers land clearly, pause briefly after short dramatic sentences, and never sound like you are reading a list."
+    "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
   },
   "scenes": [
     {
       "id": "s01",
-      "text": "Năm một nghìn chín trăm hai mươi ba. Nước Đức. Một người phụ nữ nhóm lò sưởi bằng tiền giấy.",
+      "text": "Nước Đức, năm một nghìn chín trăm hai mươi ba. Một người phụ nữ nhóm lò bằng tiền giấy.",
       "visual": {
         "bg": "news",
         "pieces": [
@@ -32,7 +32,8 @@
             "h": 800,
             "tone": "tan",
             "rot": 2.5,
-            "lines": true
+            "lines": true,
+            "at": 0.12
           },
           {
             "kind": "art",
@@ -40,7 +41,8 @@
             "x": 1170,
             "y": 180,
             "w": 380,
-            "rot": 1
+            "rot": 1,
+            "at": 0.3
           },
           {
             "kind": "art",
@@ -51,6 +53,7 @@
             "rot": -9,
             "t": "1000",
             "sub": "MARK",
+            "at": 0.55,
             "from": "left"
           },
           {
@@ -61,16 +64,8 @@
             "w": 150,
             "rot": -3,
             "enter": "drop",
+            "at": 0.72,
             "from": "bottom"
-          },
-          {
-            "kind": "label",
-            "text": "1923",
-            "x": 150,
-            "y": 230,
-            "size": 170,
-            "tone": "red",
-            "rot": -3
           },
           {
             "kind": "label",
@@ -79,14 +74,26 @@
             "y": 470,
             "size": 70,
             "tone": "mustard",
-            "rot": 2
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "1923",
+            "x": 150,
+            "y": 230,
+            "size": 170,
+            "tone": "red",
+            "rot": -3,
+            "at": 0.08
           },
           {
             "kind": "tape",
             "x": 1080,
             "y": 110,
             "w": 200,
-            "rot": -24
+            "rot": -24,
+            "at": 0.2
           }
         ]
       }
@@ -159,7 +166,7 @@
     },
     {
       "id": "s03",
-      "text": "Năm một nghìn chín trăm mười tám, một ổ bánh mì giá chưa tới một mác. Cuối năm một nghìn chín trăm hai mươi ba, giá đã lên tới hàng tỷ mác.",
+      "text": "Năm một nghìn chín trăm mười tám, một ổ bánh mì chưa tới một mác. Năm năm sau, nó giá hàng tỷ mác.",
       "visual": {
         "bg": "news",
         "pieces": [
@@ -200,7 +207,7 @@
             "size": 96,
             "tone": "red",
             "rot": 3,
-            "at": 0.55
+            "at": 0.5
           },
           {
             "kind": "type",
@@ -258,10 +265,10 @@
           },
           {
             "kind": "counter",
-            "x": 840,
-            "y": 380,
-            "w": 1000,
-            "size": 118,
+            "x": 800,
+            "y": 390,
+            "w": 1060,
+            "size": 100,
             "rot": -1,
             "at": 0.3,
             "values": [
@@ -406,7 +413,7 @@
     },
     {
       "id": "s07",
-      "text": "Rồi các hoàng đế cần thêm tiền trả quân lính, và pha đồng vào bạc.",
+      "text": "Rồi các hoàng đế pha dần đồng vào bạc, để có thêm tiền trả quân lính.",
       "visual": {
         "bg": "kraft",
         "pieces": [
@@ -478,7 +485,7 @@
     },
     {
       "id": "s08",
-      "text": "Đến năm hai trăm sáu mươi tám, mỗi đồng chỉ còn khoảng năm phần trăm bạc. Tiền nhiều lên, giá cả cũng leo thang.",
+      "text": "Đến năm hai trăm sáu mươi tám, mỗi đồng chỉ còn chừng năm phần trăm bạc. Và giá cả leo thang.",
       "visual": {
         "bg": "news",
         "pieces": [
@@ -565,7 +572,7 @@
     },
     {
       "id": "s09",
-      "text": "Ngày mười bốn tháng chín năm một nghìn chín trăm tám mươi lăm, Việt Nam đổi tiền: mười đồng cũ lấy một đồng mới.",
+      "text": "Việt Nam, tháng chín năm một nghìn chín trăm tám mươi lăm: đổi tiền, mười đồng cũ lấy một đồng mới.",
       "visual": {
         "bg": "kraft",
         "pieces": [
@@ -634,7 +641,7 @@
     },
     {
       "id": "s10",
-      "text": "Năm một nghìn chín trăm tám mươi sáu, lạm phát lên hơn bảy trăm phần trăm.",
+      "text": "Năm sau đó, lạm phát vượt bảy trăm phần trăm.",
       "visual": {
         "bg": "dark",
         "pieces": [
@@ -688,7 +695,7 @@
     },
     {
       "id": "s11",
-      "text": "Ba thời đại, ba đồng tiền, cùng một điểm chung: lượng tiền tăng nhanh hơn lượng hàng hoá.",
+      "text": "Ba thời đại, một điểm chung: tiền tăng nhanh hơn hàng hoá.",
       "visual": {
         "bg": "grid",
         "pieces": [
@@ -776,7 +783,7 @@
     },
     {
       "id": "s12",
-      "text": "Các nhà kinh tế gọi đó là lạm phát: mặt bằng giá chung tăng liên tục, và mỗi đồng tiền mua được ít hơn.",
+      "text": "Đó là lạm phát: mặt bằng giá chung tăng liên tục, và mỗi đồng tiền mua được ít hơn.",
       "visual": {
         "bg": "news",
         "pieces": [
@@ -830,7 +837,7 @@
     },
     {
       "id": "s13",
-      "text": "Lạm phát thấp và ổn định là điều bình thường. Ngày nay, nó được đo hằng tháng bằng chỉ số giá tiêu dùng, CPI.",
+      "text": "Lạm phát thấp và ổn định là bình thường. Ngày nay, nó được đo hằng tháng bằng chỉ số CPI.",
       "visual": {
         "bg": "kraft",
         "pieces": [
@@ -951,7 +958,7 @@
     },
     {
       "id": "s15",
-      "text": "Muốn biết cách đọc chỉ số CPI, hãy đọc bài viết bên dưới video.",
+      "text": "Cách đọc chỉ số CPI, mời bạn xem bài viết bên dưới video.",
       "visual": {
         "bg": "dark",
         "zoom": 1.02,
