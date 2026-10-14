@@ -127,6 +127,16 @@ for (const file of files) {
     failed++;
     continue;
   }
+  // Bản nghe (chỉ âm thanh) để duyệt lời và nhạc trước khi dựng hình: không render video.
+  if (content.audioOnly && fs.existsSync(path.join(buildDir, "mix.wav"))) {
+    const mp3 = path.resolve("out", `${id}.mp3`);
+    step("audio", run("ffmpeg", ["-y", "-v", "error", "-i", path.join(buildDir, "mix.wav"), "-c:a", "libmp3lame", "-b:a", "160k", mp3]));
+    status.ok = true;
+    status.output = { file: `out/${id}.mp3` };
+    status.finishedAt = new Date().toISOString();
+    save();
+    continue;
+  }
   const projDir = path.join(buildDir, "video-16x9");
   // Kiểm tra lint/layout của HyperFrames: ghi lại kết quả nhưng không chặn render.
   const check = run("npx", ["hyperframes", "check"], { cwd: projDir });

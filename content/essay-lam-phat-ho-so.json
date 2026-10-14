@@ -1,0 +1,565 @@
+{
+  "id": "essay-lam-phat-ho-so",
+  "format": "essay",
+  "arc": "timeline",
+  "audioOnly": true,
+  "title": "Lạm phát: hồ sơ một kẻ trộm thầm lặng",
+  "series": "· LỊCH SỬ TIỀN TỆ",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/lam-phat-va-cpi/",
+  "sources": [
+    "La Mã: NGC Ancients — Augustus ~98% bạc; năm 268 ≤5%. Sắc lệnh giá tối đa của Diocletian năm 301.",
+    "Nhà Tống: Wikipedia, Jiaozi (currency) — giao tử do nhà nước phát hành năm 1024; mất giá vì in vượt bảo chứng.",
+    "Cách mạng giá cả: Wikipedia, Price revolution — giá tăng khoảng sáu lần trong ~150 năm (khoảng 1520–1640), bạc châu Mỹ là nguyên nhân chính được nhắc nhiều nhất.",
+    "Đức 1923: Alpha History — 1 USD ≈ 48.000 mác (tháng 1) → ≈ 4.200 tỷ mác (tháng 11); bánh mì 0,25 mác năm 1918. Wikipedia, Rentenmark — 15/11/1923, 1 Rentenmark = 1.000 tỷ mác giấy.",
+    "Việt Nam: Tạp chí Công Thương — đổi tiền 14/9/1985, 10:1. Tạp chí Ngân hàng — lạm phát 1986 ~774,7%, năm 1989 còn ~35%, chính sách lãi suất thực dương."
+  ],
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Laomedeia",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are an energetic, charismatic Vietnamese YouTube edutainment host. Speak Vietnamese with a bright, smiling, upbeat tone and a brisk, punchy pace. Sound genuinely curious on questions, excited on surprising facts, keep a lively rhythm and short pauses. Never sound like a news anchor or a slow documentary narrator."
+  },
+  "music": {
+    "seed": 23,
+    "prompt": "Bright indie pop explainer track: ukulele strums, glockenspiel, upbeat drums with claps, subtle whistle-like synth lead, happy and energetic, 120 BPM, instrumental",
+    "negative": "vocals, singing, lyrics, choir, dark, sad, slow, cinematic trailer, heavy distortion",
+    "volume": 1.1
+  },
+  "duck": {
+    "ratio": 5,
+    "threshold": 0.03,
+    "release": 600
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Bạn có để ý không? Tờ năm mươi nghìn trong ví bạn vẫn y nguyên, nhưng năm nào nó cũng mua được ít đi một chút.",
+      "visual": {
+        "chapter": "Mở đầu",
+        "note": "tờ 50.000đ cắt dán, giỏ hàng vơi dần"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Không ai móc túi bạn cả. Vậy phần giá trị đó đã biến đi đâu?",
+      "visual": {
+        "chapter": "Mở đầu",
+        "note": "chiếc ví mở, dấu hỏi đỏ"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Thủ phạm có một cái tên: lạm phát. Và nó không hề mới.",
+      "visual": {
+        "chapter": "Mở đầu",
+        "note": "hồ sơ truy nã: LẠM PHÁT"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Nó từng khiến đồng bạc của đế chế La Mã gần như chẳng còn bạc, và khiến người Đức đem tiền giấy đi nhóm bếp.",
+      "visual": {
+        "chapter": "Mở đầu",
+        "note": "chớp nhanh: đồng xu mờ dần, lò sưởi + bó tiền"
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Trong vài phút tới, mình sẽ mở hồ sơ của kẻ trộm này qua hai nghìn năm, xem nó ra tay thế nào, và vì sao đến giờ nó vẫn ở quanh ta.",
+      "visual": {
+        "chapter": "Mở đầu",
+        "note": "bảng ghim hồ sơ trống, 5 ô chờ"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Lạm phát: hồ sơ một kẻ trộm thầm lặng.",
+      "visual": {
+        "chapter": "Tiêu đề",
+        "note": "thẻ tiêu đề cắt dán + DSC Academy"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Hồ sơ số một. La Mã, khoảng hai nghìn năm trước.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "thẻ chương HỒ SƠ 01 · LA MÃ"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Thời hoàng đế Augustus, đồng denarius gần như là bạc nguyên chất. Người ta tin nó, vì giá trị nằm ngay trong kim loại.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "đồng denarius ~98% bạc"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Nhưng đế chế ngày càng tốn kém. Quân đội cần trả lương, chiến tranh cần tiền.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "mũ lính, túi tiền vơi"
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Các hoàng đế nghĩ ra một cách: pha thêm đồng vào bạc. Cùng một lượng bạc, đúc được nhiều đồng tiền hơn.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "nồi nấu kim loại, đồng xu nhân bản"
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Đến năm hai trăm sáu mươi tám, mỗi đồng chỉ còn chừng năm phần trăm bạc.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "3 đồng xu 98% → 15% → ≤5%"
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Người bán hàng đâu có ngốc. Tiền kém giá trị đi, họ tăng giá lên.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "bảng giá ở chợ, số nhảy lên"
+      }
+    },
+    {
+      "id": "s13",
+      "text": "Năm ba trăm lẻ một, hoàng đế Diocletian ra sắc lệnh ấn định giá tối đa cho hơn một nghìn mặt hàng.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "cuộn sắc lệnh, con dấu GIÁ TỐI ĐA"
+      }
+    },
+    {
+      "id": "s14",
+      "text": "Kết quả? Hàng hoá biến khỏi chợ, chợ đen mọc lên, và sắc lệnh sớm bị phớt lờ.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "kệ hàng trống, dấu X đỏ"
+      }
+    },
+    {
+      "id": "s15",
+      "text": "Manh mối thứ nhất được ghim lên bảng: khi tiền bị pha loãng, giá sẽ tăng. Và cấm tăng giá thì không chữa được bệnh.",
+      "visual": {
+        "chapter": "Hồ sơ 1 · La Mã",
+        "note": "ghim thẻ manh mối 1 lên bảng dây đỏ"
+      }
+    },
+    {
+      "id": "s16",
+      "text": "Hồ sơ số hai. Trung Hoa, thế kỷ mười một.",
+      "visual": {
+        "chapter": "Hồ sơ 2 · Nhà Tống",
+        "note": "thẻ chương HỒ SƠ 02 · NHÀ TỐNG"
+      }
+    },
+    {
+      "id": "s17",
+      "text": "Năm một nghìn không trăm hai mươi tư, nhà Tống phát hành giao tử, một trong những loại tiền giấy do nhà nước phát hành sớm nhất thế giới.",
+      "visual": {
+        "chapter": "Hồ sơ 2 · Nhà Tống",
+        "note": "tờ tiền giấy cổ phương Đông (hoạ tiết chung, không chép bản thật)"
+      }
+    },
+    {
+      "id": "s18",
+      "text": "Tiền giấy tiện hơn hẳn. Không ai phải khuân những xâu tiền sắt nặng trịch đi chợ nữa.",
+      "visual": {
+        "chapter": "Hồ sơ 2 · Nhà Tống",
+        "note": "xâu tiền sắt nặng ↔ tờ giấy nhẹ"
+      }
+    },
+    {
+      "id": "s19",
+      "text": "Nhưng tờ giấy chỉ có giá trị khi người ta tin nó đổi được ra tiền thật. Mà in giấy thì quá dễ.",
+      "visual": {
+        "chapter": "Hồ sơ 2 · Nhà Tống",
+        "note": "máy in khắc gỗ, giấy nhân bản"
+      }
+    },
+    {
+      "id": "s20",
+      "text": "Triều đình in ngày càng nhiều, vượt xa lượng tiền kim loại dự trữ để bảo chứng.",
+      "visual": {
+        "chapter": "Hồ sơ 2 · Nhà Tống",
+        "note": "cán cân: chồng giấy cao ↔ ít xu"
+      }
+    },
+    {
+      "id": "s21",
+      "text": "Tờ giấy mất giá dần, có lúc chỉ còn đổi được một phần nhỏ so với mệnh giá ghi trên đó.",
+      "visual": {
+        "chapter": "Hồ sơ 2 · Nhà Tống",
+        "note": "tờ tiền bị xé nhỏ dần"
+      }
+    },
+    {
+      "id": "s22",
+      "text": "Manh mối thứ hai: kẻ trộm thích nhất là lúc in tiền trở nên quá dễ dàng.",
+      "visual": {
+        "chapter": "Hồ sơ 2 · Nhà Tống",
+        "note": "ghim manh mối 2"
+      }
+    },
+    {
+      "id": "s23",
+      "text": "Hồ sơ số ba. Tây Ban Nha, thế kỷ mười sáu.",
+      "visual": {
+        "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
+        "note": "thẻ chương HỒ SƠ 03 · TÂY BAN NHA"
+      }
+    },
+    {
+      "id": "s24",
+      "text": "Lần này, chẳng ai in tiền cả. Những đoàn tàu chở bạc từ các mỏ ở châu Mỹ cập bến châu Âu.",
+      "visual": {
+        "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
+        "note": "bản đồ hai lục địa, tàu buồm, dây đỏ"
+      }
+    },
+    {
+      "id": "s25",
+      "text": "Nghe thì giống trúng số. Nhưng lượng hàng hoá thì không tăng nhanh như thế.",
+      "visual": {
+        "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
+        "note": "rương bạc ↔ giỏ hàng nhỏ"
+      }
+    },
+    {
+      "id": "s26",
+      "text": "Trong khoảng một trăm năm mươi năm, giá cả ở châu Âu tăng khoảng sáu lần. Các sử gia gọi đó là cuộc cách mạng giá cả.",
+      "visual": {
+        "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
+        "note": "biểu đồ giá đi lên, nhãn CÁCH MẠNG GIÁ CẢ"
+      }
+    },
+    {
+      "id": "s27",
+      "text": "Manh mối thứ ba: ngay cả tiền thật, nếu đổ vào quá nhiều so với hàng hoá, cũng đẩy giá cả leo thang.",
+      "visual": {
+        "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
+        "note": "ghim manh mối 3"
+      }
+    },
+    {
+      "id": "s28",
+      "text": "Hồ sơ số bốn. Nước Đức, năm một nghìn chín trăm hai mươi ba. Vụ án nổi tiếng nhất.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "thẻ chương HỒ SƠ 04 · ĐỨC 1923"
+      }
+    },
+    {
+      "id": "s29",
+      "text": "Thua trận sau Thế chiến thứ nhất, nước Đức gánh một khoản bồi thường chiến tranh khổng lồ.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "hoá đơn bồi thường dài lê thê"
+      }
+    },
+    {
+      "id": "s30",
+      "text": "Đầu năm đó, Pháp và Bỉ chiếm vùng công nghiệp Ruhr. Công nhân đình công, nhà máy ngừng chạy.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "ống khói tắt, con dấu ĐÌNH CÔNG"
+      }
+    },
+    {
+      "id": "s31",
+      "text": "Chính phủ trả lương cho người đình công bằng cách nào? In thêm tiền.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "máy in tiền chạy hết công suất"
+      }
+    },
+    {
+      "id": "s32",
+      "text": "Tháng một, một đô la Mỹ đổi khoảng bốn mươi tám nghìn mác. Đến tháng mười một, con số đó là khoảng bốn nghìn hai trăm tỷ mác.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "bộ đếm 48.000 → 4.200.000.000.000"
+      }
+    },
+    {
+      "id": "s33",
+      "text": "Giá cả thay đổi theo từng giờ. Có nơi trả lương hai lần một ngày, để người ta kịp chạy đi mua hàng trước khi giá lại tăng.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "đồng hồ quay nhanh, tem giá dán chồng"
+      }
+    },
+    {
+      "id": "s34",
+      "text": "Một ổ bánh mì năm một nghìn chín trăm mười tám chưa tới một mác. Năm năm sau, nó có giá hàng tỷ mác.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "ổ bánh mì, hai thẻ giá nối dây đỏ"
+      }
+    },
+    {
+      "id": "s35",
+      "text": "Và có người dùng tiền giấy để nhóm bếp, vì đốt tiền còn rẻ hơn mua củi.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "lò sưởi + bó tiền + bó củi"
+      }
+    },
+    {
+      "id": "s36",
+      "text": "Tháng mười một năm đó, nước Đức phát hành đồng tiền mới. Một mác mới đổi một nghìn tỷ mác cũ, và lượng tiền mới được giới hạn chặt chẽ.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "đồng tiền mới, nhãn 1 = 1.000.000.000.000"
+      }
+    },
+    {
+      "id": "s37",
+      "text": "Cơn sốt giá dừng lại gần như ngay lập tức.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "biểu đồ giá đứng lại"
+      }
+    },
+    {
+      "id": "s38",
+      "text": "Manh mối thứ tư: muốn bắt kẻ trộm, phải khoá chặt máy in tiền, và lấy lại niềm tin vào đồng tiền.",
+      "visual": {
+        "chapter": "Hồ sơ 4 · Đức 1923",
+        "note": "ổ khoá trên máy in, ghim manh mối 4"
+      }
+    },
+    {
+      "id": "s39",
+      "text": "Hồ sơ số năm. Lần này rất gần chúng ta: Việt Nam, những năm tám mươi.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "thẻ chương HỒ SƠ 05 · VIỆT NAM"
+      }
+    },
+    {
+      "id": "s40",
+      "text": "Tháng chín năm một nghìn chín trăm tám mươi lăm, Việt Nam đổi tiền, mười đồng cũ lấy một đồng mới, cùng lúc điều chỉnh giá và lương.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "lịch 14/9/1985, tờ 10 đồng cũ → 1 đồng mới"
+      }
+    },
+    {
+      "id": "s41",
+      "text": "Nhưng thâm hụt ngân sách vẫn được bù bằng cách phát hành thêm tiền.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "sổ ngân sách đỏ, máy in"
+      }
+    },
+    {
+      "id": "s42",
+      "text": "Năm một nghìn chín trăm tám mươi sáu, lạm phát vượt bảy trăm phần trăm. Giá cả tăng gấp nhiều lần chỉ trong một năm.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "tem phiếu, bộ đếm > 700%"
+      }
+    },
+    {
+      "id": "s43",
+      "text": "Bước ngoặt đến vào năm một nghìn chín trăm tám mươi chín. Lãi suất tiết kiệm được nâng lên cao hơn tốc độ tăng giá.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "cán cân lãi suất > lạm phát"
+      }
+    },
+    {
+      "id": "s44",
+      "text": "Gửi tiền vào ngân hàng giờ giữ được giá trị. Tiền chảy ngược về ngân hàng, thay vì đổ vào tích trữ hàng hoá.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "mũi tên tiền chảy về ngân hàng"
+      }
+    },
+    {
+      "id": "s45",
+      "text": "Cùng với việc siết chi tiêu và tín dụng, lạm phát năm đó giảm xuống còn khoảng ba mươi lăm phần trăm.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "biểu đồ 1986 → 1989 lao xuống"
+      }
+    },
+    {
+      "id": "s46",
+      "text": "Manh mối thứ năm: khi lãi suất cao hơn lạm phát, người ta lại muốn giữ tiền, và kẻ trộm mất chỗ trốn.",
+      "visual": {
+        "chapter": "Hồ sơ 5 · Việt Nam",
+        "note": "ghim manh mối 5"
+      }
+    },
+    {
+      "id": "s47",
+      "text": "Giờ hãy nhìn lên bảng. Năm vụ án, năm thời đại. Bạn có thấy điểm chung không?",
+      "visual": {
+        "chapter": "Phá án",
+        "note": "toàn cảnh bảng ghim 5 hồ sơ, dây đỏ"
+      }
+    },
+    {
+      "id": "s48",
+      "text": "Pha loãng đồng tiền, in tiền giấy, bạc tràn về, in tiền trả nợ, in tiền bù ngân sách. Tất cả đều là một chuyện: lượng tiền tăng nhanh hơn lượng hàng hoá.",
+      "visual": {
+        "chapter": "Phá án",
+        "note": "5 sợi dây đỏ chụm vào thẻ trung tâm"
+      }
+    },
+    {
+      "id": "s49",
+      "text": "Hãy hình dung nền kinh tế là một khu chợ. Hàng hoá vẫn chừng đó, nhưng tiền trong tay mọi người tăng gấp đôi. Giá sẽ phải đi lên.",
+      "visual": {
+        "chapter": "Phá án",
+        "note": "khu chợ: hàng giữ nguyên, tiền nhân đôi"
+      }
+    },
+    {
+      "id": "s50",
+      "text": "Các nhà kinh tế gọi đó là lạm phát do cầu kéo: tiền và nhu cầu tăng nhanh hơn khả năng sản xuất.",
+      "visual": {
+        "chapter": "Phá án",
+        "note": "nhãn CẦU KÉO"
+      }
+    },
+    {
+      "id": "s51",
+      "text": "Kẻ trộm còn có một đồng phạm: lạm phát do chi phí đẩy. Khi xăng dầu, nguyên liệu hay tiền lương tăng, doanh nghiệp đẩy phần chi phí đó vào giá bán.",
+      "visual": {
+        "chapter": "Phá án",
+        "note": "nhãn CHI PHÍ ĐẨY, can xăng, bao nguyên liệu"
+      }
+    },
+    {
+      "id": "s52",
+      "text": "Và đây là định nghĩa chính thức: lạm phát là khi mặt bằng giá chung tăng liên tục, khiến mỗi đồng tiền mua được ít hơn.",
+      "visual": {
+        "chapter": "Phá án",
+        "note": "định nghĩa đánh máy, tĩnh"
+      }
+    },
+    {
+      "id": "s53",
+      "text": "Nhưng khoan đã. Nếu không có lạm phát thì thế giới có tốt hơn không?",
+      "visual": {
+        "chapter": "Bất ngờ",
+        "note": "dấu hỏi lớn"
+      }
+    },
+    {
+      "id": "s54",
+      "text": "Không hẳn. Khi giá cả giảm kéo dài, gọi là giảm phát, người ta trì hoãn mua sắm để chờ rẻ hơn. Doanh nghiệp bán chậm, cắt giảm sản xuất, và kinh tế có thể trì trệ.",
+      "visual": {
+        "chapter": "Bất ngờ",
+        "note": "vòng xoáy giảm phát"
+      }
+    },
+    {
+      "id": "s55",
+      "text": "Vì vậy, nhiều ngân hàng trung ương không nhắm tới lạm phát bằng không, mà muốn nó thấp và ổn định, như một dòng chảy chậm và đều.",
+      "visual": {
+        "chapter": "Bất ngờ",
+        "note": "nhiệt kế giá: vùng xanh thấp ổn định"
+      }
+    },
+    {
+      "id": "s56",
+      "text": "Kẻ trộm chỉ thật sự đáng sợ khi nó chạy quá nhanh, hoặc quá khó đoán.",
+      "visual": {
+        "chapter": "Bất ngờ",
+        "note": "nhiệt kế vượt vạch đỏ"
+      }
+    },
+    {
+      "id": "s57",
+      "text": "Vậy ngày nay, ta theo dõi kẻ trộm này thế nào? Bằng chỉ số giá tiêu dùng, gọi tắt là CPI.",
+      "visual": {
+        "chapter": "Theo dõi",
+        "note": "kính lúp soi giỏ hàng, nhãn CPI"
+      }
+    },
+    {
+      "id": "s58",
+      "text": "Ở Việt Nam, CPI theo dõi giá của một giỏ gồm mười một nhóm hàng hoá và dịch vụ mà các gia đình thường mua, từ ăn uống, nhà ở, đến đi lại, giáo dục và y tế.",
+      "visual": {
+        "chapter": "Theo dõi",
+        "note": "11 thẻ nhóm hàng"
+      }
+    },
+    {
+      "id": "s59",
+      "text": "Mỗi tháng, Cục Thống kê công bố CPI. Đó là bản tin hằng tháng về dấu vết của kẻ trộm.",
+      "visual": {
+        "chapter": "Theo dõi",
+        "note": "lịch tháng, con dấu CPI"
+      }
+    },
+    {
+      "id": "s60",
+      "text": "Còn với tiền của bạn, có một con số đáng nhớ: lợi suất thực, bằng lãi suất trừ đi lạm phát.",
+      "visual": {
+        "chapter": "Tiền của bạn",
+        "note": "phép tính LÃI SUẤT − LẠM PHÁT = LỢI SUẤT THỰC"
+      }
+    },
+    {
+      "id": "s61",
+      "text": "Ví dụ giả định: bạn gửi tiết kiệm với lãi suất năm phần trăm một năm, còn lạm phát là bốn phần trăm. Sức mua của bạn chỉ tăng khoảng một phần trăm.",
+      "visual": {
+        "chapter": "Tiền của bạn",
+        "note": "ống heo, 5% − 4% ≈ 1% (giả định)"
+      }
+    },
+    {
+      "id": "s62",
+      "text": "Nếu lạm phát lên sáu phần trăm, lợi suất thực thành âm. Tiền trong sổ vẫn nhiều lên, nhưng mua được ít đi.",
+      "visual": {
+        "chapter": "Tiền của bạn",
+        "note": "5% − 6% = −1%, ống heo nứt"
+      }
+    },
+    {
+      "id": "s63",
+      "text": "Đó là lý do người làm đầu tư luôn nhìn lạm phát trước, rồi mới nhìn tới lãi suất hay lợi nhuận.",
+      "visual": {
+        "chapter": "Tiền của bạn",
+        "note": "kính lúp: LẠM PHÁT trước"
+      }
+    },
+    {
+      "id": "s64",
+      "text": "Quay lại tờ năm mươi nghìn trong ví bạn. Nó vẫn y nguyên.",
+      "visual": {
+        "chapter": "Kết",
+        "note": "tờ 50.000đ như cảnh mở đầu"
+      }
+    },
+    {
+      "id": "s65",
+      "text": "Nhưng giờ bạn đã biết ai lấy đi một phần giá trị của nó, lấy bằng cách nào, và cách lần theo dấu vết của kẻ trộm ấy.",
+      "visual": {
+        "chapter": "Kết",
+        "note": "bảng hồ sơ đầy đủ, con dấu ĐÃ PHÁ ÁN"
+      }
+    },
+    {
+      "id": "s66",
+      "text": "Muốn đọc chỉ số CPI cho đúng, hãy xem bài viết bên dưới video nhé.",
+      "visual": {
+        "chapter": "Kết",
+        "note": "CTA + lưu ý pháp lý"
+      }
+    }
+  ]
+}

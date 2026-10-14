@@ -369,6 +369,7 @@ if (hasFfmpeg()) {
     total: TOTAL,
     musicVol: content.music?.volume ?? 1.5,
     sfxVol: content.sfxVolume ?? 1,
+    duck: content.duck || {},
     out: path.join(buildDir, "mix.wav"),
   });
   audioTags.push(`<audio id="mix" src="mix.wav" data-start="0" data-duration="${f(TOTAL)}" data-track-index="2" data-volume="1"></audio>`);
