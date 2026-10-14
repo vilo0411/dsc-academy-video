@@ -50,7 +50,10 @@ Trên máy: `npm run tts -- content/<file>.json` (cần `GEMINI_API_KEY`), `npm 
 
 Kịch bản đặt `"format": "essay"` → CI dựng bằng `scripts/build-essay.mjs` (không có nhân vật An). Mẫu: `content/essay-lich-su-lam-phat.json`.
 
-- Lời dẫn kể chuyện lịch sử, mở đầu bằng ngày tháng + địa điểm + một chi tiết nhỏ; mỗi cảnh một ý hình ảnh; dữ kiện phải có nguồn (ghi vào `sources`).
+- **Đọc `docs/essay-guide.md` trước khi viết**: chọn `arc` (timeline, hook_payoff, myth_buster, how_it_works, man_in_hole, three_act), câu móc trong 3 giây đầu, hình đổi ít nhất mỗi 3–5 giây, bảng độ dài theo số âm tiết.
+- Lời dẫn kể chuyện, mở đầu bằng ngày tháng + địa điểm + một chi tiết nhỏ; mỗi cảnh một ý hình ảnh; dữ kiện phải có nguồn (ghi vào `sources`).
+- `visual.camera`: push_in, pull_out, pan_left, pan_right, tilt_up, tilt_down, parallax, static (không hai cảnh liền nhau cùng kiểu; static cho câu chốt). `visual.cuts[]` {at, x, y, zoom}: cắt từ toàn cảnh vào chi tiết. Mảnh `fly` (name, w, path[[x,y],[x,y]], dur, spin): vật bay ngang khung, chỉ dùng ở nhịp then chốt.
+- Sau khi dựng, xem `⚠ Nhịp` trong log hoặc `build/<id>/pacing.json` (cảnh đứng yên quá 5 giây, trùng kiểu máy quay, mở đầu chậm).
 - `visual.bg`: news, kraft, dark, grid. `visual.pieces[]` vào khung theo thứ tự (hoặc theo `at` 0–1 trong phần lời):
   `scrap` (x,y,w,h,tone), `art` (name: banknote, bundle, stove, flame, logs, bread, coin, helmet, scale, ticket, basket, bowl, calendar; t, sub, tone), `label` (text,size,tone: red/mustard/ink/cream), `type` (chữ đánh máy), `stamp`, `tape`, `counter` (values[]), `chart` (points, band, caption).
 - `visual.strings[]` (dây đỏ: from, to, sag, at), `visual.marks[]` (nét bút đỏ: circle hoặc line).

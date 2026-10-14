@@ -61,7 +61,7 @@ const sfxEvents = []; // { t, kind, gain?, dur? } — xem scripts/lib/sound.mjs
 function piece(pc, id, sid) {
   const rot = pc.rot ?? 0;
   const box = (inner, extra = "") =>
-    `<div class="pc ${pc.kind}" id="${id}" style="left:${pc.x}px;top:${pc.y}px;${pc.w ? `width:${pc.w}px;` : ""}${extra}">${inner}</div>`;
+    `<div class="pw" id="${id}-w" style="left:${pc.x}px;top:${pc.y}px;${pc.w ? `width:${pc.w}px;` : ""}"><div class="pc ${pc.kind}" id="${id}" style="${extra}">${inner}</div></div>`;
   switch (pc.kind) {
     case "scrap": {
       const tone = TONES[pc.tone || "tan"];
@@ -69,6 +69,8 @@ function piece(pc, id, sid) {
     }
     case "art":
       return { html: box(artSVG(pc.name, pc)), rot, enter: pc.enter || "slide", sfx: "drop" };
+    case "fly": // vật thể bay ngang khung (dùng cho một nhịp then chốt, không lạm dụng)
+      return { html: box(artSVG(pc.name, pc)), rot, enter: "fly", sfx: "whoosh" };
     case "label": {
       const bg = TONES[pc.tone || "red"], fg = pc.tone === "mustard" || pc.tone === "cream" || pc.tone === "white" ? P.ink : P.cream;
       return { html: box(`<div class="lab-in" style="background:${bg};color:${fg};font-size:${pc.size || 72}px;clip-path:${torn(1.6, 10)}">${esc(pc.text)}</div>`), rot, enter: "drop", sfx: "drop" };
@@ -140,7 +142,45 @@ function overlay(v, sid) {
   return { svg: parts.length ? `<svg class="ov" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${parts.join("")}</svg>` : "", anims };
 }
 
+// ---------- Máy quay ----------
+// Chỉ dùng chuyển động phẳng an toàn (phóng to/thu nhỏ đều, trượt ngang/dọc, parallax).
+// Không hai cảnh liền nhau cùng một kiểu; "static" dành cho câu chốt.
+const MOVES = {
+  static: [{ s: 1.0 }, { s: 1.012 }],
+  push_in: [{ s: 1.0 }, { s: 1.06 }],
+  pull_out: [{ s: 1.09 }, { s: 1.0 }],
+  pan_left: [{ s: 1.08, dx: 60 }, { s: 1.08, dx: -60 }],
+  pan_right: [{ s: 1.08, dx: -60 }, { s: 1.08, dx: 60 }],
+  tilt_up: [{ s: 1.08, dy: -36 }, { s: 1.08, dy: 36 }],
+  tilt_down: [{ s: 1.08, dy: 36 }, { s: 1.08, dy: -36 }],
+  parallax: [{ s: 1.035 }, { s: 1.035 }],
+};
+const AUTO = ["push_in", "pan_left", "parallax", "pull_out", "tilt_up", "pan_right"];
+function camState({ s, f: focus, dx = 0, dy = 0 }) {
+  const [fx, fy] = focus || [W / 2, H * 0.46];
+  const clamp = (v, lo) => Math.min(0, Math.max(lo, v));
+  const x = clamp(W / 2 - fx * s + dx, W - W * s), y = clamp(H / 2 - fy * s + dy, H - H * s);
+  return { scale: +s.toFixed(4), x: +x.toFixed(1), y: +y.toFixed(1), transformOrigin: "0px 0px" };
+}
+const camPlan = [];
+function cameraOf(i) {
+  const n = content.scenes.length;
+  let m = content.scenes[i].visual.camera;
+  if (!m) {
+    if (i === n - 1) m = "static";
+    else {
+      let k = i % AUTO.length;
+      m = AUTO[k];
+      if (m === camPlan[i - 1]) m = AUTO[(k + 1) % AUTO.length];
+    }
+  }
+  if (!MOVES[m]) throw new Error(`Kiểu máy quay "${m}" không hợp lệ (cảnh ${content.scenes[i].id}). Dùng: ${Object.keys(MOVES).join(", ")}`);
+  camPlan[i] = m;
+  return m;
+}
+
 // ---------- Ghép ----------
+const pacing = [], warnings = [];
 const sections = [], js = [], caps = [];
 content.scenes.forEach((scene, i) => {
   const v = scene.visual;
@@ -161,11 +201,38 @@ content.scenes.forEach((scene, i) => {
   const span = Math.max(1.0, speak * 0.5);
   const AT = 0.7; // nén mốc "at" để tấm cắt dán lắp xong trước khi câu nói kết thúc
   js.push(`// ${scene.id}`);
-  js.push(`tl.fromTo("#${sid}-cam", { scale: 1 }, { scale: ${v.zoom ?? 1.045}, duration: ${f(dur)}, ease: "none" }, ${f(start)});`);
+  // Máy quay: chuyển động nền của cả cảnh + các cú cắt vào cận cảnh (cuts).
+  const move = cameraOf(i);
+  const visT = [start];
+  const segs = [{ t: start, focus: null, zoom: 1 }];
+  for (const c of v.cuts || []) segs.push({ t: tm.start + c.at * speak, focus: [c.x, c.y], zoom: c.zoom ?? 1.7 });
+  segs.forEach((sg, k) => {
+    const t1 = k < segs.length - 1 ? segs[k + 1].t : end;
+    const d = Math.max(0.1, t1 - sg.t);
+    let A, B;
+    visT.push(sg.t);
+    if (!sg.focus) {
+      const [a, b] = MOVES[move] || MOVES.push_in;
+      A = camState(a); B = camState(b);
+    } else {
+      A = camState({ s: sg.zoom, f: sg.focus }); B = camState({ s: sg.zoom * 1.04, f: sg.focus });
+      sfxEvents.push({ t: sg.t, kind: "slide", gain: 0.7 });
+    }
+    js.push(`tl.set("#${sid}-cam", ${JSON.stringify(A)}, ${f(sg.t)});`);
+    js.push(`tl.fromTo("#${sid}-cam", ${JSON.stringify(A)}, { ...${JSON.stringify(B)}, duration: ${f(d)}, ease: "none", immediateRender: false }, ${f(sg.t)});`);
+  });
+  // Parallax: các lớp trôi với tốc độ khác nhau (lớp trên trôi nhiều hơn).
+  if (move === "parallax") {
+    pcs.forEach((p, k) => {
+      const depth = pcs.length > 1 ? k / (pcs.length - 1) : 0.5;
+      js.push(`tl.fromTo("#${p.id}-w", { x: ${(depth * 28).toFixed(1)} }, { x: ${(-depth * 28).toFixed(1)}, duration: ${f(dur)}, ease: "none" }, ${f(start)});`);
+    });
+  }
   pcs.forEach((p, k) => {
     const sel = `#${p.id}`;
     const t = t0 + (p.pc.at != null ? p.pc.at * speak * AT : (k / Math.max(1, pcs.length)) * span);
     const r = p.rot;
+    visT.push(t);
     js.push(`tl.set("${sel}", { rotation: ${r}, opacity: 0 }, 0);`);
     const SFX_AT = { stamp: [["stamp", 0.15]], tape: [["tape", 0]], drop: [["tap", 0.22]], counter: [["tap", 0.22]], type: [["slide", 0, 0.5]], chart: [["slide", 0, 0.6]] };
     for (const [kind, dt, g] of SFX_AT[p.enter] || [["slide", 0], ["tap", 0.4, 0.7]]) sfxEvents.push({ t: t + dt, kind, gain: g });
@@ -181,6 +248,14 @@ content.scenes.forEach((scene, i) => {
       case "counter":
         js.push(`tl.set("${sel}", { opacity: 1 }, ${f(t)});`, `tl.fromTo("${sel}", { y: -60, rotation: ${r + 6} }, { y: 0, rotation: ${r}, duration: 0.25, ease: "steps(4)", immediateRender: false }, ${f(t)});`);
         break;
+      case "fly": {
+        const [x0, y0] = p.pc.path[0], [x1, y1] = p.pc.path[1];
+        const fd = p.pc.dur ?? 1.6;
+        js.push(`tl.set("${sel}", { opacity: 1 }, ${f(t)});`, `tl.fromTo("#${p.id}-w", { x: ${x0 - p.pc.x}, y: ${y0 - p.pc.y} }, { x: ${x1 - p.pc.x}, y: ${y1 - p.pc.y}, duration: ${f(fd)}, ease: "steps(${Math.round(fd * 10)})", immediateRender: false }, ${f(t)});`);
+        js.push(`tl.fromTo("${sel}", { rotation: ${r} }, { rotation: ${r + (p.pc.spin ?? 0)}, duration: ${f(fd)}, ease: "steps(${Math.round(fd * 10)})", immediateRender: false }, ${f(t)});`);
+        if (p.pc.exit !== false) js.push(`tl.set("${sel}", { opacity: 0 }, ${f(t + fd)});`);
+        break;
+      }
       default: {
         const dx = p.pc.from === "left" ? -260 : p.pc.from === "top" ? 0 : p.pc.from === "bottom" ? 0 : 260;
         const dy = p.pc.from === "top" ? -220 : p.pc.from === "bottom" ? 220 : 30;
@@ -210,12 +285,13 @@ content.scenes.forEach((scene, i) => {
       sfxEvents.push({ t: t + 0.4, kind: "pen", dur: Math.min(2.4, speak * 0.5) });
     }
     // Poster sống: rung rất nhẹ theo nhịp bậc thang.
-    if (k % 2 === 0 && p.enter !== "stamp") {
+    if (k % 2 === 0 && p.enter !== "stamp" && p.enter !== "fly") {
       js.push(`tl.to("${sel}", { rotation: ${r + 0.5}, duration: 0.5, ease: "steps(1)", yoyo: true, repeat: ${Math.max(1, Math.floor((end - t - 1) / 0.5))} }, ${f(t + 0.9)});`);
     }
   });
   ov.anims.forEach((a) => {
     const t = tm.start + a.at * speak * AT;
+    visT.push(t);
     if (a.kind === "string") {
       js.push(`tl.set("#${a.id}-pin0", { opacity: 1 }, ${f(t - 0.15)});`);
       js.push(`tl.to("#${a.id}", { attr: { "stroke-dashoffset": 0 }, duration: 0.5, ease: "steps(8)" }, ${f(t)});`);
@@ -227,6 +303,16 @@ content.scenes.forEach((scene, i) => {
     }
   });
   if (i > 0) sfxEvents.push({ t: Math.max(0, start - 0.2), kind: "whoosh" });
+  // Kiểm tra nhịp (theo hướng dẫn docs/essay-guide.md): hình phải đổi ít nhất mỗi 5 giây.
+  {
+    const ts = [...visT, end].sort((a, b) => a - b);
+    let gap = 0, at = start;
+    for (let k = 1; k < ts.length; k++) if (ts[k] - ts[k - 1] > gap) { gap = ts[k] - ts[k - 1]; at = ts[k - 1]; }
+    pacing.push({ id: scene.id, camera: move, dur: +dur.toFixed(2), maxStill: +gap.toFixed(2) });
+    if (gap > 5.2) warnings.push(`${scene.id}: hình đứng yên ${gap.toFixed(1)}s (từ ${at.toFixed(1)}s) — thêm "cuts" hoặc mảnh mới`);
+    if (i > 0 && camPlan[i - 1] === move && move !== "static") warnings.push(`${scene.id}: cùng kiểu máy quay "${move}" với cảnh trước`);
+    if (i === 0 && Math.min(...visT.slice(1)) - start > 1.0) warnings.push(`${scene.id}: mở đầu chậm — mảnh đầu tiên nên vào trong 1 giây`);
+  }
 
   // Phụ đề
   if (content.captions !== false) {
@@ -306,13 +392,14 @@ const css = `
 html, body { width: ${W}px; height: ${H}px; overflow: hidden; background: ${P.ink}; }
 #root { position: relative; width: 100%; height: 100%; overflow: hidden; font-family: "Oswald", sans-serif; color: ${P.ink}; }
 .scene { position: absolute; inset: 0; overflow: hidden; }
-.cam { position: absolute; inset: 0; transform-origin: 50% 45%; }
+.cam { position: absolute; inset: 0; }
 .bg-news .cam { background: ${fiber}, ${noise}, ${P.paper}; }
 .bg-kraft .cam { background: ${fiber}, ${noise}, #CDB383; }
 .bg-dark .cam { background: ${noise}, radial-gradient(circle at 50% 40%, #3A352E, #191714 75%); }
 .bg-grid .cam { background: linear-gradient(rgba(70,110,150,.18) 2px, transparent 2px) 0 0/60px 60px, linear-gradient(90deg, rgba(70,110,150,.18) 2px, transparent 2px) 0 0/60px 60px, ${noise}, #F3EEDF; }
 .newsprint { position: absolute; left: -40px; top: -40px; width: 2300px; height: 1180px; background: ${NEWS} no-repeat; }
-.pc { position: absolute; filter: drop-shadow(5px 8px 0 rgba(20,16,10,.28)); }
+.pw { position: absolute; }
+.pc { position: relative; filter: drop-shadow(5px 8px 0 rgba(20,16,10,.28)); }
 .pc svg { display: block; width: 100%; height: auto; }
 .scrap-in { width: 100%; background-image: ${noise}; }
 .scrap-in.lines { background-image: repeating-linear-gradient(0deg, transparent 0 34px, rgba(60,50,40,.18) 34px 36px), ${noise}; }
@@ -370,4 +457,6 @@ for (const fnt of fs.readdirSync("assets/fonts-essay").filter((x) => x.endsWith(
 fs.copyFileSync("assets/vendor/gsap.min.js", path.join(dir, "vendor", "gsap.min.js"));
 for (const a of audioFiles) fs.copyFileSync(path.join(buildDir, a), path.join(dir, a));
 fs.writeFileSync(path.join(dir, "index.html"), html);
+fs.writeFileSync(path.join(buildDir, "pacing.json"), JSON.stringify({ warnings, scenes: pacing }, null, 2));
+for (const w of warnings) console.log("⚠ Nhịp: " + w);
 console.log(`Đã tạo ${dir}/index.html (${TOTAL}s, ${content.scenes.length} cảnh)`);

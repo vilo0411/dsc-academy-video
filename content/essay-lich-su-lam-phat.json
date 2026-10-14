@@ -1,6 +1,7 @@
 {
   "id": "essay-lich-su-lam-phat",
   "format": "essay",
+  "arc": "timeline",
   "title": "Lịch sử lạm phát",
   "series": "· LỊCH SỬ TIỀN TỆ",
   "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/lam-phat-va-cpi/",
@@ -28,6 +29,7 @@
       "id": "s01",
       "text": "Nước Đức, năm một nghìn chín trăm hai mươi ba. Một người phụ nữ nhóm lò bằng tiền giấy.",
       "visual": {
+        "camera": "push_in",
         "bg": "news",
         "pieces": [
           {
@@ -109,6 +111,7 @@
       "id": "s02",
       "text": "Không phải vì cô giàu. Mà vì những tờ tiền ấy giờ rẻ hơn cả củi.",
       "visual": {
+        "camera": "pan_left",
         "bg": "kraft",
         "pieces": [
           {
@@ -175,6 +178,15 @@
       "id": "s03",
       "text": "Năm một nghìn chín trăm mười tám, một ổ bánh mì chưa tới một mác. Năm năm sau, nó giá hàng tỷ mác.",
       "visual": {
+        "camera": "parallax",
+        "cuts": [
+          {
+            "at": 0.55,
+            "x": 1400,
+            "y": 640,
+            "zoom": 1.6
+          }
+        ],
         "bg": "news",
         "pieces": [
           {
@@ -246,6 +258,7 @@
       "id": "s04",
       "text": "Một đô la Mỹ đổi được hơn bốn nghìn tỷ mác.",
       "visual": {
+        "camera": "push_in",
         "bg": "dark",
         "pieces": [
           {
@@ -302,6 +315,7 @@
       "id": "s05",
       "text": "Nhưng chuyện tiền mất giá đã bắt đầu từ rất lâu trước đó.",
       "visual": {
+        "camera": "pan_left",
         "bg": "grid",
         "pieces": [
           {
@@ -331,6 +345,28 @@
             "tone": "ink",
             "rot": -3,
             "at": 0.55
+          },
+          {
+            "kind": "fly",
+            "name": "coin",
+            "t": "S·C",
+            "sub": "ROMA",
+            "x": 0,
+            "y": 0,
+            "w": 150,
+            "path": [
+              [
+                1500,
+                470
+              ],
+              [
+                380,
+                470
+              ]
+            ],
+            "at": 0.32,
+            "dur": 1.3,
+            "spin": -360
           }
         ],
         "strings": [
@@ -353,6 +389,7 @@
       "id": "s06",
       "text": "Thời hoàng đế Augustus, đồng tiền bạc của La Mã gần như là bạc nguyên chất.",
       "visual": {
+        "camera": "tilt_up",
         "bg": "news",
         "pieces": [
           {
@@ -422,6 +459,7 @@
       "id": "s07",
       "text": "Rồi các hoàng đế pha dần đồng vào bạc, để có thêm tiền trả quân lính.",
       "visual": {
+        "camera": "pan_left",
         "bg": "kraft",
         "pieces": [
           {
@@ -494,6 +532,15 @@
       "id": "s08",
       "text": "Đến năm hai trăm sáu mươi tám, mỗi đồng chỉ còn chừng năm phần trăm bạc. Và giá cả leo thang.",
       "visual": {
+        "camera": "parallax",
+        "cuts": [
+          {
+            "at": 0.45,
+            "x": 1300,
+            "y": 620,
+            "zoom": 1.4
+          }
+        ],
         "bg": "news",
         "pieces": [
           {
@@ -581,6 +628,7 @@
       "id": "s09",
       "text": "Việt Nam, tháng chín năm một nghìn chín trăm tám mươi lăm: đổi tiền, mười đồng cũ lấy một đồng mới.",
       "visual": {
+        "camera": "pan_left",
         "bg": "kraft",
         "pieces": [
           {
@@ -650,6 +698,7 @@
       "id": "s10",
       "text": "Năm sau đó, lạm phát vượt bảy trăm phần trăm.",
       "visual": {
+        "camera": "push_in",
         "bg": "dark",
         "pieces": [
           {
@@ -704,6 +753,7 @@
       "id": "s11",
       "text": "Ba thời đại, một điểm chung: tiền tăng nhanh hơn hàng hoá.",
       "visual": {
+        "camera": "pull_out",
         "bg": "grid",
         "pieces": [
           {
@@ -792,6 +842,7 @@
       "id": "s12",
       "text": "Đó là lạm phát: mặt bằng giá chung tăng liên tục, và mỗi đồng tiền mua được ít hơn.",
       "visual": {
+        "camera": "static",
         "bg": "news",
         "pieces": [
           {
@@ -847,6 +898,15 @@
       "id": "s13",
       "text": "Lạm phát thấp và ổn định là bình thường. Ngày nay, nó được đo hằng tháng bằng chỉ số CPI.",
       "visual": {
+        "camera": "parallax",
+        "cuts": [
+          {
+            "at": 0.55,
+            "x": 1400,
+            "y": 600,
+            "zoom": 1.35
+          }
+        ],
         "bg": "kraft",
         "pieces": [
           {
@@ -920,6 +980,7 @@
       "id": "s14",
       "text": "Đồng tiền trong túi bạn vẫn vậy. Chỉ có thứ nó mua được là đổi khác.",
       "visual": {
+        "camera": "pull_out",
         "bg": "news",
         "pieces": [
           {
@@ -968,6 +1029,7 @@
       "id": "s15",
       "text": "Cách đọc chỉ số CPI, mời bạn xem bài viết bên dưới video.",
       "visual": {
+        "camera": "static",
         "bg": "dark",
         "zoom": 1.02,
         "pieces": [
@@ -1012,5 +1074,5 @@
       }
     }
   ],
-  "renderRev": 4
+  "renderRev": 5
 }
