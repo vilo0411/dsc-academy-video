@@ -281,7 +281,7 @@ if (hasFfmpeg()) {
     sfx: path.join(buildDir, "sfx.wav"),
     music: fs.existsSync(musicPath) ? musicPath : null,
     total: TOTAL,
-    musicVol: content.music?.volume ?? 0.3,
+    musicVol: content.music?.volume ?? 1.5,
     sfxVol: content.sfxVolume ?? 1,
     out: path.join(buildDir, "mix.wav"),
   });

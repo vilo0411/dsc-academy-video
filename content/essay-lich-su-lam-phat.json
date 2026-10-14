@@ -21,7 +21,7 @@
     "prompt": "Curious minimalist documentary underscore for a history explainer video: soft felt piano ostinato, pizzicato strings, light ticking clock percussion, warm analog tape texture, gentle and inquisitive mood, steady 92 BPM, no big build-ups, instrumental",
     "negative": "vocals, singing, lyrics, heavy drums, EDM, distorted guitar",
     "seed": 11,
-    "volume": 0.3
+    "volume": 1.5
   },
   "scenes": [
     {
@@ -1012,5 +1012,5 @@
       }
     }
   ],
-  "renderRev": 3
+  "renderRev": 4
 }

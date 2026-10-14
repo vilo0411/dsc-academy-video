@@ -190,7 +190,7 @@ export function wav16(out) {
 export const hasFfmpeg = () => spawnSync("ffmpeg", ["-version"]).status === 0;
 
 // Trộn: giọng (tuỳ chọn) + tiếng động + nhạc nền (tuỳ chọn, lặp có crossfade, tự hạ khi có lời).
-export function mixdown({ voice, sfx, music, total, out, musicVol = 0.32, sfxVol = 1.0 }) {
+export function mixdown({ voice, sfx, music, total, out, musicVol = 1.5, sfxVol = 1.0 }) {
   const inputs = [], chain = [], mixIn = [];
   let idx = 0;
   const T = total.toFixed(3);
@@ -208,11 +208,13 @@ export function mixdown({ voice, sfx, music, total, out, musicVol = 0.32, sfxVol
     const md = probeDur(music);
     const xf = 2.5;
     const copies = Math.max(1, Math.ceil((total + 1) / Math.max(1, md - xf)));
-    inputs.push("-i", music);
-    const m = idx++;
-    if (copies === 1) chain.push(`[${m}:a]aresample=48000,aformat=channel_layouts=stereo[mloop]`);
+    // Lặp nhạc: nạp file nhiều lần (asplit + acrossfade dễ làm ffmpeg cắt cụt), nối bằng crossfade.
+    const first = idx;
+    for (let k = 0; k < copies; k++) inputs.push("-i", music);
+    idx += copies;
+    if (copies === 1) chain.push(`[${first}:a]aresample=48000,aformat=channel_layouts=stereo[mloop]`);
     else {
-      chain.push(`[${m}:a]aresample=48000,aformat=channel_layouts=stereo,asplit=${copies}${Array.from({ length: copies }, (_, k) => `[mc${k}]`).join("")}`);
+      for (let k = 0; k < copies; k++) chain.push(`[${first + k}:a]aresample=48000,aformat=channel_layouts=stereo[mc${k}]`);
       let prev = "[mc0]";
       for (let k = 1; k < copies; k++) {
         const lab = k === copies - 1 ? "[mloop]" : `[mx${k}]`;
@@ -222,7 +224,7 @@ export function mixdown({ voice, sfx, music, total, out, musicVol = 0.32, sfxVol
     }
     chain.push(`[mloop]atrim=0:${T},volume=${musicVol},afade=t=in:d=1.5,afade=t=out:st=${Math.max(0, total - 3).toFixed(2)}:d=3[mus]`);
     if (vLabel) {
-      chain.push(`[mus][vkey]sidechaincompress=threshold=0.025:ratio=6:attack=30:release=600:makeup=1[mduck]`);
+      chain.push(`[mus][vkey]sidechaincompress=threshold=0.03:ratio=4:attack=40:release=700:makeup=1[mduck]`);
       mixIn.push("[mduck]");
     } else mixIn.push("[mus]");
   } else if (vLabel) chain.push(`[vkey]anullsink`);
