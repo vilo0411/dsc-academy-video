@@ -119,6 +119,18 @@ for (const file of files) {
     failed++;
     continue;
   }
+  // GitHub từ chối file > 100 MB: nén lại nếu video quá nặng (nền giấy nhiễu hạt làm bitrate cao).
+  if (fs.statSync(out).size > 80 * 1024 * 1024) {
+    const tmp = out.replace(/\.mp4$/, ".small.mp4");
+    for (const crf of [24, 28, 32]) {
+      const r = run("ffmpeg", ["-y", "-v", "error", "-i", out, "-c:v", "libx264", "-preset", "medium", "-crf", String(crf), "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", tmp]);
+      if (r.ok && fs.statSync(tmp).size < 80 * 1024 * 1024) break;
+    }
+    if (fs.existsSync(tmp)) {
+      fs.renameSync(tmp, out);
+      status.steps.push({ name: "compress", ok: true, seconds: 0, log: `Nén lại còn ${(fs.statSync(out).size / 1048576).toFixed(1)} MB` });
+    }
+  }
   const probe = run("ffprobe", ["-v", "error", "-show_entries", "format=duration,size", "-of", "json", out]);
   try {
     status.output = { file: `out/${id}.mp4`, ...JSON.parse(probe.out).format };

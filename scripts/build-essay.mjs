@@ -297,7 +297,7 @@ if (timings.audio) audioTags.push(`<audio id="voiceover" src="${timings.audio}" 
 fs.writeFileSync(path.join(buildDir, "sfx.wav"), synthSfx(TOTAL));
 audioTags.push(`<audio id="sfx" src="sfx.wav" data-start="0" data-duration="${f(TOTAL)}" data-track-index="4" data-volume="0.55"></audio>`);
 
-const noise = `url("data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.22  0 0 0 0.55 0'/></filter><rect width='400' height='400' filter='url(#n)'/></svg>`)}")`;
+const noise = `url("data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.3  0 0 0 0 0.22  0 0 0 0.32 0'/></filter><rect width='400' height='400' filter='url(#n)'/></svg>`)}")`;
 const fiber = `url("data:image/svg+xml;utf8,${encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><filter id='n'><feTurbulence type='turbulence' baseFrequency='0.012 0.04' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.33  0 0 0 0 0.2  0 0 0 0.18 0'/></filter><rect width='600' height='600' filter='url(#n)'/></svg>`)}")`;
 
 const css = `
