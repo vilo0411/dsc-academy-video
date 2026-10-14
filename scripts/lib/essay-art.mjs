@@ -40,7 +40,7 @@ const ART = {
       <path d="M150 92 l14 40 h42 l-34 25 l13 40 l-35 -25 l-35 25 l13 -40 l-34 -25 h42 z" fill="${P.cream}" stroke="${P.ink}" stroke-width="3"/>
       ${T(400, 150, o.t || "1000", 92)}
       ${T(400, 214, o.sub || "MARK", 40, 'letter-spacing="6"')}
-      ${T(512, 74, o.corner || o.t || "1000", 30)}`,
+      ${o.corner ? T(512, 74, o.corner, 30) : ""}`,
   },
   bundle: {
     vb: [600, 330],

@@ -870,8 +870,8 @@
           {
             "kind": "label",
             "text": "THẤP · ỔN ĐỊNH",
-            "x": 190,
-            "y": 130,
+            "x": 640,
+            "y": 120,
             "size": 64,
             "tone": "mustard",
             "rot": -2,

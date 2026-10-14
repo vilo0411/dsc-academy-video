@@ -95,7 +95,7 @@ function synthSfx(total) {
 function piece(pc, id, sid) {
   const rot = pc.rot ?? 0;
   const box = (inner, extra = "") =>
-    `<div class="pc ${pc.kind}" id="${id}" style="left:${pc.x}px;top:${pc.y}px;${pc.w ? `width:${pc.w}px;` : ""}${extra}">${inner}</div>`;
+    `<div class="pc ${pc.kind}" id="${id}" data-layout-allow-overflow data-layout-allow-overlap style="left:${pc.x}px;top:${pc.y}px;${pc.w ? `width:${pc.w}px;` : ""}${extra}">${inner}</div>`;
   switch (pc.kind) {
     case "scrap": {
       const tone = TONES[pc.tone || "tan"];
@@ -188,7 +188,7 @@ content.scenes.forEach((scene, i) => {
   const pcs = (v.pieces || []).map((pc, k) => ({ pc, ...piece(pc, `${sid}-p${k}`, scene.id), id: `${sid}-p${k}` }));
   const ov = overlay(v, sid);
   sections.push(`<section id="scene-${i}" class="clip scene bg-${v.bg || "news"}" data-start="${f(start)}" data-duration="${f(dur)}" data-track-index="1">
-    <div class="cam" id="${sid}-cam">${v.bg === "news" || !v.bg ? `<div class="newsprint"></div>` : ""}${pcs.map((p) => p.html).join("")}${ov.svg}</div></section>`);
+    <div class="cam" id="${sid}-cam" data-layout-allow-overflow data-layout-allow-overlap>${v.bg === "news" || !v.bg ? `<div class="newsprint"></div>` : ""}${pcs.map((p) => p.html).join("")}${ov.svg}</div></section>`);
 
   // Thời điểm vào: rải đều trong 65% đầu phần lời (hoặc theo pc.at).
   const t0 = tm.start + 0.05;
