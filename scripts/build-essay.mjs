@@ -398,6 +398,7 @@ html, body { width: ${W}px; height: ${H}px; overflow: hidden; background: ${P.in
 .bg-kraft .cam { background: ${fiber}, ${noise}, #CDB383; }
 .bg-dark .cam { background: ${noise}, radial-gradient(circle at 50% 40%, #3A352E, #191714 75%); }
 .bg-grid .cam { background: linear-gradient(rgba(70,110,150,.18) 2px, transparent 2px) 0 0/60px 60px, linear-gradient(90deg, rgba(70,110,150,.18) 2px, transparent 2px) 0 0/60px 60px, ${noise}, #F3EEDF; }
+.bg-cork .cam { background: radial-gradient(circle at 30% 20%, rgba(255,240,210,.18), transparent 60%), ${noise}, ${noise}, #A97A4A; }
 .newsprint { position: absolute; left: -40px; top: -40px; width: 2300px; height: 1180px; background: ${NEWS} no-repeat; }
 .pw { position: absolute; }
 .pc { position: relative; filter: drop-shadow(5px 8px 0 rgba(20,16,10,.28)); }

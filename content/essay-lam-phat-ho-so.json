@@ -2,7 +2,6 @@
   "id": "essay-lam-phat-ho-so",
   "format": "essay",
   "arc": "timeline",
-  "audioOnly": true,
   "title": "Lạm phát: hồ sơ một kẻ trộm thầm lặng",
   "series": "· LỊCH SỬ TIỀN TỆ",
   "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/lam-phat-va-cpi/",
@@ -37,6 +36,57 @@
       "id": "s01",
       "text": "Bạn có để ý không? Tờ năm mươi nghìn trong ví bạn vẫn y nguyên, nhưng năm nào nó cũng mua được ít đi một chút.",
       "visual": {
+        "bg": "news",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 560,
+            "y": 150,
+            "w": 800,
+            "h": 640,
+            "tone": "tan",
+            "rot": 2.5,
+            "lines": true
+          },
+          {
+            "kind": "art",
+            "name": "wallet",
+            "x": 700,
+            "y": 250,
+            "w": 520,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "MỖI NĂM",
+            "x": 160,
+            "y": 220,
+            "size": 90,
+            "tone": "ink",
+            "rot": -3,
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 1330,
+            "y": 560,
+            "w": 300,
+            "rot": 4,
+            "at": 0.6
+          },
+          {
+            "kind": "stamp",
+            "text": "ÍT ĐI",
+            "x": 1380,
+            "y": 480,
+            "size": 80,
+            "rot": -10,
+            "tone": "red",
+            "at": 0.8
+          }
+        ],
         "chapter": "Mở đầu",
         "note": "tờ 50.000đ cắt dán, giỏ hàng vơi dần"
       }
@@ -45,6 +95,38 @@
       "id": "s02",
       "text": "Không ai móc túi bạn cả. Vậy phần giá trị đó đã biến đi đâu?",
       "visual": {
+        "bg": "kraft",
+        "camera": "pan_left",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "wallet",
+            "x": 220,
+            "y": 340,
+            "w": 480,
+            "rot": -6
+          },
+          {
+            "kind": "art",
+            "name": "qmark",
+            "x": 1150,
+            "y": 200,
+            "w": 230,
+            "rot": 4,
+            "at": 0.35,
+            "hit": true
+          },
+          {
+            "kind": "label",
+            "text": "AI LẤY?",
+            "x": 1420,
+            "y": 600,
+            "size": 96,
+            "tone": "red",
+            "rot": 3,
+            "at": 0.6
+          }
+        ],
         "chapter": "Mở đầu",
         "note": "chiếc ví mở, dấu hỏi đỏ"
       }
@@ -53,6 +135,49 @@
       "id": "s03",
       "text": "Thủ phạm có một cái tên: lạm phát. Và nó không hề mới.",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 640,
+            "y": 120,
+            "w": 640,
+            "h": 780,
+            "tone": "white",
+            "rot": -1.5
+          },
+          {
+            "kind": "label",
+            "text": "TRUY NÃ",
+            "x": 760,
+            "y": 170,
+            "size": 110,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.1
+          },
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT",
+            "x": 690,
+            "y": 420,
+            "size": 130,
+            "tone": "red",
+            "rot": -3,
+            "at": 0.3,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "Không hề mới.",
+            "x": 780,
+            "y": 700,
+            "size": 44,
+            "rot": 1,
+            "at": 0.65
+          }
+        ],
         "chapter": "Mở đầu",
         "note": "hồ sơ truy nã: LẠM PHÁT"
       }
@@ -61,6 +186,61 @@
       "id": "s04",
       "text": "Nó từng khiến đồng bạc của đế chế La Mã gần như chẳng còn bạc, và khiến người Đức đem tiền giấy đi nhóm bếp.",
       "visual": {
+        "bg": "news",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 220,
+            "y": 260,
+            "w": 380,
+            "rot": -4,
+            "t": "S·C",
+            "sub": "ROMA",
+            "tone": "mid"
+          },
+          {
+            "kind": "label",
+            "text": "LA MÃ",
+            "x": 260,
+            "y": 720,
+            "size": 90,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.12
+          },
+          {
+            "kind": "art",
+            "name": "stove",
+            "x": 1150,
+            "y": 190,
+            "w": 300,
+            "rot": 2,
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "bundle",
+            "x": 1360,
+            "y": 560,
+            "w": 380,
+            "rot": -8,
+            "t": "1000",
+            "sub": "MARK",
+            "at": 0.55
+          },
+          {
+            "kind": "label",
+            "text": "ĐỨC",
+            "x": 1500,
+            "y": 150,
+            "size": 90,
+            "tone": "red",
+            "rot": 3,
+            "at": 0.6
+          }
+        ],
         "chapter": "Mở đầu",
         "note": "chớp nhanh: đồng xu mờ dần, lò sưởi + bó tiền"
       }
@@ -69,6 +249,97 @@
       "id": "s05",
       "text": "Trong vài phút tới, mình sẽ mở hồ sơ của kẻ trộm này qua hai nghìn năm, xem nó ra tay thế nào, và vì sao đến giờ nó vẫn ở quanh ta.",
       "visual": {
+        "bg": "cork",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 250,
+            "y": 190,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "01",
+            "at": 0.0
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 810,
+            "y": 140,
+            "w": 300,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "02",
+            "at": 0.03
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1370,
+            "y": 190,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "03",
+            "at": 0.06
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 410,
+            "y": 610,
+            "w": 300,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "04",
+            "at": 0.09
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1210,
+            "y": 610,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "05",
+            "at": 0.12
+          },
+          {
+            "kind": "label",
+            "text": "2.000 NĂM",
+            "x": 790,
+            "y": 470,
+            "size": 96,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.55
+          },
+          {
+            "kind": "fly",
+            "name": "coin",
+            "x": 0,
+            "y": 0,
+            "w": 150,
+            "path": [
+              [
+                1700,
+                120
+              ],
+              [
+                200,
+                860
+              ]
+            ],
+            "at": 0.7,
+            "dur": 1.4,
+            "spin": -540,
+            "t": "S·C",
+            "sub": "ROMA"
+          }
+        ],
         "chapter": "Mở đầu",
         "note": "bảng ghim hồ sơ trống, 5 ô chờ"
       }
@@ -77,6 +348,29 @@
       "id": "s06",
       "text": "Lạm phát: hồ sơ một kẻ trộm thầm lặng.",
       "visual": {
+        "bg": "dark",
+        "camera": "static",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT",
+            "x": 520,
+            "y": 300,
+            "size": 190,
+            "tone": "red",
+            "rot": -2,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "hồ sơ một kẻ trộm thầm lặng",
+            "x": 560,
+            "y": 600,
+            "size": 52,
+            "rot": 1,
+            "at": 0.25
+          }
+        ],
         "chapter": "Tiêu đề",
         "note": "thẻ tiêu đề cắt dán + DSC Academy"
       }
@@ -85,6 +379,40 @@
       "id": "s07",
       "text": "Hồ sơ số một. La Mã, khoảng hai nghìn năm trước.",
       "visual": {
+        "bg": "dark",
+        "camera": "pan_right",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 180,
+            "y": 250,
+            "w": 560,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "01"
+          },
+          {
+            "kind": "label",
+            "text": "LA MÃ",
+            "x": 860,
+            "y": 330,
+            "size": 140,
+            "tone": "red",
+            "rot": -2,
+            "at": 0.15,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "khoảng 2.000 năm trước",
+            "x": 880,
+            "y": 560,
+            "size": 46,
+            "rot": 1,
+            "at": 0.35
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "thẻ chương HỒ SƠ 01 · LA MÃ"
       }
@@ -93,6 +421,60 @@
       "id": "s08",
       "text": "Thời hoàng đế Augustus, đồng denarius gần như là bạc nguyên chất. Người ta tin nó, vì giá trị nằm ngay trong kim loại.",
       "visual": {
+        "bg": "news",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 640,
+            "y": 160,
+            "w": 640,
+            "h": 680,
+            "tone": "white",
+            "rot": -2
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 730,
+            "y": 230,
+            "w": 460,
+            "rot": 0,
+            "t": "DENARIVS",
+            "sub": "ROMA",
+            "enter": "drop",
+            "from": "top"
+          },
+          {
+            "kind": "label",
+            "text": "~98% BẠC",
+            "x": 1350,
+            "y": 360,
+            "size": 84,
+            "tone": "mustard",
+            "rot": 3,
+            "at": 0.45
+          },
+          {
+            "kind": "type",
+            "text": "Thời Augustus",
+            "x": 1350,
+            "y": 520,
+            "size": 40,
+            "rot": 2,
+            "at": 0.55
+          }
+        ],
+        "marks": [
+          {
+            "type": "circle",
+            "cx": 960,
+            "cy": 460,
+            "rx": 290,
+            "ry": 280,
+            "at": 0.7
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "đồng denarius ~98% bạc"
       }
@@ -101,6 +483,60 @@
       "id": "s09",
       "text": "Nhưng đế chế ngày càng tốn kém. Quân đội cần trả lương, chiến tranh cần tiền.",
       "visual": {
+        "bg": "kraft",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "helmet",
+            "x": 200,
+            "y": 280,
+            "w": 400,
+            "rot": -4,
+            "from": "left"
+          },
+          {
+            "kind": "label",
+            "text": "LƯƠNG LÍNH",
+            "x": 760,
+            "y": 250,
+            "size": 80,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.3
+          },
+          {
+            "kind": "label",
+            "text": "CHIẾN TRANH",
+            "x": 780,
+            "y": 430,
+            "size": 80,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 1360,
+            "y": 330,
+            "w": 280,
+            "rot": 6,
+            "t": "S·C",
+            "sub": "ROMA",
+            "at": 0.55
+          },
+          {
+            "kind": "stamp",
+            "text": "THIẾU TIỀN",
+            "x": 1300,
+            "y": 680,
+            "size": 70,
+            "rot": -8,
+            "tone": "red",
+            "at": 0.75
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "mũ lính, túi tiền vơi"
       }
@@ -109,6 +545,63 @@
       "id": "s10",
       "text": "Các hoàng đế nghĩ ra một cách: pha thêm đồng vào bạc. Cùng một lượng bạc, đúc được nhiều đồng tiền hơn.",
       "visual": {
+        "bg": "news",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "crucible",
+            "x": 200,
+            "y": 260,
+            "w": 420,
+            "rot": -2
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 820,
+            "y": 240,
+            "w": 270,
+            "rot": -5,
+            "t": "S·C",
+            "sub": "BẠC",
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 1130,
+            "y": 210,
+            "w": 270,
+            "rot": 4,
+            "t": "S·C",
+            "sub": "+ ĐỒNG",
+            "tone": "mid",
+            "at": 0.55
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 1440,
+            "y": 250,
+            "w": 270,
+            "rot": -3,
+            "t": "S·C",
+            "sub": "+ ĐỒNG",
+            "tone": "bronze",
+            "at": 0.65
+          },
+          {
+            "kind": "label",
+            "text": "PHA THÊM ĐỒNG",
+            "x": 820,
+            "y": 700,
+            "size": 80,
+            "tone": "red",
+            "rot": -1,
+            "at": 0.75
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "nồi nấu kim loại, đồng xu nhân bản"
       }
@@ -117,6 +610,89 @@
       "id": "s11",
       "text": "Đến năm hai trăm sáu mươi tám, mỗi đồng chỉ còn chừng năm phần trăm bạc.",
       "visual": {
+        "bg": "news",
+        "camera": "pan_left",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "BẠC TRONG MỖI ĐỒNG",
+            "x": 600,
+            "y": 140,
+            "size": 56,
+            "tone": "ink",
+            "rot": -1
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 200,
+            "y": 260,
+            "w": 330,
+            "rot": -3,
+            "t": "98%",
+            "sub": "AUGUSTUS",
+            "at": 0.1
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 790,
+            "y": 280,
+            "w": 330,
+            "rot": 2,
+            "t": "15%",
+            "sub": "NĂM 260",
+            "tone": "mid",
+            "at": 0.3
+          },
+          {
+            "kind": "art",
+            "name": "coin",
+            "x": 1380,
+            "y": 260,
+            "w": 330,
+            "rot": -2,
+            "t": "≤5%",
+            "sub": "NĂM 268",
+            "tone": "bronze",
+            "at": 0.5,
+            "hit": true
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              365,
+              610
+            ],
+            "to": [
+              955,
+              630
+            ],
+            "at": 0.25,
+            "sag": 40
+          },
+          {
+            "from": [
+              955,
+              630
+            ],
+            "to": [
+              1545,
+              610
+            ],
+            "at": 0.42,
+            "sag": 40
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.72,
+            "x": 1500,
+            "y": 470,
+            "zoom": 1.5
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "3 đồng xu 98% → 15% → ≤5%"
       }
@@ -125,6 +701,43 @@
       "id": "s12",
       "text": "Người bán hàng đâu có ngốc. Tiền kém giá trị đi, họ tăng giá lên.",
       "visual": {
+        "bg": "kraft",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 260,
+            "y": 300,
+            "w": 420,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "GIÁ",
+            "x": 1000,
+            "y": 230,
+            "size": 90,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.1
+          },
+          {
+            "kind": "counter",
+            "values": [
+              "10",
+              "20",
+              "40",
+              "80"
+            ],
+            "x": 1000,
+            "y": 390,
+            "w": 520,
+            "size": 170,
+            "rot": -2,
+            "at": 0.2
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "bảng giá ở chợ, số nhảy lên"
       }
@@ -133,6 +746,48 @@
       "id": "s13",
       "text": "Năm ba trăm lẻ một, hoàng đế Diocletian ra sắc lệnh ấn định giá tối đa cho hơn một nghìn mặt hàng.",
       "visual": {
+        "bg": "news",
+        "camera": "tilt_down",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "scroll",
+            "x": 280,
+            "y": 170,
+            "w": 420,
+            "rot": -3,
+            "t": "SẮC LỆNH"
+          },
+          {
+            "kind": "label",
+            "text": "NĂM 301",
+            "x": 880,
+            "y": 200,
+            "size": 100,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.2
+          },
+          {
+            "kind": "type",
+            "text": "Giá tối đa cho hơn 1.000 mặt hàng",
+            "x": 880,
+            "y": 420,
+            "size": 40,
+            "rot": 0,
+            "at": 0.4
+          },
+          {
+            "kind": "stamp",
+            "text": "GIÁ TỐI ĐA",
+            "x": 980,
+            "y": 600,
+            "size": 90,
+            "rot": -6,
+            "tone": "red",
+            "at": 0.68
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "cuộn sắc lệnh, con dấu GIÁ TỐI ĐA"
       }
@@ -141,6 +796,38 @@
       "id": "s14",
       "text": "Kết quả? Hàng hoá biến khỏi chợ, chợ đen mọc lên, và sắc lệnh sớm bị phớt lờ.",
       "visual": {
+        "bg": "kraft",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "shelf",
+            "x": 260,
+            "y": 260,
+            "w": 580,
+            "rot": -2
+          },
+          {
+            "kind": "label",
+            "text": "CHỢ ĐEN",
+            "x": 1060,
+            "y": 300,
+            "size": 100,
+            "tone": "ink",
+            "rot": 2,
+            "at": 0.35
+          },
+          {
+            "kind": "stamp",
+            "text": "THẤT BẠI",
+            "x": 1080,
+            "y": 540,
+            "size": 100,
+            "rot": -8,
+            "tone": "red",
+            "at": 0.65
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "kệ hàng trống, dấu X đỏ"
       }
@@ -149,6 +836,92 @@
       "id": "s15",
       "text": "Manh mối thứ nhất được ghim lên bảng: khi tiền bị pha loãng, giá sẽ tăng. Và cấm tăng giá thì không chữa được bệnh.",
       "visual": {
+        "bg": "cork",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "white",
+            "rot": 2,
+            "at": 0.25
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.27
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.31,
+            "hit": true
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 810,
+            "y": 140,
+            "w": 300,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "02",
+            "at": 0.03
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1370,
+            "y": 190,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "03",
+            "at": 0.06
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 410,
+            "y": 610,
+            "w": 300,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "04",
+            "at": 0.09
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1210,
+            "y": 610,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "05",
+            "at": 0.12
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.6,
+            "x": 420,
+            "y": 330,
+            "zoom": 1.6
+          }
+        ],
         "chapter": "Hồ sơ 1 · La Mã",
         "note": "ghim thẻ manh mối 1 lên bảng dây đỏ"
       }
@@ -157,6 +930,40 @@
       "id": "s16",
       "text": "Hồ sơ số hai. Trung Hoa, thế kỷ mười một.",
       "visual": {
+        "bg": "dark",
+        "camera": "pan_right",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 180,
+            "y": 250,
+            "w": 560,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "02"
+          },
+          {
+            "kind": "label",
+            "text": "NHÀ TỐNG",
+            "x": 860,
+            "y": 330,
+            "size": 140,
+            "tone": "red",
+            "rot": -2,
+            "at": 0.15,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "Trung Hoa, thế kỷ 11",
+            "x": 880,
+            "y": 560,
+            "size": 46,
+            "rot": 1,
+            "at": 0.35
+          }
+        ],
         "chapter": "Hồ sơ 2 · Nhà Tống",
         "note": "thẻ chương HỒ SƠ 02 · NHÀ TỐNG"
       }
@@ -165,6 +972,56 @@
       "id": "s17",
       "text": "Năm một nghìn không trăm hai mươi tư, nhà Tống phát hành giao tử, một trong những loại tiền giấy do nhà nước phát hành sớm nhất thế giới.",
       "visual": {
+        "bg": "news",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "chinanote",
+            "x": 300,
+            "y": 150,
+            "w": 300,
+            "rot": -3,
+            "t": "1000"
+          },
+          {
+            "kind": "label",
+            "text": "NĂM 1024",
+            "x": 760,
+            "y": 200,
+            "size": 100,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.15
+          },
+          {
+            "kind": "type",
+            "text": "Giao tử: tiền giấy nhà nước sớm nhất",
+            "x": 760,
+            "y": 410,
+            "size": 38,
+            "rot": 0,
+            "at": 0.35
+          },
+          {
+            "kind": "stamp",
+            "text": "TIỀN GIẤY",
+            "x": 820,
+            "y": 580,
+            "size": 90,
+            "rot": -6,
+            "tone": "red",
+            "at": 0.6
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.75,
+            "x": 900,
+            "y": 500,
+            "zoom": 1.25
+          }
+        ],
         "chapter": "Hồ sơ 2 · Nhà Tống",
         "note": "tờ tiền giấy cổ phương Đông (hoạ tiết chung, không chép bản thật)"
       }
@@ -173,6 +1030,57 @@
       "id": "s18",
       "text": "Tiền giấy tiện hơn hẳn. Không ai phải khuân những xâu tiền sắt nặng trịch đi chợ nữa.",
       "visual": {
+        "bg": "kraft",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "cash",
+            "x": 120,
+            "y": 330,
+            "w": 640,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "NẶNG",
+            "x": 300,
+            "y": 640,
+            "size": 90,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.25
+          },
+          {
+            "kind": "art",
+            "name": "arrow",
+            "x": 800,
+            "y": 420,
+            "w": 320,
+            "rot": 0,
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "chinanote",
+            "x": 1280,
+            "y": 200,
+            "w": 250,
+            "rot": 6,
+            "t": "1000",
+            "at": 0.55
+          },
+          {
+            "kind": "label",
+            "text": "NHẸ",
+            "x": 1320,
+            "y": 740,
+            "size": 90,
+            "tone": "mustard",
+            "rot": 3,
+            "at": 0.7
+          }
+        ],
         "chapter": "Hồ sơ 2 · Nhà Tống",
         "note": "xâu tiền sắt nặng ↔ tờ giấy nhẹ"
       }
@@ -181,6 +1089,58 @@
       "id": "s19",
       "text": "Nhưng tờ giấy chỉ có giá trị khi người ta tin nó đổi được ra tiền thật. Mà in giấy thì quá dễ.",
       "visual": {
+        "bg": "news",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "press",
+            "x": 200,
+            "y": 220,
+            "w": 460,
+            "rot": -2
+          },
+          {
+            "kind": "art",
+            "name": "chinanote",
+            "x": 880,
+            "y": 230,
+            "w": 230,
+            "rot": -6,
+            "t": "1000",
+            "at": 0.4
+          },
+          {
+            "kind": "art",
+            "name": "chinanote",
+            "x": 1060,
+            "y": 260,
+            "w": 230,
+            "rot": 3,
+            "t": "1000",
+            "at": 0.5
+          },
+          {
+            "kind": "art",
+            "name": "chinanote",
+            "x": 1240,
+            "y": 230,
+            "w": 230,
+            "rot": 8,
+            "t": "1000",
+            "at": 0.6
+          },
+          {
+            "kind": "label",
+            "text": "IN QUÁ DỄ",
+            "x": 960,
+            "y": 790,
+            "size": 84,
+            "tone": "red",
+            "rot": -1,
+            "at": 0.72
+          }
+        ],
         "chapter": "Hồ sơ 2 · Nhà Tống",
         "note": "máy in khắc gỗ, giấy nhân bản"
       }
@@ -189,6 +1149,48 @@
       "id": "s20",
       "text": "Triều đình in ngày càng nhiều, vượt xa lượng tiền kim loại dự trữ để bảo chứng.",
       "visual": {
+        "bg": "grid",
+        "camera": "pan_left",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "scale",
+            "x": 680,
+            "y": 300,
+            "w": 560,
+            "rot": 0
+          },
+          {
+            "kind": "label",
+            "text": "GIẤY",
+            "x": 420,
+            "y": 330,
+            "size": 84,
+            "tone": "mustard",
+            "rot": -3,
+            "at": 0.3
+          },
+          {
+            "kind": "label",
+            "text": "TIỀN KIM LOẠI",
+            "x": 1260,
+            "y": 330,
+            "size": 70,
+            "tone": "ink",
+            "rot": 3,
+            "at": 0.45
+          },
+          {
+            "kind": "stamp",
+            "text": "THIẾU BẢO CHỨNG",
+            "x": 640,
+            "y": 780,
+            "size": 70,
+            "rot": -4,
+            "tone": "red",
+            "at": 0.7
+          }
+        ],
         "chapter": "Hồ sơ 2 · Nhà Tống",
         "note": "cán cân: chồng giấy cao ↔ ít xu"
       }
@@ -197,6 +1199,53 @@
       "id": "s21",
       "text": "Tờ giấy mất giá dần, có lúc chỉ còn đổi được một phần nhỏ so với mệnh giá ghi trên đó.",
       "visual": {
+        "bg": "news",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "chinanote",
+            "x": 260,
+            "y": 190,
+            "w": 300,
+            "rot": -3,
+            "t": "1000"
+          },
+          {
+            "kind": "label",
+            "text": "ĐỔI ĐƯỢC (XU)",
+            "x": 880,
+            "y": 230,
+            "size": 70,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.15
+          },
+          {
+            "kind": "counter",
+            "values": [
+              "1000",
+              "700",
+              "400",
+              "100"
+            ],
+            "x": 880,
+            "y": 380,
+            "w": 560,
+            "size": 160,
+            "rot": -2,
+            "at": 0.25
+          },
+          {
+            "kind": "type",
+            "text": "minh hoạ",
+            "x": 900,
+            "y": 650,
+            "size": 30,
+            "rot": 0,
+            "at": 0.6
+          }
+        ],
         "chapter": "Hồ sơ 2 · Nhà Tống",
         "note": "tờ tiền bị xé nhỏ dần"
       }
@@ -205,6 +1254,124 @@
       "id": "s22",
       "text": "Manh mối thứ hai: kẻ trộm thích nhất là lúc in tiền trở nên quá dễ dàng.",
       "visual": {
+        "bg": "cork",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.06
+          },
+          {
+            "kind": "scrap",
+            "x": 740,
+            "y": 135,
+            "w": 440,
+            "h": 230,
+            "tone": "white",
+            "rot": -2,
+            "at": 0.25
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 2",
+            "x": 765,
+            "y": 155,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.27
+          },
+          {
+            "kind": "type",
+            "text": "In tiền quá dễ",
+            "x": 760,
+            "y": 230,
+            "size": 30,
+            "rot": 0,
+            "at": 0.31,
+            "hit": true
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1370,
+            "y": 190,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "03",
+            "at": 0.06
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 410,
+            "y": 610,
+            "w": 300,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "04",
+            "at": 0.09
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1210,
+            "y": 610,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "05",
+            "at": 0.12
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              400,
+              395
+            ],
+            "to": [
+              960,
+              345
+            ],
+            "at": 0.55,
+            "sag": 40
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.62,
+            "x": 980,
+            "y": 280,
+            "zoom": 1.6
+          }
+        ],
         "chapter": "Hồ sơ 2 · Nhà Tống",
         "note": "ghim manh mối 2"
       }
@@ -213,6 +1380,40 @@
       "id": "s23",
       "text": "Hồ sơ số ba. Tây Ban Nha, thế kỷ mười sáu.",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 180,
+            "y": 250,
+            "w": 560,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "03"
+          },
+          {
+            "kind": "label",
+            "text": "TÂY BAN NHA",
+            "x": 860,
+            "y": 330,
+            "size": 140,
+            "tone": "red",
+            "rot": -2,
+            "at": 0.15,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "thế kỷ 16",
+            "x": 880,
+            "y": 560,
+            "size": 46,
+            "rot": 1,
+            "at": 0.35
+          }
+        ],
         "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
         "note": "thẻ chương HỒ SƠ 03 · TÂY BAN NHA"
       }
@@ -221,6 +1422,61 @@
       "id": "s24",
       "text": "Lần này, chẳng ai in tiền cả. Những đoàn tàu chở bạc từ các mỏ ở châu Mỹ cập bến châu Âu.",
       "visual": {
+        "bg": "kraft",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "map",
+            "x": 140,
+            "y": 160,
+            "w": 1000,
+            "rot": -1
+          },
+          {
+            "kind": "art",
+            "name": "chest",
+            "x": 1300,
+            "y": 480,
+            "w": 400,
+            "rot": 3,
+            "at": 0.6
+          },
+          {
+            "kind": "fly",
+            "name": "ship",
+            "x": 0,
+            "y": 0,
+            "w": 260,
+            "path": [
+              [
+                220,
+                470
+              ],
+              [
+                880,
+                300
+              ]
+            ],
+            "at": 0.25,
+            "dur": 1.8,
+            "spin": 0
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              330,
+              520
+            ],
+            "to": [
+              930,
+              360
+            ],
+            "at": 0.3,
+            "sag": 60
+          }
+        ],
         "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
         "note": "bản đồ hai lục địa, tàu buồm, dây đỏ"
       }
@@ -229,6 +1485,47 @@
       "id": "s25",
       "text": "Nghe thì giống trúng số. Nhưng lượng hàng hoá thì không tăng nhanh như thế.",
       "visual": {
+        "bg": "news",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "chest",
+            "x": 220,
+            "y": 320,
+            "w": 460,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "BẠC NHIỀU",
+            "x": 260,
+            "y": 200,
+            "size": 90,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.1
+          },
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 1250,
+            "y": 420,
+            "w": 300,
+            "rot": 4,
+            "at": 0.55
+          },
+          {
+            "kind": "label",
+            "text": "HÀNG ÍT",
+            "x": 1240,
+            "y": 250,
+            "size": 90,
+            "tone": "ink",
+            "rot": 2,
+            "at": 0.6
+          }
+        ],
         "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
         "note": "rương bạc ↔ giỏ hàng nhỏ"
       }
@@ -237,6 +1534,54 @@
       "id": "s26",
       "text": "Trong khoảng một trăm năm mươi năm, giá cả ở châu Âu tăng khoảng sáu lần. Các sử gia gọi đó là cuộc cách mạng giá cả.",
       "visual": {
+        "bg": "grid",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "chart",
+            "points": [
+              1,
+              1.3,
+              1.7,
+              2.2,
+              2.8,
+              3.5,
+              4.2,
+              4.9,
+              5.6,
+              6.0
+            ],
+            "x": 140,
+            "y": 200,
+            "w": 900,
+            "h": 560,
+            "rot": -1,
+            "min": 0,
+            "max": 7,
+            "caption": "khoảng 1520–1640"
+          },
+          {
+            "kind": "label",
+            "text": "× 6",
+            "x": 1250,
+            "y": 250,
+            "size": 200,
+            "tone": "red",
+            "rot": -3,
+            "at": 0.45,
+            "hit": true
+          },
+          {
+            "kind": "label",
+            "text": "CÁCH MẠNG GIÁ CẢ",
+            "x": 1100,
+            "y": 640,
+            "size": 64,
+            "tone": "mustard",
+            "rot": -1,
+            "at": 0.7
+          }
+        ],
         "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
         "note": "biểu đồ giá đi lên, nhãn CÁCH MẠNG GIÁ CẢ"
       }
@@ -245,6 +1590,154 @@
       "id": "s27",
       "text": "Manh mối thứ ba: ngay cả tiền thật, nếu đổ vào quá nhiều so với hàng hoá, cũng đẩy giá cả leo thang.",
       "visual": {
+        "bg": "cork",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.06
+          },
+          {
+            "kind": "scrap",
+            "x": 740,
+            "y": 135,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 2",
+            "x": 765,
+            "y": 155,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.04
+          },
+          {
+            "kind": "type",
+            "text": "In tiền quá dễ",
+            "x": 760,
+            "y": 230,
+            "size": 30,
+            "rot": 0,
+            "at": 0.08
+          },
+          {
+            "kind": "scrap",
+            "x": 1300,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "white",
+            "rot": 2,
+            "at": 0.25
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 3",
+            "x": 1325,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.27
+          },
+          {
+            "kind": "type",
+            "text": "Tiền nhiều hơn hàng",
+            "x": 1320,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.31,
+            "hit": true
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 410,
+            "y": 610,
+            "w": 300,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "04",
+            "at": 0.09
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1210,
+            "y": 610,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "05",
+            "at": 0.12
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              400,
+              395
+            ],
+            "to": [
+              960,
+              345
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              960,
+              345
+            ],
+            "to": [
+              1520,
+              395
+            ],
+            "at": 0.55,
+            "sag": 40
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.62,
+            "x": 1500,
+            "y": 330,
+            "zoom": 1.6
+          }
+        ],
         "chapter": "Hồ sơ 3 · Bạc châu Mỹ",
         "note": "ghim manh mối 3"
       }
@@ -253,6 +1746,40 @@
       "id": "s28",
       "text": "Hồ sơ số bốn. Nước Đức, năm một nghìn chín trăm hai mươi ba. Vụ án nổi tiếng nhất.",
       "visual": {
+        "bg": "dark",
+        "camera": "pan_left",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 180,
+            "y": 250,
+            "w": 560,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "04"
+          },
+          {
+            "kind": "label",
+            "text": "ĐỨC 1923",
+            "x": 860,
+            "y": 330,
+            "size": 140,
+            "tone": "red",
+            "rot": -2,
+            "at": 0.15,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "vụ án nổi tiếng nhất",
+            "x": 880,
+            "y": 560,
+            "size": 46,
+            "rot": 1,
+            "at": 0.35
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "thẻ chương HỒ SƠ 04 · ĐỨC 1923"
       }
@@ -261,6 +1788,47 @@
       "id": "s29",
       "text": "Thua trận sau Thế chiến thứ nhất, nước Đức gánh một khoản bồi thường chiến tranh khổng lồ.",
       "visual": {
+        "bg": "news",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "invoice",
+            "x": 300,
+            "y": 150,
+            "w": 320,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "BỒI THƯỜNG",
+            "x": 800,
+            "y": 260,
+            "size": 100,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.2
+          },
+          {
+            "kind": "type",
+            "text": "sau Thế chiến thứ nhất",
+            "x": 820,
+            "y": 470,
+            "size": 44,
+            "rot": 0,
+            "at": 0.4
+          },
+          {
+            "kind": "stamp",
+            "text": "KHỔNG LỒ",
+            "x": 880,
+            "y": 640,
+            "size": 100,
+            "rot": -8,
+            "tone": "red",
+            "at": 0.65
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "hoá đơn bồi thường dài lê thê"
       }
@@ -269,6 +1837,47 @@
       "id": "s30",
       "text": "Đầu năm đó, Pháp và Bỉ chiếm vùng công nghiệp Ruhr. Công nhân đình công, nhà máy ngừng chạy.",
       "visual": {
+        "bg": "kraft",
+        "camera": "pan_right",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "factory",
+            "x": 200,
+            "y": 260,
+            "w": 580,
+            "rot": -2
+          },
+          {
+            "kind": "label",
+            "text": "RUHR · 1923",
+            "x": 900,
+            "y": 220,
+            "size": 90,
+            "tone": "mustard",
+            "rot": 2,
+            "at": 0.2
+          },
+          {
+            "kind": "stamp",
+            "text": "ĐÌNH CÔNG",
+            "x": 940,
+            "y": 450,
+            "size": 100,
+            "rot": -6,
+            "tone": "red",
+            "at": 0.5
+          },
+          {
+            "kind": "type",
+            "text": "Pháp và Bỉ chiếm vùng công nghiệp",
+            "x": 880,
+            "y": 700,
+            "size": 36,
+            "rot": 0,
+            "at": 0.65
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "ống khói tắt, con dấu ĐÌNH CÔNG"
       }
@@ -277,6 +1886,51 @@
       "id": "s31",
       "text": "Chính phủ trả lương cho người đình công bằng cách nào? In thêm tiền.",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "press",
+            "x": 260,
+            "y": 230,
+            "w": 440,
+            "rot": -2
+          },
+          {
+            "kind": "art",
+            "name": "bundle",
+            "x": 980,
+            "y": 230,
+            "w": 440,
+            "rot": -4,
+            "t": "1000",
+            "sub": "MARK",
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "bundle",
+            "x": 1080,
+            "y": 440,
+            "w": 440,
+            "rot": 5,
+            "t": "1000",
+            "sub": "MARK",
+            "at": 0.55
+          },
+          {
+            "kind": "label",
+            "text": "IN THÊM TIỀN",
+            "x": 980,
+            "y": 780,
+            "size": 84,
+            "tone": "red",
+            "rot": -1,
+            "at": 0.65,
+            "hit": true
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "máy in tiền chạy hết công suất"
       }
@@ -285,6 +1939,65 @@
       "id": "s32",
       "text": "Tháng một, một đô la Mỹ đổi khoảng bốn mươi tám nghìn mác. Đến tháng mười một, con số đó là khoảng bốn nghìn hai trăm tỷ mác.",
       "visual": {
+        "bg": "dark",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "banknote",
+            "x": 140,
+            "y": 330,
+            "w": 520,
+            "rot": -5,
+            "t": "1",
+            "sub": "US DOLLAR",
+            "corner": "1",
+            "from": "left"
+          },
+          {
+            "kind": "label",
+            "text": "=",
+            "x": 690,
+            "y": 420,
+            "size": 120,
+            "tone": "mustard",
+            "rot": 0,
+            "at": 0.15
+          },
+          {
+            "kind": "counter",
+            "values": [
+              "48.000",
+              "1.000.000",
+              "170.000.000.000",
+              "4.200.000.000.000"
+            ],
+            "x": 800,
+            "y": 390,
+            "w": 1060,
+            "size": 100,
+            "rot": -1,
+            "at": 0.2
+          },
+          {
+            "kind": "label",
+            "text": "MÁC · THÁNG 1 → 11/1923",
+            "x": 1000,
+            "y": 610,
+            "size": 52,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.45
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.78,
+            "x": 1320,
+            "y": 480,
+            "zoom": 1.35
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "bộ đếm 48.000 → 4.200.000.000.000"
       }
@@ -293,6 +2006,58 @@
       "id": "s33",
       "text": "Giá cả thay đổi theo từng giờ. Có nơi trả lương hai lần một ngày, để người ta kịp chạy đi mua hàng trước khi giá lại tăng.",
       "visual": {
+        "bg": "news",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "clock",
+            "x": 220,
+            "y": 240,
+            "w": 400,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "LƯƠNG 2 LẦN / NGÀY",
+            "x": 760,
+            "y": 220,
+            "size": 72,
+            "tone": "mustard",
+            "rot": 2,
+            "at": 0.2
+          },
+          {
+            "kind": "stamp",
+            "text": "GIÁ MỚI",
+            "x": 880,
+            "y": 470,
+            "size": 80,
+            "rot": -8,
+            "tone": "red",
+            "at": 0.45
+          },
+          {
+            "kind": "stamp",
+            "text": "GIÁ MỚI",
+            "x": 1140,
+            "y": 560,
+            "size": 80,
+            "rot": 6,
+            "tone": "red",
+            "at": 0.55
+          },
+          {
+            "kind": "stamp",
+            "text": "GIÁ MỚI",
+            "x": 1400,
+            "y": 450,
+            "size": 80,
+            "rot": -4,
+            "tone": "red",
+            "at": 0.65
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "đồng hồ quay nhanh, tem giá dán chồng"
       }
@@ -301,6 +2066,73 @@
       "id": "s34",
       "text": "Một ổ bánh mì năm một nghìn chín trăm mười tám chưa tới một mác. Năm năm sau, nó có giá hàng tỷ mác.",
       "visual": {
+        "bg": "news",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "bread",
+            "x": 690,
+            "y": 300,
+            "w": 560,
+            "rot": -2,
+            "enter": "drop",
+            "from": "top"
+          },
+          {
+            "kind": "label",
+            "text": "1918",
+            "x": 200,
+            "y": 220,
+            "size": 96,
+            "tone": "ink",
+            "rot": -3,
+            "at": 0.05
+          },
+          {
+            "kind": "type",
+            "text": "< 1 mác / ổ bánh mì",
+            "x": 200,
+            "y": 360,
+            "size": 40,
+            "rot": -2,
+            "at": 0.15
+          },
+          {
+            "kind": "label",
+            "text": "1923",
+            "x": 1290,
+            "y": 560,
+            "size": 96,
+            "tone": "red",
+            "rot": 3,
+            "at": 0.5,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "hàng tỷ mác / ổ",
+            "x": 1290,
+            "y": 700,
+            "size": 40,
+            "rot": 2,
+            "at": 0.6
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              330,
+              448
+            ],
+            "to": [
+              1310,
+              640
+            ],
+            "at": 0.45,
+            "sag": 140
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "ổ bánh mì, hai thẻ giá nối dây đỏ"
       }
@@ -309,6 +2141,60 @@
       "id": "s35",
       "text": "Và có người dùng tiền giấy để nhóm bếp, vì đốt tiền còn rẻ hơn mua củi.",
       "visual": {
+        "bg": "kraft",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "stove",
+            "x": 260,
+            "y": 200,
+            "w": 360,
+            "rot": 1
+          },
+          {
+            "kind": "art",
+            "name": "bundle",
+            "x": 720,
+            "y": 580,
+            "w": 420,
+            "rot": -9,
+            "t": "1000",
+            "sub": "MARK",
+            "at": 0.35,
+            "from": "left"
+          },
+          {
+            "kind": "art",
+            "name": "flame",
+            "x": 380,
+            "y": 470,
+            "w": 140,
+            "rot": -3,
+            "enter": "drop",
+            "at": 0.5
+          },
+          {
+            "kind": "art",
+            "name": "logs",
+            "x": 1250,
+            "y": 360,
+            "w": 460,
+            "rot": 2,
+            "at": 0.55
+          },
+          {
+            "kind": "label",
+            "text": "RẺ HƠN CỦI",
+            "x": 1200,
+            "y": 200,
+            "size": 84,
+            "tone": "red",
+            "rot": -2,
+            "at": 0.7,
+            "hit": true
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "lò sưởi + bó tiền + bó củi"
       }
@@ -317,6 +2203,59 @@
       "id": "s36",
       "text": "Tháng mười một năm đó, nước Đức phát hành đồng tiền mới. Một mác mới đổi một nghìn tỷ mác cũ, và lượng tiền mới được giới hạn chặt chẽ.",
       "visual": {
+        "bg": "grid",
+        "camera": "pan_left",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "banknote",
+            "x": 180,
+            "y": 250,
+            "w": 520,
+            "rot": -3,
+            "t": "1",
+            "sub": "MÁC MỚI",
+            "corner": "1"
+          },
+          {
+            "kind": "label",
+            "text": "=",
+            "x": 760,
+            "y": 360,
+            "size": 110,
+            "tone": "mustard",
+            "rot": 0,
+            "at": 0.25
+          },
+          {
+            "kind": "label",
+            "text": "1.000.000.000.000 MÁC CŨ",
+            "x": 880,
+            "y": 370,
+            "size": 60,
+            "tone": "ink",
+            "rot": 1,
+            "at": 0.35
+          },
+          {
+            "kind": "art",
+            "name": "lock",
+            "x": 1380,
+            "y": 560,
+            "w": 220,
+            "rot": 4,
+            "at": 0.6
+          },
+          {
+            "kind": "type",
+            "text": "Lượng tiền mới giới hạn chặt",
+            "x": 300,
+            "y": 700,
+            "size": 40,
+            "rot": -1,
+            "at": 0.7
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "đồng tiền mới, nhãn 1 = 1.000.000.000.000"
       }
@@ -325,6 +2264,44 @@
       "id": "s37",
       "text": "Cơn sốt giá dừng lại gần như ngay lập tức.",
       "visual": {
+        "bg": "grid",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "chart",
+            "points": [
+              1,
+              1.5,
+              3,
+              7,
+              18,
+              45,
+              100,
+              100,
+              100,
+              100
+            ],
+            "x": 140,
+            "y": 200,
+            "w": 900,
+            "h": 560,
+            "rot": -1,
+            "min": 0,
+            "max": 115,
+            "caption": "minh hoạ"
+          },
+          {
+            "kind": "label",
+            "text": "DỪNG LẠI",
+            "x": 1220,
+            "y": 320,
+            "size": 110,
+            "tone": "red",
+            "rot": -3,
+            "at": 0.35,
+            "hit": true
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "biểu đồ giá đứng lại"
       }
@@ -333,6 +2310,184 @@
       "id": "s38",
       "text": "Manh mối thứ tư: muốn bắt kẻ trộm, phải khoá chặt máy in tiền, và lấy lại niềm tin vào đồng tiền.",
       "visual": {
+        "bg": "cork",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.06
+          },
+          {
+            "kind": "scrap",
+            "x": 740,
+            "y": 135,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 2",
+            "x": 765,
+            "y": 155,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.04
+          },
+          {
+            "kind": "type",
+            "text": "In tiền quá dễ",
+            "x": 760,
+            "y": 230,
+            "size": 30,
+            "rot": 0,
+            "at": 0.08
+          },
+          {
+            "kind": "scrap",
+            "x": 1300,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.04
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 3",
+            "x": 1325,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "type",
+            "text": "Tiền nhiều hơn hàng",
+            "x": 1320,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.1
+          },
+          {
+            "kind": "scrap",
+            "x": 340,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "white",
+            "rot": -2,
+            "at": 0.25
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 4",
+            "x": 365,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.27
+          },
+          {
+            "kind": "type",
+            "text": "Khoá máy in tiền",
+            "x": 360,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.31,
+            "hit": true
+          },
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 1210,
+            "y": 610,
+            "w": 300,
+            "rot": 3,
+            "t": "HỒ SƠ",
+            "sub": "05",
+            "at": 0.12
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              400,
+              395
+            ],
+            "to": [
+              960,
+              345
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              960,
+              345
+            ],
+            "to": [
+              1520,
+              395
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1520,
+              395
+            ],
+            "to": [
+              560,
+              815
+            ],
+            "at": 0.55,
+            "sag": 40
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.62,
+            "x": 600,
+            "y": 760,
+            "zoom": 1.6
+          }
+        ],
         "chapter": "Hồ sơ 4 · Đức 1923",
         "note": "ổ khoá trên máy in, ghim manh mối 4"
       }
@@ -341,6 +2496,40 @@
       "id": "s39",
       "text": "Hồ sơ số năm. Lần này rất gần chúng ta: Việt Nam, những năm tám mươi.",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "folder",
+            "x": 180,
+            "y": 250,
+            "w": 560,
+            "rot": -3,
+            "t": "HỒ SƠ",
+            "sub": "05"
+          },
+          {
+            "kind": "label",
+            "text": "VIỆT NAM",
+            "x": 860,
+            "y": 330,
+            "size": 140,
+            "tone": "red",
+            "rot": -2,
+            "at": 0.15,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "những năm 80",
+            "x": 880,
+            "y": 560,
+            "size": 46,
+            "rot": 1,
+            "at": 0.35
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "thẻ chương HỒ SƠ 05 · VIỆT NAM"
       }
@@ -349,6 +2538,70 @@
       "id": "s40",
       "text": "Tháng chín năm một nghìn chín trăm tám mươi lăm, Việt Nam đổi tiền, mười đồng cũ lấy một đồng mới, cùng lúc điều chỉnh giá và lương.",
       "visual": {
+        "bg": "kraft",
+        "camera": "pan_right",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "calendar",
+            "x": 820,
+            "y": 130,
+            "w": 260,
+            "rot": -3,
+            "t": "14",
+            "sub": "THÁNG 9"
+          },
+          {
+            "kind": "label",
+            "text": "VIỆT NAM · 1985",
+            "x": 140,
+            "y": 170,
+            "size": 80,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.1
+          },
+          {
+            "kind": "art",
+            "name": "banknote",
+            "x": 140,
+            "y": 470,
+            "w": 520,
+            "rot": -4,
+            "t": "10",
+            "sub": "ĐỒNG CŨ",
+            "corner": "10",
+            "tone": "dark",
+            "at": 0.35,
+            "from": "left"
+          },
+          {
+            "kind": "art",
+            "name": "banknote",
+            "x": 1260,
+            "y": 470,
+            "w": 520,
+            "rot": 3,
+            "t": "1",
+            "sub": "ĐỒNG MỚI",
+            "corner": "1",
+            "at": 0.55
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              670,
+              620
+            ],
+            "to": [
+              1260,
+              620
+            ],
+            "at": 0.5,
+            "sag": 60
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "lịch 14/9/1985, tờ 10 đồng cũ → 1 đồng mới"
       }
@@ -357,6 +2610,47 @@
       "id": "s41",
       "text": "Nhưng thâm hụt ngân sách vẫn được bù bằng cách phát hành thêm tiền.",
       "visual": {
+        "bg": "news",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "scroll",
+            "x": 220,
+            "y": 170,
+            "w": 380,
+            "rot": -3,
+            "t": "NGÂN SÁCH"
+          },
+          {
+            "kind": "stamp",
+            "text": "THÂM HỤT",
+            "x": 260,
+            "y": 640,
+            "size": 80,
+            "rot": -8,
+            "tone": "red",
+            "at": 0.3
+          },
+          {
+            "kind": "art",
+            "name": "arrow",
+            "x": 720,
+            "y": 420,
+            "w": 340,
+            "rot": 0,
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "press",
+            "x": 1180,
+            "y": 260,
+            "w": 420,
+            "rot": 2,
+            "at": 0.55
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "sổ ngân sách đỏ, máy in"
       }
@@ -365,6 +2659,56 @@
       "id": "s42",
       "text": "Năm một nghìn chín trăm tám mươi sáu, lạm phát vượt bảy trăm phần trăm. Giá cả tăng gấp nhiều lần chỉ trong một năm.",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "ticket",
+            "x": 150,
+            "y": 220,
+            "w": 380,
+            "rot": -8,
+            "t": "TEM PHIẾU",
+            "sub": "GẠO"
+          },
+          {
+            "kind": "art",
+            "name": "ticket",
+            "x": 210,
+            "y": 470,
+            "w": 380,
+            "rot": 6,
+            "t": "TEM PHIẾU",
+            "sub": "VẢI",
+            "at": 0.1
+          },
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT 1986",
+            "x": 760,
+            "y": 230,
+            "size": 70,
+            "tone": "mustard",
+            "rot": -1,
+            "at": 0.15
+          },
+          {
+            "kind": "counter",
+            "values": [
+              "100%",
+              "300%",
+              "500%",
+              "> 700%"
+            ],
+            "x": 760,
+            "y": 380,
+            "w": 900,
+            "size": 200,
+            "rot": -2,
+            "at": 0.25
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "tem phiếu, bộ đếm > 700%"
       }
@@ -373,6 +2717,59 @@
       "id": "s43",
       "text": "Bước ngoặt đến vào năm một nghìn chín trăm tám mươi chín. Lãi suất tiết kiệm được nâng lên cao hơn tốc độ tăng giá.",
       "visual": {
+        "bg": "kraft",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "1989",
+            "x": 160,
+            "y": 160,
+            "size": 120,
+            "tone": "red",
+            "rot": -3,
+            "hit": true
+          },
+          {
+            "kind": "art",
+            "name": "scale",
+            "x": 680,
+            "y": 300,
+            "w": 560,
+            "rot": 0,
+            "at": 0.2
+          },
+          {
+            "kind": "label",
+            "text": "LÃI SUẤT",
+            "x": 400,
+            "y": 330,
+            "size": 70,
+            "tone": "mustard",
+            "rot": -3,
+            "at": 0.4
+          },
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT",
+            "x": 1260,
+            "y": 330,
+            "size": 70,
+            "tone": "ink",
+            "rot": 3,
+            "at": 0.5
+          },
+          {
+            "kind": "stamp",
+            "text": "LÃI > GIÁ",
+            "x": 760,
+            "y": 780,
+            "size": 90,
+            "rot": -5,
+            "tone": "red",
+            "at": 0.72
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "cán cân lãi suất > lạm phát"
       }
@@ -381,6 +2778,57 @@
       "id": "s44",
       "text": "Gửi tiền vào ngân hàng giờ giữ được giá trị. Tiền chảy ngược về ngân hàng, thay vì đổ vào tích trữ hàng hoá.",
       "visual": {
+        "bg": "news",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "bundle",
+            "x": 160,
+            "y": 330,
+            "w": 400,
+            "rot": -5,
+            "t": "1000",
+            "sub": "ĐỒNG"
+          },
+          {
+            "kind": "art",
+            "name": "arrow",
+            "x": 640,
+            "y": 420,
+            "w": 380,
+            "rot": 0,
+            "at": 0.25
+          },
+          {
+            "kind": "art",
+            "name": "bank",
+            "x": 1150,
+            "y": 250,
+            "w": 520,
+            "rot": 2,
+            "at": 0.35
+          },
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 220,
+            "y": 680,
+            "w": 260,
+            "rot": 4,
+            "at": 0.6
+          },
+          {
+            "kind": "stamp",
+            "text": "THÔI TÍCH TRỮ",
+            "x": 460,
+            "y": 820,
+            "size": 60,
+            "rot": -6,
+            "tone": "red",
+            "at": 0.72
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "mũi tên tiền chảy về ngân hàng"
       }
@@ -389,6 +2837,48 @@
       "id": "s45",
       "text": "Cùng với việc siết chi tiêu và tín dụng, lạm phát năm đó giảm xuống còn khoảng ba mươi lăm phần trăm.",
       "visual": {
+        "bg": "grid",
+        "camera": "tilt_down",
+        "pieces": [
+          {
+            "kind": "chart",
+            "points": [
+              774,
+              323,
+              394,
+              35
+            ],
+            "x": 140,
+            "y": 200,
+            "w": 900,
+            "h": 560,
+            "rot": -1,
+            "min": 0,
+            "max": 850,
+            "caption": "1986 · 1987 · 1988 · 1989"
+          },
+          {
+            "kind": "label",
+            "text": "1986: > 700%",
+            "x": 1150,
+            "y": 240,
+            "size": 72,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.2
+          },
+          {
+            "kind": "label",
+            "text": "1989: ~35%",
+            "x": 1150,
+            "y": 520,
+            "size": 96,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.6,
+            "hit": true
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "biểu đồ 1986 → 1989 lao xuống"
       }
@@ -397,6 +2887,214 @@
       "id": "s46",
       "text": "Manh mối thứ năm: khi lãi suất cao hơn lạm phát, người ta lại muốn giữ tiền, và kẻ trộm mất chỗ trốn.",
       "visual": {
+        "bg": "cork",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.06
+          },
+          {
+            "kind": "scrap",
+            "x": 740,
+            "y": 135,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 2",
+            "x": 765,
+            "y": 155,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.04
+          },
+          {
+            "kind": "type",
+            "text": "In tiền quá dễ",
+            "x": 760,
+            "y": 230,
+            "size": 30,
+            "rot": 0,
+            "at": 0.08
+          },
+          {
+            "kind": "scrap",
+            "x": 1300,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.04
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 3",
+            "x": 1325,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "type",
+            "text": "Tiền nhiều hơn hàng",
+            "x": 1320,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.1
+          },
+          {
+            "kind": "scrap",
+            "x": 340,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 4",
+            "x": 365,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.08
+          },
+          {
+            "kind": "type",
+            "text": "Khoá máy in tiền",
+            "x": 360,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.12
+          },
+          {
+            "kind": "scrap",
+            "x": 1140,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "white",
+            "rot": 2,
+            "at": 0.25
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 5",
+            "x": 1165,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.27
+          },
+          {
+            "kind": "type",
+            "text": "Lãi suất > lạm phát",
+            "x": 1160,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.31,
+            "hit": true
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              400,
+              395
+            ],
+            "to": [
+              960,
+              345
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              960,
+              345
+            ],
+            "to": [
+              1520,
+              395
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1520,
+              395
+            ],
+            "to": [
+              1360,
+              815
+            ],
+            "at": 0.55,
+            "sag": 40
+          },
+          {
+            "from": [
+              1360,
+              815
+            ],
+            "to": [
+              560,
+              815
+            ],
+            "at": 0.55,
+            "sag": 40
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.62,
+            "x": 1380,
+            "y": 760,
+            "zoom": 1.6
+          }
+        ],
         "chapter": "Hồ sơ 5 · Việt Nam",
         "note": "ghim manh mối 5"
       }
@@ -405,6 +3103,215 @@
       "id": "s47",
       "text": "Giờ hãy nhìn lên bảng. Năm vụ án, năm thời đại. Bạn có thấy điểm chung không?",
       "visual": {
+        "bg": "cork",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.06
+          },
+          {
+            "kind": "scrap",
+            "x": 740,
+            "y": 135,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 2",
+            "x": 765,
+            "y": 155,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.04
+          },
+          {
+            "kind": "type",
+            "text": "In tiền quá dễ",
+            "x": 760,
+            "y": 230,
+            "size": 30,
+            "rot": 0,
+            "at": 0.08
+          },
+          {
+            "kind": "scrap",
+            "x": 1300,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.04
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 3",
+            "x": 1325,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "type",
+            "text": "Tiền nhiều hơn hàng",
+            "x": 1320,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.1
+          },
+          {
+            "kind": "scrap",
+            "x": 340,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 4",
+            "x": 365,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.08
+          },
+          {
+            "kind": "type",
+            "text": "Khoá máy in tiền",
+            "x": 360,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.12
+          },
+          {
+            "kind": "scrap",
+            "x": 1140,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.08
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 5",
+            "x": 1165,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.1
+          },
+          {
+            "kind": "type",
+            "text": "Lãi suất > lạm phát",
+            "x": 1160,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.14
+          },
+          {
+            "kind": "art",
+            "name": "qmark",
+            "x": 860,
+            "y": 400,
+            "w": 200,
+            "rot": 3,
+            "at": 0.55,
+            "hit": true
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              400,
+              395
+            ],
+            "to": [
+              960,
+              345
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              960,
+              345
+            ],
+            "to": [
+              1520,
+              395
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1520,
+              395
+            ],
+            "to": [
+              1360,
+              815
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1360,
+              815
+            ],
+            "to": [
+              560,
+              815
+            ],
+            "at": 0.12,
+            "sag": 40
+          }
+        ],
         "chapter": "Phá án",
         "note": "toàn cảnh bảng ghim 5 hồ sơ, dây đỏ"
       }
@@ -413,6 +3320,284 @@
       "id": "s48",
       "text": "Pha loãng đồng tiền, in tiền giấy, bạc tràn về, in tiền trả nợ, in tiền bù ngân sách. Tất cả đều là một chuyện: lượng tiền tăng nhanh hơn lượng hàng hoá.",
       "visual": {
+        "bg": "cork",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.06
+          },
+          {
+            "kind": "scrap",
+            "x": 740,
+            "y": 135,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 2",
+            "x": 765,
+            "y": 155,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.04
+          },
+          {
+            "kind": "type",
+            "text": "In tiền quá dễ",
+            "x": 760,
+            "y": 230,
+            "size": 30,
+            "rot": 0,
+            "at": 0.08
+          },
+          {
+            "kind": "scrap",
+            "x": 1300,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.04
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 3",
+            "x": 1325,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "type",
+            "text": "Tiền nhiều hơn hàng",
+            "x": 1320,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.1
+          },
+          {
+            "kind": "scrap",
+            "x": 340,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 4",
+            "x": 365,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.08
+          },
+          {
+            "kind": "type",
+            "text": "Khoá máy in tiền",
+            "x": 360,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.12
+          },
+          {
+            "kind": "scrap",
+            "x": 1140,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.08
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 5",
+            "x": 1165,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.1
+          },
+          {
+            "kind": "type",
+            "text": "Lãi suất > lạm phát",
+            "x": 1160,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.14
+          },
+          {
+            "kind": "label",
+            "text": "TIỀN TĂNG NHANH HƠN HÀNG",
+            "x": 552,
+            "y": 455,
+            "size": 64,
+            "tone": "red",
+            "rot": -1,
+            "at": 0.5,
+            "hit": true
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              400,
+              395
+            ],
+            "to": [
+              960,
+              345
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              960,
+              345
+            ],
+            "to": [
+              1520,
+              395
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1520,
+              395
+            ],
+            "to": [
+              1360,
+              815
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1360,
+              815
+            ],
+            "to": [
+              560,
+              815
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              400,
+              410
+            ],
+            "to": [
+              960,
+              490
+            ],
+            "at": 0.25,
+            "sag": 20
+          },
+          {
+            "from": [
+              960,
+              360
+            ],
+            "to": [
+              960,
+              490
+            ],
+            "at": 0.32,
+            "sag": 20
+          },
+          {
+            "from": [
+              1520,
+              410
+            ],
+            "to": [
+              960,
+              490
+            ],
+            "at": 0.39,
+            "sag": 20
+          },
+          {
+            "from": [
+              560,
+              830
+            ],
+            "to": [
+              960,
+              490
+            ],
+            "at": 0.46,
+            "sag": 20
+          },
+          {
+            "from": [
+              1360,
+              830
+            ],
+            "to": [
+              960,
+              490
+            ],
+            "at": 0.53,
+            "sag": 20
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.78,
+            "x": 960,
+            "y": 500,
+            "zoom": 1.45
+          }
+        ],
         "chapter": "Phá án",
         "note": "5 sợi dây đỏ chụm vào thẻ trung tâm"
       }
@@ -421,6 +3606,70 @@
       "id": "s49",
       "text": "Hãy hình dung nền kinh tế là một khu chợ. Hàng hoá vẫn chừng đó, nhưng tiền trong tay mọi người tăng gấp đôi. Giá sẽ phải đi lên.",
       "visual": {
+        "bg": "kraft",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 200,
+            "y": 300,
+            "w": 400,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "HÀNG: GIỮ NGUYÊN",
+            "x": 160,
+            "y": 180,
+            "size": 64,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.25
+          },
+          {
+            "kind": "art",
+            "name": "bundle",
+            "x": 1050,
+            "y": 240,
+            "w": 420,
+            "rot": -5,
+            "t": "1000",
+            "sub": "ĐỒNG",
+            "at": 0.45
+          },
+          {
+            "kind": "art",
+            "name": "bundle",
+            "x": 1120,
+            "y": 440,
+            "w": 420,
+            "rot": 4,
+            "t": "1000",
+            "sub": "ĐỒNG",
+            "at": 0.55
+          },
+          {
+            "kind": "label",
+            "text": "TIỀN: × 2",
+            "x": 1120,
+            "y": 150,
+            "size": 80,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.55
+          },
+          {
+            "kind": "stamp",
+            "text": "GIÁ ↑",
+            "x": 700,
+            "y": 700,
+            "size": 110,
+            "rot": -8,
+            "tone": "red",
+            "at": 0.75
+          }
+        ],
         "chapter": "Phá án",
         "note": "khu chợ: hàng giữ nguyên, tiền nhân đôi"
       }
@@ -429,6 +3678,47 @@
       "id": "s50",
       "text": "Các nhà kinh tế gọi đó là lạm phát do cầu kéo: tiền và nhu cầu tăng nhanh hơn khả năng sản xuất.",
       "visual": {
+        "bg": "news",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "CẦU KÉO",
+            "x": 260,
+            "y": 240,
+            "size": 160,
+            "tone": "red",
+            "rot": -2,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "Tiền và nhu cầu tăng nhanh hơn sản xuất",
+            "x": 280,
+            "y": 520,
+            "size": 40,
+            "rot": 0,
+            "at": 0.3
+          },
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 1340,
+            "y": 320,
+            "w": 360,
+            "rot": 4,
+            "at": 0.5
+          },
+          {
+            "kind": "art",
+            "name": "arrow",
+            "x": 1240,
+            "y": 720,
+            "w": 360,
+            "rot": 0,
+            "at": 0.65
+          }
+        ],
         "chapter": "Phá án",
         "note": "nhãn CẦU KÉO"
       }
@@ -437,6 +3727,74 @@
       "id": "s51",
       "text": "Kẻ trộm còn có một đồng phạm: lạm phát do chi phí đẩy. Khi xăng dầu, nguyên liệu hay tiền lương tăng, doanh nghiệp đẩy phần chi phí đó vào giá bán.",
       "visual": {
+        "bg": "kraft",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "CHI PHÍ ĐẨY",
+            "x": 200,
+            "y": 160,
+            "size": 120,
+            "tone": "mustard",
+            "rot": -2
+          },
+          {
+            "kind": "art",
+            "name": "gascan",
+            "x": 220,
+            "y": 420,
+            "w": 260,
+            "rot": -4,
+            "at": 0.3
+          },
+          {
+            "kind": "art",
+            "name": "sack",
+            "x": 560,
+            "y": 420,
+            "w": 280,
+            "rot": 3,
+            "at": 0.4
+          },
+          {
+            "kind": "type",
+            "text": "Xăng dầu, nguyên liệu, tiền lương ↑",
+            "x": 960,
+            "y": 300,
+            "size": 36,
+            "rot": 0,
+            "at": 0.5
+          },
+          {
+            "kind": "art",
+            "name": "arrow",
+            "x": 1000,
+            "y": 520,
+            "w": 360,
+            "rot": 0,
+            "at": 0.6
+          },
+          {
+            "kind": "label",
+            "text": "GIÁ BÁN ↑",
+            "x": 1420,
+            "y": 540,
+            "size": 80,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.7,
+            "hit": true
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.82,
+            "x": 1300,
+            "y": 600,
+            "zoom": 1.4
+          }
+        ],
         "chapter": "Phá án",
         "note": "nhãn CHI PHÍ ĐẨY, can xăng, bao nguyên liệu"
       }
@@ -445,6 +3803,55 @@
       "id": "s52",
       "text": "Và đây là định nghĩa chính thức: lạm phát là khi mặt bằng giá chung tăng liên tục, khiến mỗi đồng tiền mua được ít hơn.",
       "visual": {
+        "bg": "news",
+        "camera": "static",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT",
+            "x": 170,
+            "y": 200,
+            "size": 190,
+            "tone": "red",
+            "rot": -2
+          },
+          {
+            "kind": "type",
+            "text": "Mặt bằng giá chung tăng liên tục.",
+            "x": 180,
+            "y": 520,
+            "size": 46,
+            "rot": -1,
+            "at": 0.35
+          },
+          {
+            "kind": "type",
+            "text": "Mỗi đồng tiền mua được ít hơn.",
+            "x": 180,
+            "y": 650,
+            "size": 46,
+            "rot": 1,
+            "at": 0.6
+          },
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 1340,
+            "y": 300,
+            "w": 420,
+            "rot": 3,
+            "at": 0.2
+          }
+        ],
+        "marks": [
+          {
+            "type": "line",
+            "x": 180,
+            "y": 470,
+            "w": 720,
+            "at": 0.3
+          }
+        ],
         "chapter": "Phá án",
         "note": "định nghĩa đánh máy, tĩnh"
       }
@@ -453,6 +3860,29 @@
       "id": "s53",
       "text": "Nhưng khoan đã. Nếu không có lạm phát thì thế giới có tốt hơn không?",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "qmark",
+            "x": 300,
+            "y": 200,
+            "w": 300,
+            "rot": -4
+          },
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT = 0 ?",
+            "x": 760,
+            "y": 380,
+            "size": 120,
+            "tone": "mustard",
+            "rot": 2,
+            "at": 0.3,
+            "hit": true
+          }
+        ],
         "chapter": "Bất ngờ",
         "note": "dấu hỏi lớn"
       }
@@ -461,6 +3891,153 @@
       "id": "s54",
       "text": "Không hẳn. Khi giá cả giảm kéo dài, gọi là giảm phát, người ta trì hoãn mua sắm để chờ rẻ hơn. Doanh nghiệp bán chậm, cắt giảm sản xuất, và kinh tế có thể trì trệ.",
       "visual": {
+        "bg": "grid",
+        "camera": "pan_left",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "GIẢM PHÁT",
+            "x": 760,
+            "y": 120,
+            "size": 100,
+            "tone": "red",
+            "rot": -2
+          },
+          {
+            "kind": "scrap",
+            "x": 260,
+            "y": 330,
+            "w": 420,
+            "h": 160,
+            "tone": "white",
+            "rot": -2,
+            "at": 0.15
+          },
+          {
+            "kind": "type",
+            "text": "Giá giảm",
+            "x": 300,
+            "y": 380,
+            "size": 44,
+            "rot": 0,
+            "at": 0.17
+          },
+          {
+            "kind": "scrap",
+            "x": 1240,
+            "y": 330,
+            "w": 420,
+            "h": 160,
+            "tone": "white",
+            "rot": 2,
+            "at": 0.3
+          },
+          {
+            "kind": "type",
+            "text": "Chờ rẻ hơn",
+            "x": 1280,
+            "y": 380,
+            "size": 44,
+            "rot": 0,
+            "at": 0.32
+          },
+          {
+            "kind": "scrap",
+            "x": 1240,
+            "y": 680,
+            "w": 420,
+            "h": 160,
+            "tone": "white",
+            "rot": -1,
+            "at": 0.45
+          },
+          {
+            "kind": "type",
+            "text": "Bán chậm",
+            "x": 1280,
+            "y": 730,
+            "size": 44,
+            "rot": 0,
+            "at": 0.47
+          },
+          {
+            "kind": "scrap",
+            "x": 260,
+            "y": 680,
+            "w": 420,
+            "h": 160,
+            "tone": "white",
+            "rot": 1,
+            "at": 0.6
+          },
+          {
+            "kind": "type",
+            "text": "Cắt sản xuất",
+            "x": 300,
+            "y": 730,
+            "size": 44,
+            "rot": 0,
+            "at": 0.62
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              680,
+              410
+            ],
+            "to": [
+              1240,
+              410
+            ],
+            "at": 0.3,
+            "sag": 30
+          },
+          {
+            "from": [
+              1450,
+              490
+            ],
+            "to": [
+              1450,
+              680
+            ],
+            "at": 0.45,
+            "sag": 0
+          },
+          {
+            "from": [
+              1240,
+              760
+            ],
+            "to": [
+              680,
+              760
+            ],
+            "at": 0.6,
+            "sag": 30
+          },
+          {
+            "from": [
+              470,
+              680
+            ],
+            "to": [
+              470,
+              490
+            ],
+            "at": 0.75,
+            "sag": 0
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.82,
+            "x": 960,
+            "y": 560,
+            "zoom": 1.3
+          }
+        ],
         "chapter": "Bất ngờ",
         "note": "vòng xoáy giảm phát"
       }
@@ -469,6 +4046,63 @@
       "id": "s55",
       "text": "Vì vậy, nhiều ngân hàng trung ương không nhắm tới lạm phát bằng không, mà muốn nó thấp và ổn định, như một dòng chảy chậm và đều.",
       "visual": {
+        "bg": "news",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "thermo",
+            "x": 300,
+            "y": 180,
+            "w": 180,
+            "rot": -2,
+            "level": 0.3
+          },
+          {
+            "kind": "label",
+            "text": "THẤP · ỔN ĐỊNH",
+            "x": 640,
+            "y": 240,
+            "size": 90,
+            "tone": "mustard",
+            "rot": 2,
+            "at": 0.25
+          },
+          {
+            "kind": "type",
+            "text": "không nhắm tới 0%",
+            "x": 660,
+            "y": 440,
+            "size": 44,
+            "rot": 0,
+            "at": 0.4
+          },
+          {
+            "kind": "chart",
+            "points": [
+              3,
+              3.2,
+              2.9,
+              3.1,
+              3.3,
+              3.0,
+              3.2
+            ],
+            "x": 1000,
+            "y": 560,
+            "w": 760,
+            "h": 340,
+            "rot": -1,
+            "min": 0,
+            "max": 10,
+            "band": [
+              2,
+              4.5
+            ],
+            "caption": "minh hoạ",
+            "at": 0.6
+          }
+        ],
         "chapter": "Bất ngờ",
         "note": "nhiệt kế giá: vùng xanh thấp ổn định"
       }
@@ -477,6 +4111,40 @@
       "id": "s56",
       "text": "Kẻ trộm chỉ thật sự đáng sợ khi nó chạy quá nhanh, hoặc quá khó đoán.",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "thermo",
+            "x": 300,
+            "y": 140,
+            "w": 180,
+            "rot": -2,
+            "level": 0.92
+          },
+          {
+            "kind": "label",
+            "text": "QUÁ NHANH",
+            "x": 700,
+            "y": 280,
+            "size": 110,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.25,
+            "hit": true
+          },
+          {
+            "kind": "label",
+            "text": "QUÁ KHÓ ĐOÁN",
+            "x": 720,
+            "y": 520,
+            "size": 100,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.55
+          }
+        ],
         "chapter": "Bất ngờ",
         "note": "nhiệt kế vượt vạch đỏ"
       }
@@ -485,6 +4153,59 @@
       "id": "s57",
       "text": "Vậy ngày nay, ta theo dõi kẻ trộm này thế nào? Bằng chỉ số giá tiêu dùng, gọi tắt là CPI.",
       "visual": {
+        "bg": "kraft",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "basket",
+            "x": 440,
+            "y": 330,
+            "w": 460,
+            "rot": -3
+          },
+          {
+            "kind": "fly",
+            "name": "magnifier",
+            "x": 0,
+            "y": 0,
+            "w": 360,
+            "path": [
+              [
+                1700,
+                150
+              ],
+              [
+                780,
+                260
+              ]
+            ],
+            "at": 0.2,
+            "dur": 1.0,
+            "spin": 0,
+            "exit": false
+          },
+          {
+            "kind": "label",
+            "text": "CPI",
+            "x": 1340,
+            "y": 560,
+            "size": 150,
+            "tone": "red",
+            "rot": 3,
+            "at": 0.55,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "Chỉ số giá tiêu dùng",
+            "x": 1260,
+            "y": 780,
+            "size": 40,
+            "rot": 0,
+            "at": 0.65
+          }
+        ],
         "chapter": "Theo dõi",
         "note": "kính lúp soi giỏ hàng, nhãn CPI"
       }
@@ -493,6 +4214,118 @@
       "id": "s58",
       "text": "Ở Việt Nam, CPI theo dõi giá của một giỏ gồm mười một nhóm hàng hoá và dịch vụ mà các gia đình thường mua, từ ăn uống, nhà ở, đến đi lại, giáo dục và y tế.",
       "visual": {
+        "bg": "news",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "GIỎ CPI · 11 NHÓM",
+            "x": 640,
+            "y": 120,
+            "size": 80,
+            "tone": "red",
+            "rot": -2
+          },
+          {
+            "kind": "type",
+            "text": "Ăn uống",
+            "x": 200,
+            "y": 300,
+            "size": 34,
+            "rot": 1.5,
+            "at": 0.06
+          },
+          {
+            "kind": "type",
+            "text": "Đồ uống, thuốc lá",
+            "x": 760,
+            "y": 300,
+            "size": 34,
+            "rot": -1.5,
+            "at": 0.135
+          },
+          {
+            "kind": "type",
+            "text": "May mặc, giày dép",
+            "x": 1320,
+            "y": 300,
+            "size": 34,
+            "rot": 1.5,
+            "at": 0.21
+          },
+          {
+            "kind": "type",
+            "text": "Nhà ở, điện nước",
+            "x": 200,
+            "y": 450,
+            "size": 34,
+            "rot": -1.5,
+            "at": 0.285
+          },
+          {
+            "kind": "type",
+            "text": "Thiết bị gia đình",
+            "x": 760,
+            "y": 450,
+            "size": 34,
+            "rot": 1.5,
+            "at": 0.36
+          },
+          {
+            "kind": "type",
+            "text": "Thuốc, y tế",
+            "x": 1320,
+            "y": 450,
+            "size": 34,
+            "rot": -1.5,
+            "at": 0.435
+          },
+          {
+            "kind": "type",
+            "text": "Giao thông",
+            "x": 200,
+            "y": 600,
+            "size": 34,
+            "rot": 1.5,
+            "at": 0.51
+          },
+          {
+            "kind": "type",
+            "text": "Bưu chính, viễn thông",
+            "x": 760,
+            "y": 600,
+            "size": 34,
+            "rot": -1.5,
+            "at": 0.585
+          },
+          {
+            "kind": "type",
+            "text": "Giáo dục",
+            "x": 1320,
+            "y": 600,
+            "size": 34,
+            "rot": 1.5,
+            "at": 0.6599999999999999
+          },
+          {
+            "kind": "type",
+            "text": "Văn hoá, giải trí",
+            "x": 200,
+            "y": 750,
+            "size": 34,
+            "rot": -1.5,
+            "at": 0.7349999999999999
+          },
+          {
+            "kind": "type",
+            "text": "Hàng hoá khác",
+            "x": 760,
+            "y": 750,
+            "size": 34,
+            "rot": 1.5,
+            "at": 0.81
+          }
+        ],
         "chapter": "Theo dõi",
         "note": "11 thẻ nhóm hàng"
       }
@@ -501,6 +4334,40 @@
       "id": "s59",
       "text": "Mỗi tháng, Cục Thống kê công bố CPI. Đó là bản tin hằng tháng về dấu vết của kẻ trộm.",
       "visual": {
+        "bg": "news",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "calendar",
+            "x": 300,
+            "y": 220,
+            "w": 320,
+            "rot": -3,
+            "t": "CPI",
+            "sub": "HẰNG THÁNG"
+          },
+          {
+            "kind": "stamp",
+            "text": "MỖI THÁNG",
+            "x": 900,
+            "y": 360,
+            "size": 100,
+            "rot": -6,
+            "tone": "red",
+            "at": 0.3,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "Cục Thống kê công bố",
+            "x": 920,
+            "y": 600,
+            "size": 44,
+            "rot": 0,
+            "at": 0.45
+          }
+        ],
         "chapter": "Theo dõi",
         "note": "lịch tháng, con dấu CPI"
       }
@@ -509,6 +4376,60 @@
       "id": "s60",
       "text": "Còn với tiền của bạn, có một con số đáng nhớ: lợi suất thực, bằng lãi suất trừ đi lạm phát.",
       "visual": {
+        "bg": "grid",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "LÃI SUẤT",
+            "x": 160,
+            "y": 300,
+            "size": 100,
+            "tone": "mustard",
+            "rot": -2
+          },
+          {
+            "kind": "label",
+            "text": "−",
+            "x": 760,
+            "y": 300,
+            "size": 110,
+            "tone": "ink",
+            "rot": 0,
+            "at": 0.15
+          },
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT",
+            "x": 900,
+            "y": 300,
+            "size": 100,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.2
+          },
+          {
+            "kind": "label",
+            "text": "=",
+            "x": 760,
+            "y": 520,
+            "size": 110,
+            "tone": "ink",
+            "rot": 0,
+            "at": 0.4
+          },
+          {
+            "kind": "label",
+            "text": "LỢI SUẤT THỰC",
+            "x": 900,
+            "y": 520,
+            "size": 100,
+            "tone": "ink",
+            "rot": -1,
+            "at": 0.5,
+            "hit": true
+          }
+        ],
         "chapter": "Tiền của bạn",
         "note": "phép tính LÃI SUẤT − LẠM PHÁT = LỢI SUẤT THỰC"
       }
@@ -517,6 +4438,66 @@
       "id": "s61",
       "text": "Ví dụ giả định: bạn gửi tiết kiệm với lãi suất năm phần trăm một năm, còn lạm phát là bốn phần trăm. Sức mua của bạn chỉ tăng khoảng một phần trăm.",
       "visual": {
+        "bg": "kraft",
+        "camera": "pan_left",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "piggy",
+            "x": 160,
+            "y": 300,
+            "w": 480,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "LÃI 5%",
+            "x": 760,
+            "y": 190,
+            "size": 110,
+            "tone": "mustard",
+            "rot": -2,
+            "at": 0.3
+          },
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT 4%",
+            "x": 1160,
+            "y": 330,
+            "size": 100,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.45
+          },
+          {
+            "kind": "label",
+            "text": "≈ +1% SỨC MUA",
+            "x": 820,
+            "y": 560,
+            "size": 110,
+            "tone": "ink",
+            "rot": -1,
+            "at": 0.65,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "Ví dụ giả định",
+            "x": 940,
+            "y": 760,
+            "size": 34,
+            "rot": 0,
+            "at": 0.75
+          }
+        ],
+        "cuts": [
+          {
+            "at": 0.85,
+            "x": 1250,
+            "y": 560,
+            "zoom": 1.35
+          }
+        ],
         "chapter": "Tiền của bạn",
         "note": "ống heo, 5% − 4% ≈ 1% (giả định)"
       }
@@ -525,6 +4506,48 @@
       "id": "s62",
       "text": "Nếu lạm phát lên sáu phần trăm, lợi suất thực thành âm. Tiền trong sổ vẫn nhiều lên, nhưng mua được ít đi.",
       "visual": {
+        "bg": "dark",
+        "camera": "push_in",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "piggy",
+            "x": 160,
+            "y": 300,
+            "w": 480,
+            "rot": -3,
+            "crack": true
+          },
+          {
+            "kind": "label",
+            "text": "5% − 6% = −1%",
+            "x": 820,
+            "y": 340,
+            "size": 100,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.3,
+            "hit": true
+          },
+          {
+            "kind": "type",
+            "text": "Tiền nhiều lên, mua được ít đi",
+            "x": 860,
+            "y": 560,
+            "size": 42,
+            "rot": 0,
+            "at": 0.55
+          },
+          {
+            "kind": "type",
+            "text": "Ví dụ giả định",
+            "x": 860,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.6
+          }
+        ],
         "chapter": "Tiền của bạn",
         "note": "5% − 6% = −1%, ống heo nứt"
       }
@@ -533,6 +4556,37 @@
       "id": "s63",
       "text": "Đó là lý do người làm đầu tư luôn nhìn lạm phát trước, rồi mới nhìn tới lãi suất hay lợi nhuận.",
       "visual": {
+        "bg": "news",
+        "camera": "tilt_up",
+        "pieces": [
+          {
+            "kind": "art",
+            "name": "magnifier",
+            "x": 230,
+            "y": 260,
+            "w": 380,
+            "rot": -4
+          },
+          {
+            "kind": "label",
+            "text": "LẠM PHÁT TRƯỚC",
+            "x": 720,
+            "y": 280,
+            "size": 100,
+            "tone": "red",
+            "rot": 2,
+            "at": 0.3
+          },
+          {
+            "kind": "type",
+            "text": "rồi mới tới lãi suất, lợi nhuận",
+            "x": 760,
+            "y": 500,
+            "size": 42,
+            "rot": 0,
+            "at": 0.5
+          }
+        ],
         "chapter": "Tiền của bạn",
         "note": "kính lúp: LẠM PHÁT trước"
       }
@@ -541,6 +4595,38 @@
       "id": "s64",
       "text": "Quay lại tờ năm mươi nghìn trong ví bạn. Nó vẫn y nguyên.",
       "visual": {
+        "bg": "news",
+        "camera": "pull_out",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 560,
+            "y": 150,
+            "w": 800,
+            "h": 640,
+            "tone": "tan",
+            "rot": 2.5,
+            "lines": true
+          },
+          {
+            "kind": "art",
+            "name": "wallet",
+            "x": 700,
+            "y": 250,
+            "w": 520,
+            "rot": -3
+          },
+          {
+            "kind": "label",
+            "text": "VẪN Y NGUYÊN",
+            "x": 160,
+            "y": 220,
+            "size": 80,
+            "tone": "ink",
+            "rot": -3,
+            "at": 0.45
+          }
+        ],
         "chapter": "Kết",
         "note": "tờ 50.000đ như cảnh mở đầu"
       }
@@ -549,6 +4635,216 @@
       "id": "s65",
       "text": "Nhưng giờ bạn đã biết ai lấy đi một phần giá trị của nó, lấy bằng cách nào, và cách lần theo dấu vết của kẻ trộm ấy.",
       "visual": {
+        "bg": "cork",
+        "camera": "parallax",
+        "pieces": [
+          {
+            "kind": "scrap",
+            "x": 180,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.0
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 1",
+            "x": 205,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "type",
+            "text": "Tiền pha loãng → giá tăng",
+            "x": 200,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.06
+          },
+          {
+            "kind": "scrap",
+            "x": 740,
+            "y": 135,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.02
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 2",
+            "x": 765,
+            "y": 155,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.04
+          },
+          {
+            "kind": "type",
+            "text": "In tiền quá dễ",
+            "x": 760,
+            "y": 230,
+            "size": 30,
+            "rot": 0,
+            "at": 0.08
+          },
+          {
+            "kind": "scrap",
+            "x": 1300,
+            "y": 185,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.04
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 3",
+            "x": 1325,
+            "y": 205,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "type",
+            "text": "Tiền nhiều hơn hàng",
+            "x": 1320,
+            "y": 280,
+            "size": 30,
+            "rot": 0,
+            "at": 0.1
+          },
+          {
+            "kind": "scrap",
+            "x": 340,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": -2,
+            "at": 0.06
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 4",
+            "x": 365,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.08
+          },
+          {
+            "kind": "type",
+            "text": "Khoá máy in tiền",
+            "x": 360,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.12
+          },
+          {
+            "kind": "scrap",
+            "x": 1140,
+            "y": 605,
+            "w": 440,
+            "h": 230,
+            "tone": "cream",
+            "rot": 2,
+            "at": 0.08
+          },
+          {
+            "kind": "label",
+            "text": "MANH MỐI 5",
+            "x": 1165,
+            "y": 625,
+            "size": 40,
+            "tone": "ink",
+            "rot": -2,
+            "at": 0.1
+          },
+          {
+            "kind": "type",
+            "text": "Lãi suất > lạm phát",
+            "x": 1160,
+            "y": 700,
+            "size": 30,
+            "rot": 0,
+            "at": 0.14
+          },
+          {
+            "kind": "stamp",
+            "text": "ĐÃ PHÁ ÁN",
+            "x": 690,
+            "y": 420,
+            "size": 120,
+            "rot": -8,
+            "tone": "red",
+            "at": 0.55,
+            "hit": true
+          }
+        ],
+        "strings": [
+          {
+            "from": [
+              400,
+              395
+            ],
+            "to": [
+              960,
+              345
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              960,
+              345
+            ],
+            "to": [
+              1520,
+              395
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1520,
+              395
+            ],
+            "to": [
+              1360,
+              815
+            ],
+            "at": 0.12,
+            "sag": 40
+          },
+          {
+            "from": [
+              1360,
+              815
+            ],
+            "to": [
+              560,
+              815
+            ],
+            "at": 0.12,
+            "sag": 40
+          }
+        ],
         "chapter": "Kết",
         "note": "bảng hồ sơ đầy đủ, con dấu ĐÃ PHÁ ÁN"
       }
@@ -557,9 +4853,51 @@
       "id": "s66",
       "text": "Muốn đọc chỉ số CPI cho đúng, hãy xem bài viết bên dưới video nhé.",
       "visual": {
+        "bg": "dark",
+        "camera": "static",
+        "pieces": [
+          {
+            "kind": "label",
+            "text": "DSC ACADEMY",
+            "x": 640,
+            "y": 200,
+            "size": 110,
+            "tone": "cream",
+            "rot": -2
+          },
+          {
+            "kind": "type",
+            "text": "Lạm phát và CPI · Bài 3/12",
+            "x": 700,
+            "y": 400,
+            "size": 46,
+            "rot": 0,
+            "at": 0.15
+          },
+          {
+            "kind": "label",
+            "text": "ĐỌC BÀI VIẾT BÊN DƯỚI",
+            "x": 560,
+            "y": 540,
+            "size": 92,
+            "tone": "red",
+            "rot": -1,
+            "at": 0.35
+          },
+          {
+            "kind": "type",
+            "text": "Nội dung giáo dục, không phải khuyến nghị đầu tư. Hình ảnh và ví dụ minh hoạ.",
+            "x": 360,
+            "y": 780,
+            "size": 26,
+            "rot": 0,
+            "at": 0.55
+          }
+        ],
         "chapter": "Kết",
         "note": "CTA + lưu ý pháp lý"
       }
     }
-  ]
+  ],
+  "renderRev": 1
 }

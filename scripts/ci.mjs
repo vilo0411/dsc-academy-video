@@ -150,11 +150,11 @@ for (const file of files) {
     continue;
   }
   // GitHub từ chối file > 100 MB: nén lại nếu video quá nặng (nền giấy nhiễu hạt làm bitrate cao).
-  if (fs.statSync(out).size > 80 * 1024 * 1024) {
+  if (fs.statSync(out).size > 95 * 1024 * 1024) {
     const tmp = out.replace(/\.mp4$/, ".small.mp4");
-    for (const crf of [24, 28, 32]) {
+    for (const crf of [24, 26, 28, 30, 32]) {
       const r = run("ffmpeg", ["-y", "-v", "error", "-i", out, "-c:v", "libx264", "-preset", "medium", "-crf", String(crf), "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", tmp]);
-      if (r.ok && fs.statSync(tmp).size < 80 * 1024 * 1024) break;
+      if (r.ok && fs.statSync(tmp).size < 95 * 1024 * 1024) break;
     }
     if (fs.existsSync(tmp)) {
       fs.renameSync(tmp, out);

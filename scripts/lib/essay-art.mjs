@@ -142,6 +142,189 @@ const ART = {
       <circle cx="80" cy="30" r="12" fill="${P.ink}"/><circle cx="220" cy="30" r="12" fill="${P.ink}"/>
       ${T(150, 88, o.sub || "THÁNG 9", 40, `fill="${P.cream}"`)}${T(150, 250, o.t || "14", 130)}`,
   },
+  wallet: {
+    vb: [460, 320],
+    draw: () => `
+      <path d="M30 80 h360 a30 30 0 0 1 30 30 v170 a30 30 0 0 1 -30 30 h-330 a30 30 0 0 1 -30 -30 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="70" y="20" width="250" height="120" rx="6" fill="url(#ht)" stroke="${P.ink}" stroke-width="5" transform="rotate(-6 195 80)"/>
+      ${T(200, 92, "50.000", 46, 'transform="rotate(-6 195 80)"')}
+      <path d="M300 150 h150 v90 h-150 a45 45 0 0 1 0 -90 z" fill="url(#htd)" stroke="${P.ink}" stroke-width="5"/>
+      <circle cx="320" cy="195" r="16" fill="url(#htm)" stroke="${P.ink}" stroke-width="4"/>`,
+  },
+  qmark: {
+    vb: [240, 360],
+    draw: () => `<path d="M40 110 C40 40 100 10 130 10 C190 10 220 55 220 100 C220 160 150 175 145 230 L90 230 C90 150 160 140 160 100 C160 75 145 65 125 65 C105 65 95 80 95 110 Z" fill="url(#htr)" stroke="${P.ink}" stroke-width="6"/>
+      <circle cx="118" cy="300" r="40" fill="url(#htr)" stroke="${P.ink}" stroke-width="6"/>`,
+  },
+  folder: {
+    vb: [520, 380],
+    draw: (o) => `
+      <path d="M10 40 h170 l30 30 h300 v300 h-500 z" fill="url(#htm)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="10" y="90" width="500" height="280" fill="#E9C873" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="60" y="130" width="230" height="40" fill="${P.cream}" stroke="${P.ink}" stroke-width="3"/>
+      ${T(175, 162, o.t || "HỒ SƠ", 30)}
+      ${o.sub ? T(260, 300, o.sub, 86) : ""}`,
+  },
+  crucible: {
+    vb: [400, 380],
+    draw: () => `
+      <path d="M150 20 q-30 40 0 70 q30 30 0 60" fill="none" stroke="${P.gray}" stroke-width="7" stroke-linecap="round"/>
+      <path d="M60 150 h280 l-30 190 h-220 z" fill="url(#htd)" stroke="${P.ink}" stroke-width="6"/>
+      <ellipse cx="200" cy="150" rx="140" ry="24" fill="url(#htm)" stroke="${P.ink}" stroke-width="6"/>
+      <path d="M130 210 q70 30 140 0" fill="none" stroke="${P.mustard}" stroke-width="6"/>`,
+  },
+  scroll: {
+    vb: [420, 460],
+    draw: (o) => `
+      <rect x="50" y="40" width="320" height="380" fill="${P.cream}" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="20" y="20" width="380" height="40" rx="20" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="20" y="400" width="380" height="40" rx="20" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      ${T(210, 130, o.t || "SẮC LỆNH", 44)}
+      ${[180, 220, 260, 300, 340].map((y) => `<path d="M90 ${y} h240" stroke="${P.gray}" stroke-width="6"/>`).join("")}`,
+  },
+  shelf: {
+    vb: [520, 380],
+    draw: () => `
+      <rect x="20" y="20" width="480" height="340" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      ${[130, 240].map((y) => `<rect x="20" y="${y}" width="480" height="16" fill="${P.ink}"/>`).join("")}
+      <rect x="380" y="70" width="60" height="60" fill="url(#ht)" stroke="${P.ink}" stroke-width="5"/>
+      <path d="M90 300 l40 -40 M90 260 l40 40" stroke="${P.red}" stroke-width="10" stroke-linecap="round"/>`,
+  },
+  cash: {
+    vb: [520, 220],
+    draw: () => `<path d="M20 110 Q260 200 500 110" fill="none" stroke="#7A6440" stroke-width="8"/>
+      ${Array.from({ length: 9 }, (_, i) => { const x = 50 + i * 52, y = 110 + Math.sin((i / 8) * Math.PI) * 42; return `<circle cx="${x}" cy="${y.toFixed(0)}" r="30" fill="url(#htd)" stroke="${P.ink}" stroke-width="4"/><rect x="${x - 9}" y="${(y - 9).toFixed(0)}" width="18" height="18" fill="${P.cream}" stroke="${P.ink}" stroke-width="3"/>`; }).join("")}`,
+  },
+  chinanote: {
+    vb: [300, 480],
+    draw: (o) => `
+      <rect x="10" y="10" width="280" height="460" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="34" y="34" width="232" height="412" fill="none" stroke="${P.ink}" stroke-width="4"/>
+      ${Array.from({ length: 10 }, (_, i) => `<circle cx="${60 + (i % 5) * 45}" cy="${70 + Math.floor(i / 5) * 46}" r="14" fill="url(#htd)"/>`).join("")}
+      <rect x="70" y="190" width="160" height="150" fill="${P.cream}" stroke="${P.ink}" stroke-width="4"/>
+      ${T(150, 290, o.t || "1000", 64)}
+      <rect x="180" y="370" width="70" height="70" fill="none" stroke="${P.red}" stroke-width="6"/>`,
+  },
+  press: {
+    vb: [460, 440],
+    draw: () => `
+      <rect x="60" y="20" width="340" height="40" fill="url(#htd)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="90" y="60" width="30" height="300" fill="${P.ink}"/><rect x="340" y="60" width="30" height="300" fill="${P.ink}"/>
+      <rect x="215" y="60" width="30" height="120" fill="${P.ink}"/>
+      <rect x="140" y="170" width="180" height="40" fill="url(#hts)" stroke="${P.ink}" stroke-width="5"/>
+      <rect x="40" y="300" width="380" height="60" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="150" y="250" width="160" height="50" fill="url(#ht)" stroke="${P.ink}" stroke-width="4"/>
+      <circle cx="400" cy="120" r="44" fill="none" stroke="${P.ink}" stroke-width="10"/><path d="M400 76 v88 M356 120 h88" stroke="${P.ink}" stroke-width="8"/>
+      <rect x="40" y="360" width="40" height="70" fill="${P.ink}"/><rect x="380" y="360" width="40" height="70" fill="${P.ink}"/>`,
+  },
+  ship: {
+    vb: [480, 440],
+    draw: () => `
+      <path d="M40 300 h400 l-50 90 h-300 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="236" y="40" width="10" height="260" fill="${P.ink}"/><rect x="126" y="90" width="8" height="210" fill="${P.ink}"/><rect x="346" y="100" width="8" height="200" fill="${P.ink}"/>
+      <path d="M250 60 q90 40 0 110 z M250 180 q100 40 0 110 z" fill="${P.cream}" stroke="${P.ink}" stroke-width="5"/>
+      <path d="M138 110 q60 40 0 90 z M138 210 q66 30 0 80 z M358 120 q50 30 0 80 z" fill="${P.cream}" stroke="${P.ink}" stroke-width="5"/>
+      <path d="M246 40 l50 14 l-50 14 z" fill="${P.red}"/>`,
+  },
+  map: {
+    vb: [760, 420],
+    draw: () => `
+      <rect x="10" y="10" width="740" height="400" fill="#E9DFC4" stroke="${P.ink}" stroke-width="6"/>
+      ${[110, 210, 310].map((y) => `<path d="M10 ${y} h740" stroke="rgba(60,90,120,.3)" stroke-width="3" stroke-dasharray="10 8"/>`).join("")}
+      <path d="M90 60 q60 -10 90 30 q20 40 -10 70 q40 30 30 90 q-10 60 -50 90 q-20 -60 -40 -100 q-50 -40 -40 -100 q0 -60 20 -80 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="5"/>
+      <path d="M470 60 q80 -20 150 10 q60 40 40 90 q-40 20 -70 10 q20 60 -10 120 q-40 30 -60 -10 q-30 -40 -60 -60 q-40 -60 10 -160 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="5"/>
+      ${T(150, 380, "CHÂU MỸ", 30)}${T(570, 380, "CHÂU ÂU", 30)}`,
+  },
+  chest: {
+    vb: [420, 340],
+    draw: () => `
+      <path d="M30 120 q180 -110 360 0 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      ${Array.from({ length: 7 }, (_, i) => `<circle cx="${100 + i * 38}" cy="${112 - Math.abs(3 - i) * 8}" r="22" fill="url(#hts)" stroke="${P.ink}" stroke-width="4"/>`).join("")}
+      <rect x="30" y="120" width="360" height="200" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="30" y="170" width="360" height="22" fill="${P.ink}"/><rect x="185" y="160" width="50" height="60" fill="url(#htm)" stroke="${P.ink}" stroke-width="5"/>`,
+  },
+  invoice: {
+    vb: [300, 560],
+    draw: (o) => `
+      <path d="M20 10 h260 v520 l-20 20 l-20 -20 l-20 20 l-20 -20 l-20 20 l-20 -20 l-20 20 l-20 -20 l-20 20 l-20 -20 l-20 20 l-20 -20 l-20 20 z" fill="${P.cream}" stroke="${P.ink}" stroke-width="5"/>
+      ${T(150, 70, o.t || "BỒI THƯỜNG", 34)}
+      ${Array.from({ length: 9 }, (_, i) => `<path d="M50 ${120 + i * 44} h140" stroke="${P.gray}" stroke-width="6"/><path d="M210 ${120 + i * 44} h40" stroke="${P.ink}" stroke-width="6"/>`).join("")}`,
+  },
+  factory: {
+    vb: [520, 380],
+    draw: () => `
+      <rect x="60" y="40" width="50" height="180" fill="url(#htd)" stroke="${P.ink}" stroke-width="5"/>
+      <rect x="150" y="80" width="44" height="140" fill="url(#htd)" stroke="${P.ink}" stroke-width="5"/>
+      <path d="M20 360 V200 l120 -60 v60 l120 -60 v60 l120 -60 v60 l120 -60 v220 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      ${[80, 200, 320, 440].map((x) => `<rect x="${x - 30}" y="260" width="50" height="50" fill="${P.ink}"/>`).join("")}`,
+  },
+  clock: {
+    vb: [320, 320],
+    draw: () => `<circle cx="160" cy="160" r="146" fill="${P.cream}" stroke="${P.ink}" stroke-width="10"/>
+      ${Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2; return `<path d="M${160 + Math.cos(a) * 118} ${160 + Math.sin(a) * 118} L${160 + Math.cos(a) * 134} ${160 + Math.sin(a) * 134}" stroke="${P.ink}" stroke-width="8"/>`; }).join("")}
+      <path d="M160 160 L160 64" stroke="${P.ink}" stroke-width="12" stroke-linecap="round"/><path d="M160 160 L236 200" stroke="${P.red}" stroke-width="8" stroke-linecap="round"/><circle cx="160" cy="160" r="14" fill="${P.ink}"/>`,
+  },
+  lock: {
+    vb: [300, 380],
+    draw: () => `<path d="M70 170 V110 a80 80 0 0 1 160 0 V170" fill="none" stroke="${P.ink}" stroke-width="34"/>
+      <path d="M70 170 V110 a80 80 0 0 1 160 0 V170" fill="none" stroke="url(#hts)" stroke-width="20"/>
+      <rect x="20" y="160" width="260" height="200" rx="20" fill="url(#htm)" stroke="${P.ink}" stroke-width="7"/>
+      <circle cx="150" cy="240" r="24" fill="${P.ink}"/><rect x="140" y="250" width="20" height="60" fill="${P.ink}"/>`,
+  },
+  piggy: {
+    vb: [460, 340],
+    draw: (o) => `
+      <ellipse cx="230" cy="180" rx="190" ry="130" fill="#F2B6C1" stroke="${P.ink}" stroke-width="6"/>
+      <ellipse cx="230" cy="180" rx="190" ry="130" fill="url(#ht)" opacity="0.35"/>
+      <rect x="190" y="50" width="80" height="14" rx="7" fill="${P.ink}"/>
+      <ellipse cx="420" cy="180" rx="34" ry="44" fill="#F2B6C1" stroke="${P.ink}" stroke-width="6"/>
+      <circle cx="410" cy="170" r="6" fill="${P.ink}"/><circle cx="430" cy="190" r="6" fill="${P.ink}"/>
+      <circle cx="350" cy="130" r="9" fill="${P.ink}"/><path d="M300 60 l30 -40 l20 50 z" fill="#F2B6C1" stroke="${P.ink}" stroke-width="5"/>
+      <rect x="100" y="280" width="40" height="50" fill="#F2B6C1" stroke="${P.ink}" stroke-width="5"/><rect x="300" y="280" width="40" height="50" fill="#F2B6C1" stroke="${P.ink}" stroke-width="5"/>
+      ${o.crack ? `<path d="M200 60 l20 50 l-25 30 l30 40 l-20 40" fill="none" stroke="${P.ink}" stroke-width="7"/>` : ""}`,
+  },
+  magnifier: {
+    vb: [380, 380],
+    draw: () => `<path d="M235 235 L350 350" stroke="${P.ink}" stroke-width="40" stroke-linecap="round"/>
+      <circle cx="150" cy="150" r="125" fill="rgba(200,225,235,.55)" stroke="${P.ink}" stroke-width="18"/>
+      <path d="M90 100 q30 -40 80 -40" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>`,
+  },
+  thermo: {
+    vb: [200, 520],
+    draw: (o) => {
+      const lv = o.level ?? 0.35;
+      const top = 40 + (1 - lv) * 340;
+      return `<rect x="60" y="20" width="80" height="400" rx="40" fill="${P.cream}" stroke="${P.ink}" stroke-width="7"/>
+        <rect x="80" y="${top.toFixed(0)}" width="40" height="${(400 - top).toFixed(0)}" fill="${lv > 0.7 ? P.red : P.mustard}"/>
+        <circle cx="100" cy="440" r="64" fill="${lv > 0.7 ? P.red : P.mustard}" stroke="${P.ink}" stroke-width="7"/>
+        <rect x="60" y="150" width="80" height="120" fill="rgba(80,160,120,.25)"/>
+        ${[80, 140, 200, 260, 320].map((y) => `<path d="M140 ${y} h30" stroke="${P.ink}" stroke-width="6"/>`).join("")}`;
+    },
+  },
+  gascan: {
+    vb: [320, 380],
+    draw: () => `<path d="M40 80 h200 l50 50 v230 h-250 z" fill="url(#htr)" stroke="${P.ink}" stroke-width="6"/>
+      <rect x="80" y="20" width="110" height="40" rx="10" fill="none" stroke="${P.ink}" stroke-width="14"/>
+      <path d="M240 90 l50 -60" stroke="${P.ink}" stroke-width="22" stroke-linecap="round"/>
+      <path d="M80 160 l140 140 M220 160 l-140 140" stroke="${P.ink}" stroke-width="10" opacity="0.5"/>`,
+  },
+  sack: {
+    vb: [340, 380],
+    draw: (o) => `<path d="M110 70 q-100 130 -80 230 q10 60 140 60 q130 0 140 -60 q20 -100 -80 -230 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      <path d="M100 70 h140 l-20 -40 h-100 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/><path d="M110 75 h120" stroke="${P.red}" stroke-width="10"/>
+      ${T(170, 250, o.t || "NGUYÊN LIỆU", 34)}`,
+  },
+  bank: {
+    vb: [480, 400],
+    draw: () => `<path d="M20 120 L240 20 L460 120 z" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      ${[80, 170, 260, 350].map((x) => `<rect x="${x}" y="140" width="50" height="190" fill="url(#ht)" stroke="${P.ink}" stroke-width="5"/>`).join("")}
+      <rect x="30" y="120" width="420" height="24" fill="${P.ink}"/><rect x="20" y="330" width="440" height="50" fill="url(#htt)" stroke="${P.ink}" stroke-width="6"/>
+      ${T(240, 100, "NGÂN HÀNG", 30)}`,
+  },
+  arrow: {
+    vb: [400, 140],
+    draw: (o) => `<path d="M10 50 h270 v-40 l110 60 l-110 60 v-40 h-270 z" fill="url(#${o.tone === "red" ? "htr" : "htm"})" stroke="${P.ink}" stroke-width="6"/>`,
+  },
 };
 
 export const ART_NAMES = Object.keys(ART);
