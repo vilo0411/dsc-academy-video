@@ -103,7 +103,7 @@ for (const file of files) {
     status.timings = JSON.parse(fs.readFileSync(path.join(buildDir, "timings.json"), "utf8"));
   } catch {}
 
-  if (!step("build", run(process.execPath, ["scripts/build.mjs", file]))) {
+  if (!step("build", run(process.execPath, [content.format === "essay" ? "scripts/build-essay.mjs" : "scripts/build.mjs", file]))) {
     failed++;
     continue;
   }

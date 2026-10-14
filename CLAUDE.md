@@ -45,3 +45,13 @@ Nhân vật An (`scripts/lib/figure.mjs`):
 Trên GitHub (mặc định): đẩy file kịch bản lên `main`. Video ở `out/<id>.mp4`, báo cáo ở `status/<id>.json` trên nhánh `renders`.
 
 Trên máy: `npm run tts -- content/<file>.json` (cần `GEMINI_API_KEY`), `npm run build -- content/<file>.json`, rồi `npx hyperframes check` và `npm run render -- content/<file>.json` trong thư mục dự án. Không tự đăng video; giao file cho người dùng.
+
+## 5. Video essay (thử nghiệm, phong cách cắt dán giấy)
+
+Kịch bản đặt `"format": "essay"` → CI dựng bằng `scripts/build-essay.mjs` (không có nhân vật An). Mẫu: `content/essay-lich-su-lam-phat.json`.
+
+- Lời dẫn kể chuyện lịch sử, mở đầu bằng ngày tháng + địa điểm + một chi tiết nhỏ; mỗi cảnh một ý hình ảnh; dữ kiện phải có nguồn (ghi vào `sources`).
+- `visual.bg`: news, kraft, dark, grid. `visual.pieces[]` vào khung theo thứ tự (hoặc theo `at` 0–1 trong phần lời):
+  `scrap` (x,y,w,h,tone), `art` (name: banknote, bundle, stove, flame, logs, bread, coin, helmet, scale, ticket, basket, bowl, calendar; t, sub, tone), `label` (text,size,tone: red/mustard/ink/cream), `type` (chữ đánh máy), `stamp`, `tape`, `counter` (values[]), `chart` (points, band, caption).
+- `visual.strings[]` (dây đỏ: from, to, sag, at), `visual.marks[]` (nét bút đỏ: circle hoặc line).
+- Không vẽ khuôn mặt người thật; trẻ em chỉ thể hiện bằng đồ vật. Hình mới thêm vào `scripts/lib/essay-art.mjs`.
