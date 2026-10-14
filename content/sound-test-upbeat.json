@@ -1,0 +1,41 @@
+{
+  "id": "sound-test-upbeat",
+  "soundTest": true,
+  "title": "Nghe thử âm thanh upbeat cho video essay dài",
+  "note": "Không phải video. CI tạo các file mp3 trong out/sound-test-upbeat/ để duyệt giọng, nhạc và tiếng động.",
+  "scenes": [
+    { "id": "s1", "text": "Năm một nghìn chín trăm hai mươi ba, ở Đức, có người dùng tiền giấy để nhóm bếp.",
+      "sfx": [{ "at": 0.02, "kind": "swish" }, { "at": 0.08, "kind": "pop" }, { "at": 0.45, "kind": "slide" }, { "at": 0.55, "kind": "tap" }] },
+    { "id": "s2", "text": "Nghe vô lý đúng không? Nhưng lúc đó, một bó tiền còn rẻ hơn cả một bó củi!",
+      "sfx": [{ "at": 0.0, "kind": "swish" }, { "at": 0.15, "kind": "pop" }, { "at": 0.55, "kind": "riser", "dur": 0.6 }, { "at": 0.72, "kind": "stamp" }] },
+    { "id": "s3", "text": "Một ổ bánh mì chưa tới một mác, chỉ năm năm sau đã có giá hàng tỷ mác.",
+      "sfx": [{ "at": 0.0, "kind": "swish" }, { "at": 0.1, "kind": "pop" }, { "at": 0.5, "kind": "tick" }, { "at": 0.56, "kind": "tick" }, { "at": 0.62, "kind": "tick" }, { "at": 0.68, "kind": "tick" }, { "at": 0.74, "kind": "hit", "gain": 0.6 }] },
+    { "id": "s4", "text": "Chuyện gì đã xảy ra? Và liệu nó có thể xảy ra ở bất cứ đâu?",
+      "sfx": [{ "at": 0.0, "kind": "swish" }, { "at": 0.2, "kind": "snap" }, { "at": 0.6, "kind": "snap" }] },
+    { "id": "s5", "text": "Hôm nay, mình cùng đi ngược hai nghìn năm, để tìm hiểu kẻ trộm thầm lặng mang tên lạm phát.",
+      "sfx": [{ "at": 0.0, "kind": "whoosh" }, { "at": 0.4, "kind": "pen", "dur": 0.4 }, { "at": 0.86, "kind": "pop" }, { "at": 0.9, "kind": "ding" }] }
+  ],
+  "voices": [
+    { "name": "A-Puck", "note": "nam, sáng, vui", "provider": "gemini-api", "model": "gemini-3.1-flash-tts-preview", "voice": "Puck",
+      "style": "You are an energetic, charismatic Vietnamese YouTube edutainment host. Speak Vietnamese with a bright, smiling, upbeat tone and a brisk, punchy pace. Sound genuinely curious on questions, excited on surprising facts, keep a lively rhythm and short pauses. Never sound like a news anchor or a slow documentary narrator." },
+    { "name": "B-Fenrir", "note": "nam, hào hứng hơn", "provider": "gemini-api", "model": "gemini-3.1-flash-tts-preview", "voice": "Fenrir",
+      "style": "You are an energetic, charismatic Vietnamese YouTube edutainment host. Speak Vietnamese with a bright, smiling, upbeat tone and a brisk, punchy pace. Sound genuinely curious on questions, excited on surprising facts, keep a lively rhythm and short pauses. Never sound like a news anchor or a slow documentary narrator." },
+    { "name": "C-Zephyr", "note": "nữ, trong, tươi", "provider": "gemini-api", "model": "gemini-3.1-flash-tts-preview", "voice": "Zephyr",
+      "style": "You are an energetic, charismatic Vietnamese YouTube edutainment host. Speak Vietnamese with a bright, smiling, upbeat tone and a brisk, punchy pace. Sound genuinely curious on questions, excited on surprising facts, keep a lively rhythm and short pauses. Never sound like a news anchor or a slow documentary narrator." },
+    { "name": "D-Laomedeia", "note": "nữ, vui, nhẹ nhàng hơn", "provider": "gemini-api", "model": "gemini-3.1-flash-tts-preview", "voice": "Laomedeia",
+      "style": "You are an energetic, charismatic Vietnamese YouTube edutainment host. Speak Vietnamese with a bright, smiling, upbeat tone and a brisk, punchy pace. Sound genuinely curious on questions, excited on surprising facts, keep a lively rhythm and short pauses. Never sound like a news anchor or a slow documentary narrator." }
+  ],
+  "musics": [
+    { "name": "1-pizzicato", "note": "pizzicato + marimba + vỗ tay, vui tò mò", "seed": 21,
+      "prompt": "Upbeat playful explainer background music: bouncy pizzicato strings, marimba, hand claps and finger snaps, light funky bass, cheerful and curious, 112 BPM, YouTube edutainment vibe, steady groove, instrumental",
+      "negative": "vocals, singing, lyrics, choir, dark, sad, slow, cinematic trailer, heavy distortion" },
+    { "name": "2-lofi-funk", "note": "lo-fi funk, bass slap, Rhodes — hiện đại, tự tin", "seed": 22,
+      "prompt": "Energetic modern lo-fi funk beat: groovy slap bass, crisp punchy drums, warm Rhodes chords, playful synth plucks, confident and upbeat, 100 BPM, sits nicely under voice-over, instrumental",
+      "negative": "vocals, singing, lyrics, choir, dark, sad, slow, cinematic trailer, heavy distortion" },
+    { "name": "3-indie-pop", "note": "ukulele + glockenspiel, tươi sáng", "seed": 23,
+      "prompt": "Bright indie pop explainer track: ukulele strums, glockenspiel, upbeat drums with claps, subtle whistle-like synth lead, happy and energetic, 120 BPM, instrumental",
+      "negative": "vocals, singing, lyrics, choir, dark, sad, slow, cinematic trailer, heavy distortion" }
+  ],
+  "musicVolume": 1.8,
+  "duck": { "ratio": 3, "threshold": 0.04, "release": 500 }
+}

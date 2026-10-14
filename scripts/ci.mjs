@@ -42,6 +42,20 @@ for (const file of files) {
   const cacheDir = path.join("cache", id);
   fs.mkdirSync(buildDir, { recursive: true });
 
+  // Bản nghe thử âm thanh (giọng × nhạc × tiếng động) để duyệt trước khi làm video.
+  if (content.soundTest) {
+    const r = run(process.execPath, ["scripts/sound-test.mjs", file]);
+    step("sound-test", r);
+    try {
+      status.report = JSON.parse(fs.readFileSync(path.join(buildDir, "report.json"), "utf8"));
+    } catch {}
+    status.ok = r.ok;
+    status.output = { dir: `out/${id}/` };
+    save();
+    if (!r.ok) failed++;
+    continue;
+  }
+
   // Bài nghe thử giọng: luôn tạo mới, ghép nhiều phương án vào một video.
   if (content.variants) {
     if (!step("voice-test", run(process.execPath, ["scripts/voice-test.mjs", file]))) {

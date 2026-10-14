@@ -9,7 +9,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { loadEnv } from "./lib/env.mjs";
-import { gcpAccessToken, gcpProjectId } from "./lib/gcp-auth.mjs";
+import { generateMusic } from "./lib/lyria.mjs";
 
 loadEnv();
 const file = process.argv[2];
@@ -34,40 +34,14 @@ try {
   }
 } catch {}
 
-const project = gcpProjectId();
-if (!project) {
-  console.error("Thiếu GCP_SA_KEY — không tạo được nhạc nền.");
+try {
+  const wav = await generateMusic(m);
+  fs.writeFileSync(path.join(buildDir, "music.wav"), wav);
+  fs.mkdirSync(cacheDir, { recursive: true });
+  fs.copyFileSync(path.join(buildDir, "music.wav"), path.join(cacheDir, "music.wav"));
+  fs.writeFileSync(cachedMeta, JSON.stringify({ hash, prompt: m.prompt, model: m.model || "lyria-002" }, null, 2));
+  console.log(`Đã tạo nhạc nền (${Math.round(wav.length / 1024)} KB).`);
+} catch (e) {
+  console.error(e.message);
   process.exit(1);
 }
-const loc = m.location || "us-central1";
-const url = `https://${loc}-aiplatform.googleapis.com/v1/projects/${project}/locations/${loc}/publishers/google/models/${m.model || "lyria-002"}:predict`;
-const body = { instances: [{ prompt: m.prompt, negative_prompt: m.negative || "vocals, singing, lyrics", seed: m.seed ?? 7 }], parameters: {} };
-
-let lastErr = "";
-for (let attempt = 1; attempt <= 3; attempt++) {
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { Authorization: `Bearer ${await gcpAccessToken()}`, "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
-  const txt = await res.text();
-  if (res.ok) {
-    const j = JSON.parse(txt);
-    const b64 = j.predictions?.[0]?.bytesBase64Encoded || j.predictions?.[0]?.audioContent;
-    if (!b64) {
-      lastErr = "Phản hồi không có audio: " + txt.slice(0, 300);
-      break;
-    }
-    fs.writeFileSync(path.join(buildDir, "music.wav"), Buffer.from(b64, "base64"));
-    fs.mkdirSync(cacheDir, { recursive: true });
-    fs.copyFileSync(path.join(buildDir, "music.wav"), path.join(cacheDir, "music.wav"));
-    fs.writeFileSync(cachedMeta, JSON.stringify({ hash, prompt: m.prompt, model: m.model || "lyria-002" }, null, 2));
-    console.log(`Đã tạo nhạc nền (${Math.round(fs.statSync(path.join(buildDir, "music.wav")).size / 1024)} KB).`);
-    process.exit(0);
-  }
-  lastErr = `${res.status} ${txt.slice(0, 400)}`;
-  if (res.status !== 429 && res.status < 500) break;
-  await new Promise((r) => setTimeout(r, 5000 * attempt));
-}
-console.error("Không tạo được nhạc nền: " + lastErr);
-process.exit(1);

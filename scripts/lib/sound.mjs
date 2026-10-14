@@ -160,8 +160,51 @@ const SOUNDS = {
     }
     return out;
   },
+  // ---- Bộ tiếng vui nhộn (sfxSet "playful") ----
+  // "pop": bong bóng/nút bật — sine trượt cao xuống nhanh
+  pop(r) {
+    const n = Math.floor(0.12 * SR), out = new Float32Array(n);
+    let ph = 0;
+    for (let k = 0; k < n; k++) {
+      const t = k / SR;
+      const f = 380 + 900 * Math.exp(-t * 45);
+      ph += (2 * Math.PI * f) / SR;
+      out[k] = Math.sin(ph) * Math.exp(-t * 32) * Math.min(1, t / 0.002);
+    }
+    return out;
+  },
+  // "swish": vút nhanh, sáng hơn whoosh
+  swish(r) {
+    const n = Math.floor(0.28 * SR);
+    const s = sweepBP(r, n, 1200, 7000, 2.2);
+    for (let k = 0; k < n; k++) { const u = k / n; s[k] *= Math.pow(Math.sin(Math.PI * Math.pow(u, 0.6)), 2) * 3.2; }
+    return s;
+  },
+  // "ding": chuông nhỏ — hai hoạ âm, ngân ngắn
+  ding(r) {
+    const n = Math.floor(0.9 * SR), out = new Float32Array(n);
+    for (let k = 0; k < n; k++) {
+      const t = k / SR;
+      out[k] = (Math.sin(2 * Math.PI * 1568 * t) * 0.6 + Math.sin(2 * Math.PI * 3920 * t) * 0.25 * Math.exp(-t * 6)) * Math.exp(-t * 4.5) * Math.min(1, t / 0.003);
+    }
+    return out;
+  },
+  // "snap": búng tay
+  snap(r) {
+    const n = Math.floor(0.06 * SR), out = new Float32Array(n);
+    const bp = biquad("bp", 2200, 1.5);
+    for (let k = 0; k < n; k++) { const t = k / SR; out[k] = bp(r()) * Math.exp(-t * 140) * 4; }
+    return out;
+  },
+  // "riser": cao dần trước điểm nhấn (0,8s)
+  riser(r, dur = 0.8) {
+    const n = Math.floor(dur * SR);
+    const s = sweepBP(r, n, 400, 5000, 4);
+    for (let k = 0; k < n; k++) s[k] *= Math.pow(k / n, 2) * 3;
+    return s;
+  },
 };
-const GAIN = { slide: 0.16, tap: 0.22, stamp: 0.55, tape: 0.12, key: 0.07, tick: 0.09, hit: 0.5, whoosh: 0.14, zip: 0.07, pen: 0.06 };
+const GAIN = { pop: 0.28, swish: 0.16, ding: 0.12, snap: 0.25, riser: 0.1, slide: 0.16, tap: 0.22, stamp: 0.55, tape: 0.12, key: 0.07, tick: 0.09, hit: 0.5, whoosh: 0.14, zip: 0.07, pen: 0.06 };
 
 // events: [{ t, kind, dur? }] → Buffer WAV 16-bit mono
 export function synthSfx(events, total) {
@@ -190,7 +233,7 @@ export function wav16(out) {
 export const hasFfmpeg = () => spawnSync("ffmpeg", ["-version"]).status === 0;
 
 // Trộn: giọng (tuỳ chọn) + tiếng động + nhạc nền (tuỳ chọn, lặp có crossfade, tự hạ khi có lời).
-export function mixdown({ voice, sfx, music, total, out, musicVol = 1.5, sfxVol = 1.0 }) {
+export function mixdown({ voice, sfx, music, total, out, musicVol = 1.5, sfxVol = 1.0, duck = {} }) {
   const inputs = [], chain = [], mixIn = [];
   let idx = 0;
   const T = total.toFixed(3);
@@ -224,7 +267,7 @@ export function mixdown({ voice, sfx, music, total, out, musicVol = 1.5, sfxVol 
     }
     chain.push(`[mloop]atrim=0:${T},volume=${musicVol},afade=t=in:d=1.5,afade=t=out:st=${Math.max(0, total - 3).toFixed(2)}:d=3[mus]`);
     if (vLabel) {
-      chain.push(`[mus][vkey]sidechaincompress=threshold=0.03:ratio=4:attack=40:release=700:makeup=1[mduck]`);
+      chain.push(`[mus][vkey]sidechaincompress=threshold=${duck.threshold ?? 0.03}:ratio=${duck.ratio ?? 4}:attack=${duck.attack ?? 40}:release=${duck.release ?? 700}:makeup=1[mduck]`);
       mixIn.push("[mduck]");
     } else mixIn.push("[mus]");
   } else if (vLabel) chain.push(`[vkey]anullsink`);
