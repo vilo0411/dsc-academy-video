@@ -1,0 +1,60 @@
+{
+  "id": "toon-chuoi-gia-tri-dau-khi",
+  "format": "toon",
+  "title": "Chuỗi giá trị ngành Dầu khí",
+  "thumbnailAt": 5.0,
+  "series": "· PHÂN TÍCH NGÀNH",
+  "article": "https://cuonganhecowriter.substack.com/p/chuoi-gia-tri-nganh-dau-khi",
+  "sources": [
+    "Tập đoàn Dầu khí Việt Nam (PVN): Báo cáo chuỗi giá trị và cơ cấu ngành",
+    "Vietcap & TechProfit: Báo cáo phân tích chuỗi giá trị dầu khí",
+    "Substack Cường Anh EcoWriter: Chuỗi giá trị ngành Dầu khí"
+  ],
+  "voice": {
+    "provider": "cloud-gemini",
+    "model": "gemini-2.5-pro-tts",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are narrating an engaging, insightful financial documentary in Vietnamese with a warm, energetic Vox-style tone. Speak naturally at a brisk, confident pace. Emphasize the hook dramatically, and pronounce financial terms and stock tickers clearly."
+  },
+  "music": "km-investigations",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Sáng nay bạn ghé cây xăng, đổ năm mươi nghìn đồng vào xe máy. Nhưng bạn có bao giờ tự hỏi: số tiền đó thực chất đang được chia cho những ai? Bao nhiêu trả cho thợ khoan ngoài khơi, bao nhiêu cho tàu chở dầu vượt biển, và bao nhiêu thuộc về nhà máy lọc dầu? Và vì sao khi giá dầu thế giới tăng vọt, có cổ phiếu dầu khí tăng mạnh, nhưng cũng có mã lại đứng im?"
+    },
+    {
+      "id": "s02",
+      "text": "Câu trả lời nằm ở chuỗi giá trị ngành dầu khí, một cỗ máy khổng lồ gồm ba mắt xích liên hoàn: thượng nguồn tìm kiếm khai thác, trung nguồn vận chuyển lưu trữ, và hạ nguồn lọc hóa dầu đưa về tay người tiêu dùng."
+    },
+    {
+      "id": "s03",
+      "text": "Đầu tiên là thượng nguồn ngoài khơi xa, nơi các công ty thăm dò và khoan hút dầu thô, khí tự nhiên từ lòng biển sâu. Khâu này chia làm hai nhóm rõ rệt: nhóm một là các chủ mỏ như Tổng công ty Thăm dò Khai thác PVEP hay Liên doanh Vietsovpetro, đây là những đơn vị sở hữu tài nguyên nhưng chưa niêm yết. Nhóm hai là các doanh nghiệp dịch vụ kỹ thuật niêm yết trên sàn, tiêu biểu là PVD với đội giàn khoan biển và PVS chuyên xây lắp công trình cơ khí ngoài khơi."
+    },
+    {
+      "id": "s04",
+      "text": "Về mặt tài chính, giá dầu thô thế giới neo cao là động lực thúc đẩy đầu tư thăm dò khai thác, giúp gia tăng khối lượng công việc và đơn giá ngày cho PVD và PVS. Tuy nhiên, kết quả kinh doanh của thượng nguồn luôn có độ trễ ngắn hạn từ sáu đến mười hai tháng, bởi các công việc đều thực hiện theo hợp đồng đã ký kết từ trước."
+    },
+    {
+      "id": "s05",
+      "text": "Tiếp theo là trung nguồn, huyết mạch vận chuyển dầu thô và khí tự nhiên từ mỏ vào đất liền và các kho cảng lưu trữ. Khâu này có hai doanh nghiệp nòng cốt: Tổng công ty Khí Việt Nam GAS vận hành toàn bộ hệ thống đường ống dẫn khí vào bờ, và PVT làm chủ đội tàu vận tải dầu khí chuyên dụng. Doanh thu trung nguồn đến từ cước phí vận chuyển và dịch vụ ổn định, nên ít chịu tác động trực tiếp khi giá dầu biến động ngắn hạn."
+    },
+    {
+      "id": "s06",
+      "text": "Cập bến đất liền là hạ nguồn, đảm nhận hai nhiệm vụ: chế biến lọc dầu và phân phối tiếp thị. Việt Nam hiện có hai nhà máy lọc dầu lớn là Dung Quất và Nghi Sơn. Trong đó, Công ty Lọc Hóa dầu Bình Sơn BSR vận hành Dung Quất đã niêm yết trên thị trường. Sau khi dầu thô được lọc thành xăng dầu thành phẩm, PVT lại tiếp tục vận chuyển đến hai nhà phân phối bán lẻ lớn nhất nước là Tập đoàn Xăng dầu Petrolimex PLX và Tổng công ty Dầu Việt Nam OIL."
+    },
+    {
+      "id": "s07",
+      "text": "Ở hạ nguồn, lợi nhuận của nhà máy lọc dầu BSR phụ thuộc chặt chẽ vào biên lọc dầu crack spread, tức chênh lệch giữa giá xăng thành phẩm bán ra và giá dầu thô mua vào. Trong khi đó, các doanh nghiệp phân phối như PLX và OIL lại sống nhờ sản lượng tiêu thụ nội địa và mức chiết khấu kinh doanh xăng dầu."
+    },
+    {
+      "id": "s08",
+      "text": "Nhìn lại toàn bộ lược đồ chuỗi giá trị: nếu kỳ vọng một chu kỳ giá dầu cao dài hạn thì thượng nguồn PVD và PVS là lựa chọn trực tiếp nhất; nếu tìm kiếm dòng tiền phòng thủ và cước phí ổn định thì trung nguồn GAS và PVT là điểm đến; còn nếu đặt cược vào biên lọc dầu mở rộng và sức mua tiêu dùng, hạ nguồn BSR, PLX và OIL sẽ là tâm điểm."
+    },
+    {
+      "id": "s09",
+      "text": "Nắm vững chuỗi giá trị giúp bạn hiểu đúng bản chất dòng tiền của từng mã cổ phiếu dầu khí. Mời bạn đọc bài viết chi tiết bên dưới video để tải infographic đầy đủ."
+    }
+  ]
+}

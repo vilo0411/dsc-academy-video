@@ -1,0 +1,143 @@
+{
+  "id": "toon-lich-su-lam-phat",
+  "format": "toon",
+  "title": "Lịch sử lạm phát",
+  "thumbnailAt": 17.9,
+  "series": "· LỊCH SỬ TIỀN TỆ",
+  "article": "https://vilo0411.github.io/dsc-academy/khoa-hoc/kinh-te-vi-mo/lam-phat-va-cpi/",
+  "sources": [
+    "La Mã: NGC Ancients, The Decline of Roman Silver Coinage (Augustus ~98% bạc; năm 260 ~15%; năm 268 ≤5%)",
+    "Đức 1923: Alpha History, 1923 hyperinflation (1 USD ≈ 4 nghìn tỷ mác tháng 11/1923; bánh mì 0,25 mác năm 1918)",
+    "Việt Nam: Tạp chí Công Thương, Cuộc tổng điều chỉnh giá - lương - tiền năm 1985 (đổi tiền 14/9/1985, 10:1; lạm phát 1986 ~774,5%)"
+  ],
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
+  },
+  "music": "upbeat-indie-ukulele",
+  "cast": {
+    "style": "Character for a Vietnamese doodle explainer YouTube cartoon (finance education): simple stylized 'blob figure' stick-figure style. Large soft rounded-rectangle or bean-shaped blob head, small simple torso wearing clothes, arms and legs drawn as THIN SINGLE BLACK STICK LINES ending in tiny round hands and small simple shoes. Minimal expressive face: small dot or short-line eyes, simple eyebrows, small mouth, light pink blush. Clean even medium-thin black outlines, flat soft colours, no shading, natural human skin tones.",
+    "styleRef": "lab/out/char-grid/an.png",
+    "an": {
+      "look": "An, the host: young Vietnamese man, neat black side-part quiff hair, white polo shirt with a small green DSC logo on his left chest, navy trousers (same as the attached reference).",
+      "poses": {
+        "shock": "close-up of head and shoulders only, centered, face large in frame: comically shocked, eyes huge round with tiny pupils, mouth wide open, both stick arms raised with hands spread beside his face.",
+        "smug": "close-up of head and shoulders only, centered, face large in frame: suspicious side-eye, one eyebrow raised, half-lidded eyes looking sideways, sly sceptical smirk, one hand rubbing his chin.",
+        "panic": "close-up of head and shoulders only, centered, face large in frame: total panic, both hands clutching the sides of his head, eyes wide and wobbly, mouth open in a scream, blue sweat drops flying."
+      }
+    },
+    "frau": {
+      "look": "a working-class German woman in 1923: reddish-brown hair in a low bun, long dark-green dress with a white apron, simple black shoes.",
+      "poses": {
+        "base": "full body, standing relaxed facing the viewer, calm neutral expression.",
+        "toss": "full body, three-quarter view facing right, both stick arms swung forward to the right as if tossing something away, determined face.",
+        "smug": "full body, facing the viewer, hands on hips, eyebrows raised with a wry knowing half-smile.",
+        "push": "full body, side view facing right, leaning forward with both stick arms stretched forward low at waist height as if pushing a wheelbarrow, hopeful smile.",
+        "gasp": "full body, facing right, jumping back in shock, both hands on her cheeks, mouth open, eyes huge."
+      }
+    },
+    "baker": {
+      "look": "a 1920s German baker: plump, white baker's hat, white shirt with rolled sleeves, beige apron, small moustache, brown trousers.",
+      "poses": {
+        "base": "full body, standing facing left in three-quarter view, friendly smile, hands relaxed.",
+        "present": "full body, facing left, one stick arm extended palm-up presenting something on a counter, proud smile.",
+        "shrug": "full body, facing left, exaggerated helpless shrug with both palms up, sad apologetic face, eyebrows tilted."
+      }
+    },
+    "emperor": {
+      "look": "Emperor Augustus of Rome as a friendly cartoon caricature in this blob style (like doodle history channels draw historical figures): short wavy light-brown hair combed forward, clean-shaven young face, golden laurel wreath, ornate bronze cuirass breastplate, deep red-purple cloak draped over one arm, white tunic skirt, sandals, thin stick limbs.",
+      "refs": [
+        "videos/toon-lich-su-lam-phat/media/cast/emperor-scheme.png"
+      ],
+      "poses": {
+        "base": "full body from laurel wreath down to the sandals, both legs drawn as thin stick lines with sandals, standing proudly facing right, one arm raised pointing forward, confident smile. Pure flat cartoon drawing, NOT a photo.",
+        "scheme": "full body, facing right, hunched forward rubbing both hands together sneakily, sly guilty smile, eyes glancing sideways."
+      }
+    },
+    "soldier": {
+      "look": "a Roman legionary: grey iron helmet, red tunic, brown leather belt and sandals, cheerful face.",
+      "poses": {
+        "base": "full body, facing left in three-quarter view, one stick arm stretched out with an open palm asking to be paid, eager excited smile."
+      }
+    },
+    "ba": {
+      "look": "an elderly Vietnamese grandmother in 1985: grey hair in a bun, purple áo bà ba with small white dots, black trousers, sandals, a jade bracelet.",
+      "poses": {
+        "base": "full body, standing facing right, calm gentle expression, hands clasped.",
+        "count": "full body, facing right, holding up a small fan of paper banknotes with no symbols or text, counting them with a puzzled frown.",
+        "surprised": "full body, facing right, startled, eyebrows shot up, mouth in a small round O, one hand raised."
+      }
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Nước Đức, năm một nghìn chín trăm hai mươi ba. Một người phụ nữ nhóm lò bằng tiền giấy."
+    },
+    {
+      "id": "s02",
+      "text": "Không phải vì cô giàu. Mà vì những tờ tiền ấy giờ rẻ hơn cả củi."
+    },
+    {
+      "id": "s03",
+      "text": "Năm một nghìn chín trăm mười tám, một ổ bánh mì chưa tới một mác. Năm năm sau, nó giá hàng tỷ mác."
+    },
+    {
+      "id": "s04",
+      "text": "Một đô la Mỹ đổi được hơn bốn nghìn tỷ mác."
+    },
+    {
+      "id": "s05",
+      "text": "Nhưng chuyện tiền mất giá đã bắt đầu từ rất lâu trước đó."
+    },
+    {
+      "id": "s06",
+      "text": "Thời hoàng đế Augustus, đồng tiền bạc của La Mã gần như là bạc nguyên chất."
+    },
+    {
+      "id": "s07",
+      "text": "Rồi các hoàng đế pha dần đồng vào bạc, để có thêm tiền trả quân lính."
+    },
+    {
+      "id": "s08",
+      "text": "Đến năm hai trăm sáu mươi tám, mỗi đồng chỉ còn chừng năm phần trăm bạc. Và giá cả leo thang."
+    },
+    {
+      "id": "s09",
+      "text": "Việt Nam, tháng chín năm một nghìn chín trăm tám mươi lăm: đổi tiền, mười đồng cũ lấy một đồng mới."
+    },
+    {
+      "id": "s10",
+      "text": "Năm sau đó, lạm phát vượt bảy trăm phần trăm."
+    },
+    {
+      "id": "s11",
+      "text": "Ba thời đại, một điểm chung: tiền tăng nhanh hơn hàng hoá."
+    },
+    {
+      "id": "s12",
+      "text": "Đó là lạm phát: mặt bằng giá chung tăng liên tục, và mỗi đồng tiền mua được ít hơn."
+    },
+    {
+      "id": "s13",
+      "text": "Lạm phát thấp và ổn định là bình thường. Ngày nay, nó được đo hằng tháng bằng chỉ số CPI."
+    },
+    {
+      "id": "s14",
+      "text": "Đồng tiền trong túi bạn vẫn vậy. Chỉ có thứ nó mua được là đổi khác."
+    },
+    {
+      "id": "s15",
+      "text": "Cách đọc chỉ số CPI, mời bạn xem bài viết bên dưới video."
+    }
+  ],
+  "sfxSet": "playful",
+  "stingers": {
+    "intro": "chime-intro",
+    "outro": "soft-outro"
+  }
+}

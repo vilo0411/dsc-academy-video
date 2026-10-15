@@ -1,0 +1,72 @@
+{
+  "id": "template-essay",
+  "format": "essay",
+  "arc": "timeline",
+  "title": "Hồ Sơ Điều Tra & Phóng Sự Phân Tích (Vox Style)",
+  "series": "Phóng sự Kinh tế",
+  "article": "",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-2.5-flash",
+    "voice": "Puck",
+    "rate": 1.02
+  },
+  "music": "km-investigations",
+  "duck": -18,
+  "sources": [
+    "Báo cáo Ngân hàng Thế giới",
+    "Dữ liệu Lịch sử Kinh tế",
+    "Financial Times Archive"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Mùa hè năm một nghìn chín trăm bảy mươi mốt, tại một căn phòng kín ở Trại David, một quyết định đã làm rung chuyển toàn bộ trật tự tiền tệ thế giới.",
+      "visual": {
+        "bg": "news",
+        "camera": "push_in",
+        "headline": "15 THÁNG 8, 1971",
+        "pieces": [
+          { "type": "headline", "text": "Tổng thống Nixon tuyên bố đóng cửa cửa sổ vàng" },
+          { "type": "marker", "target": "đóng cửa cửa sổ vàng", "color": "yellow" }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Trước thời điểm đó, mọi đồng đô la lưu hành trên toàn cầu đều được bảo đảm bằng một lượng vàng vật chất nhất định cất giữ tại pháo đài Fort Knox.",
+      "visual": {
+        "bg": "kraft",
+        "camera": "pan_left",
+        "pieces": [
+          { "type": "image", "src": "gold-reserves", "caption": "Kho dự trữ vàng Fort Knox" },
+          { "type": "stamp", "label": "TIÊU CHUẨN VÀNG BRETTON WOODS" }
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Nhưng khi chi tiêu công gia tăng và các quốc gia đồng minh bắt đầu yêu cầu đổi đô la lấy vàng, hệ thống bắt đầu xuất hiện những vết rạn nứt không thể cứu vãn.",
+      "visual": {
+        "bg": "chart",
+        "camera": "parallax",
+        "pieces": [
+          { "type": "line_chart", "title": "Dự trữ vàng vs Lượng USD phát hành (1960-1971)" },
+          { "type": "callout_circle", "x": 650, "y": 420, "color": "red" }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Từ đây, kỷ nguyên tiền pháp định ra đời. Không còn bị neo vào kim loại quý, giá trị của tiền tệ giờ đây phụ thuộc hoàn toàn vào niềm tin và sức mạnh của nền kinh tế phát hành.",
+      "visual": {
+        "bg": "news",
+        "camera": "pull_out",
+        "pieces": [
+          { "type": "quote", "author": "Milton Friedman", "text": "Lạm phát ở mọi nơi và mọi thời điểm luôn là hiện tượng tiền tệ." }
+        ]
+      }
+    }
+  ]
+}
+

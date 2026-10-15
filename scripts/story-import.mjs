@@ -3,7 +3,7 @@
 // theo đúng thứ tự cảnh; mỗi file mới xuất hiện trong thư mục tải về được đổi tên thành file còn thiếu
 // kế tiếp cùng loại và chuyển vào media/. Ảnh được thu về rộng 1920px.
 //
-// Cách dùng:  node scripts/story-import.mjs stories/<thư mục>/story.json [--from ~/Downloads] [--only s05]
+// Cách dùng:  node scripts/story-import.mjs videos/<id>/script.json [--from ~/Downloads] [--only s05]
 //   --only  nhận đúng các file này (tên cảnh hoặc char-<key>), thay file đang có; ảnh cũ giữ ở media/_old/
 // Dừng:       tự dừng khi đủ file, hoặc Ctrl+C.
 
@@ -20,7 +20,7 @@ const opt = (name) => {
   return i >= 0 ? args[i + 1] : undefined;
 };
 if (!storyPath) {
-  console.error("Thiếu file kịch bản. Ví dụ: node scripts/story-import.mjs stories/chiec-lo-cua-ba/story.json");
+  console.error("Thiếu file kịch bản. Ví dụ: node scripts/story-import.mjs videos/story-chiec-lo-cua-ba/script.json");
   process.exit(1);
 }
 const story = JSON.parse(fs.readFileSync(storyPath, "utf8"));

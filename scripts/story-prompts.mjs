@@ -2,8 +2,8 @@
 // Sinh bảng phân cảnh (SHOTLIST.md) cho phim kể chuyện: câu lệnh tạo hình cho Nano Banana và Flow (Veo),
 // kèm tên file cần có trong media/. Chạy lại bất cứ lúc nào để xem còn thiếu file nào.
 //
-// Cách dùng:  node scripts/story-prompts.mjs stories/<thư mục>/story.json
-// Kết quả:    stories/<thư mục>/SHOTLIST.md
+// Cách dùng:  node scripts/story-prompts.mjs videos/<id>/script.json
+// Kết quả:    videos/<id>/SHOTLIST.md
 
 import fs from "node:fs";
 import path from "node:path";
@@ -11,7 +11,7 @@ import { shots } from "./lib/story-shots.mjs";
 
 const storyPath = process.argv[2];
 if (!storyPath) {
-  console.error("Thiếu file kịch bản. Ví dụ: node scripts/story-prompts.mjs stories/chiec-lo-cua-ba/story.json");
+  console.error("Thiếu file kịch bản. Ví dụ: node scripts/story-prompts.mjs videos/story-chiec-lo-cua-ba/script.json");
   process.exit(1);
 }
 const story = JSON.parse(fs.readFileSync(storyPath, "utf8"));

@@ -1,0 +1,87 @@
+{
+  "id": "template-dataviz",
+  "format": "toon",
+  "title": "Bản Đồ Chu Kỳ Kinh Tế & Dòng Tiền 4 Pha (3Blue1Brown Style)",
+  "series": "Trực quan hóa Dữ liệu",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-2.5-flash",
+    "voice": "Puck",
+    "rate": 1.02
+  },
+  "music": {
+    "mood": "ambient"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Nền kinh tế luôn vận động theo một chiếc đồng hồ bốn pha: Phục hồi, Tăng trưởng nóng, Thắt chặt, và Suy thoái.",
+      "visual": {
+        "type": "cycle",
+        "active": 0,
+        "sectors": true
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Ở mỗi pha, dòng tiền thông minh trên thế giới lại tự động luân chuyển giữa bốn loại tài sản cốt lõi.",
+      "visual": {
+        "type": "grid",
+        "cols": 2,
+        "items": [
+          {
+            "title": "Pha 1: Cổ phiếu",
+            "text": "Hưởng lợi từ tiền rẻ và tăng trưởng",
+            "tone": "positive"
+          },
+          {
+            "title": "Pha 2: Hàng hóa",
+            "text": "Tăng mạnh khi lạm phát lên cao",
+            "tone": "warning"
+          },
+          {
+            "title": "Pha 3: Tiền mặt",
+            "text": "Phòng thủ khi lãi suất đạt đỉnh",
+            "tone": "neutral"
+          },
+          {
+            "title": "Pha 4: Trái phiếu",
+            "text": "Tăng giá khi ngân hàng bắt đầu hạ lãi",
+            "tone": "info"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Hãy quan sát chỉ báo sớm sản xuất PMI: khi đường này cắt xuống dưới mốc năm mươi điểm, chuông cảnh báo bắt đầu reo.",
+      "visual": {
+        "type": "gauge",
+        "min": 30,
+        "max": 70,
+        "mid": 50,
+        "value": 48.5,
+        "left": "Thu hẹp",
+        "right": "Mở rộng"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Đọc bài viết bên dưới video để xem cách theo dõi từng pha của chu kỳ.",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Chu kỳ và dòng tiền",
+        "sub": "Chi tiết trong bài viết bên dưới",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư."
+      }
+    }
+  ],
+  "mix": "v2",
+  "sources": [
+    {
+      "title": "Minh hoạ chu kỳ kinh tế (giáo dục, không phải khuyến nghị)",
+      "url": ""
+    }
+  ]
+}

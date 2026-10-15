@@ -1,12 +1,34 @@
 node_modules/
-build/
-out/
 .env
+.DS_Store
+
+# videos/<id>/: chỉ lưu kịch bản, SHOTLIST và bản sửa tay (edit/) trong git
+videos/*/project*/
+videos/*/.work/
+videos/*/media/
+videos/*/*.mp4
+videos/*/*.jpg
+videos/*/*.srt
+videos/*/*.wav
+videos/*/voice.whisper.json
+videos/*/music.json
+videos/*/timings.json
+
+# Thử nghiệm: chỉ lưu code + kịch bản
+lab/build/
+lab/out/
+
+# Mô hình whisper (tải về máy)
+assets/models/
+
+# GitHub CI (thư mục tạm khi chạy workflow)
+out/
 cache/
 status/
 prev/
 pub/
 
-# Phim kể chuyện: ảnh/video nặng, giữ trên máy
-stories/*/media/
-.DS_Store
+# Gói xuất bản và tóm tắt chạy theo lô (sinh lại được)
+videos/*/* (mô tả).txt
+videos/.batch.json
+videos/*/*.mp3

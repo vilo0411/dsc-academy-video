@@ -6,7 +6,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "content/**"
+      - "videos/**"
       - "scripts/**"
       - "assets/**"
       - "package.json"
@@ -42,6 +42,26 @@ jobs:
       - name: Cài HyperFrames
         run: npm install --no-audit --no-fund
 
+      # Whisper (mốc từng từ cho toon và cảnh dựng sẵn): dựng whisper.cpp + tải mô hình một lần, lưu cache
+      - name: Cache Whisper
+        uses: actions/cache@v4
+        with:
+          path: ~/.whisper
+          key: whisper-cpp-v1.9.5-large-v3-turbo-q5_0
+
+      - name: Cài Whisper
+        run: |
+          if [ ! -x ~/.whisper/bin/whisper-cli ]; then
+            git clone -q --depth 1 --branch v1.9.5 https://github.com/ggml-org/whisper.cpp /tmp/wcpp
+            cmake -S /tmp/wcpp -B /tmp/wcpp/build -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF -DWHISPER_BUILD_TESTS=OFF > /dev/null
+            cmake --build /tmp/wcpp/build -j 4 --config Release --target whisper-cli > /dev/null
+            mkdir -p ~/.whisper/bin && cp /tmp/wcpp/build/bin/whisper-cli ~/.whisper/bin/
+            curl -sSL -o ~/.whisper/ggml-large-v3-turbo-q5_0.bin https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3-turbo-q5_0.bin
+          fi
+          echo "$HOME/.whisper/bin" >> "$GITHUB_PATH"
+          echo "WHISPER_MODEL=$HOME/.whisper/ggml-large-v3-turbo-q5_0.bin" >> "$GITHUB_ENV"
+          echo "WHISPER_TIMEOUT=900" >> "$GITHUB_ENV"
+
       - name: Lấy kết quả cũ từ nhánh renders (giọng đọc đã tạo)
         run: |
           mkdir -p prev cache
@@ -57,18 +77,22 @@ jobs:
           # So với commit đã render gần nhất (ghi trên nhánh renders), không phải lần push trước:
           # lần chạy bị huỷ do xếp hàng sẽ không làm sót kịch bản.
           BASE=$(cat prev/LAST_COMMIT 2>/dev/null || true)
-          ALL=$(ls content/*.json 2>/dev/null || true)
+          # Mọi kịch bản trừ phim kể chuyện (ảnh/clip media/ chỉ có trên máy)
+          ALL=$(for f in videos/*/script.json; do node -e "process.exit(JSON.parse(require('fs').readFileSync('$f')).characters?1:0)" && echo $f; done)
           if [ -z "$BASE" ] || ! git cat-file -e "$BASE" 2>/dev/null; then
             FILES="$ALL"
           elif git log --format=%B "$BASE..HEAD" | grep -q '\[render-all\]'; then
             FILES="$ALL"   # commit có [render-all]: render lại tất cả (giọng đọc được dùng lại)
           else
-            FILES=$(git diff --name-only --diff-filter=AM "$BASE" HEAD -- 'content/*.json')
+            # Kịch bản hoặc bản sửa tay (videos/<id>/edit/) đổi: render lại video đó
+            FILES=$(git diff --name-only "$BASE" HEAD -- 'videos/' | cut -d/ -f2 | sort -u | sed 's|.*|videos/&/script.json|')
             # Thêm kịch bản chưa có video thành công trên nhánh renders (chưa render, hoặc lần trước lỗi)
             for f in $ALL; do
-              node -e "const fs=require('fs');const id=JSON.parse(fs.readFileSync('$f')).id;let ok=false;try{ok=JSON.parse(fs.readFileSync('prev/status/'+id+'.json')).ok===true}catch{}process.exit(ok?0:1)" || FILES="$FILES $f"
+              id=$(basename $(dirname $f))
+              node -e "let ok=false;try{ok=JSON.parse(require('fs').readFileSync('prev/status/$id.json')).ok===true}catch{}process.exit(ok?0:1)" || FILES="$FILES $f"
             done
-            FILES=$(echo $FILES | tr ' ' '\n' | sort -u | tr '\n' ' ')
+            # Chỉ giữ kịch bản còn tồn tại và không phải phim kể chuyện
+            FILES=$(for f in $FILES; do echo "$ALL" | grep -qx "$f" && echo $f; done | sort -u | tr '\n' ' ')
           fi
           echo "files=$(echo $FILES)" >> "$GITHUB_OUTPUT"
           echo "Sẽ render: $FILES"

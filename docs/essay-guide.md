@@ -21,7 +21,7 @@ Gợi ý: chủ đề lịch sử → `timeline`; khủng hoảng → `man_in_ho
 
 - **Câu móc trong 3 giây đầu.** Cảnh 1 phải mang lời hứa của cả video: ngày tháng + địa điểm + một chi tiết lạ, một con số gây sốc, hoặc một câu hỏi. Không mở bằng phần giới thiệu.
   Kiểu câu móc: `surprising_stat` (con số), `direct_question` (câu hỏi), `pattern_interrupt` (chi tiết ngược đời, ví dụ "nhóm lò bằng tiền giấy"), `mistake_callout` ("bạn đang hiểu sai…").
-- **Hình phải đổi ít nhất mỗi 3–5 giây.** Không cảnh nào đứng yên quá 5 giây: cảnh dài thì thêm `cuts` (cắt vào cận cảnh) hoặc thêm mảnh. Bản dựng tự kiểm tra và in cảnh báo `⚠ Nhịp` (xem `build/<id>/pacing.json`).
+- **Hình phải đổi ít nhất mỗi 3–5 giây.** Không cảnh nào đứng yên quá 5 giây: cảnh dài thì thêm `cuts` (cắt vào cận cảnh) hoặc thêm mảnh. Bản dựng tự kiểm tra và in cảnh báo `⚠ Nhịp` (xem `videos/<id>/.work/pacing.json`).
 - **Tỷ lệ:** câu móc 1–3 giây → thân 70–80% → vỡ lẽ 10–20% → kết/CTA ≤ 5 giây.
 - **Độ dài** (giọng Kore phong cách tài liệu đọc khoảng 3 âm tiết/giây, tính cả số đọc thành chữ):
 

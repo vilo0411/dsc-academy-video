@@ -1,0 +1,69 @@
+{
+  "id": "template-faceless",
+  "format": "faceless",
+  "title": "Bí Ẩn Sự Sụp Đổ Của Tập Đoàn Năng Lượng (MagnatesMedia Style)",
+  "series": "Hồ Sơ Doanh Nghiệp Bí Ẩn",
+  "aspect": "16x9",
+  "style": "dark-luxury",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-2.5-flash",
+    "voice": "Fenrir",
+    "rate": 0.98
+  },
+  "music": {
+    "mood": "mystery"
+  },
+  "duck": -20,
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Năm hai nghìn linh một, tập đoàn năng lượng lớn thứ bảy nước Mỹ bất ngờ nộp đơn phá sản chỉ trong vài tuần ngắn ngủi.",
+      "visual": {
+        "camera": "parallax_push",
+        "bg_color": "#050811",
+        "elements": [
+          {
+            "type": "portrait_silhouette",
+            "glow": "gold"
+          },
+          {
+            "type": "subtitle_glow",
+            "text": "HỒ SƠ MẬT: THÁNG 12, 2001"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Hàng chục nghìn nhân viên mất sạch tiền hưu trí, trong khi những nhân vật đứng đầu đã kịp tẩu tán hàng trăm triệu đô la trước đó.",
+      "visual": {
+        "camera": "drift_slow",
+        "bg_color": "#0b0f19",
+        "elements": [
+          {
+            "type": "stat_counter",
+            "from": 0,
+            "to": 63400000000,
+            "prefix": "$",
+            "label": "Tổng tài sản bốc hơi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Làm thế nào một công ty được tôn vinh là sáng tạo nhất Phố Wall lại che giấu được khoản nợ khổng lồ suốt nhiều năm liền?",
+      "visual": {
+        "camera": "zoom_through",
+        "bg_color": "#050811",
+        "elements": [
+          {
+            "type": "redacted_document",
+            "headline": "BÁO CÁO NGOẠI BẢNG CÂN ĐỐI KẾ TOÁN"
+          }
+        ]
+      }
+    }
+  ]
+}

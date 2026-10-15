@@ -1,0 +1,260 @@
+{
+  "id": "t04-lai-suat-va-chinh-sach-tien-te",
+  "content": "videos/t04-lai-suat-va-chinh-sach-tien-te/script.json",
+  "entry": "/lab/three/episodes/t04.js",
+  "world": "Một thế giới liền mạch nhìn từ trên cao: Đài điều khiển vĩ mô (trái) → Bể chứa Ngân hàng Nhà nước với van lãi suất (giữa) → 3 đường ống → Thành phố doanh nghiệp giả định (phải). Camera bay dọc đường ống khi chuyển bối cảnh.",
+  "sets": {
+    "control": "Đài điều khiển: bàn điều khiển 5 ô (Tăng trưởng, Giá cả, Tiền tệ, Đối ngoại, Tài khoá) với đèn từng chỉ số",
+    "valve": "Bể chứa Ngân hàng Nhà nước + vô lăng van 'Lãi suất điều hành' + hai đồng hồ Tái cấp vốn / Tái chiết khấu",
+    "corridor": "Hành lang lãi suất: hai thanh ray phát sáng (trần, sàn), quả cầu 'Liên ngân hàng' chạy giữa",
+    "pipes": "Đường ống từ bể chứa tới các ngân hàng, trạm bơm OMO, két dự trữ bắt buộc",
+    "channels": "Ba đường ống truyền dẫn đi vào thành phố: Chi phí vốn, Định giá, Dòng tiền",
+    "city": "Thành phố 9 doanh nghiệp giả định, mỗi toà nhà có cột giá nổi phía trên",
+    "board": "Sân khấu bảng lớn cho quiz, sổ tay, kết thúc"
+  },
+  "scenes": {
+    "s01": {
+      "set": "city",
+      "beats": [
+        { "at": 0, "cam": "Toàn cảnh thành phố từ trên cao, hạ dần", "action": "Bảng tin nổi 'NHNN tăng lãi suất' bật lên giữa trời; cột giá trên các toà nhà đồng loạt giảm" },
+        { "at": 3.5, "cam": "Đẩy vào Tổ Ấm Land", "action": "Cột giá Tổ Ấm Land tụt sâu nhất, mũi tên đỏ 'Giảm mạnh'" },
+        { "at": 6, "cam": "Trung cảnh An trước toà nhà", "action": "An che mặt (facepalm), dấu '!' trên đầu" }
+      ],
+      "onscreen": "NHNN tăng lãi suất",
+      "transition": "Cắt sang đài điều khiển khi nhắc 'bài trước'",
+      "difficulty": "Medium"
+    },
+    "s02": {
+      "set": "control",
+      "beats": [
+        { "at": 0, "cam": "Lia ngang dọc bàn điều khiển", "action": "Ô Tăng trưởng và Giá cả đã sáng (GDP, CPI, Lạm phát lõi)" },
+        { "at": 4, "cam": "Đẩy vào ô Tiền tệ", "action": "Ô Tiền tệ nhấp nháy; An ngửa tay giới thiệu" }
+      ],
+      "onscreen": "Bài 4: ô Tiền tệ",
+      "transition": "Camera chui vào ống dẫn sau ô Tiền tệ, bay tới bể chứa NHNN",
+      "difficulty": "Easy"
+    },
+    "s03": {
+      "set": "valve",
+      "beats": [
+        { "at": 0, "cam": "Bay ra khỏi ống, thấy túi tiền khổng lồ", "action": "Thẻ giá '%' treo lên túi tiền" },
+        { "at": 3, "cam": "Lùi rộng", "action": "Hai nhánh: bên trái nhà máy 'Chi phí vay' (đồng xu chảy ra), bên phải heo đất 'Tiết kiệm' (đồng xu chảy vào)" },
+        { "at": 5.5, "cam": "Trung cảnh An", "action": "An giơ tay chỉ lên, bóng đèn ý tưởng" }
+      ],
+      "onscreen": "Lãi suất là giá của tiền",
+      "transition": "Túi tiền thu nhỏ rơi vào bể chứa NHNN",
+      "difficulty": "Medium"
+    },
+    "s04": {
+      "set": "valve",
+      "beats": [
+        { "at": 0, "cam": "Ngước lên bể chứa 'Ngân hàng Nhà nước'", "action": "Vô lăng van 'Lãi suất điều hành' phát sáng" },
+        { "at": 3, "cam": "Orbit quanh bể", "action": "Hai đồng hồ hiện ra: 'Tái cấp vốn', 'Tái chiết khấu'" },
+        { "at": 6, "cam": "Trung cảnh", "action": "An giới thiệu; chữ 'Lãi suất gốc của hệ thống'" }
+      ],
+      "onscreen": "Lãi suất điều hành",
+      "transition": "Hai đồng hồ kéo dài thành hai thanh ray của hành lang",
+      "difficulty": "Medium"
+    },
+    "s05": {
+      "set": "corridor",
+      "beats": [
+        { "at": 0, "cam": "Nhìn ngang", "action": "Thanh ray trên 'Trần: tái cấp vốn', thanh ray dưới 'Sàn: tái chiết khấu' trải dài" },
+        { "at": 3, "cam": "Bám theo quả cầu", "action": "Quả cầu 'Liên ngân hàng' chạy lên xuống bên trong hành lang, để lại vệt đường (dữ liệu minh hoạ)" },
+        { "at": 7.5, "cam": "Lùi rộng thấy cả vệt", "action": "Nhãn 'Chỉ báo thanh khoản hằng ngày'; An chỉ vào" }
+      ],
+      "onscreen": "Hành lang lãi suất",
+      "transition": "Quả cầu lăn vào đường ống",
+      "difficulty": "Medium"
+    },
+    "s06": {
+      "set": "pipes",
+      "beats": [
+        { "at": 0, "cam": "Cận vô lăng", "action": "Vô lăng xoay, nước trong ống đổi màu" },
+        { "at": 2, "cam": "Bám theo dòng nước", "action": "Dòng nước chảy tới các ngân hàng" },
+        { "at": 4.5, "cam": "Trung cảnh ngân hàng", "action": "Đồng hồ 'Cho vay' và 'Huy động' nhích lên chậm, đồng hồ cát 'Độ trễ'" }
+      ],
+      "onscreen": "Lan truyền sau một độ trễ",
+      "transition": "Lia sang trạm bơm cạnh ống",
+      "difficulty": "Medium"
+    },
+    "s07": {
+      "set": "pipes",
+      "beats": [
+        { "at": 0, "cam": "Trung cảnh trạm bơm 'OMO'", "action": "Piston bơm, mũi tên xanh: bơm tiền vào hệ thống" },
+        { "at": 4, "cam": "Giữ khung, nghiêng nhẹ", "action": "Đảo chiều, mũi tên đỏ: hút tiền về" },
+        { "at": 6, "cam": "Thấy An", "action": "An chỉ vào trạm bơm" }
+      ],
+      "onscreen": "OMO: bơm vào / hút về hằng ngày",
+      "transition": "Theo ống tới bể của ngân hàng",
+      "difficulty": "Medium"
+    },
+    "s08": {
+      "set": "pipes",
+      "beats": [
+        { "at": 0, "cam": "Cắt ngang bể ngân hàng (cutaway)", "action": "Ngăn 'Dự trữ bắt buộc' bên trong bể" },
+        { "at": 3, "cam": "Giữ khung", "action": "Vách ngăn dịch sang, phần dự trữ lớn lên, phần 'Có thể cho vay' nhỏ lại" },
+        { "at": 6.5, "cam": "Cận vòi huy động", "action": "Nắp chặn 'Trần lãi suất huy động' đóng giới hạn vòi tiền gửi ngắn hạn" }
+      ],
+      "onscreen": "Dự trữ bắt buộc · Trần lãi suất huy động",
+      "transition": "Lùi về đài điều khiển",
+      "difficulty": "Advanced"
+    },
+    "s09": {
+      "set": "control",
+      "beats": [
+        { "at": 0, "cam": "Trung cảnh tường màn hình", "action": "Ba màn hình lần lượt sáng và có dấu tích: 'Quyết định trên web NHNN', 'Lãi suất liên ngân hàng qua đêm', 'Khối lượng OMO hằng ngày'" },
+        { "at": 4.5, "cam": "Đẩy nhẹ", "action": "An chỉ vào màn hình" }
+      ],
+      "onscreen": "Theo dõi ở đâu?",
+      "transition": "Camera nâng lên nhìn từ trên xuống ba đường ống",
+      "difficulty": "Easy"
+    },
+    "s10": {
+      "set": "channels",
+      "beats": [
+        { "at": 0, "cam": "Từ trên xuống", "action": "Ba ống tách ra từ van và chạy vào thành phố, đánh số 1 Chi phí vốn, 2 Định giá, 3 Dòng tiền" },
+        { "at": 2.5, "cam": "Hạ xuống", "action": "An suy nghĩ, dấu '?'" }
+      ],
+      "onscreen": "Ba kênh truyền dẫn",
+      "transition": "Bám theo ống số 1",
+      "difficulty": "Easy"
+    },
+    "s11": {
+      "set": "channels",
+      "beats": [
+        { "at": 0, "cam": "Bám theo ống 1 vào cỗ máy", "action": "Cỗ máy 'Lợi nhuận': đồng xu 'tiền lãi' chảy ra ngoài" },
+        { "at": 3, "cam": "Trung cảnh", "action": "Khối 'Lợi nhuận' co lại; An nhún vai" }
+      ],
+      "onscreen": "Lãi suất ↑ → chi phí vốn ↑ → lợi nhuận ↓",
+      "transition": "Lia sang ống 2",
+      "difficulty": "Medium"
+    },
+    "s12": {
+      "set": "channels",
+      "beats": [
+        { "at": 0, "cam": "Nhìn dọc băng chuyền thời gian", "action": "Đồng xu 'lợi nhuận tương lai' đi từ năm xa về hiện tại, nhỏ dần (chiết khấu)" },
+        { "at": 4, "cam": "Lùi rộng", "action": "Quả nặng 'Tỷ suất chiết khấu' tăng → bệ 'P/E hợp lý' hạ xuống" },
+        { "at": 7, "cam": "Trung cảnh", "action": "An chỉ, mặt lo lắng" }
+      ],
+      "onscreen": "Tỷ suất chiết khấu ↑ → P/E hợp lý ↓",
+      "transition": "Lia sang ống 3",
+      "difficulty": "Advanced"
+    },
+    "s13": {
+      "set": "channels",
+      "beats": [
+        { "at": 0, "cam": "Toàn cảnh hai công trình", "action": "Bên trái 'Cổ phiếu', bên phải két 'Tiết kiệm' có biển lãi suất tăng" },
+        { "at": 2.5, "cam": "Bám theo đồng xu", "action": "Một dòng đồng xu bay từ 'Cổ phiếu' sang 'Tiết kiệm'" },
+        { "at": 5, "cam": "Trung cảnh", "action": "An giới thiệu" }
+      ],
+      "onscreen": "Dòng tiền dịch chuyển",
+      "transition": "Bay theo đồng xu vào thành phố, dừng ở Tổ Ấm Land",
+      "difficulty": "Medium"
+    },
+    "s14": {
+      "set": "city",
+      "beats": [
+        { "at": 0, "cam": "Orbit Tổ Ấm Land", "action": "Biển số liệu nổi: 'Lợi nhuận trước lãi vay: 400 tỷ/năm'" },
+        { "at": 3.5, "cam": "Giữ orbit", "action": "Biển thứ hai: 'Nợ vay: 2.000 tỷ'; An giới thiệu" }
+      ],
+      "onscreen": "Tổ Ấm Land (doanh nghiệp giả định)",
+      "transition": "Khối lợi nhuận 400 tỷ bay ra trước toà nhà",
+      "difficulty": "Easy"
+    },
+    "s15": {
+      "set": "city",
+      "beats": [
+        { "at": 0, "cam": "Trung cảnh khối lợi nhuận + núm vặn lãi suất", "action": "Núm '8%': phần đỏ 'Tiền lãi 160 tỷ', phần mint 'Còn 240 tỷ'" },
+        { "at": 5, "cam": "Đẩy nhẹ", "action": "Núm vặn lên '10%': phần đỏ lớn lên, còn 200 tỷ" },
+        { "at": 8.5, "cam": "Đẩy tiếp", "action": "Núm '12%': còn 160 tỷ; An ngạc nhiên" }
+      ],
+      "onscreen": "Lãi suất vay: 8% → 10% → 12%",
+      "transition": "Giữ nguyên bối cảnh",
+      "difficulty": "Medium"
+    },
+    "s16": {
+      "set": "city",
+      "beats": [
+        { "at": 0, "cam": "Giữ khung", "action": "Con dấu '−1/3 lợi nhuận' đóng lên khối" },
+        { "at": 4, "cam": "Lùi rộng", "action": "Biển 'Nợ gấp 5 lần lợi nhuận'; cột giá Tổ Ấm Land 'Nhạy nhất'" },
+        { "at": 7.5, "cam": "Trung cảnh", "action": "An chống nạnh, tự tin" }
+      ],
+      "onscreen": "Vay càng nhiều, lợi nhuận càng nhạy",
+      "transition": "Lia sang bên hông toà nhà",
+      "difficulty": "Easy"
+    },
+    "s17": {
+      "set": "city",
+      "beats": [
+        { "at": 0, "cam": "Hai nửa khung", "action": "Trái: cần cẩu chủ đầu tư chậm lại, biển 'Chi phí vốn ↑'. Phải: người mua nhà đứng trước cửa ngân hàng đang khép, biển 'Khó vay hơn'" },
+        { "at": 3, "cam": "Trung cảnh An", "action": "An ôm đầu" }
+      ],
+      "onscreen": "Bất động sản: tác động kép",
+      "transition": "Lia sang Ngân hàng Heo Đất",
+      "difficulty": "Medium"
+    },
+    "s18": {
+      "set": "city",
+      "beats": [
+        { "at": 0, "cam": "Trung cảnh Heo Đất", "action": "Hai cột nước: 'Lãi suất cho vay' và 'Lãi suất huy động'" },
+        { "at": 4, "cam": "Cận khoảng cách hai cột", "action": "Khoảng cách được gắn nhãn 'NIM'; hai cột lên với tốc độ khác nhau" },
+        { "at": 7, "cam": "Trung cảnh", "action": "An suy nghĩ" }
+      ],
+      "onscreen": "NIM: biên lãi ròng",
+      "transition": "Mọi thứ thu lại thành sân khấu quiz",
+      "difficulty": "Medium"
+    },
+    "s19": {
+      "set": "board",
+      "beats": [
+        { "at": 0, "cam": "Chính diện sân khấu", "action": "Câu hỏi trên bảng, ba bục đáp án lần lượt nhô lên: Bất động sản / Bảo hiểm / Doanh nghiệp nhiều tiền mặt ròng" },
+        { "at": 4.5, "cam": "Đèn rọi lướt qua ba bục, không dừng ở bục nào", "action": "Chữ 'Đáp án trong bài viết bên dưới'; An suy nghĩ" }
+      ],
+      "onscreen": "Câu hỏi cho bạn",
+      "transition": "Cắt về đài điều khiển",
+      "difficulty": "Easy"
+    },
+    "s20": {
+      "set": "control",
+      "beats": [
+        { "at": 0, "cam": "Cận ô Tiền tệ", "action": "Đèn 'Lãi suất' bật sáng mint, pháo giấy (có seed)" },
+        { "at": 2, "cam": "Lùi", "action": "An giơ hai tay ăn mừng" }
+      ],
+      "onscreen": "Đèn mới: Lãi suất",
+      "transition": "Chuyển sang bàn có sổ tay",
+      "difficulty": "Easy"
+    },
+    "s21": {
+      "set": "board",
+      "beats": [
+        { "at": 0, "cam": "Từ trên xuống cuốn sổ mở", "action": "Bốn dòng sổ tay, dòng cuối tự viết ra" },
+        { "at": 3.5, "cam": "Nghiêng sang An", "action": "An vui vẻ" }
+      ],
+      "onscreen": "Sổ tay của An",
+      "transition": "Về đài điều khiển",
+      "difficulty": "Easy"
+    },
+    "s22": {
+      "set": "control",
+      "beats": [
+        { "at": 0, "cam": "Trung cảnh bàn điều khiển", "action": "Ô Tiền tệ tiếp tục nhấp nháy" },
+        { "at": 3.5, "cam": "Bay qua bàn ra phía sau", "action": "Mạng lưới ống dẫn nước chảy vào thành phố (gợi Bài 5: cung tiền và tín dụng)" },
+        { "at": 6.5, "cam": "Trung cảnh", "action": "An chỉ, hào hứng" }
+      ],
+      "onscreen": "Bài 5: Cung tiền và tín dụng",
+      "transition": "Lùi lên cao thấy toàn bộ thế giới",
+      "difficulty": "Medium"
+    },
+    "s23": {
+      "set": "city",
+      "beats": [
+        { "at": 0, "cam": "Toàn cảnh thế giới từ trên cao", "action": "An vẫy tay; thẻ kết: 'Hẹn gặp ở Bài 5', 'Chi tiết và quiz ngay bên dưới video' + dòng miễn trừ trách nhiệm" }
+      ],
+      "onscreen": "Hẹn gặp ở Bài 5",
+      "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định.",
+      "transition": "Kết thúc",
+      "difficulty": "Easy"
+    }
+  }
+}

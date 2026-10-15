@@ -5,17 +5,17 @@
 **Ảnh (nhân vật + khung hình):** tạo tự động bằng API, có báo chi phí trước khi chạy:
 
 ```bash
-node scripts/story-images.mjs stories/gia-cua-tien/story.json          # xem danh sách ảnh và chi phí
-node scripts/story-images.mjs stories/gia-cua-tien/story.json --yes    # tạo các ảnh còn thiếu
+node scripts/story-images.mjs videos/story-gia-cua-tien/script.json          # xem danh sách ảnh và chi phí
+node scripts/story-images.mjs videos/story-gia-cua-tien/script.json --yes    # tạo các ảnh còn thiếu
 ```
 
 **Video 🎬 (Flow → Veo):** làm tay theo mục 3. Trước khi tải, chạy lệnh dưới đây; file tải về sẽ tự đổi tên và chuyển vào `media/`:
 
 ```bash
-node scripts/story-import.mjs stories/gia-cua-tien/story.json
+node scripts/story-import.mjs videos/story-gia-cua-tien/script.json
 ```
 
-Xong thì dựng phim: `node scripts/story.mjs stories/gia-cua-tien/story.json`. Thiếu file nào thì cảnh đó hiện khung giữ chỗ.
+Xong thì dựng phim: `node scripts/story.mjs videos/story-gia-cua-tien/script.json`. Thiếu file nào thì cảnh đó hiện khung giữ chỗ.
 
 ## 1. Ảnh tham chiếu nhân vật
 

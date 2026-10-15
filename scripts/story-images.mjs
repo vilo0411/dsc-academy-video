@@ -3,16 +3,17 @@
 // rồi khung hình từng cảnh, mỗi khung đính kèm ảnh nhân vật xuất hiện trong cảnh để giữ đồng nhất.
 // Mặc định chỉ liệt kê ảnh còn thiếu và báo chi phí; thêm --yes mới gọi API.
 //
-// Cách dùng:  node scripts/story-images.mjs stories/<thư mục>/story.json [--yes]
+// Cách dùng:  node scripts/story-images.mjs videos/<id>/script.json [--yes]
 //               [--only s03,s07]  chỉ làm các ảnh này (tên cảnh hoặc char-<key>), tạo lại nếu đã có
 //               [--model pro|nb21|flash]  mặc định pro (gemini-3-pro-image)
 //               [--size 1K|2K]  mặc định 2K
 //               [--out <thư mục>]  lưu chỗ khác thay vì media/ (để thử)
 //               [--retry N]  số lần tự tạo lại khi khung hình bị viền/dải trống, mặc định 1
-// Kết quả:    media/*.png (ảnh cũ bị thay được giữ ở media/_old/), build/<id>/image-log.json
+// Kết quả:    media/*.png (ảnh cũ bị thay được giữ ở media/_old/), videos/<id>/.work/image-log.json
 
 import fs from "node:fs";
 import path from "node:path";
+import { videoDir, workDir } from "./lib/paths.mjs";
 import { execFileSync } from "node:child_process";
 import { loadEnv } from "./lib/env.mjs";
 import { gcpAccessToken, gcpProjectId } from "./lib/gcp-auth.mjs";
@@ -47,13 +48,13 @@ const opt = (name) => {
   return i >= 0 ? args[i + 1] : undefined;
 };
 if (!storyPath) {
-  console.error("Thiếu file kịch bản. Ví dụ: node scripts/story-images.mjs stories/chiec-lo-cua-ba/story.json");
+  console.error("Thiếu file kịch bản. Ví dụ: node scripts/story-images.mjs videos/story-chiec-lo-cua-ba/script.json");
   process.exit(1);
 }
 const story = JSON.parse(fs.readFileSync(storyPath, "utf8"));
 const mediaDir = path.join(path.dirname(storyPath), "media");
 const outDir = opt("out") || mediaDir;
-const buildDir = path.join("build", story.id);
+const buildDir = workDir(videoDir(story.id));
 const model = MODELS[opt("model") || story.imageModel || "pro"];
 const size = opt("size") || "2K";
 const RETRY = Number(opt("retry") ?? 1);

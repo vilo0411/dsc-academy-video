@@ -2,11 +2,12 @@
 // Giọng đọc cho phim kể chuyện: người dẫn chuyện dùng "voice", câu thoại của nhân vật dùng giọng riêng
 // (characters.<key>.voice). Mỗi cảnh một lần gọi API; cảnh không đổi lời/giọng thì dùng lại bản đã tạo.
 //
-// Cách dùng:  node scripts/story-tts.mjs stories/<thư mục>/story.json
-// Kết quả:    build/<id>/voice.wav + build/<id>/timings.json
+// Cách dùng:  node scripts/story-tts.mjs videos/<id>/script.json
+// Kết quả:    videos/<id>/voice.wav + videos/<id>/timings.json
 
 import fs from "node:fs";
 import path from "node:path";
+import { videoDir, workDir } from "./lib/paths.mjs";
 import crypto from "node:crypto";
 import { loadEnv } from "./lib/env.mjs";
 import { synthesize, resample, trimSilence, floatToWav } from "./lib/tts-providers.mjs";
@@ -18,8 +19,8 @@ const GAP = 0.5; // giây nghỉ giữa hai câu
 const LEAD = 0.6; // nghỉ đầu phim
 
 const story = JSON.parse(fs.readFileSync(process.argv[2], "utf8"));
-const outDir = path.join("build", story.id);
-const cacheDir = path.join(outDir, "voice-cache");
+const outDir = videoDir(story.id);
+const cacheDir = path.join(workDir(outDir), "voice-cache");
 fs.mkdirSync(cacheDir, { recursive: true });
 
 const voiceOf = (s) => (s.speaker && story.characters?.[s.speaker]?.voice) || story.voice;

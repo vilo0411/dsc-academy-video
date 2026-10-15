@@ -1,0 +1,74 @@
+{
+  "id": "demo-shorts-skit",
+  "format": "shorts-skit",
+  "aspect": "9x16",
+  "title": "Demo TikTok Tiểu Phẩm Đối Thoại",
+  "duration_target": "40s",
+  "characters": {
+    "f0": {
+      "name": "Nhà đầu tư F0",
+      "side": "left",
+      "tone": "lo lắng, hoang mang"
+    },
+    "expert": {
+      "name": "Chuyên viên DSC",
+      "side": "right",
+      "tone": "điềm tĩnh, tự tin"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "speaker": "f0",
+      "text": "Anh ơi, thị trường giảm ba mươi điểm rồi! Em có nên bán hết cắt lỗ chạy ngay không?",
+      "visual": {
+        "actor": "f0",
+        "pose": "panic",
+        "bg_tint": "red",
+        "sfx": "alarm"
+      }
+    },
+    {
+      "id": "s02",
+      "speaker": "expert",
+      "text": "Bình tĩnh nào! Doanh nghiệp em mua lợi nhuận vẫn tăng trưởng hai mươi phần trăm chứ?",
+      "visual": {
+        "actor": "expert",
+        "pose": "calm",
+        "bg_tint": "neutral",
+        "sfx": "whoosh"
+      }
+    },
+    {
+      "id": "s03",
+      "speaker": "f0",
+      "text": "Dạ vẫn tăng đều ạ, đơn hàng kín cả năm sau!",
+      "visual": {
+        "actor": "f0",
+        "pose": "confused",
+        "bg_tint": "neutral"
+      }
+    },
+    {
+      "id": "s04",
+      "speaker": "expert",
+      "text": "Vậy thì món hàng tốt đang được giảm giá ba mươi phần trăm, sao em lại đòi bán tháo thay vì nắm giữ hoặc gom thêm?",
+      "visual": {
+        "actor": "expert",
+        "pose": "confident",
+        "bg_tint": "green",
+        "sfx": "cash_ding"
+      }
+    },
+    {
+      "id": "s05",
+      "speaker": "f0",
+      "text": "À... hóa ra là vậy! Cảm ơn chuyên gia, may mà chưa bán non!",
+      "visual": {
+        "actor": "f0",
+        "pose": "cheer",
+        "cta": "Follow kênh để vững tâm lý F0!"
+      }
+    }
+  ]
+}

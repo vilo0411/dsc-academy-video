@@ -3,24 +3,26 @@
 // đoạn video Veo, chuyển cảnh mờ chồng, phụ đề có tên người nói, giọng đọc và nhạc nền (nếu có).
 // Cảnh chưa có media hiện khung giữ chỗ kèm câu lệnh để xem thử nhịp phim trước.
 //
-// Cách dùng:  node scripts/build-story.mjs stories/<thư mục>/story.json
-// Đầu vào:    stories/<thư mục>/media/*, build/<id>/timings.json (nếu chưa có giọng đọc thì tự ước lượng)
-// Kết quả:    build/<id>/video-16x9/index.html (hoặc video-9x16 khi aspect là 9:16)
+// Cách dùng:  node scripts/build-story.mjs videos/<id>/script.json
+// Đầu vào:    videos/<id>/media/*, videos/<id>/timings.json (nếu chưa có giọng đọc thì tự ước lượng)
+// Kết quả:    videos/<id>/project/index.html (hoặc project-9x16 khi aspect là 9:16)
 
 import fs from "node:fs";
 import path from "node:path";
+import { videoDir, projectDir } from "./lib/paths.mjs";
 import { spawnSync } from "node:child_process";
 import { BRAND } from "./lib/brand.mjs";
 import { timeCaptions } from "./lib/captions.mjs";
+import { writeIndex } from "./lib/edits.mjs";
 
 const storyPath = process.argv[2];
 if (!storyPath) {
-  console.error("Thiếu file kịch bản. Ví dụ: node scripts/build-story.mjs stories/chiec-lo-cua-ba/story.json");
+  console.error("Thiếu file kịch bản. Ví dụ: node scripts/build-story.mjs videos/story-chiec-lo-cua-ba/script.json");
   process.exit(1);
 }
 const story = JSON.parse(fs.readFileSync(storyPath, "utf8"));
 const mediaDir = path.join(path.dirname(storyPath), "media");
-const buildDir = path.join("build", story.id);
+const buildDir = videoDir(story.id);
 const vertical = story.aspect === "9:16";
 const orientation = vertical ? "9x16" : "16x9";
 const W = vertical ? 1080 : 1920;
@@ -223,13 +225,13 @@ const html = `<!doctype html>
 </html>
 `;
 
-const dir = path.join(buildDir, `video-${orientation}`);
+const dir = projectDir(buildDir, orientation);
 fs.rmSync(path.join(dir, "media"), { recursive: true, force: true });
 for (const sub of ["fonts", "vendor", "media"]) fs.mkdirSync(path.join(dir, sub), { recursive: true });
 for (const fnt of fs.readdirSync("assets/fonts")) fs.copyFileSync(path.join("assets/fonts", fnt), path.join(dir, "fonts", fnt));
 fs.copyFileSync("assets/vendor/gsap.min.js", path.join(dir, "vendor", "gsap.min.js"));
 for (const m of media) fs.copyFileSync(path.join(mediaDir, m), path.join(dir, "media", m));
 if (timings.audio) fs.copyFileSync(path.join(buildDir, timings.audio), path.join(dir, timings.audio));
-fs.writeFileSync(path.join(dir, "index.html"), html);
+writeIndex(story.id, orientation, dir, html);
 console.log(`Đã tạo ${dir}/index.html — ${TOTAL}s, ${media.size} file media.`);
 if (missing.length) console.log(`Cảnh dùng khung giữ chỗ (thiếu ${missing.join(", ")}).`);

@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 // Bài nghe thử: đọc cùng một đoạn bằng nhiều phương án giọng, ghép thành một video có thẻ tên từng phương án.
 //
-// Cách dùng:  node scripts/voice-test.mjs content/voice-test.json
-// Kết quả:    build/<id>/content.json (kịch bản đã ghép), voice.wav, timings.json, report.json
-//             out/<id>/<chữ cái>.wav cho từng phương án
+// Cách dùng:  node lab/voice-test.mjs lab/voice-test.json
+// Kết quả:    lab/build/<id>/content.json (kịch bản đã ghép), voice.wav, timings.json, report.json
+//             lab/out/<id>/<chữ cái>.wav cho từng phương án
 
 import fs from "node:fs";
 import path from "node:path";
-import { loadEnv } from "./lib/env.mjs";
-import { synthScenes } from "./tts.mjs";
+import { loadEnv } from "../scripts/lib/env.mjs";
+import { synthScenes } from "../scripts/tts.mjs";
 
 loadEnv();
 const contentPath = process.argv[2];
 const test = JSON.parse(fs.readFileSync(contentPath, "utf8"));
-const outDir = path.join("build", test.id);
-const wavDir = path.join("out", test.id);
+const outDir = path.join("lab/build", test.id);
+const wavDir = path.join("lab/out", test.id);
 fs.mkdirSync(outDir, { recursive: true });
 fs.mkdirSync(wavDir, { recursive: true });
 

@@ -1,0 +1,196 @@
+{
+  "id": "demo-shorts-kinetic",
+  "format": "shorts-kinetic",
+  "title": "Lãi suất thực: tiền gửi có thắng lạm phát?",
+  "preset": "taichinh",
+  "thumbnails": [
+    {
+      "type": "question",
+      "kicker": "Tiền nằm yên trong sổ…",
+      "title": "Vẫn bị hao mòn?"
+    },
+    {
+      "type": "number",
+      "kicker": "Ví dụ giả định",
+      "title": "-4% sức mua",
+      "dir": "down"
+    },
+    {
+      "type": "compare",
+      "kicker": "Khác nhau thế nào?",
+      "left": "Lãi danh nghĩa",
+      "right": "Lãi thực",
+      "leftKicker": "bạn nghĩ",
+      "rightKicker": "thực ra"
+    }
+  ],
+  "voice": {
+    "provider": "cloud-gemini",
+    "model": "gemini-2.5-pro-tts",
+    "voice": "Puck",
+    "style": "You are an energetic Vietnamese finance educator recording a TikTok short. Speak Vietnamese naturally at a fast, punchy pace with clear emphasis on key words and numbers. Keep pauses very short. Sound curious and confident, never salesy."
+  },
+  "music": "km-funkorama",
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Tiền nằm yên trong sổ, sao vẫn bị hao mòn?",
+      "visual": {
+        "cue": "hook_2tier",
+        "tier1": "Tiền nằm yên trong sổ…",
+        "tier2": "VẪN BỊ HAO MÒN?",
+        "at": "hao mòn",
+        "icon": "question",
+        "sfx": "sub_boom"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Thủ phạm có một cái tên: lạm phát.",
+      "visual": {
+        "cue": "statement",
+        "text": "Thủ phạm: LẠM PHÁT",
+        "mark": "LẠM PHÁT",
+        "keywords": [
+          "lạm phát"
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Giả sử giá cả tăng bốn phần trăm mỗi năm.",
+      "visual": {
+        "cue": "big_counter",
+        "value": "4%",
+        "label": "giá cả tăng mỗi năm",
+        "icon": "up",
+        "badge": "Giả định",
+        "at": "bốn",
+        "circle": "bốn",
+        "circleLabel": "Ví dụ"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Một trăm triệu đồng hôm nay, sau một năm chỉ còn sức mua khoảng chín mươi sáu triệu.",
+      "visual": {
+        "cue": "arrow",
+        "dir": "down",
+        "value": "≈ 96 triệu",
+        "label": "sức mua của 100 triệu sau 1 năm",
+        "keywords": [
+          "chín mươi sáu triệu"
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Vậy lãi tiết kiệm có bù được không? Câu trả lời là lãi suất thực.",
+      "visual": {
+        "cue": "chapter",
+        "sub": "câu trả lời nằm ở",
+        "title": "Lãi suất thực",
+        "keywords": [
+          "lãi suất thực"
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Lãi ghi trên sổ là lãi danh nghĩa. Trừ đi lạm phát, phần còn lại mới là lãi thực.",
+      "visual": {
+        "cue": "ab_compare",
+        "left": {
+          "kicker": "lãi ghi trên sổ",
+          "title": "Danh nghĩa",
+          "value": "6%"
+        },
+        "right": {
+          "kicker": "sau khi trừ lạm phát",
+          "title": "Lãi thực",
+          "value": "≈ 2%",
+          "tone": "up"
+        },
+        "rightAt": "trừ"
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Nhớ công thức gần đúng: lãi thực bằng lãi danh nghĩa trừ lạm phát.",
+      "visual": {
+        "cue": "statement",
+        "style": "type",
+        "text": "Lãi thực ≈ Lãi danh nghĩa − Lạm phát"
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Tự kiểm tra trong ba bước. Bước một, xem lãi suất bạn đang nhận.",
+      "visual": {
+        "cue": "steps",
+        "items": [
+          "Lãi suất đang nhận",
+          "Lạm phát mới nhất",
+          "Lấy hiệu số"
+        ],
+        "active": 1,
+        "numbered": true
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Bước hai, tra chỉ số giá tiêu dùng mới nhất.",
+      "visual": {
+        "cue": "steps",
+        "items": [
+          "Lãi suất đang nhận",
+          "Lạm phát mới nhất",
+          "Lấy hiệu số"
+        ],
+        "active": 2,
+        "numbered": true
+      }
+    },
+    {
+      "id": "s10",
+      "text": "Bước ba, lấy hiệu số. Nếu âm, tiền của bạn đang mất sức mua.",
+      "visual": {
+        "cue": "steps",
+        "items": [
+          "Lãi suất đang nhận",
+          "Lạm phát mới nhất",
+          "Lấy hiệu số"
+        ],
+        "active": 3,
+        "keywords": [
+          "mất sức mua"
+        ],
+        "numbered": true
+      }
+    },
+    {
+      "id": "s11",
+      "text": "Theo bạn, lãi suất thực lúc này đang dương hay âm? Để lại bình luận nhé.",
+      "visual": {
+        "cue": "question",
+        "text": "Lãi suất thực lúc này đang…",
+        "options": [
+          "Dương",
+          "Âm",
+          "Chưa chắc"
+        ]
+      }
+    },
+    {
+      "id": "s12",
+      "text": "Đọc bài viết đầy đủ về lạm phát và chỉ số giá ở phần mô tả nhé.",
+      "visual": {
+        "cue": "outro_cta",
+        "headline": "Lạm phát & CPI",
+        "sub": "Kinh tế vĩ mô cho nhà đầu tư · Tập 3",
+        "cta": "Đọc bài viết ở phần mô tả",
+        "disclaimer": "Số liệu giả định, chỉ nhằm mục đích giáo dục. Không phải khuyến nghị đầu tư."
+      }
+    }
+  ]
+}

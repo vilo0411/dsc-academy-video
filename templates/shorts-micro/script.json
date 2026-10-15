@@ -1,0 +1,103 @@
+{
+  "id": "template-shorts-micro",
+  "format": "shorts-micro",
+  "title": "Lãi kép trong 30 giây",
+  "preset": "dsc",
+  "thumbnails": [
+    {
+      "type": "question",
+      "kicker": "Vì sao tiền lãi…",
+      "title": "Tự đẻ ra lãi?"
+    },
+    {
+      "type": "number",
+      "kicker": "Ví dụ giả định",
+      "title": "≈ 19,7 triệu",
+      "sub": "10 triệu, 7%/năm, 10 năm",
+      "dir": "up"
+    },
+    {
+      "type": "compare",
+      "kicker": "Khác nhau ở đâu?",
+      "left": "Lãi đơn",
+      "right": "Lãi kép",
+      "leftKicker": "17 triệu",
+      "rightKicker": "≈ 19,7 triệu"
+    }
+  ],
+  "voice": {
+    "provider": "cloud-gemini",
+    "model": "gemini-2.5-pro-tts",
+    "voice": "Puck",
+    "style": "You are an upbeat Vietnamese finance educator recording a 30-second TikTok. Speak fast and clearly, emphasize numbers, keep pauses very short."
+  },
+  "music": {
+    "mood": "upbeat",
+    "energy": 4
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Vì sao tiền lãi có thể tự đẻ ra tiền lãi?",
+      "visual": {
+        "cue": "hook_2tier",
+        "tier1": "Vì sao tiền lãi…",
+        "tier2": "TỰ ĐẺ RA TIỀN LÃI?",
+        "at": "tự",
+        "icon": "coin"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Giả sử mười triệu đồng, lãi bảy phần trăm mỗi năm, nhập lãi vào gốc.",
+      "visual": {
+        "cue": "big_counter",
+        "value": "10 triệu",
+        "label": "lãi 7%/năm, nhập lãi vào gốc",
+        "badge": "Giả định",
+        "at": "mười"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Lãi đơn sau mười năm được mười bảy triệu. Lãi kép được gần hai mươi triệu.",
+      "visual": {
+        "cue": "ab_compare",
+        "headline": "Sau 10 năm",
+        "left": {
+          "kicker": "lãi đơn",
+          "title": "17 triệu"
+        },
+        "right": {
+          "kicker": "lãi kép",
+          "title": "≈ 19,7 triệu",
+          "tone": "up"
+        },
+        "rightAt": "lãi kép"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Khác biệt nằm ở thời gian: năm sau tính lãi trên cả tiền lãi năm trước.",
+      "visual": {
+        "cue": "statement",
+        "style": "hand",
+        "text": "Bí quyết là thời gian",
+        "mark": "thời gian",
+        "keywords": [
+          "thời gian"
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Đọc bài viết về lãi kép ở phần mô tả nhé.",
+      "visual": {
+        "cue": "outro_cta",
+        "headline": "Lãi kép",
+        "cta": "Đọc bài viết ở phần mô tả",
+        "disclaimer": "Ví dụ giả định, chỉ nhằm mục đích giáo dục. Lợi nhuận đầu tư thực tế không cố định và có thể âm."
+      }
+    }
+  ]
+}

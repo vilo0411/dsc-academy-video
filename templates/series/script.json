@@ -1,0 +1,160 @@
+{
+  "id": "template-series",
+  "format": "series",
+  "title": "Tiêu đề Bài Học Giáo Dục (16:9)",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "episode": 1,
+  "character": "an",
+  "article": "",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-2.5-flash",
+    "voice": "Puck",
+    "rate": 1.05
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Chào bạn, hôm nay chúng ta cùng tìm hiểu một khái niệm cực kỳ quan trọng đối với mọi nhà đầu tư.",
+      "visual": {
+        "type": "title",
+        "pose": "wave",
+        "headline": "Tiêu Đề Video",
+        "sub": "Bài 1"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Trước hết, hãy cùng nhìn lại bức tranh tổng quan đã được lưu lại trong sổ tay tập trước.",
+      "visual": {
+        "type": "notebook",
+        "pose": "idle",
+        "entries": [
+          "Kiến thức nền tảng tập trước"
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Khái niệm này được hiểu đơn giản là sự so sánh giữa hai cán cân đối nghịch trên thị trường.",
+      "visual": {
+        "type": "versus",
+        "pose": "present",
+        "headline": "So Sánh Hai Yếu Tố",
+        "left": {
+          "title": "Cung Tiền",
+          "text": "Lượng tiền lưu thông tăng"
+        },
+        "right": {
+          "title": "Hàng Hóa",
+          "text": "Khối lượng sản phẩm thực tế"
+        }
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Khi nhìn vào bảng số liệu vĩ mô, chúng ta thấy năm nhóm chỉ số chính đang phản ánh xu hướng này.",
+      "visual": {
+        "type": "dashboard",
+        "pose": "point",
+        "show": [
+          "growth",
+          "prices",
+          "money",
+          "external",
+          "fiscal"
+        ],
+        "reveal": [
+          "prices",
+          "money"
+        ],
+        "lit": [
+          "prices"
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "text": "Chuỗi tác động sẽ đi thẳng từ chính sách tiền tệ đến lợi nhuận và định giá của các doanh nghiệp niêm yết.",
+      "visual": {
+        "type": "chain",
+        "pose": "pointUp",
+        "highlight": "both",
+        "dir": "up",
+        "caption": "Lãi suất giảm đẩy định giá tăng"
+      }
+    },
+    {
+      "id": "s06",
+      "text": "Hãy xem phản ứng của hai doanh nghiệp giả định: Công ty Thép Đại Nam và Công ty Bán lẻ An Bình.",
+      "visual": {
+        "type": "pair",
+        "pose": "present",
+        "items": [
+          {
+            "company": "Thép Đại Nam (Giả định)",
+            "rows": [
+              {
+                "k": "Chi phí vốn",
+                "v": "Giảm 1.5%"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "+12% Lợi nhuận"
+          },
+          {
+            "company": "Bán lẻ An Bình (Giả định)",
+            "rows": [
+              {
+                "k": "Sức mua",
+                "v": "Hồi phục"
+              }
+            ],
+            "move": "up",
+            "moveLabel": "+8% Doanh thu"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "text": "Như vậy, ba điểm quan trọng nhất bạn cần ghi nhớ trong bài học hôm nay là gì?",
+      "visual": {
+        "type": "checklist",
+        "pose": "present",
+        "headline": "Ba điều cần nhớ",
+        "items": [
+          "Chính sách tiền tệ điều tiết dòng chảy vốn",
+          "Tác động phân hóa giữa nhóm thâm dụng vốn và tiêu dùng",
+          "Luôn theo dõi lãi suất điều hành định kỳ"
+        ]
+      }
+    },
+    {
+      "id": "s08",
+      "text": "Hãy cùng thử tài với câu hỏi nhanh: Khi lãi suất hạ, kênh tài sản nào thường phản ứng tích cực đầu tiên?",
+      "visual": {
+        "type": "quiz",
+        "pose": "think",
+        "question": "Khi lãi suất điều hành hạ, tài sản nào thường phản ứng sớm nhất?",
+        "options": [
+          "Cổ phiếu và trái phiếu",
+          "Gửi tiết kiệm kỳ hạn dài",
+          "Bất động sản vùng sâu"
+        ],
+        "footer": "Bình luận đáp án của bạn bên dưới!"
+      }
+    },
+    {
+      "id": "s09",
+      "text": "Hẹn gặp lại các bạn trong bài học tiếp theo. Đừng quên đọc bài phân tích chi tiết và làm bài trắc nghiệm bên dưới nhé!",
+      "visual": {
+        "type": "outro",
+        "pose": "wave",
+        "headline": "Hẹn Gặp Ở Bài 2",
+        "sub": "Đọc bài viết chi tiết và làm quiz ngay dưới video",
+        "disclaimer": "Nội dung chỉ nhằm mục đích giáo dục, không phải khuyến nghị đầu tư. Doanh nghiệp và số liệu trong video là giả định."
+      }
+    }
+  ]
+}

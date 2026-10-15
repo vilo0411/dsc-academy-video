@@ -2,23 +2,23 @@
 // Bản nghe thử âm thanh để duyệt trước khi làm video: nhiều giọng đọc × nhiều bản nhạc nền,
 // trộn với tiếng động theo đúng cách build-essay trộn.
 //
-// Cách dùng:  node scripts/sound-test.mjs content/sound-test-upbeat.json   (cần GEMINI_API_KEY, GCP_SA_KEY)
-// Kết quả:    out/<id>/giong-*.mp3, nhac-*.mp3, demo-*.mp3 + out/<id>/README.txt
+// Cách dùng:  node lab/sound-test.mjs lab/sound-test-upbeat.json   (cần GEMINI_API_KEY, GCP_SA_KEY)
+// Kết quả:    lab/out/<id>/giong-*.mp3, nhac-*.mp3, demo-*.mp3 + lab/out/<id>/README.txt
 
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { loadEnv } from "./lib/env.mjs";
-import { synthesize, resample, trimSilence, floatToWav } from "./lib/tts-providers.mjs";
-import { splitScenes } from "./lib/split.mjs";
-import { generateMusic } from "./lib/lyria.mjs";
-import { synthSfx, mixdown, probeDur } from "./lib/sound.mjs";
+import { loadEnv } from "../scripts/lib/env.mjs";
+import { synthesize, resample, trimSilence, floatToWav } from "../scripts/lib/tts-providers.mjs";
+import { splitScenes } from "../scripts/lib/split.mjs";
+import { generateMusic } from "../scripts/lib/lyria.mjs";
+import { synthSfx, mixdown, probeDur } from "../scripts/lib/sound.mjs";
 
 loadEnv();
 const file = process.argv[2];
 const c = JSON.parse(fs.readFileSync(file, "utf8"));
-const work = path.join("build", c.id);
-const outDir = path.join("out", c.id);
+const work = path.join("lab/build", c.id);
+const outDir = path.join("lab/out", c.id);
 fs.mkdirSync(work, { recursive: true });
 fs.mkdirSync(outDir, { recursive: true });
 const RATE = 24000;

@@ -1,0 +1,32 @@
+{
+  "id": "t04-tomland-3d",
+  "content": "lab/content3d/t04-tomland-3d.content.json",
+  "entry": "/lab/three/inserts/t04-elevator.js",
+  "captionChars": 46,
+  "replaces": {
+    "episode": "t04-lai-suat-va-chinh-sach-tien-te",
+    "from": "s14",
+    "to": "s16"
+  },
+  "note": "Thang máy lợi nhuận: An ở trong cabin thang kính của toà Tổ Ấm Land; mỗi lần lãi suất tăng, cần cẩu Ngân hàng treo thêm bao tiền lãi, thang tụt tầng 400 → 240 → 200 → 160. Chữ nằm trên vật thể (bảng số lật, vạch tầng, chữ in trên bao và cần cẩu); 22% đáy khung dành cho phụ đề.",
+  "scenes": {
+    "a1": {
+      "shot": "Cận bảng số lật 400 trong cabin → kéo ra xuyên kính → toàn cảnh toà tháp, An vẫy tay"
+    },
+    "a2": {
+      "shot": "Cần cẩu Ngân hàng vươn vào, móc treo bao tiền; An ngước lên"
+    },
+    "a3": {
+      "shot": "Từ móc cẩu nhìn xuống: bao 8% · 160 tỷ móc vào đáy cabin → thang rơi, camera rơi theo, nảy, rung; bảng lật 240"
+    },
+    "a4": {
+      "shot": "Bao +40 tỷ, rơi tiếp; bảng lật 200; ánh sáng nguội dần"
+    },
+    "a5": {
+      "shot": "Bao +40 tỷ, cú rơi mạnh nhất; An ôm đầu; bảng lật 160; vạch đỏ −1/3"
+    },
+    "a6": {
+      "shot": "Lùi rộng: toà Doanh nghiệp ít nợ (giả định) bên cạnh, bao nhỏ, cabin chỉ nhún nhẹ"
+    }
+  }
+}

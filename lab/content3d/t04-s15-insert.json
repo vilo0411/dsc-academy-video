@@ -1,0 +1,22 @@
+{
+  "id": "t04-lai-suat-va-chinh-sach-tien-te",
+  "name": "insert-s15",
+  "content": "videos/t04-lai-suat-va-chinh-sach-tien-te/script.json",
+  "entry": "/lab/three/inserts/t04-s15.js",
+  "only": ["s15"],
+  "captionChars": 46,
+  "note": "Hướng B: đoạn 3D chèn vào bản 2D thay cho cảnh s15. Ẩn dụ: 400 tỷ = 20 đồng xu (mỗi đồng 20 tỷ); lãi suất 8% → 10% → 12% làm 8 → 10 → 12 đồng bay sang chồng 'Tiền lãi', chồng còn lại là lợi nhuận trước thuế.",
+  "scenes": {
+    "s15": {
+      "set": "studio",
+      "beats": [
+        { "at": 0, "cam": "Trung cảnh thấp, phòng chụp nền cong", "action": "Chồng 20 đồng vàng 'Tổ Ấm Land · 400 tỷ' trên bệ; núm lãi suất vặn tới 8%" },
+        { "at": 1.7, "cam": "Lia nhẹ", "action": "8 đồng trên cùng bay sang bệ đỏ 'Tiền lãi': 160 tỷ" },
+        { "at": 3.7, "cam": "Orbit chậm", "action": "Chồng còn lại sáng lên: 'Còn 240 tỷ'" },
+        { "at": 6.3, "cam": "Đẩy vào", "action": "Núm lên 10%, thêm 2 đồng bay: còn 200 tỷ" },
+        { "at": 9.1, "cam": "Đẩy sát", "action": "Núm lên 12%, thêm 2 đồng: còn 160 tỷ; An ngạc nhiên" }
+      ],
+      "difficulty": "Medium"
+    }
+  }
+}

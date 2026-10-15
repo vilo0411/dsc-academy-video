@@ -1,75 +1,59 @@
-# DSC Academy Video — video người que tự động
+# DSC Academy Video
 
-> **Chạy tự động trên GitHub:** mỗi lần đẩy kịch bản mới vào `content/` trên nhánh `main`, workflow `Render videos` tự tạo giọng (Gemini, dùng secret `GEMINI_API_KEY`), dựng và render bằng HyperFrames. Video nằm ở `out/` trên nhánh **`renders`**, báo cáo từng video ở `status/`.
-
-Demo luồng tự động hoá video giáo dục dạng người que cho DSC, chi phí 0 đồng:
-
-1. **Kịch bản**: Claude (gói Pro) viết file `content/<chủ-đề>.json`.
-2. **Giọng đọc**: Gemini TTS (free tier) đọc cả kịch bản trong 1 lần gọi API, script tự cắt thành từng cảnh.
-3. **Dựng hình**: script sinh composition HyperFrames: nhân vật người que SVG, chuyển động GSAP, phụ đề, màu thương hiệu DSC.
-4. **Render**: HyperFrames xuất 2 bản MP4: 16:9 cho YouTube, 9:16 cho Shorts/Reels/TikTok.
-
-
+Video giáo dục đầu tư tự động: Claude Code viết kịch bản → Gemini đọc → HyperFrames dựng và render.
+Ba loại video: chuỗi người que (**series**), video essay cắt dán giấy (**essay**), phim kể chuyện (**story**).
 
 ## Cài đặt (một lần)
 
-Cần cài sẵn:
+- Node.js 22+, FFmpeg (`brew install ffmpeg`), Google Chrome.
+- `npm install` rồi `npx hyperframes doctor`.
+- Copy `.env.example` thành `.env`, điền `GEMINI_API_KEY` (miễn phí ở https://aistudio.google.com/apikey); `GCP_SA_KEY` nếu dùng giọng Google Cloud hoặc nhạc Lyria.
 
-- **Node.js 22 trở lên**: https://nodejs.org
-- **FFmpeg**:
-  - macOS: `brew install ffmpeg`
-  - Windows: `winget install ffmpeg`
-- **Google Chrome**: HyperFrames dùng Chrome để render.
-
-Sau đó mở terminal trong thư mục này và chạy:
+## Làm một video
 
 ```bash
-npm install
-npx hyperframes doctor       # kiểm tra Chrome + FFmpeg đã sẵn sàng
+npm run new -- t13-ten-bai "Tiêu đề"        # tạo videos/t13-ten-bai/script.json (essay-…/story-… hoặc --format)
+# viết nội dung (hoặc nhờ Claude: "Làm tập 13 … theo CLAUDE.md")
+npm run lint -- t13                           # kiểm tra kịch bản, không tốn API
+npm run video -- t13 --draft                  # bản xem nhanh: videos/<id>/draft.mp4
+npm run video -- t13                          # bản cuối: "T13 - Tiêu đề.mp4" + .srt + .jpg
 ```
 
-Lấy API key Gemini miễn phí tại https://aistudio.google.com/apikey. Sau đó copy `.env.example` thành `.env` và dán key vào dòng `GEMINI_API_KEY=`.
+`npm run video` tự dùng lại giọng/nhạc nếu lời không đổi, tự lấy bản GitHub đã tạo (nhánh `renders`) nếu máy chưa có. Khi cần gọi API (giọng hoặc nhạc mới), lệnh dừng và báo số ký tự, chi phí; thêm `--api` để chạy. `--no-voice` dựng không tiếng để xem hình. Log đầy đủ ở `videos/<id>/.work/log.txt`.
 
-## Chạy demo
+## Sửa tay trong HyperFrames
 
 ```bash
-npm run make -- content/pe-la-gi.json
+npm run edit -- open t01 --app     # mở ứng dụng HyperFrames (bỏ --app: Studio trên trình duyệt)
+npm run edit -- save t01           # khoá bản sửa vào videos/<id>/edit/ (lưu trong git)
+npm run edit -- status t01         # | drop t01: bỏ bản sửa
 ```
 
-Lệnh này chạy lần lượt 3 bước: giọng đọc → dựng → render. Video ra trong thư mục `out/`.
+## Thư mục
 
-Bạn cũng có thể chạy từng bước:
-
-```bash
-npm run tts -- content/pe-la-gi.json      # tạo build/pe-la-gi/voice.wav + timings.json
-npm run build -- content/pe-la-gi.json    # tạo composition 16:9 và 9:16
-npm run preview                           # mở HyperFrames Studio để xem/sửa trên timeline
-npm run render -- content/pe-la-gi.json   # xuất MP4 (thêm "draft" ở cuối để render nhanh)
+```
+videos/<id>/
+  script.json            kịch bản (git)
+  edit/                  bản sửa tay đã khoá (git)
+  SHOTLIST.md, media/    phim kể chuyện: bảng phân cảnh (git), ảnh/clip (chỉ trên máy)
+  voice.wav timings.json music.wav …   giọng, nhạc, tiếng động
+  project/               dự án HyperFrames sinh ra — mở/sửa được
+  "T01 - Vĩ mô là gì.mp4" .srt .jpg   đầu ra; draft.mp4 bản nháp
+  .work/                 log, file trung gian
+scripts/                 luồng chính (video, new, lint, edit, pull, build*, tts*, music, story-*)
+scripts/lib/             thư viện dùng chung (cảnh, nhân vật, giọng, âm thanh, đường dẫn)
+lab/                     thử nghiệm: 3D (Three.js), puppet, fx, sound/voice test — npm run lab:*
+assets/                  font, GSAP, mô hình whisper (assets/models/, tải về máy)
+docs/essay-guide.md      hướng dẫn viết video essay
 ```
 
-Chưa có API key? Chạy `npm run make -- content/pe-la-gi.json --no-voice` để xem phần hình trước. Bản này không có tiếng và dùng thời lượng ước lượng.
+## Chạy trên GitHub (máy công ty)
 
-## Làm video mới
-
-Mở Claude Code trong thư mục này và gõ, ví dụ:
-
-> Làm video "Cổ tức là gì" theo quy trình trong CLAUDE.md
-
-Claude sẽ viết `content/co-tuc-la-gi.json` theo đúng cấu trúc, dừng lại để bạn duyệt nội dung, rồi chạy `npm run make`.
-
-## Tuỳ chỉnh
-
-| Muốn đổi | Sửa ở đâu |
-| --- | --- |
-| Màu thương hiệu | `scripts/lib/brand.mjs` |
-| Tư thế nhân vật | `scripts/lib/figure.mjs` (bảng `POSES`) |
-| Bố cục, cỡ chữ, kiểu cảnh | `scripts/build.mjs` |
-| Giọng đọc | `voice.voiceName` trong file kịch bản, hoặc `GEMINI_VOICE` trong `.env` |
+Đẩy `videos/<id>/script.json` (hoặc `edit/`) lên `main` → workflow **Render videos** tạo giọng, dựng, render; kết quả ở nhánh `renders` (`out/<id>.mp4`, `.srt`, `status/<id>.json`, `cache/<id>/`). Phim kể chuyện không chạy trên GitHub (media chỉ có trên máy). Về máy cá nhân: `npm run pull` (hoặc `npm run pull -- t01`) chép giọng, nhạc, video vào `videos/<id>/`.
 
 ## Lưu ý
 
-- Gemini TTS free tier có giới hạn số lượt gọi mỗi phút/ngày; xem hạn mức ở Google AI Studio. Nếu gặp lỗi 429, script tự chờ và thử lại.
-- Dữ liệu gửi qua free tier có thể được Google dùng để cải thiện sản phẩm. Chỉ dùng cho kịch bản công khai, không dùng cho nội dung nội bộ.
-- Luôn nghe lại `voice.wav` trước khi render, đặc biệt cách đọc số và thuật ngữ (P/E, EPS…). Nếu đọc sai, viết lại câu đó trong kịch bản theo cách đọc (ví dụ "năm mươi nghìn" thay vì "50.000") rồi chạy lại `npm run tts`.
+- Gemini TTS free tier có giới hạn lượt gọi; lỗi 429 thì script tự chờ và thử lại. Dữ liệu free tier có thể được Google dùng để cải thiện sản phẩm: chỉ dùng cho kịch bản công khai.
+- Nghe lại giọng trước khi đăng, nhất là số và thuật ngữ; đọc sai thì viết lại câu theo cách đọc rồi chạy `npm run video -- <id> --api`.
 - Mọi video phải được người có chuyên môn duyệt nội dung trước khi đăng.
-- Font Inter: giấy phép SIL OFL. GSAP: giấy phép chuẩn của GreenSock, miễn phí. HyperFrames: Apache 2.0.
+- Font Inter: SIL OFL. GSAP: giấy phép chuẩn GreenSock. HyperFrames: Apache 2.0.

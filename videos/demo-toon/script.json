@@ -1,0 +1,37 @@
+{
+  "id": "demo-toon",
+  "format": "toon",
+  "title": "Demo Hoạt Hình OverSimplified",
+  "series": "Hoạt hình Lịch sử Kinh tế",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
+  },
+  "music": "km-scheming-weasel-faster",
+  "duck": -16,
+  "sources": [
+    "Sử ký La Mã Cổ đại"
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Năm hai trăm bảy mươi sau Công nguyên, Đế chế La Mã đang ở đỉnh cao quyền lực, nhưng có một vấn đề nho nhỏ: Hoàng đế đã tiêu sạch sành sanh ngân khố!"
+    },
+    {
+      "id": "s02",
+      "text": "Vậy Hoàng đế đã làm gì? Vay mượn ngân hàng? Không! Ngài quyết định nấu chảy những đồng tiền bạc thật và pha thêm đồng vào đó!"
+    },
+    {
+      "id": "s03",
+      "text": "Người dân lập tức nhận ra ngay: Bánh mì hôm qua có giá một đồng bạc, sáng nay người bán bánh đòi mười đồng mới chịu bán!"
+    },
+    {
+      "id": "s04",
+      "text": "Và bùm! Đây chính là cách người La Mã phát minh ra lạm phát phi mã, hàng nghìn năm trước khi ngân hàng trung ương hiện đại xuất hiện."
+    }
+  ]
+}

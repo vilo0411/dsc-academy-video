@@ -1,21 +1,24 @@
 #!/usr/bin/env node
 // Dựng video essay phong cách cắt dán giấy (16:9) từ kịch bản "format": "essay".
 //
-// Cách dùng:  node scripts/build-essay.mjs content/essay-lich-su-lam-phat.json
-// Đầu vào:    content/<id>.json, build/<id>/timings.json (nếu chưa có giọng đọc thì tự ước lượng)
-// Kết quả:    build/<id>/video-16x9/index.html (+ sfx.wav: tiếng giấy, con dấu, dây…)
+// Cách dùng:  node scripts/build-essay.mjs videos/essay-lich-su-lam-phat/script.json
+// Đầu vào:    videos/<id>/script.json, videos/<id>/timings.json (nếu chưa có giọng đọc thì tự ước lượng)
+// Kết quả:    videos/<id>/project/index.html (+ sfx.wav: tiếng giấy, con dấu, dây…)
 //
 // Mỗi cảnh là một tấm cắt dán: visual.bg (nền) + visual.pieces[] (các mảnh, xếp theo thứ tự vào khung).
 // Các mảnh tự lắp ráp theo nhịp stop-motion (chuyển động bậc thang), rồi đứng yên như tấm poster sống.
 
 import fs from "node:fs";
 import path from "node:path";
+import { videoDir, projectDir, workDir } from "./lib/paths.mjs";
 import { P, HALFTONE_DEFS, artSVG, artAspect } from "./lib/essay-art.mjs";
-import { synthSfx, mixdown, hasFfmpeg } from "./lib/sound.mjs";
+import { synthSfx, mixdown, hasFfmpeg, applySfxSet, setLibResolver, mixOpts } from "./lib/sound.mjs";
+import { resolveAudio, writeCredits, findTrack, trackFile } from "./lib/audio-lib.mjs";
+import { writeIndex } from "./lib/edits.mjs";
 
 const contentPath = process.argv[2];
 const content = JSON.parse(fs.readFileSync(contentPath, "utf8"));
-const buildDir = path.join("build", content.id);
+const buildDir = videoDir(content.id);
 fs.mkdirSync(buildDir, { recursive: true });
 const W = 1920, H = 1080;
 
@@ -356,25 +359,32 @@ let NEWS = "";
 }
 
 
-// Âm thanh: trộn giọng + tiếng động + nhạc nền thành một track (ffmpeg); không có ffmpeg thì để từng track riêng.
+// Âm thanh: trộn giọng + tiếng động + nhạc nền + ambience/stinger (thư viện assets/audio) thành một track (ffmpeg);
+// không có ffmpeg thì để từng track riêng.
 const audioTags = [];
-fs.writeFileSync(path.join(buildDir, "sfx.wav"), synthSfx(sfxEvents, TOTAL));
-const musicPath = path.join(buildDir, "music.wav");
+setLibResolver((id) => trackFile(findTrack(id)));
+const sfxAll = applySfxSet(sfxEvents, content.sfxSet);
+fs.writeFileSync(path.join(buildDir, "sfx.wav"), synthSfx(sfxAll, TOTAL));
+const lib = resolveAudio(content, timings, TOTAL, buildDir);
+writeCredits(buildDir, lib.used);
 let audioFiles = [];
 if (hasFfmpeg()) {
   mixdown({
     voice: timings.audio ? path.join(buildDir, timings.audio) : null,
     sfx: path.join(buildDir, "sfx.wav"),
-    music: fs.existsSync(musicPath) ? musicPath : null,
+    music: lib.music,
     total: TOTAL,
-    musicVol: content.music?.volume ?? 1.5,
+    ...mixOpts(content, timings),
+    musicVol: lib.musicVol ?? content.music?.volume ?? 1.5,
     sfxVol: content.sfxVolume ?? 1,
     duck: content.duck || {},
+    beds: lib.beds,
+    hits: lib.hits,
     out: path.join(buildDir, "mix.wav"),
   });
   audioTags.push(`<audio id="mix" src="mix.wav" data-start="0" data-duration="${f(TOTAL)}" data-track-index="2" data-volume="1"></audio>`);
   audioFiles = ["mix.wav"];
-  console.log(`Âm thanh: giọng ${timings.audio ? "có" : "chưa có"}, nhạc nền ${fs.existsSync(musicPath) ? "có" : "không"}, ${sfxEvents.length} tiếng động.`);
+  console.log(`Âm thanh: giọng ${timings.audio ? "có" : "chưa có"}, nhạc nền ${lib.music ? path.basename(lib.music) : "không"}, ${lib.beds.length} ambience, ${lib.hits.length} stinger, ${sfxAll.length} tiếng động${content.sfxSet ? ` (bộ ${content.sfxSet})` : ""}.`);
 } else {
   if (timings.audio) audioTags.push(`<audio id="voiceover" src="${timings.audio}" data-start="0" data-duration="${f(timings.duration)}" data-track-index="2" data-volume="1"></audio>`);
   audioTags.push(`<audio id="sfx" src="sfx.wav" data-start="0" data-duration="${f(TOTAL)}" data-track-index="4" data-volume="0.8"></audio>`);
@@ -452,13 +462,13 @@ const html = `<!doctype html>
 </html>
 `;
 
-const dir = path.join(buildDir, "video-16x9");
+const dir = projectDir(buildDir);
 fs.mkdirSync(path.join(dir, "fonts"), { recursive: true });
 fs.mkdirSync(path.join(dir, "vendor"), { recursive: true });
 for (const fnt of fs.readdirSync("assets/fonts-essay").filter((x) => x.endsWith(".ttf"))) fs.copyFileSync(path.join("assets/fonts-essay", fnt), path.join(dir, "fonts", fnt));
 fs.copyFileSync("assets/vendor/gsap.min.js", path.join(dir, "vendor", "gsap.min.js"));
 for (const a of audioFiles) fs.copyFileSync(path.join(buildDir, a), path.join(dir, a));
-fs.writeFileSync(path.join(dir, "index.html"), html);
-fs.writeFileSync(path.join(buildDir, "pacing.json"), JSON.stringify({ warnings, scenes: pacing }, null, 2));
+writeIndex(content.id, "16x9", dir, html);
+fs.writeFileSync(path.join(workDir(buildDir), "pacing.json"), JSON.stringify({ warnings, scenes: pacing }, null, 2));
 for (const w of warnings) console.log("⚠ Nhịp: " + w);
 console.log(`Đã tạo ${dir}/index.html (${TOTAL}s, ${content.scenes.length} cảnh)`);

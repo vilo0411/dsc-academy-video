@@ -1,0 +1,59 @@
+{
+  "id": "t04-tomland-3d",
+  "episode": 4,
+  "title": "Lãi suất và NHNN",
+  "series": "Kinh tế vĩ mô cho nhà đầu tư",
+  "note": "Lời thoại riêng cho đoạn 3D \"Thang máy lợi nhuận\" thay cảnh s14–s16 của Tập 4. Số liệu cố định: lợi nhuận trước lãi vay 400 tỷ, nợ vay 2.000 tỷ; lãi suất 8% / 10% / 12% → tiền lãi 160 / 200 / 240 tỷ → còn 240 / 200 / 160 tỷ (mất 1/3). Doanh nghiệp ít nợ chỉ so sánh định tính, không có số liệu.",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "scenes": [
+    {
+      "id": "a1",
+      "text": "Giờ hãy nhìn Tổ Ấm Land. Mỗi năm công ty làm ra bốn trăm tỷ đồng lợi nhuận trước lãi vay. Thang máy lợi nhuận đang ở tầng bốn trăm.",
+      "visual": {
+        "pose": "wave"
+      }
+    },
+    {
+      "id": "a2",
+      "text": "Nhưng công ty đang vay hai nghìn tỷ đồng. Mỗi năm, ngân hàng treo vào thang một bao tiền lãi.",
+      "visual": {
+        "pose": "lookUp"
+      }
+    },
+    {
+      "id": "a3",
+      "text": "Lãi suất tám phần trăm: bao lãi nặng một trăm sáu mươi tỷ. Thang tụt xuống tầng hai trăm bốn mươi.",
+      "visual": {
+        "pose": "grip"
+      }
+    },
+    {
+      "id": "a4",
+      "text": "Lãi suất lên mười phần trăm, xuống tầng hai trăm.",
+      "visual": {
+        "pose": "grip"
+      }
+    },
+    {
+      "id": "a5",
+      "text": "Mười hai phần trăm, chỉ còn tầng một trăm sáu mươi. Mất một phần ba lợi nhuận.",
+      "visual": {
+        "pose": "headHold"
+      }
+    },
+    {
+      "id": "a6",
+      "text": "Còn thang của doanh nghiệp ít nợ thì gần như không nhúc nhích. Vay càng nhiều, lãi suất tăng càng đau. Đó là lý do Tổ Ấm Land giảm mạnh nhất.",
+      "visual": {
+        "pose": "shrug"
+      }
+    }
+  ]
+}

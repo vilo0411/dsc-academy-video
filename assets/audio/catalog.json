@@ -1,0 +1,984 @@
+{
+  "tracks": [
+    {
+      "id": "birds-morning",
+      "kind": "ambience",
+      "file": "ambience/birds-morning.m4a",
+      "title": "Crows and Birds - morning",
+      "mood": [
+        "nature",
+        "morning",
+        "calm"
+      ],
+      "energy": 1,
+      "duration": 61.3,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "HighPeakEmma",
+      "url": "https://freesound.org/people/HighPeakEmma/sounds/635920",
+      "attribution": "\"Crows and Birds - morning\" by HighPeakEmma is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "cafe-chatter",
+      "kind": "ambience",
+      "file": "ambience/cafe-chatter.m4a",
+      "title": "People talking at cafe ambience",
+      "mood": [
+        "cafe",
+        "crowd",
+        "warm"
+      ],
+      "energy": 2,
+      "duration": 90,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "priesjensen",
+      "url": "https://freesound.org/people/priesjensen/sounds/482990",
+      "attribution": "\"People talking at cafe ambience\" by priesjensen is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "city-traffic",
+      "kind": "ambience",
+      "file": "ambience/city-traffic.m4a",
+      "title": "Hamburg City Traffic Ambience",
+      "mood": [
+        "city",
+        "traffic",
+        "street"
+      ],
+      "energy": 3,
+      "duration": 90,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "Kinoton",
+      "url": "https://freesound.org/people/Kinoton/sounds/352152",
+      "attribution": "\"Hamburg City Traffic Ambience\" by Kinoton is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "market-crowd",
+      "kind": "ambience",
+      "file": "ambience/market-crowd.m4a",
+      "title": "Esperaza market crowd binaural (France)",
+      "mood": [
+        "market",
+        "crowd",
+        "city"
+      ],
+      "energy": 3,
+      "duration": 78.73,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "Sadiquecat",
+      "url": "https://freesound.org/people/Sadiquecat/sounds/704777",
+      "attribution": "\"Esperaza market crowd binaural (France)\" by Sadiquecat is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "office-ambience",
+      "kind": "ambience",
+      "file": "ambience/office-ambience.m4a",
+      "title": "office ambience",
+      "mood": [
+        "office",
+        "work",
+        "calm"
+      ],
+      "energy": 2,
+      "duration": 48.18,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "ninovisalli",
+      "url": "https://freesound.org/people/ninovisalli/sounds/457258",
+      "attribution": "\"office ambience\" by ninovisalli is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "office-keyboard",
+      "kind": "ambience",
+      "file": "ambience/office-keyboard.m4a",
+      "title": "small_office.wav",
+      "mood": [
+        "office",
+        "typing",
+        "work"
+      ],
+      "energy": 2,
+      "duration": 90,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "fbtz",
+      "url": "https://freesound.org/people/fbtz/sounds/237612",
+      "attribution": "\"small_office.wav\" by fbtz is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "rain-forest",
+      "kind": "ambience",
+      "file": "ambience/rain-forest.m4a",
+      "title": "Rain Sound and Rainforest.mp3",
+      "mood": [
+        "rain",
+        "nature",
+        "calm"
+      ],
+      "energy": 1,
+      "duration": 90,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "INNORECORDS",
+      "url": "https://freesound.org/people/INNORECORDS/sounds/457447",
+      "attribution": "\"Rain Sound and Rainforest.mp3\" by INNORECORDS is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "rain-moderate",
+      "kind": "ambience",
+      "file": "ambience/rain-moderate.m4a",
+      "title": "Rain, Moderate, C.wav",
+      "mood": [
+        "rain",
+        "calm"
+      ],
+      "energy": 1,
+      "duration": 60.12,
+      "loop": true,
+      "source": "openverse:freesound",
+      "license": "by",
+      "author": "InspectorJ",
+      "url": "https://freesound.org/people/InspectorJ/sounds/401275",
+      "attribution": "\"Rain, Moderate, C.wav\" by InspectorJ is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/."
+    },
+    {
+      "id": "doc-curious-piano",
+      "kind": "music",
+      "file": "music/doc-curious-piano.m4a",
+      "title": "doc-curious-piano",
+      "mood": [
+        "curious",
+        "documentary",
+        "calm"
+      ],
+      "energy": 2,
+      "bpm": 92,
+      "duration": 32.77,
+      "loop": true,
+      "source": "lyria",
+      "license": "lyria",
+      "prompt": "Curious minimalist documentary underscore for a history explainer video: soft felt piano ostinato, pizzicato strings, light ticking clock percussion, warm analog tape texture, gentle and inquisitive mood, steady 92 BPM, no big build-ups, instrumental",
+      "hash": "7e6c61f4bda9",
+      "note": "nhạc của essay/toon lịch sử lạm phát; lấy lại từ videos/toon-lich-su-lam-phat/music.wav"
+    },
+    {
+      "id": "km-airport-lounge",
+      "kind": "music",
+      "file": "music/km-airport-lounge.m4a",
+      "title": "Airport Lounge",
+      "mood": [
+        "calm",
+        "lofi",
+        "jazz"
+      ],
+      "energy": 2,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Airport%20Lounge.mp3",
+      "attribution": "\"Airport Lounge\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-carefree",
+      "kind": "music",
+      "file": "music/km-carefree.m4a",
+      "title": "Carefree",
+      "mood": [
+        "happy",
+        "upbeat",
+        "playful"
+      ],
+      "energy": 4,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Carefree.mp3",
+      "attribution": "\"Carefree\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-easy-lemon",
+      "kind": "music",
+      "file": "music/km-easy-lemon.m4a",
+      "title": "Easy Lemon",
+      "mood": [
+        "calm",
+        "happy",
+        "corporate"
+      ],
+      "energy": 2,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Easy%20Lemon.mp3",
+      "attribution": "\"Easy Lemon\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-fluffing-a-duck",
+      "kind": "music",
+      "file": "music/km-fluffing-a-duck.m4a",
+      "title": "Fluffing a Duck",
+      "mood": [
+        "playful",
+        "kids",
+        "funny"
+      ],
+      "energy": 4,
+      "duration": 64.82,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Fluffing%20a%20Duck.mp3",
+      "attribution": "\"Fluffing a Duck\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-funkorama",
+      "kind": "music",
+      "file": "music/km-funkorama.m4a",
+      "title": "Funkorama",
+      "mood": [
+        "upbeat",
+        "funk",
+        "confident"
+      ],
+      "energy": 4,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Funkorama.mp3",
+      "attribution": "\"Funkorama\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-hyperfun",
+      "kind": "music",
+      "file": "music/km-hyperfun.m4a",
+      "title": "Hyperfun",
+      "mood": [
+        "upbeat",
+        "energetic"
+      ],
+      "energy": 5,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hyperfun.mp3",
+      "attribution": "\"Hyperfun\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-inspired",
+      "kind": "music",
+      "file": "music/km-inspired.m4a",
+      "title": "Inspired",
+      "mood": [
+        "hopeful",
+        "inspiring"
+      ],
+      "energy": 3,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Inspired.mp3",
+      "attribution": "\"Inspired\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-investigations",
+      "kind": "music",
+      "file": "music/km-investigations.m4a",
+      "title": "Investigations",
+      "mood": [
+        "curious",
+        "mystery"
+      ],
+      "energy": 3,
+      "duration": 92.51,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Investigations.mp3",
+      "attribution": "\"Investigations\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-life-of-riley",
+      "kind": "music",
+      "file": "music/km-life-of-riley.m4a",
+      "title": "Life of Riley",
+      "mood": [
+        "happy",
+        "upbeat",
+        "warm"
+      ],
+      "energy": 4,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Life%20of%20Riley.mp3",
+      "attribution": "\"Life of Riley\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-local-forecast-elevator",
+      "kind": "music",
+      "file": "music/km-local-forecast-elevator.m4a",
+      "title": "Local Forecast - Elevator",
+      "mood": [
+        "calm",
+        "jazz",
+        "warm"
+      ],
+      "energy": 2,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Local%20Forecast%20-%20Elevator.mp3",
+      "attribution": "\"Local Forecast - Elevator\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-meditation-impromptu-01",
+      "kind": "music",
+      "file": "music/km-meditation-impromptu-01.m4a",
+      "title": "Meditation Impromptu 01",
+      "mood": [
+        "calm",
+        "ambient",
+        "reflective"
+      ],
+      "energy": 1,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Meditation%20Impromptu%2001.mp3",
+      "attribution": "\"Meditation Impromptu 01\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-merry-go",
+      "kind": "music",
+      "file": "music/km-merry-go.m4a",
+      "title": "Merry Go",
+      "mood": [
+        "playful",
+        "kids"
+      ],
+      "energy": 3,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Merry%20Go.mp3",
+      "attribution": "\"Merry Go\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-monkeys-spinning-monkeys",
+      "kind": "music",
+      "file": "music/km-monkeys-spinning-monkeys.m4a",
+      "title": "Monkeys Spinning Monkeys",
+      "mood": [
+        "playful",
+        "kids",
+        "happy"
+      ],
+      "energy": 4,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Monkeys%20Spinning%20Monkeys.mp3",
+      "attribution": "\"Monkeys Spinning Monkeys\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-off-to-osaka",
+      "kind": "music",
+      "file": "music/km-off-to-osaka.m4a",
+      "title": "Off to Osaka",
+      "mood": [
+        "playful",
+        "curious"
+      ],
+      "energy": 3,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Off%20to%20Osaka.mp3",
+      "attribution": "\"Off to Osaka\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-pixel-peeker-polka-faster",
+      "kind": "music",
+      "file": "music/km-pixel-peeker-polka-faster.m4a",
+      "title": "Pixel Peeker Polka - faster",
+      "mood": [
+        "playful",
+        "upbeat",
+        "funny"
+      ],
+      "energy": 5,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Pixel%20Peeker%20Polka%20-%20faster.mp3",
+      "attribution": "\"Pixel Peeker Polka - faster\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-scheming-weasel-faster",
+      "kind": "music",
+      "file": "music/km-scheming-weasel-faster.m4a",
+      "title": "Scheming Weasel faster",
+      "mood": [
+        "playful",
+        "mystery",
+        "funny"
+      ],
+      "energy": 4,
+      "duration": 85.81,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Scheming%20Weasel%20faster.mp3",
+      "attribution": "\"Scheming Weasel faster\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-sneaky-snitch",
+      "kind": "music",
+      "file": "music/km-sneaky-snitch.m4a",
+      "title": "Sneaky Snitch",
+      "mood": [
+        "playful",
+        "mystery",
+        "curious"
+      ],
+      "energy": 3,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sneaky%20Snitch.mp3",
+      "attribution": "\"Sneaky Snitch\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-thinking-music",
+      "kind": "music",
+      "file": "music/km-thinking-music.m4a",
+      "title": "Thinking Music",
+      "mood": [
+        "curious",
+        "reflective"
+      ],
+      "energy": 2,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Thinking%20Music.mp3",
+      "attribution": "\"Thinking Music\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "km-wallpaper",
+      "kind": "music",
+      "file": "music/km-wallpaper.m4a",
+      "title": "Wallpaper",
+      "mood": [
+        "calm",
+        "corporate"
+      ],
+      "energy": 2,
+      "duration": 100,
+      "loop": true,
+      "source": "incompetech",
+      "license": "by",
+      "author": "Kevin MacLeod",
+      "url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Wallpaper.mp3",
+      "attribution": "\"Wallpaper\" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "upbeat-indie-ukulele",
+      "kind": "music",
+      "file": "music/upbeat-indie-ukulele.m4a",
+      "title": "upbeat-indie-ukulele",
+      "mood": [
+        "upbeat",
+        "happy",
+        "playful"
+      ],
+      "energy": 4,
+      "bpm": 120,
+      "duration": 32.77,
+      "loop": true,
+      "source": "lyria",
+      "license": "lyria",
+      "prompt": "Bright indie pop explainer track: ukulele strums, glockenspiel, upbeat drums with claps, subtle whistle-like synth lead, happy and energetic, 120 BPM, instrumental",
+      "hash": "685fed5de743",
+      "note": "nhạc của essay-lam-phat-ho-so; lấy lại từ videos/essay-lam-phat-ho-so/music.wav"
+    },
+    {
+      "id": "sfx-applause",
+      "kind": "sfx",
+      "file": "sfx/sfx-applause.m4a",
+      "title": "Applause 2.WAV",
+      "mood": [
+        "applause",
+        "celebrate"
+      ],
+      "energy": 4,
+      "duration": 6.27,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "Sandermotions",
+      "url": "https://freesound.org/people/Sandermotions/sounds/277021",
+      "attribution": "\"Applause 2.WAV\" by Sandermotions is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-buzzer-wrong",
+      "kind": "sfx",
+      "file": "sfx/sfx-buzzer-wrong.m4a",
+      "title": "Buzzer",
+      "mood": [
+        "wrong",
+        "quiz",
+        "error"
+      ],
+      "energy": 4,
+      "duration": 0.93,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "Rickplayer",
+      "url": "https://freesound.org/people/Rickplayer/sounds/531701",
+      "attribution": "\"Buzzer\" by Rickplayer is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-camera-shutter",
+      "kind": "sfx",
+      "file": "sfx/sfx-camera-shutter.m4a",
+      "title": "Camera Shutter",
+      "mood": [
+        "camera",
+        "snap"
+      ],
+      "energy": 3,
+      "duration": 0.29,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "roachpowder",
+      "url": "https://freesound.org/people/roachpowder/sounds/170229",
+      "attribution": "\"Camera Shutter\" by roachpowder is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-cash-register",
+      "kind": "sfx",
+      "file": "sfx/sfx-cash-register.m4a",
+      "title": "cash register chching",
+      "mood": [
+        "money",
+        "cash",
+        "emphasis"
+      ],
+      "energy": 4,
+      "duration": 1.38,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "disman",
+      "url": "https://freesound.org/people/disman/sounds/728224",
+      "attribution": "\"cash register chching\" by disman is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-clock-ticking",
+      "kind": "sfx",
+      "file": "sfx/sfx-clock-ticking.m4a",
+      "title": "Clock ticking",
+      "mood": [
+        "clock",
+        "tense",
+        "time"
+      ],
+      "energy": 2,
+      "duration": 5.24,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "olver",
+      "url": "https://freesound.org/people/olver/sounds/130388",
+      "attribution": "\"Clock ticking\" by olver is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-coin-retro",
+      "kind": "sfx",
+      "file": "sfx/sfx-coin-retro.m4a",
+      "title": "Retro, Coin 02.wav",
+      "mood": [
+        "money",
+        "coin",
+        "playful"
+      ],
+      "energy": 3,
+      "duration": 0.44,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "MATRIXXX_",
+      "url": "https://freesound.org/people/MATRIXXX_/sounds/402288",
+      "attribution": "\"Retro, Coin 02.wav\" by MATRIXXX_ is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-confetti-pop",
+      "kind": "sfx",
+      "file": "sfx/sfx-confetti-pop.m4a",
+      "title": "Balloon Pop / Christmas cracker / Confetti Cannon",
+      "mood": [
+        "pop",
+        "celebrate",
+        "playful"
+      ],
+      "energy": 4,
+      "duration": 0.35,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "Breviceps",
+      "url": "https://freesound.org/people/Breviceps/sounds/458398",
+      "attribution": "\"Balloon Pop / Christmas cracker / Confetti Cannon\" by Breviceps is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-ding",
+      "kind": "sfx",
+      "file": "sfx/sfx-ding.m4a",
+      "title": "Ding 1",
+      "mood": [
+        "ding",
+        "correct",
+        "bright"
+      ],
+      "energy": 3,
+      "duration": 0.52,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "greenvwbeetle",
+      "url": "https://freesound.org/people/greenvwbeetle/sounds/241288",
+      "attribution": "\"Ding 1\" by greenvwbeetle is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-drumroll-rimshot",
+      "kind": "sfx",
+      "file": "sfx/sfx-drumroll-rimshot.m4a",
+      "title": "Sting, rimshot, drum roll (smooth)",
+      "mood": [
+        "drumroll",
+        "reveal",
+        "funny"
+      ],
+      "energy": 4,
+      "duration": 5.06,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "tlwmdbt",
+      "url": "https://freesound.org/people/tlwmdbt/sounds/440829",
+      "attribution": "\"Sting, rimshot, drum roll (smooth)\" by tlwmdbt is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-notify-chime",
+      "kind": "sfx",
+      "file": "sfx/sfx-notify-chime.m4a",
+      "title": "Chime Notification",
+      "mood": [
+        "notification",
+        "ui",
+        "tech"
+      ],
+      "energy": 2,
+      "duration": 0.32,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "Jofae",
+      "url": "https://freesound.org/people/Jofae/sounds/380482",
+      "attribution": "\"Chime Notification\" by Jofae is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-page-turn",
+      "kind": "sfx",
+      "file": "sfx/sfx-page-turn.m4a",
+      "title": "Page Turn 02.wav",
+      "mood": [
+        "paper",
+        "page"
+      ],
+      "energy": 2,
+      "duration": 0.67,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "MATRIXXX_",
+      "url": "https://freesound.org/people/MATRIXXX_/sounds/397549",
+      "attribution": "\"Page Turn 02.wav\" by MATRIXXX_ is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-pop",
+      "kind": "sfx",
+      "file": "sfx/sfx-pop.m4a",
+      "title": "Pop 2",
+      "mood": [
+        "pop",
+        "playful",
+        "ui"
+      ],
+      "energy": 3,
+      "duration": 0.13,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "greenvwbeetle",
+      "url": "https://freesound.org/people/greenvwbeetle/sounds/244654",
+      "attribution": "\"Pop 2\" by greenvwbeetle is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-record-scratch",
+      "kind": "sfx",
+      "file": "sfx/sfx-record-scratch.m4a",
+      "title": "Record Scratch #4",
+      "mood": [
+        "scratch",
+        "funny",
+        "surprise"
+      ],
+      "energy": 4,
+      "duration": 1.84,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "musicvision31",
+      "url": "https://freesound.org/people/musicvision31/sounds/431777",
+      "attribution": "\"Record Scratch #4\" by musicvision31 is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-success",
+      "kind": "sfx",
+      "file": "sfx/sfx-success.m4a",
+      "title": "SFX-Success!.wav",
+      "mood": [
+        "success",
+        "correct",
+        "quiz"
+      ],
+      "energy": 4,
+      "duration": 1.2,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "HenryRichard",
+      "url": "https://freesound.org/people/HenryRichard/sounds/448274",
+      "attribution": "\"SFX-Success!.wav\" by HenryRichard is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-typing-laptop",
+      "kind": "sfx",
+      "file": "sfx/sfx-typing-laptop.m4a",
+      "title": "typing on a laptop keyboard",
+      "mood": [
+        "typing",
+        "office",
+        "tech"
+      ],
+      "energy": 2,
+      "duration": 13.51,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "supersnd",
+      "url": "https://freesound.org/people/supersnd/sounds/215744",
+      "attribution": "\"typing on a laptop keyboard\" by supersnd is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-ui-click",
+      "kind": "sfx",
+      "file": "sfx/sfx-ui-click.m4a",
+      "title": "SFX UI Button Click",
+      "mood": [
+        "click",
+        "ui",
+        "tech"
+      ],
+      "energy": 2,
+      "duration": 0.13,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "suntemple",
+      "url": "https://freesound.org/people/suntemple/sounds/253168",
+      "attribution": "\"SFX UI Button Click\" by suntemple is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-whoosh-air",
+      "kind": "sfx",
+      "file": "sfx/sfx-whoosh-air.m4a",
+      "title": "Swosh swoosh whoosh air sound, free, high quality",
+      "mood": [
+        "whoosh",
+        "transition"
+      ],
+      "energy": 3,
+      "duration": 0.49,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "qubodup",
+      "url": "https://freesound.org/people/qubodup/sounds/60026",
+      "attribution": "\"Swosh swoosh whoosh air sound, free, high quality\" by qubodup is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "sfx-whoosh-cartoon",
+      "kind": "sfx",
+      "file": "sfx/sfx-whoosh-cartoon.m4a",
+      "title": "Cartoony whooshes",
+      "mood": [
+        "whoosh",
+        "playful",
+        "transition"
+      ],
+      "energy": 4,
+      "duration": 2.34,
+      "loop": false,
+      "source": "openverse:freesound",
+      "license": "cc0",
+      "author": "BranRainey",
+      "url": "https://freesound.org/people/BranRainey/sounds/142348",
+      "attribution": "\"Cartoony whooshes\" by BranRainey is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+    },
+    {
+      "id": "boom-hit",
+      "kind": "stinger",
+      "file": "stingers/boom-hit.m4a",
+      "title": "boom-hit",
+      "mood": [
+        "serious",
+        "emphasis"
+      ],
+      "energy": 4,
+      "duration": 1.2,
+      "loop": false,
+      "source": "synth",
+      "license": "synth",
+      "note": "sound.mjs: hit"
+    },
+    {
+      "id": "chime-intro",
+      "kind": "stinger",
+      "file": "stingers/chime-intro.m4a",
+      "title": "chime-intro",
+      "mood": [
+        "bright",
+        "intro"
+      ],
+      "energy": 3,
+      "duration": 2.04,
+      "loop": false,
+      "source": "synth",
+      "license": "synth",
+      "note": "sound.mjs: chime"
+    },
+    {
+      "id": "correct-ding",
+      "kind": "stinger",
+      "file": "stingers/correct-ding.m4a",
+      "title": "correct-ding",
+      "mood": [
+        "quiz",
+        "correct",
+        "playful"
+      ],
+      "energy": 4,
+      "duration": 1.38,
+      "loop": false,
+      "source": "synth",
+      "license": "synth",
+      "note": "sound.mjs: success"
+    },
+    {
+      "id": "quiz-reveal",
+      "kind": "stinger",
+      "file": "stingers/quiz-reveal.m4a",
+      "title": "quiz-reveal",
+      "mood": [
+        "quiz",
+        "reveal"
+      ],
+      "energy": 4,
+      "duration": 1.55,
+      "loop": false,
+      "source": "synth",
+      "license": "synth",
+      "note": "sound.mjs: reveal"
+    },
+    {
+      "id": "riser-short",
+      "kind": "stinger",
+      "file": "stingers/riser-short.m4a",
+      "title": "riser-short",
+      "mood": [
+        "tense",
+        "build"
+      ],
+      "energy": 4,
+      "duration": 0.65,
+      "loop": false,
+      "source": "synth",
+      "license": "synth",
+      "note": "sound.mjs: riser"
+    },
+    {
+      "id": "soft-outro",
+      "kind": "stinger",
+      "file": "stingers/soft-outro.m4a",
+      "title": "soft-outro",
+      "mood": [
+        "calm",
+        "outro"
+      ],
+      "energy": 2,
+      "duration": 2.4,
+      "loop": false,
+      "source": "synth",
+      "license": "synth",
+      "note": "sound.mjs: outro"
+    }
+  ]
+}

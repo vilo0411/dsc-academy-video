@@ -1,0 +1,55 @@
+{
+  "id": "template-shorts-split",
+  "format": "shorts-split",
+  "aspect": "9x16",
+  "title": "Câu Chuyện Khủng Hoảng Hoa Tulip (Màn Hình Kép)",
+  "duration_target": "50s",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-2.5-flash",
+    "voice": "Puck",
+    "rate": 1.12
+  },
+  "layout": {
+    "top": "story_animation",
+    "bottom": "satisfying_loop",
+    "divider_color": "#38bdf8"
+  },
+  "music": {
+    "mood": "lofi"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "text": "Bạn có tin không: Vào năm một nghìn sáu trăm ba mươi bảy, một củ hoa tulip có thể đổi được cả một dinh thự bên bờ sông ở Amsterdam?",
+      "visual": {
+        "top_caption": "Bong bóng hoa Tulip 1637",
+        "bottom_asset": "parkour_clip_01"
+      }
+    },
+    {
+      "id": "s02",
+      "text": "Mọi người từ quý tộc đến người quét đường đều bán sạch nhà cửa ruộng vườn để gom hoa, tin rằng giá sẽ tăng mãi mãi.",
+      "visual": {
+        "top_caption": "Cơn sốt điên cuồng",
+        "bottom_asset": "parkour_clip_01"
+      }
+    },
+    {
+      "id": "s03",
+      "text": "Cho đến một ngày nọ, trong một phiên đấu giá, người ta nhận ra: Không còn ai muốn mua nữa. Và chỉ trong một đêm, giá rơi thẳng đứng chín mươi chín phần trăm!",
+      "visual": {
+        "top_caption": "Cú rơi tự do 99%",
+        "bottom_asset": "parkour_clip_02"
+      }
+    },
+    {
+      "id": "s04",
+      "text": "Bài học muôn đời: Khi tài sản tăng giá chỉ vì người sau tin rằng người sau nữa sẽ mua đắt hơn, quả bóng sớm muộn cũng sẽ vỡ.",
+      "visual": {
+        "top_caption": "Bài học kinh điển",
+        "bottom_asset": "parkour_clip_02"
+      }
+    }
+  ]
+}

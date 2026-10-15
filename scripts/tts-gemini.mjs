@@ -2,12 +2,13 @@
 // Tạo giọng đọc bằng Gemini TTS (free tier) — một lần gọi API cho cả kịch bản,
 // rồi tự cắt thành từng cảnh dựa vào khoảng lặng giữa các câu.
 //
-// Cách dùng:  node scripts/tts-gemini.mjs content/pe-la-gi.json
+// Cách dùng:  node scripts/tts-gemini.mjs videos/t01-vi-mo-la-gi/script.json
 // Cần:        GEMINI_API_KEY trong file .env (lấy miễn phí ở https://aistudio.google.com/apikey)
-// Kết quả:    build/<id>/voice.wav  +  build/<id>/timings.json
+// Kết quả:    videos/<id>/voice.wav  +  videos/<id>/timings.json
 
 import fs from "node:fs";
 import path from "node:path";
+import { videoDir } from "./lib/paths.mjs";
 import { loadEnv } from "./lib/env.mjs";
 import { pcmToWav } from "./lib/wav.mjs";
 import { splitScenes } from "./lib/split.mjs";
@@ -15,7 +16,7 @@ import { splitScenes } from "./lib/split.mjs";
 loadEnv();
 const contentPath = process.argv[2];
 if (!contentPath) {
-  console.error("Thiếu file kịch bản. Ví dụ: node scripts/tts-gemini.mjs content/pe-la-gi.json");
+  console.error("Thiếu file kịch bản. Ví dụ: node scripts/tts-gemini.mjs videos/t01-vi-mo-la-gi/script.json");
   process.exit(1);
 }
 const apiKey = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
@@ -28,7 +29,7 @@ const content = JSON.parse(fs.readFileSync(contentPath, "utf8"));
 const model = process.env.GEMINI_TTS_MODEL || "gemini-3.1-flash-tts-preview";
 const voiceName = process.env.GEMINI_VOICE || content.voice?.voiceName || "Kore";
 const style = content.voice?.style || "Read aloud in a clear Vietnamese voice.";
-const outDir = path.join("build", content.id);
+const outDir = videoDir(content.id);
 fs.mkdirSync(outDir, { recursive: true });
 
 // Mỗi cảnh một đoạn, ngăn bằng dòng trống để giọng đọc ngắt nghỉ rõ giữa các cảnh.

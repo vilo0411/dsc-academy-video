@@ -1,61 +1,58 @@
-# Quy trình làm video người que DSC Academy
+# Quy trình làm video DSC Academy
 
-Dự án sinh video giáo dục đầu tư dạng người que cho Công ty Chứng khoán DSC. Chuỗi hiện tại: **Kinh tế vĩ mô cho nhà đầu tư** (12 tập, mỗi tập 3–4 phút, gắn ở đầu bài viết cùng số trên DSC Academy). Sổ tay sản xuất (giọng đọc, dàn doanh nghiệp giả định, số liệu cố định, đề cương 12 tập) là nguồn chuẩn; dữ liệu dùng chung nằm ở `scripts/lib/series.mjs`.
+Dự án sinh video giáo dục đầu tư cho Công ty Chứng khoán DSC. Chuỗi hiện tại: **Kinh tế vĩ mô cho nhà đầu tư** (12 tập, mỗi tập 3–4 phút, gắn ở đầu bài viết cùng số trên DSC Academy). Sổ tay sản xuất (giọng đọc, dàn doanh nghiệp giả định, số liệu cố định, đề cương 12 tập) là nguồn chuẩn; dữ liệu dùng chung ở `scripts/lib/series.mjs`.
 
-## 1. Viết kịch bản
+Mỗi video một thư mục `videos/<id>/` (kịch bản `script.json`, giọng, `project/` HyperFrames, mp4/srt/jpg). Làm video mới **không cần đọc `scripts/`**: skill dự án + `npm run lint` là đủ.
 
-Tạo `content/tNN-<slug>.json`, dùng `content/t01-vi-mo-la-gi.json` làm mẫu (giữ nguyên khối `voice`).
+## Skill dự án (`.claude/skills/`) — nạp trước khi làm
 
-- 3–4 phút: khoảng 600–750 âm tiết, 20–30 cảnh. Theo khung 8 phần: mở đầu, tập trước, khái niệm, đọc số liệu, chuỗi tác động, ví dụ, tóm tắt và quiz, gieo tập sau và CTA.
-- Viết số theo cách đọc trong `text` ("năm mươi nghìn đồng"); chữ số chỉ đặt trong `visual`. Viết đủ "Ngân hàng Nhà nước", "đô la Mỹ".
-- CTA luôn là mời đọc bài viết bên dưới video. Cảnh cuối là `outro`, luôn có `disclaimer`.
-- Người dùng đã đồng ý **không cần duyệt kịch bản trước**: đẩy lên `main` là GitHub tự tạo giọng và render. Chỉ đặt `"approved": false` khi muốn xem thử hình mà không tốn lượt gọi API giọng đọc.
+| Việc | Skill |
+| --- | --- |
+| Làm/sửa/dựng/bàn giao bất kỳ video nào (điểm vào, quy tắc chung) | `dsc-video` |
+| Tập vĩ mô `tNN-…` (người que, cảnh dựng sẵn) và hoạt hình `toon-…` | `dsc-toon` |
+| Video essay `essay-…` (workflow 7 bước từ research tới bàn giao) | `dsc-essay` |
+| Video ngắn 9:16 `shorts-…` | `dsc-shorts` |
+| Phim kể chuyện `story-…` | `dsc-story` |
+| Nhạc, tiếng động, độ to, mix v2 | `dsc-audio` |
+| Kiểm tra sau khi dựng/render | `dsc-qa` |
+| Viết mã GSAP (quy tắc chính chủ, HyperFrames ưu tiên) | `vendor-gsap-core`, `-timeline`, `-plugins`, `-performance` |
 
-## 2. Quy tắc nội dung (bắt buộc)
+## Luồng làm việc
+
+1. `npm run new -- <id> "Tiêu đề"` → `videos/<id>/script.json`, giữ nguyên khối `voice`. `tNN-…` tạo tập vĩ mô trên bộ toon (cảnh dựng sẵn); `--format series` cho bộ dựng người que cũ.
+2. Điền nội dung → `npm run lint -- <id>` tới khi không còn ✗ (⚠ là gợi ý).
+3. `npm run video -- <id> --draft` để xem nhanh, `--audio-only` để nghe lời + nhạc, `--batch a,b,c` cho nhiều video; `npm run video -- <id>` cho bản cuối. Màn hình chỉ in tóm tắt (kèm `⚠ Nhịp hình`, `⚠ Timeline`, âm lượng LUFS, contact sheet); khi lỗi mới đọc `videos/<id>/.work/log.txt` bằng `tail`/`grep`.
+4. Mã thoát 2 = cần gọi API (giọng mới, nhạc Lyria, ảnh AI): báo người dùng số ký tự và loại phí, chỉ chạy lại với `--api` khi họ đồng ý.
+5. Không tự đăng video; giao đường dẫn mp4/srt/jpg và `<Tên> (mô tả).txt` (chương YouTube, miễn trừ, ghi công).
+6. Người dùng đã đồng ý **không cần duyệt kịch bản trước**. `"approved": false` để xem thử hình mà không tạo giọng.
+
+## Quy tắc nội dung (bắt buộc)
 
 - Không nêu tên hay mã cổ phiếu thật, không khuyến nghị mua/bán, không dự báo giá, không cam kết lợi nhuận.
 - Chỉ dùng doanh nghiệp giả định trong `scripts/lib/series.mjs` với đúng số liệu cố định của sổ tay; luôn có nhãn "giả định".
 - Kiến thức phải khớp bài viết cùng số. Nếu không chắc, hỏi người dùng thay vì đoán.
+- Viết số theo cách đọc trong `text` ("năm mươi nghìn đồng"); chữ số chỉ đặt trong `visual`. Viết đủ "Ngân hàng Nhà nước", "đô la Mỹ".
+- CTA mời đọc bài viết bên dưới video; cảnh cuối luôn có `disclaimer`.
+- Không thêm bóng thoại/lời thoại hư cấu cho nhân vật.
 
-## 3. Kiểu cảnh (`visual.type`)
+## 12 tập đã giao
 
-Cơ bản: `title`, `formula`, `numbers`, `calc`, `coins`, `trend`, `split`, `compare`, `warning`, `checklist`, `outro` (xem `renderScene` trong `scripts/build.mjs`).
+`t01`–`t12` dùng bộ dựng người que cũ (`scripts/build.mjs`, giữ nguyên để dựng lại ra y hệt). Không đổi hình/âm thanh hay chuyển sang toon khi người dùng chưa yêu cầu.
 
-Chuỗi vĩ mô (`scripts/lib/scenes-macro.mjs`):
+## GitHub và kết quả
 
-| type | Trường |
-| --- | --- |
-| `dashboard` | headline?, show[], reveal[], blink, lit[] — khoá nhóm: growth, prices, money, external, fiscal |
-| `chain` | headline?, highlight: profit/valuation/both/none, dir: up/down, caption? |
-| `pair` | headline?, items[{company, rows[{k,v}], move: up/down/downBig/flat, moveLabel}] |
-| `versus` | headline?, left{title,text}, right{title,text} |
-| `tide` | headline, sub |
-| `quiz` | question, options[3], footer? |
-| `notebook` | entries[] (dòng cuối là dòng mới của tập) |
+- Máy công ty: đẩy `videos/<id>/script.json` (hoặc `edit/`) lên `main` → GitHub tạo giọng, dựng (có Whisper cho mốc từng từ), render; kết quả trên nhánh `renders` (`out/<id>.mp4`, `.srt`, `status/<id>.json`). Phim kể chuyện và toon có `cast` (ảnh AI trong `media/`) chỉ dựng trên máy.
+- Máy cá nhân: `npm run pull [-- <id>]` chép giọng/nhạc/video từ `renders`; `npm run video` cũng tự làm khi thiếu giọng.
 
-Nhân vật An (`scripts/lib/figure.mjs`):
+## Sửa tay trong HyperFrames Studio
 
-- `visual.pose`: idle, point, pointUp, present, wave, cheer, think, shrug, hips, headHold, facepalm.
-- `visual.expr` (tuỳ chọn, mặc định theo tư thế; với cảnh `calc` dùng `visual.face` vì `expr` là phép tính): happy, excited, surprised, worried, sad, thinking, confused, confident, neutral.
-- `visual.emote` (tuỳ chọn): question, exclaim, bulb, sweat, sparkle.
-- Đổi tư thế/biểu cảm theo cảm xúc của câu thoại; tránh lặp một tư thế quá 3 cảnh liền.
+`videos/<id>/project/` là dự án HyperFrames.
+- `npm run edit -- open <id> [--app]` mở Studio (trình duyệt hoặc ứng dụng desktop). Sửa xong: `npm run edit -- save <id>` khoá vào `videos/<id>/edit/` (lưu trong git).
+- Khi đã khoá, mọi bước dựng dùng `index.html` đã sửa; sửa kịch bản sẽ không đổi video và log có `⚠ Bản sửa`. Bản sinh mới ở `videos/<id>/.work/generated-16x9.html`.
+- `npm run edit -- status|drop <id>`. Trước khi sửa kịch bản của video đã có `edit/`, hỏi người dùng nên bỏ bản sửa hay sửa trực tiếp trong `edit/`.
 
-## 4. Chạy
+## Thử nghiệm
 
-Trên GitHub (mặc định): đẩy file kịch bản lên `main`. Video ở `out/<id>.mp4`, báo cáo ở `status/<id>.json` trên nhánh `renders`.
+`lab/`: hoạt hình rối, fx, 3D Three.js (`npm run lab:build3d|lab:render3d|lab:preview3d|lab:inspect3d`, storyboard ở `lab/content3d/`), sound/voice test. Không thuộc luồng chính; kết quả ở `lab/build/`, `lab/out/`.
 
-Trên máy: `npm run tts -- content/<file>.json` (cần `GEMINI_API_KEY`), `npm run build -- content/<file>.json`, rồi `npx hyperframes check` và `npm run render -- content/<file>.json` trong thư mục dự án. Không tự đăng video; giao file cho người dùng.
-
-## 5. Video essay (thử nghiệm, phong cách cắt dán giấy)
-
-Kịch bản đặt `"format": "essay"` → CI dựng bằng `scripts/build-essay.mjs` (không có nhân vật An). Mẫu: `content/essay-lich-su-lam-phat.json`.
-
-- **Đọc `docs/essay-guide.md` trước khi viết**: chọn `arc` (timeline, hook_payoff, myth_buster, how_it_works, man_in_hole, three_act), câu móc trong 3 giây đầu, hình đổi ít nhất mỗi 3–5 giây, bảng độ dài theo số âm tiết.
-- Lời dẫn kể chuyện, mở đầu bằng ngày tháng + địa điểm + một chi tiết nhỏ; mỗi cảnh một ý hình ảnh; dữ kiện phải có nguồn (ghi vào `sources`).
-- `visual.camera`: push_in, pull_out, pan_left, pan_right, tilt_up, tilt_down, parallax, static (không hai cảnh liền nhau cùng kiểu; static cho câu chốt). `visual.cuts[]` {at, x, y, zoom}: cắt từ toàn cảnh vào chi tiết. Mảnh `fly` (name, w, path[[x,y],[x,y]], dur, spin): vật bay ngang khung, chỉ dùng ở nhịp then chốt.
-- Sau khi dựng, xem `⚠ Nhịp` trong log hoặc `build/<id>/pacing.json` (cảnh đứng yên quá 5 giây, trùng kiểu máy quay, mở đầu chậm).
-- `visual.bg`: news, kraft, dark, grid. `visual.pieces[]` vào khung theo thứ tự (hoặc theo `at` 0–1 trong phần lời):
-  `scrap` (x,y,w,h,tone), `art` (name: banknote, bundle, stove, flame, logs, bread, coin, helmet, scale, ticket, basket, bowl, calendar; t, sub, tone), `label` (text,size,tone: red/mustard/ink/cream), `type` (chữ đánh máy), `stamp`, `tape`, `counter` (values[]), `chart` (points, band, caption).
-- `visual.strings[]` (dây đỏ: from, to, sag, at), `visual.marks[]` (nét bút đỏ: circle hoặc line).
-- Không vẽ khuôn mặt người thật; trẻ em chỉ thể hiện bằng đồ vật. Hình mới thêm vào `scripts/lib/essay-art.mjs`.
-- Âm thanh: `music` {prompt, negative, seed, volume} → CI tạo nhạc nền không lời bằng Lyria (`scripts/music.mjs`, cần `GCP_SA_KEY`, có cache). `scripts/lib/sound.mjs` tổng hợp tiếng giấy/con dấu/máy chữ/whoosh và trộn bằng ffmpeg: nhạc tự hạ khi có lời, chuẩn hoá -16 LUFS. Đặt `hit: true` trên một mảnh để có tiếng nhấn mạnh trầm; `counter` mặc định có tiếng nhấn ở số cuối.
+Tài liệu: `docs/video-production-handbook.md` (sổ tay thể loại, kỹ thuật dựng, âm thanh, công cụ), `docs/toon-guide.md`, `docs/essay-guide.md`, `docs/audio-guide.md`, `docs/studio-aizening-optimization.md`.

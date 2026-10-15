@@ -2,11 +2,12 @@
 // Tạo giọng đọc theo từng cảnh rồi ghép lại. Mốc thời gian mỗi cảnh lấy chính xác từ độ dài audio,
 // không cần dò khoảng lặng. Nguồn giọng khai báo ở "voice" trong file kịch bản (xem scripts/lib/tts-providers.mjs).
 //
-// Cách dùng:  node scripts/tts.mjs content/t01-vi-mo-la-gi.json
-// Kết quả:    build/<id>/voice.wav + build/<id>/timings.json
+// Cách dùng:  node scripts/tts.mjs videos/t01-vi-mo-la-gi/script.json
+// Kết quả:    videos/<id>/voice.wav + videos/<id>/timings.json
 
 import fs from "node:fs";
 import path from "node:path";
+import { videoDir } from "./lib/paths.mjs";
 import { loadEnv } from "./lib/env.mjs";
 import { synthesize, resample, trimSilence, floatToWav } from "./lib/tts-providers.mjs";
 import { splitScenes } from "./lib/split.mjs";
@@ -110,7 +111,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.error('Kịch bản chưa khai báo "voice.provider". Dùng scripts/tts-gemini.mjs cho cách cũ.');
     process.exit(1);
   }
-  const outDir = path.join("build", content.id);
+  const outDir = videoDir(content.id);
   fs.mkdirSync(outDir, { recursive: true });
   console.log(`Tạo giọng: ${voice.provider} · ${voice.model || ""} · ${voice.voice} · ${content.scenes.length} cảnh`);
   const r = await synthScenes(content.scenes, voice);
