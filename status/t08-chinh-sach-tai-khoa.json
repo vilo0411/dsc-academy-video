@@ -1,0 +1,177 @@
+{
+  "id": "t08-chinh-sach-tai-khoa",
+  "file": "videos/t08-chinh-sach-tai-khoa/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-16T00:59:24.957Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 0,
+      "log": "Lời thoại không đổi — dùng lại giọng đọc đã có."
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 0,
+      "log": "Dùng mốc thời gian từ giọng đọc thật (182.094s).\nĐã tạo videos/t08-chinh-sach-tai-khoa/project/index.html\nTổng thời lượng: 183.594s. Bước tiếp theo: npm run video -- t08-chinh-sach-tai-khoa\n"
+    },
+    {
+      "name": "check",
+      "ok": true,
+      "seconds": 9,
+      "log": "◆  Checking project\n\nLint\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"0.000\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"2.957\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"5.656\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"8.613\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"10.020\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"12.832\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"15.578\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"17.735\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"20.482\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/wor\n…\n and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-19\"> is a timeline element that contains nested <div id=\"panel-19\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html #scene-19 t=0s\n    Fix: Move <section id=\"scene-19\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-20\"> is a timeline element that contains nested <div id=\"panel-20\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html #scene-20 t=0s\n    Fix: Move <section id=\"scene-20\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-21\"> is a timeline element that contains nested <div id=\"panel-21\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html #scene-21 t=0s\n    Fix: Move <section id=\"scene-21\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-22\"> is a timeline element that contains nested <div id=\"panel-22\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html #scene-22 t=0s\n    Fix: Move <section id=\"scene-22\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-23\"> is a timeline element that contains nested <div id=\"panel-23\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/index.html #scene-23 t=0s\n    Fix: Move <section id=\"scene-23\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  0 error(s), 110 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ⚠ t=173.394s rotation_pivot_drift #armL — Rotating element's bounding-box center drifts 217px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).\n        Fix: The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.\n  ⚠ t=173.394s off_pivot_rotation #armR — Gauge/dial pointer rotates about a point 210px from the dial hub — its center-of-rotation is off the hub, so it points wrong or overshoots the track (check the rotating group's pivot: translate to the hub before rotate, or set svgOrigin/transform-origin to the hub).\n        Fix: The pointer's center-of-rotation must coincide with the dial hub. Rotate the group about the hub (e.g. transform-origin/svgOrigin set to the hub center, or translate the group so its rotation pivot lands on the hub) rather than about the element's own bbox center.\n  0 error(s), 2 warning(s), 0 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 56/56 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check passed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t08-chinh-sach-tai-khoa/project/.hyperframes/artifacts/checks/cf567763-3ccd-4efc-b104-37cc765580b1.json\nRevision: none (unversioned)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 216,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (183ms)\n[initSession:beginframe] GSAP proxy flush complete (206ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (353ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (355ms)\n[initSession:beginframe] applyVideoMetadataHints complete (355ms)\n[initSession:beginframe] media + fonts + tailwind ready (357ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (363ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (176ms)\n[initSession:beginframe] GSAP proxy flush complete (197ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (340ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (342ms)\n[initSession:beginframe] applyVideoMetadataHints complete (342ms)\n[initSession:beginframe] media + fonts + tailwind ready (343ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (347ms)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-Regular.otf (591 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-SemiBold.otf (610 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-ExtraBold.otf (613 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Kore",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+    },
+    "audio": "voice.wav",
+    "duration": 182.094,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 10.02
+      },
+      {
+        "id": "s02",
+        "start": 10.02,
+        "end": 21.32
+      },
+      {
+        "id": "s03",
+        "start": 21.32,
+        "end": 29.92
+      },
+      {
+        "id": "s04",
+        "start": 29.92,
+        "end": 39.19
+      },
+      {
+        "id": "s05",
+        "start": 39.19,
+        "end": 46.505
+      },
+      {
+        "id": "s06",
+        "start": 46.505,
+        "end": 54.05
+      },
+      {
+        "id": "s07",
+        "start": 54.05,
+        "end": 61.56
+      },
+      {
+        "id": "s08",
+        "start": 61.56,
+        "end": 68.25
+      },
+      {
+        "id": "s09",
+        "start": 68.25,
+        "end": 77.98
+      },
+      {
+        "id": "s10",
+        "start": 77.98,
+        "end": 83.655
+      },
+      {
+        "id": "s11",
+        "start": 83.655,
+        "end": 92.69
+      },
+      {
+        "id": "s12",
+        "start": 92.69,
+        "end": 96.66
+      },
+      {
+        "id": "s13",
+        "start": 96.66,
+        "end": 103.92
+      },
+      {
+        "id": "s14",
+        "start": 103.92,
+        "end": 113.51
+      },
+      {
+        "id": "s15",
+        "start": 113.51,
+        "end": 119.74
+      },
+      {
+        "id": "s16",
+        "start": 119.74,
+        "end": 127.165
+      },
+      {
+        "id": "s17",
+        "start": 127.165,
+        "end": 135.345
+      },
+      {
+        "id": "s18",
+        "start": 135.345,
+        "end": 142.565
+      },
+      {
+        "id": "s19",
+        "start": 142.565,
+        "end": 147.365
+      },
+      {
+        "id": "s20",
+        "start": 147.365,
+        "end": 154.133
+      },
+      {
+        "id": "s21",
+        "start": 154.133,
+        "end": 162.868
+      },
+      {
+        "id": "s22",
+        "start": 162.868,
+        "end": 167.508
+      },
+      {
+        "id": "s23",
+        "start": 167.508,
+        "end": 176.328
+      },
+      {
+        "id": "s24",
+        "start": 176.328,
+        "end": 182.094
+      }
+    ],
+    "textHash": "689644f781a1ef6edd5ba3223fa8cc2976e2d9d3"
+  },
+  "output": {
+    "file": "out/t08-chinh-sach-tai-khoa.mp4",
+    "duration": "183.600000",
+    "size": "27812670"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-16T01:03:09.698Z"
+}

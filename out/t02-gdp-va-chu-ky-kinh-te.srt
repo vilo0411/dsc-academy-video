@@ -1,0 +1,323 @@
+1
+00:00:00,000 --> 00:00:02,232
+Quý vừa rồi, số liệu GDP vẫn còn yếu.
+
+2
+00:00:02,232 --> 00:00:04,886
+Vậy mà cổ phiếu Ngân hàng Heo Đất đã tăng từ
+
+3
+00:00:04,886 --> 00:00:07,730
+mấy tháng trước. Thị trường có vô lý không?
+
+4
+00:00:07,730 --> 00:00:10,514
+Ở bài trước, An biết vĩ mô tác động đến giá cổ
+
+5
+00:00:10,514 --> 00:00:13,056
+phiếu qua hai kênh: lợi nhuận và định giá.
+
+6
+00:00:13,056 --> 00:00:15,840
+Hôm nay, ta bật sáng ô đầu tiên trên bảng điều
+
+7
+00:00:15,840 --> 00:00:17,240
+khiển: tăng trưởng.
+
+8
+00:00:17,240 --> 00:00:19,154
+GDP, hay tổng sản phẩm trong nước,
+
+9
+00:00:19,154 --> 00:00:21,687
+là tổng giá trị hàng hoá và dịch vụ cuối cùng
+
+10
+00:00:21,686 --> 00:00:23,206
+được tạo ra trong một nước,
+
+11
+00:00:23,206 --> 00:00:24,726
+trong một khoảng thời gian,
+
+12
+00:00:24,725 --> 00:00:26,720
+thường là một quý hoặc một năm.
+
+13
+00:00:26,720 --> 00:00:29,548
+Có ba cách đo GDP, và cả ba cho cùng một kết
+
+14
+00:00:29,548 --> 00:00:31,733
+quả: theo chi tiêu, theo sản xuất,
+
+15
+00:00:31,733 --> 00:00:33,075
+và theo thu nhập.
+
+16
+00:00:33,075 --> 00:00:35,773
+Cách dễ hình dung nhất là theo chi tiêu:
+
+17
+00:00:35,773 --> 00:00:37,527
+tiêu dùng của hộ gia đình,
+
+18
+00:00:37,527 --> 00:00:40,293
+cộng đầu tư, cộng chi tiêu của chính phủ,
+
+19
+00:00:40,292 --> 00:00:43,192
+cộng xuất khẩu ròng, tức xuất khẩu trừ nhập
+
+20
+00:00:43,193 --> 00:00:43,780
+khẩu.
+
+21
+00:00:43,780 --> 00:00:46,230
+Nhìn theo cách này, kinh tế Việt Nam dựa vào
+
+22
+00:00:46,230 --> 00:00:47,845
+ba trụ: tiêu dùng trong nước,
+
+23
+00:00:47,845 --> 00:00:49,906
+đầu tư gồm cả đầu tư công và vốn FDI,
+
+24
+00:00:49,906 --> 00:00:50,880
+và xuất khẩu.
+
+25
+00:00:50,880 --> 00:00:53,231
+Cục Thống kê công bố GDP theo quý,
+
+26
+00:00:53,231 --> 00:00:56,136
+thường vào đầu tháng sau khi quý kết thúc.
+
+27
+00:00:56,136 --> 00:00:58,530
+Khi đọc, có bốn điểm cần chú ý.
+
+28
+00:00:58,530 --> 00:01:01,315
+Một, nhìn GDP thực, tức đã loại bỏ tác động
+
+29
+00:01:01,315 --> 00:01:04,229
+của giá cả. Hai, so với cùng quý năm trước để
+
+30
+00:01:04,229 --> 00:01:07,208
+bỏ yếu tố mùa vụ. Ba, xem khu vực nào kéo tăng
+
+31
+00:01:07,208 --> 00:01:10,058
+trưởng. Bốn, so với mục tiêu Quốc hội đặt ra
+
+32
+00:01:10,058 --> 00:01:11,020
+cho cả năm.
+
+33
+00:01:11,020 --> 00:01:13,493
+Nhưng nền kinh tế không tăng theo đường thẳng.
+
+34
+00:01:13,493 --> 00:01:15,375
+Nó dao động quanh xu hướng dài hạn,
+
+35
+00:01:15,375 --> 00:01:17,615
+qua bốn giai đoạn của chu kỳ kinh tế.
+
+36
+00:01:17,615 --> 00:01:19,833
+Phục hồi: tăng trưởng cải thiện từ đáy,
+
+37
+00:01:19,833 --> 00:01:22,222
+lạm phát thấp, và lãi suất thường được giữ
+
+38
+00:01:22,222 --> 00:01:23,325
+thấp để hỗ trợ.
+
+39
+00:01:23,325 --> 00:01:25,684
+Tăng trưởng: sản xuất, tiêu dùng và tín dụng
+
+40
+00:01:25,684 --> 00:01:27,936
+tăng mạnh. Ngân hàng Nhà nước bắt đầu thận
+
+41
+00:01:27,936 --> 00:01:29,205
+trọng với lạm phát.
+
+42
+00:01:29,205 --> 00:01:30,632
+Đỉnh: kinh tế tăng trưởng nóng,
+
+43
+00:01:30,632 --> 00:01:32,335
+lạm phát và chi phí đầu vào tăng cao.
+
+44
+00:01:32,334 --> 00:01:34,221
+Chính sách tiền tệ thường được thắt chặt,
+
+45
+00:01:34,221 --> 00:01:35,115
+lãi suất tăng.
+
+46
+00:01:35,115 --> 00:01:37,062
+Suy thoái: tăng trưởng chậm lại,
+
+47
+00:01:37,062 --> 00:01:38,766
+lợi nhuận doanh nghiệp giảm,
+
+48
+00:01:38,766 --> 00:01:41,815
+và chính sách lại được nới lỏng để kích thích.
+
+49
+00:01:41,815 --> 00:01:44,002
+Điểm quan trọng nhất: thị trường chứng khoán
+
+50
+00:01:44,002 --> 00:01:45,642
+thường đi trước chu kỳ vài tháng,
+
+51
+00:01:45,642 --> 00:01:47,879
+vì giá cổ phiếu phản ánh kỳ vọng về lợi nhuận
+
+52
+00:01:47,879 --> 00:01:48,626
+tương lai.
+
+53
+00:01:48,626 --> 00:01:51,456
+Đó là lý do cổ phiếu Heo Đất có thể tăng khi
+
+54
+00:01:51,456 --> 00:01:54,222
+GDP còn yếu. Nhà đầu tư đang mua kỳ vọng về
+
+55
+00:01:54,222 --> 00:01:56,401
+giai đoạn phục hồi phía trước.
+
+56
+00:01:56,401 --> 00:01:58,959
+Mỗi giai đoạn lại có nhóm ngành hưởng lợi khác
+
+57
+00:01:58,959 --> 00:02:01,601
+nhau. Người ta gọi đó là luân chuyển ngành.
+
+58
+00:02:01,601 --> 00:02:03,754
+Đầu giai đoạn phục hồi, ngân hàng,
+
+59
+00:02:03,754 --> 00:02:06,477
+chứng khoán và bất động sản thường dẫn dắt,
+
+60
+00:02:06,478 --> 00:02:08,695
+nhờ lãi suất thấp và tín dụng tăng,
+
+61
+00:02:08,694 --> 00:02:10,591
+như Heo Đất và Tổ Ấm Land.
+
+62
+00:02:10,591 --> 00:02:13,399
+Khi kinh tế tăng trưởng, bán lẻ như Siêu thị
+
+63
+00:02:13,399 --> 00:02:16,271
+Giỏ Tre được hưởng lợi. Ở đỉnh chu kỳ là năng
+
+64
+00:02:16,271 --> 00:02:18,951
+lượng và nguyên vật liệu, như Thép Lò Rèn.
+
+65
+00:02:18,951 --> 00:02:21,695
+Còn khi suy thoái, nhóm phòng thủ như điện,
+
+66
+00:02:21,695 --> 00:02:24,625
+nước, hàng thiết yếu và y tế giữ vững hơn.
+
+67
+00:02:24,625 --> 00:02:26,758
+Nhưng đây chỉ là khung tham khảo,
+
+68
+00:02:26,758 --> 00:02:29,731
+không phải quy luật cứng. Mỗi chu kỳ một khác,
+
+69
+00:02:29,731 --> 00:02:32,639
+và chất lượng từng doanh nghiệp vẫn là yếu tố
+
+70
+00:02:32,639 --> 00:02:33,600
+quyết định.
+
+71
+00:02:33,600 --> 00:02:36,004
+Câu hỏi cho bạn: vì sao thị trường chứng khoán
+
+72
+00:02:36,004 --> 00:02:37,467
+thường đi trước nền kinh tế?
+
+73
+00:02:37,467 --> 00:02:39,860
+Đáp án nằm trong bài viết bên dưới video.
+
+74
+00:02:39,860 --> 00:02:43,019
+Ô tăng trưởng trên bảng điều khiển đã sáng đèn
+
+75
+00:02:43,019 --> 00:02:44,230
+đầu tiên: GDP.
+
+76
+00:02:44,230 --> 00:02:46,516
+An ghi thêm dòng thứ hai vào sổ tay:
+
+77
+00:02:46,516 --> 00:02:49,180
+thị trường đi trước kinh tế vài tháng.
+
+78
+00:02:49,180 --> 00:02:52,309
+Ở giai đoạn đỉnh, giá cả bắt đầu leo thang.
+
+79
+00:02:52,309 --> 00:02:55,760
+Bài sau, ta tìm hiểu lạm phát và chỉ số CPI.
+
+80
+00:02:55,760 --> 00:02:58,268
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+81
+00:02:58,268 --> 00:02:59,609
+và làm bài quiz nhé.

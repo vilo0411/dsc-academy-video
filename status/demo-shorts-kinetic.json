@@ -1,0 +1,115 @@
+{
+  "id": "demo-shorts-kinetic",
+  "file": "videos/demo-shorts-kinetic/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-15T23:50:51.574Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 62,
+      "log": "Tạo giọng: cloud-gemini · gemini-2.5-pro-tts · Puck · 12 cảnh\n...........Cloud Gemini-TTS gemini-2.5-pro-tts: lỗi 429, thử lại sau 15s…\n.\nXong: videos/demo-shorts-kinetic/voice.wav (43.226s)\n"
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 1,
+      "log": "⚠ Không có Whisper: mốc từng từ chia đều theo cảnh (chữ có thể lệch lời một chút).\nDựng xong videos/demo-shorts-kinetic/project-9x16/index.html: 43.2s, 12 cảnh, 36 cụm phụ đề (clean), 15 tiếng động (21/phút), preset taichinh.\n"
+    },
+    {
+      "name": "check",
+      "ok": true,
+      "seconds": 10,
+      "log": "◆  Checking project-9x16\n\nLint\n  ⚠ composition_file_too_large: This HTML composition file has 411 lines. Smaller sub-compositions are easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-shorts-kinetic/project-9x16/index.html [data-composition-id] t=0s\n    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.\n  ⚠ timeline_track_too_dense: Track 3 has 36 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-shorts-kinetic/project-9x16/index.html [data-composition-id] t=0s\n    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.\n  0 error(s), 2 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ◇ 0 issues across 9 sample(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 45/45 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check passed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-shorts-kinetic/project-9x16/.hyperframes/artifacts/checks/e8628107-86ab-4406-b13f-292640a65f30.json\nRevision: none (unversioned)\n[INFO] [Compiler] Fetched 7 font face(s) for \"EB Garamond\" from Google Fonts (cached to /home/runner/.cache/hyperframes/fonts/eb-garamond)\n[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 74,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (244ms)\n[initSession:beginframe] GSAP proxy flush complete (265ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (396ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (398ms)\n[initSession:beginframe] applyVideoMetadataHints complete (398ms)\n[initSession:beginframe] media + fonts + tailwind ready (400ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (435ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (224ms)\n[initSession:beginframe] GSAP proxy flush complete (242ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (372ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (374ms)\n[initSession:beginframe] applyVideoMetadataHints complete (374ms)\n[initSession:beginframe] media + fonts + tailwind ready (375ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (379ms)\n[INFO] [Compiler] Fetched 7 font face(s) for \"EB Garamond\" from Google Fonts (cached to /home/runner/.cache/hyperframes/fonts/eb-garamond)\n[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families\n[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-SemiBold.ttf (134 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-ExtraBold.ttf (136 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/BarlowCondensed-SemiBold.ttf (107 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/BarlowCondensed-ExtraBold.ttf (108 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/PlayfairDisplay-Italic.ttf (272 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/DancingScript.ttf (131 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-SemiBold.otf (610 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-ExtraBold.otf (613 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    }
+  ],
+  "timings": {
+    "source": "cloud-gemini",
+    "voice": {
+      "provider": "cloud-gemini",
+      "model": "gemini-2.5-pro-tts",
+      "voice": "Puck",
+      "style": "You are an energetic Vietnamese finance educator recording a TikTok short. Speak Vietnamese naturally at a fast, punchy pace with clear emphasis on key words and numbers. Keep pauses very short. Sound curious and confident, never salesy."
+    },
+    "audio": "voice.wav",
+    "duration": 43.226,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 2.566
+      },
+      {
+        "id": "s02",
+        "start": 2.566,
+        "end": 4.881
+      },
+      {
+        "id": "s03",
+        "start": 4.881,
+        "end": 7.284
+      },
+      {
+        "id": "s04",
+        "start": 7.284,
+        "end": 11.385
+      },
+      {
+        "id": "s05",
+        "start": 11.385,
+        "end": 14.853
+      },
+      {
+        "id": "s06",
+        "start": 14.853,
+        "end": 19.751
+      },
+      {
+        "id": "s07",
+        "start": 19.751,
+        "end": 24.05
+      },
+      {
+        "id": "s08",
+        "start": 24.05,
+        "end": 27.822
+      },
+      {
+        "id": "s09",
+        "start": 27.822,
+        "end": 30.84
+      },
+      {
+        "id": "s10",
+        "start": 30.84,
+        "end": 35.381
+      },
+      {
+        "id": "s11",
+        "start": 35.381,
+        "end": 39.281
+      },
+      {
+        "id": "s12",
+        "start": 39.281,
+        "end": 43.226
+      }
+    ],
+    "textHash": "45a4f6816e1201793a49c450c66df3455e35a72a"
+  },
+  "output": {
+    "file": "out/demo-shorts-kinetic.mp4",
+    "duration": "43.233333",
+    "size": "10244119"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-15T23:53:18.741Z"
+}

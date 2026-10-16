@@ -1,0 +1,182 @@
+{
+  "id": "t11-kinh-te-the-gioi-va-viet-nam",
+  "file": "videos/t11-kinh-te-the-gioi-va-viet-nam/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-16T01:10:34.125Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 0,
+      "log": "Lời thoại không đổi — dùng lại giọng đọc đã có."
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 0,
+      "log": "Dùng mốc thời gian từ giọng đọc thật (182.537s).\nĐã tạo videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html\nTổng thời lượng: 184.037s. Bước tiếp theo: npm run video -- t11-kinh-te-the-gioi-va-viet-nam\n"
+    },
+    {
+      "name": "check",
+      "ok": true,
+      "seconds": 9,
+      "log": "◆  Checking project\n\nLint\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"0.000\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"2.150\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"4.764\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"7.379\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"9.430\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"11.636\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"13.895\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"16.263\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"17.750\" data-track-index=\"3\"> has no id, so Studio cannot use a stable\n…\nat contains nested <div id=\"panel-19\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html #scene-19 t=0s\n    Fix: Move <section id=\"scene-19\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-20\"> is a timeline element that contains nested <div id=\"panel-20\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html #scene-20 t=0s\n    Fix: Move <section id=\"scene-20\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-21\"> is a timeline element that contains nested <div id=\"panel-21\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html #scene-21 t=0s\n    Fix: Move <section id=\"scene-21\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-22\"> is a timeline element that contains nested <div id=\"panel-22\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html #scene-22 t=0s\n    Fix: Move <section id=\"scene-22\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-23\"> is a timeline element that contains nested <div id=\"panel-23\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html #scene-23 t=0s\n    Fix: Move <section id=\"scene-23\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-24\"> is a timeline element that contains nested <div id=\"panel-24\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/index.html #scene-24 t=0s\n    Fix: Move <section id=\"scene-24\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  0 error(s), 115 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ⚠ t=173.813s off_pivot_rotation #armR — Gauge/dial pointer rotates about a point 261px from the dial hub — its center-of-rotation is off the hub, so it points wrong or overshoots the track (check the rotating group's pivot: translate to the hub before rotate, or set svgOrigin/transform-origin to the hub).\n        Fix: The pointer's center-of-rotation must coincide with the dial hub. Rotate the group about the hub (e.g. transform-origin/svgOrigin set to the hub center, or translate the group so its rotation pivot lands on the hub) rather than about the element's own bbox center.\n  0 error(s), 1 warning(s), 0 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 97/97 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check passed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t11-kinh-te-the-gioi-va-viet-nam/project/.hyperframes/artifacts/checks/9e794883-ff65-4c7c-a86f-aeb8ba4c29ea.json\nRevision: none (unversioned)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 218,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (193ms)\n[initSession:beginframe] GSAP proxy flush complete (216ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (364ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (366ms)\n[initSession:beginframe] applyVideoMetadataHints complete (366ms)\n[initSession:beginframe] media + fonts + tailwind ready (368ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (375ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (191ms)\n[initSession:beginframe] GSAP proxy flush complete (214ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (359ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (362ms)\n[initSession:beginframe] applyVideoMetadataHints complete (362ms)\n[initSession:beginframe] media + fonts + tailwind ready (363ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (368ms)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-Regular.otf (591 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-SemiBold.otf (610 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-ExtraBold.otf (613 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Kore",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+    },
+    "audio": "voice.wav",
+    "duration": 182.537,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 9.43
+      },
+      {
+        "id": "s02",
+        "start": 9.43,
+        "end": 17.75
+      },
+      {
+        "id": "s03",
+        "start": 17.75,
+        "end": 26.4
+      },
+      {
+        "id": "s04",
+        "start": 26.4,
+        "end": 33.026
+      },
+      {
+        "id": "s05",
+        "start": 33.026,
+        "end": 40.901
+      },
+      {
+        "id": "s06",
+        "start": 40.901,
+        "end": 48.261
+      },
+      {
+        "id": "s07",
+        "start": 48.261,
+        "end": 51.861
+      },
+      {
+        "id": "s08",
+        "start": 51.861,
+        "end": 61.171
+      },
+      {
+        "id": "s09",
+        "start": 61.171,
+        "end": 67.869
+      },
+      {
+        "id": "s10",
+        "start": 67.869,
+        "end": 78.454
+      },
+      {
+        "id": "s11",
+        "start": 78.454,
+        "end": 86.694
+      },
+      {
+        "id": "s12",
+        "start": 86.694,
+        "end": 92.904
+      },
+      {
+        "id": "s13",
+        "start": 92.904,
+        "end": 102.148
+      },
+      {
+        "id": "s14",
+        "start": 102.148,
+        "end": 112.613
+      },
+      {
+        "id": "s15",
+        "start": 112.613,
+        "end": 121.073
+      },
+      {
+        "id": "s16",
+        "start": 121.073,
+        "end": 127.193
+      },
+      {
+        "id": "s17",
+        "start": 127.193,
+        "end": 134.043
+      },
+      {
+        "id": "s18",
+        "start": 134.043,
+        "end": 139.997
+      },
+      {
+        "id": "s19",
+        "start": 139.997,
+        "end": 146.592
+      },
+      {
+        "id": "s20",
+        "start": 146.592,
+        "end": 155.522
+      },
+      {
+        "id": "s21",
+        "start": 155.522,
+        "end": 160.732
+      },
+      {
+        "id": "s22",
+        "start": 160.732,
+        "end": 166.722
+      },
+      {
+        "id": "s23",
+        "start": 166.722,
+        "end": 169.542
+      },
+      {
+        "id": "s24",
+        "start": 169.542,
+        "end": 178.772
+      },
+      {
+        "id": "s25",
+        "start": 178.772,
+        "end": 182.537
+      }
+    ],
+    "textHash": "a0d9964a4c3cfde3ee743b83f8916130ba226a50"
+  },
+  "output": {
+    "file": "out/t11-kinh-te-the-gioi-va-viet-nam.mp4",
+    "duration": "184.066667",
+    "size": "28400128"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-16T01:14:21.003Z"
+}

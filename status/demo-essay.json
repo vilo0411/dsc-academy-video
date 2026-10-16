@@ -1,0 +1,57 @@
+{
+  "id": "demo-essay",
+  "file": "videos/demo-essay/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-15T23:49:05.191Z",
+  "ok": false,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 14,
+      "log": "Tạo giọng: gemini-api · gemini-3.1-flash-tts-preview · Kore · 4 cảnh\n[4]\nXong: videos/demo-essay/voice.wav (34.652s)\n"
+    },
+    {
+      "name": "build",
+      "ok": false,
+      "seconds": 0,
+      "log": "file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/build-essay.mjs:114\n      throw new Error(`Không biết loại mảnh \"${pc.kind}\" (cảnh ${sid})`);\n            ^\n\nError: Không biết loại mảnh \"undefined\" (cảnh s01)\n    at piece (file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/build-essay.mjs:114:13)\n    at file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/build-essay.mjs:197:57\n    at Array.map (<anonymous>)\n    at file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/build-essay.mjs:197:32\n    at Array.forEach (<anonymous>)\n    at file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/build-essay.mjs:188:16\n    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.23.3\n"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Kore",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
+    },
+    "audio": "voice.wav",
+    "duration": 34.652,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 8.15
+      },
+      {
+        "id": "s02",
+        "start": 8.15,
+        "end": 15.99
+      },
+      {
+        "id": "s03",
+        "start": 15.99,
+        "end": 24.54
+      },
+      {
+        "id": "s04",
+        "start": 24.54,
+        "end": 34.652
+      }
+    ],
+    "textHash": "bed1ea7d875a7fa50775173bfee8712011e615d2"
+  }
+}

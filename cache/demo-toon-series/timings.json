@@ -1,0 +1,61 @@
+{
+  "source": "gemini-api",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "audio": "voice.wav",
+  "duration": 45.503,
+  "scenes": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 5.2
+    },
+    {
+      "id": "s02",
+      "start": 5.2,
+      "end": 9.47
+    },
+    {
+      "id": "s03",
+      "start": 9.47,
+      "end": 14.47
+    },
+    {
+      "id": "s04",
+      "start": 14.47,
+      "end": 19.33
+    },
+    {
+      "id": "s05",
+      "start": 19.33,
+      "end": 24.71
+    },
+    {
+      "id": "s06",
+      "start": 24.71,
+      "end": 29.84
+    },
+    {
+      "id": "s07",
+      "start": 29.84,
+      "end": 33.813
+    },
+    {
+      "id": "s08",
+      "start": 33.813,
+      "end": 39.808
+    },
+    {
+      "id": "s09",
+      "start": 39.808,
+      "end": 45.503
+    }
+  ],
+  "textHash": "616e994824e99e6e0c6d2904c3b5ced5506d66a7"
+}

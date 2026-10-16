@@ -1,0 +1,36 @@
+{
+  "source": "gemini-api",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
+  },
+  "audio": "voice.wav",
+  "duration": 34.652,
+  "scenes": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 8.15
+    },
+    {
+      "id": "s02",
+      "start": 8.15,
+      "end": 15.99
+    },
+    {
+      "id": "s03",
+      "start": 15.99,
+      "end": 24.54
+    },
+    {
+      "id": "s04",
+      "start": 24.54,
+      "end": 34.652
+    }
+  ],
+  "textHash": "bed1ea7d875a7fa50775173bfee8712011e615d2"
+}

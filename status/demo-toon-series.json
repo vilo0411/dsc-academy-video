@@ -1,0 +1,102 @@
+{
+  "id": "demo-toon-series",
+  "file": "videos/demo-toon-series/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-15T23:54:17.354Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 20,
+      "log": "Tạo giọng: gemini-api · gemini-3.1-flash-tts-preview · Kore · 9 cảnh\n[7][2]\nXong: videos/demo-toon-series/voice.wav (45.503s)\n"
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 46,
+      "log": "Tiếng động: giữ 11/16 (15 tiếng/phút).\nDựng xong videos/demo-toon-series/project/index.html: 45.5s, 9 khung, 9 lần chuyển cảnh, 1 gag, 195 từ có mốc (whisper), 16 tiếng động, 9 cảnh dựng sẵn.\n"
+    },
+    {
+      "name": "check",
+      "ok": true,
+      "seconds": 22,
+      "log": "◆  Checking project\n\nLint\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#pz0h-hop\" for attr between 0.12s and 0.13s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/index.html #pz0h-hop t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#pz0h-hop\" for attr between 0.13s and 0.35s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/index.html #pz0h-hop t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#pz5h-hop\" for attr between 24.79s and 24.94s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/index.html #pz5h-hop t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ gsap_repeated_fromto_without_baseline: 2 tl.fromTo() calls target \"#sc3-g1\" with no stable baseline. The last-authored fromTo \"from\" values become the element's resting state for any seek before the first tween actually runs, because GSAP applies fromTo from-values at authoring time (immediateRender), not at tween position.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/index.html #sc3-g1 t=0s\n    Fix: Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 14.75s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them.\n  ⚠ gsap_repeated_fromto_without_baseline: 2 tl.fromTo() calls target \"#sc3-g2\" with no stable baseline. The last-authored fromTo \"from\" values become the element's resting state for any seek before the first tween actually runs, because GSAP applies fromTo from-values at authoring time (immediateRender), not at tween position.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/index.html #sc3-g2 t=0s\n    Fix: Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 14.83s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them.\n  ⚠ composition_file_too_large: This HTML composition file has 6837 lines. Smaller sub-compositions are easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/index.html [data-composition-id] t=0s\n    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.\n  ⚠ timeline_track_too_dense: Track 3 has 21 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/index.html [data-composition-id] t=0s\n    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.\n  0 error(s), 7 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ⚠ t=39.768, 39.893, 40.018, 40.142s content_overlap #sc7-o1 inside div.end-sub \"B Gửi tiết kiệm kỳ hạn dài\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ⚠ t=39.768, 39.893, 40.018, 40.142s content_overlap #sc7-o1 > span:nth-of-type(1) inside div.end-sub \"B\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-ove\n…\niner, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=12.64s container_overflow #pz2-d inside #pz2 overflowed left 27.38px, right 16.78px, top 11.92px, bottom 12.92px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=17.696s container_overflow #pz3-d inside #pz3 overflowed left 28.45px, right 17.44px, top 12.39px, bottom 13.42px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=22.752s canvas_overflow #gag-g4-an-bob > text:nth-of-type(1) inside #root overflowed bottom 86.4px \"DSC\" — Text extends outside the composition canvas.\n        Fix: Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.\n  ℹ t=22.752s container_overflow #pz4-d inside #pz4 overflowed left 27.26px, right 16.71px, top 11.87px, bottom 12.86px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=22.752s container_overflow #gag-g4-z inside #gag-g4 overflowed left 37.6px, right 34.59px, top 21.06px, bottom 19.55px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=22.752s container_overflow #gag-g4-rays inside #gag-g4-z > svg:nth-of-type(1) overflowed left 1744.61px, right 1827.62px, top 2201.15px, bottom 2242.66px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=22.752s container_overflow #gag-g4-z > svg:nth-of-type(1) > g:nth-of-type(2) inside #gag-g4-z > svg:nth-of-type(1) overflowed bottom 670.71px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=27.807s container_overflow #pz5-d inside #pz5 overflowed left 26.07px, right 15.98px, top 11.35px, bottom 12.3px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=32.863s container_overflow #pz6-d inside #pz6 overflowed left 32.62px, right 19.99px, top 14.2px, bottom 15.39px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=37.919s container_overflow #pz7-d inside #pz7 overflowed left 29.28px, right 17.95px, top 12.75px, bottom 13.82px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  0 error(s), 5 warning(s), 12 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ✗ #sc0-k 2.86:1 (need 3:1, t=2.528s)\n    Try rgb(14,154,122); source index.html\n  ✗ #sc4-profit-b 1.78:1 (need 3:1, t=22.752s)\n    Try rgb(106,106,106); source index.html\n  ✗ #sc4-valuation-b 1.8:1 (need 3:1, t=22.752s)\n    Try rgb(106,106,106); source index.html\n  ✗ #sc4-price 1.8:1 (need 3:1, t=22.752s)\n    Try rgb(106,106,106); source index.html\n  ✗ #sc4-price-b 1.8:1 (need 3:1, t=22.752s)\n    Try rgb(106,106,106); source index.html\n  ✗ #pz6h-emo 2.86:1 (need 3:1, t=32.863s)\n    Try rgb(14,154,122); source index.html\n  0 error(s), 6 warning(s), 0 info(s)\n\nSnapshots\n  ◇ disabled\n\n◇  Check passed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon-series/project/.hyperframes/artifacts/checks/8ed5d1bd-b008-4e64-aa76-168603adb4a7.json\nRevision: none (unversioned)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 125,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (181ms)\n[initSession:beginframe] GSAP proxy flush complete (201ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (433ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (435ms)\n[initSession:beginframe] applyVideoMetadataHints complete (435ms)\n[initSession:beginframe] media + fonts + tailwind ready (437ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (466ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (180ms)\n[initSession:beginframe] GSAP proxy flush complete (198ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (442ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (444ms)\n[initSession:beginframe] applyVideoMetadataHints complete (444ms)\n[initSession:beginframe] media + fonts + tailwind ready (445ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (476ms)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-SemiBold.otf (610 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-ExtraBold.otf (613 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Kore",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+    },
+    "audio": "voice.wav",
+    "duration": 45.503,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 5.2
+      },
+      {
+        "id": "s02",
+        "start": 5.2,
+        "end": 9.47
+      },
+      {
+        "id": "s03",
+        "start": 9.47,
+        "end": 14.47
+      },
+      {
+        "id": "s04",
+        "start": 14.47,
+        "end": 19.33
+      },
+      {
+        "id": "s05",
+        "start": 19.33,
+        "end": 24.71
+      },
+      {
+        "id": "s06",
+        "start": 24.71,
+        "end": 29.84
+      },
+      {
+        "id": "s07",
+        "start": 29.84,
+        "end": 33.813
+      },
+      {
+        "id": "s08",
+        "start": 33.813,
+        "end": 39.808
+      },
+      {
+        "id": "s09",
+        "start": 39.808,
+        "end": 45.503
+      }
+    ],
+    "textHash": "616e994824e99e6e0c6d2904c3b5ced5506d66a7"
+  },
+  "output": {
+    "file": "out/demo-toon-series.mp4",
+    "duration": "45.533333",
+    "size": "36545731"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-15T23:57:50.886Z"
+}

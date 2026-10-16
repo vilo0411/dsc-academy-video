@@ -1,0 +1,343 @@
+1
+00:00:00,000 --> 00:00:03,018
+Cuối năm, tin tức đưa: Ngân hàng Nhà nước nới
+
+2
+00:00:03,018 --> 00:00:04,896
+room tín dụng. Ngay hôm sau,
+
+3
+00:00:04,896 --> 00:00:07,042
+cổ phiếu Ngân hàng Heo Đất tăng.
+
+4
+00:00:07,042 --> 00:00:09,840
+Vậy room là gì, mà quan trọng đến thế?
+
+5
+00:00:09,840 --> 00:00:12,656
+Bài trước, ta biết lãi suất là giá của tiền.
+
+6
+00:00:12,656 --> 00:00:15,472
+Hôm nay, ô tiền tệ trên bảng điều khiển sáng
+
+7
+00:00:15,472 --> 00:00:18,090
+thêm một đèn: lượng tiền và tín dụng.
+
+8
+00:00:18,090 --> 00:00:21,090
+Cung tiền, gọi là M2, là tổng lượng tiền trong
+
+9
+00:00:21,090 --> 00:00:24,340
+nền kinh tế. Hãy hình dung nó như một bể nước.
+
+10
+00:00:24,340 --> 00:00:26,177
+Bể M2 gồm ba phần: tiền mặt đang lưu thông,
+
+11
+00:00:26,177 --> 00:00:28,142
+tiền gửi không kỳ hạn, và tiền gửi có kỳ hạn ở
+
+12
+00:00:28,143 --> 00:00:28,820
+ngân hàng.
+
+13
+00:00:28,820 --> 00:00:32,194
+Điều bất ngờ là tiền được tạo ra khi ngân hàng
+
+14
+00:00:32,194 --> 00:00:35,495
+cho vay. Khoản vay chuyển vào tài khoản người
+
+15
+00:00:35,496 --> 00:00:39,120
+vay, và trở thành tiền gửi mới trong hệ thống.
+
+16
+00:00:39,120 --> 00:00:41,385
+Tiền cũng tăng khi Ngân hàng Nhà nước mua
+
+17
+00:00:41,385 --> 00:00:43,871
+ngoại tệ, vì khi đó tiền đồng được bơm vào hệ
+
+18
+00:00:43,871 --> 00:00:44,452
+thống.
+
+19
+00:00:44,452 --> 00:00:46,813
+Ngược lại, khi Ngân hàng Nhà nước bán ngoại
+
+20
+00:00:46,813 --> 00:00:49,229
+tệ, hoặc hút tiền về qua thị trường mở như ở
+
+21
+00:00:49,230 --> 00:00:51,127
+bài trước, bể tiền sẽ vơi bớt.
+
+22
+00:00:51,127 --> 00:00:53,378
+Nhưng nếu lượng tiền tăng nhanh hơn hàng hoá
+
+23
+00:00:53,378 --> 00:00:55,731
+thực trong thời gian dài, đó chính là mầm mống
+
+24
+00:00:55,731 --> 00:00:57,567
+lạm phát mà ta đã học ở bài ba.
+
+25
+00:00:57,567 --> 00:00:59,986
+Còn tăng trưởng tín dụng là tốc độ tăng của
+
+26
+00:00:59,986 --> 00:01:02,405
+tổng dư nợ cho vay trong toàn hệ thống ngân
+
+27
+00:01:02,406 --> 00:01:02,937
+hàng.
+
+28
+00:01:02,937 --> 00:01:05,030
+Số liệu tín dụng được Ngân hàng Nhà nước cập
+
+29
+00:01:05,030 --> 00:01:07,123
+nhật định kỳ trong năm, qua các buổi họp báo
+
+30
+00:01:07,122 --> 00:01:09,037
+và thông tin trên website của mình.
+
+31
+00:01:09,037 --> 00:01:11,392
+Mỗi năm, Ngân hàng Nhà nước đặt chỉ tiêu tăng
+
+32
+00:01:11,392 --> 00:01:13,590
+trưởng tín dụng, rồi phân hạn mức cho từng
+
+33
+00:01:13,590 --> 00:01:15,579
+ngân hàng dựa trên sức khoẻ tài chính.
+
+34
+00:01:15,579 --> 00:01:17,661
+Hạn mức đó thường được gọi là room.
+
+35
+00:01:17,661 --> 00:01:20,004
+Ngân hàng có nợ xấu thấp và vốn mạnh thường
+
+36
+00:01:20,004 --> 00:01:21,693
+được giao room cao hơn. Vì thế,
+
+37
+00:01:21,694 --> 00:01:24,201
+mỗi lần nới room, thị trường thường chú ý ngay
+
+38
+00:01:24,201 --> 00:01:25,486
+đến nhóm ngân hàng.
+
+39
+00:01:25,486 --> 00:01:28,690
+Khi đọc số liệu tín dụng, có ba điểm cần chú
+
+40
+00:01:28,690 --> 00:01:29,086
+ý.
+
+41
+00:01:29,086 --> 00:01:30,767
+Một, so với chỉ tiêu cả năm,
+
+42
+00:01:30,767 --> 00:01:32,448
+để biết dư địa còn lại. Hai,
+
+43
+00:01:32,449 --> 00:01:34,070
+tín dụng chảy vào sản xuất,
+
+44
+00:01:34,070 --> 00:01:35,691
+tiêu dùng hay bất động sản.
+
+45
+00:01:35,692 --> 00:01:38,274
+Ba, so với huy động. Cho vay tăng nhanh hơn
+
+46
+00:01:38,274 --> 00:01:40,986
+huy động quá lâu thì thanh khoản sẽ căng.
+
+47
+00:01:40,986 --> 00:01:43,169
+Tín dụng tác động lên thị trường theo bốn tình
+
+48
+00:01:43,169 --> 00:01:44,226
+huống thường gặp.
+
+49
+00:01:44,226 --> 00:01:46,837
+Tín dụng tăng chậm dù lãi suất thấp cho thấy
+
+50
+00:01:46,837 --> 00:01:49,388
+cầu vay yếu. Còn tín dụng quá nóng thì mang
+
+51
+00:01:49,388 --> 00:01:51,596
+rủi ro lạm phát và nợ xấu về sau.
+
+52
+00:01:51,596 --> 00:01:54,064
+Tình huống cuối là tín dụng bị siết đột ngột.
+
+53
+00:01:54,064 --> 00:01:56,422
+Khi đó, các ngành phụ thuộc vốn vay chịu áp
+
+54
+00:01:56,422 --> 00:01:57,385
+lực lớn nhất.
+
+55
+00:01:57,385 --> 00:01:59,849
+Quay lại Heo Đất. Ngân hàng được nới room thêm
+
+56
+00:01:59,849 --> 00:02:02,206
+mười nghìn tỷ đồng, và cho vay hết phần room
+
+57
+00:02:02,206 --> 00:02:02,670
+này.
+
+58
+00:02:02,670 --> 00:02:04,673
+Với biên lãi ròng ba phẩy năm phần trăm,
+
+59
+00:02:04,673 --> 00:02:06,876
+phần cho vay thêm mang về khoảng ba trăm năm
+
+60
+00:02:06,875 --> 00:02:08,878
+mươi tỷ đồng thu nhập lãi thuần mỗi năm.
+
+61
+00:02:08,878 --> 00:02:10,880
+Đó là lý do cổ phiếu phản ứng ngay.
+
+62
+00:02:10,880 --> 00:02:13,295
+Lưu ý, đây là con số trước chi phí dự phòng và
+
+63
+00:02:13,295 --> 00:02:15,657
+chi phí hoạt động. Lợi nhuận thật còn tuỳ vào
+
+64
+00:02:15,657 --> 00:02:17,640
+chất lượng của các khoản vay mới.
+
+65
+00:02:17,640 --> 00:02:19,271
+Lần tới khi nghe tin nới room,
+
+66
+00:02:19,271 --> 00:02:21,283
+hãy hỏi thêm: ngân hàng nào được nới,
+
+67
+00:02:21,283 --> 00:02:23,980
+và họ có cho vay hết phần room đó được không?
+
+68
+00:02:23,980 --> 00:02:25,850
+Nhưng chiều ngược lại cũng xảy ra.
+
+69
+00:02:25,850 --> 00:02:27,940
+Khi tín dụng vào bất động sản bị siết,
+
+70
+00:02:27,940 --> 00:02:29,700
+Tổ Ấm Land khó vay để làm dự án,
+
+71
+00:02:29,700 --> 00:02:31,820
+và người mua nhà cũng khó vay hơn.
+
+72
+00:02:31,820 --> 00:02:34,462
+Nói ngắn gọn: lãi suất cho biết giá của tiền,
+
+73
+00:02:34,462 --> 00:02:37,163
+còn tín dụng cho biết tiền có thực sự chảy vào
+
+74
+00:02:37,163 --> 00:02:38,705
+nền kinh tế hay không.
+
+75
+00:02:38,705 --> 00:02:41,077
+Câu hỏi cho bạn: nhóm cổ phiếu nào nhạy trực
+
+76
+00:02:41,077 --> 00:02:42,964
+tiếp nhất với tăng trưởng tín dụng?
+
+77
+00:02:42,964 --> 00:02:45,425
+Đáp án nằm trong bài viết bên dưới video.
+
+78
+00:02:45,425 --> 00:02:48,251
+Ô tiền tệ trên bảng điều khiển đã sáng thêm
+
+79
+00:02:48,251 --> 00:02:49,815
+đèn: tín dụng và M2.
+
+80
+00:02:49,815 --> 00:02:52,651
+An ghi vào sổ tay: so tín dụng với chỉ tiêu cả
+
+81
+00:02:52,651 --> 00:02:54,195
+năm, và với huy động.
+
+82
+00:02:54,195 --> 00:02:56,969
+Ngân hàng Nhà nước mua đô la Mỹ cũng làm tăng
+
+83
+00:02:56,969 --> 00:02:59,311
+cung tiền. Vậy tỷ giá vận hành ra sao?
+
+84
+00:02:59,311 --> 00:03:01,225
+Bài sau, ta mở ô đối ngoại.
+
+85
+00:03:01,225 --> 00:03:03,636
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+86
+00:03:03,636 --> 00:03:04,934
+và làm bài quiz nhé.

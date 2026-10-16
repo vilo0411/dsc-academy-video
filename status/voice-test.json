@@ -1,0 +1,74 @@
+{
+  "id": "voice-test",
+  "file": "content/voice-test.json",
+  "commit": "c224f9728c92507bb488aeaecf63653cd0b2c3e8",
+  "startedAt": "2026-10-13T03:42:27.348Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "voice-test",
+      "ok": true,
+      "seconds": 27,
+      "log": "Phương án A: Gemini Flash (miễn phí) · Kore · hướng dẫn mới\n...\nPhương án B: Gemini 2.5 Pro TTS · Kore (nữ)\n  bỏ qua: Cloud Gemini-TTS gemini-2.5-pro-tts: lỗi 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission 'aiplatform.endpoints.predict' denied on resource '//aiplatform.googleapis.com/projects/1014193902033/locations/global/publishers/google/models/gemini-2.5-pro-tts' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMWExMzM1YS1mM2NjLTc1MTItYjBjNy1hYWU1YmJhNzcyNjgSU3Byb2plY3RzLzEwMTQxOTM5MDIwMzMvbG9jYXRpb25zL2dsb2JhbC9wdWJsaXNoZXJzL2dvb2dsZS9tb2RlbHMvZ2VtaW5pLTIuNS1wcm8tdHRz .\",\n    \"status\": \"PERMISSION_D\nPhương án B: Gemini 2.5 Pro TTS · Charon (nam)\n  bỏ qua: Cloud Gemini-TTS gemini-2.5-pro-tts: lỗi 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission 'aiplatform.endpoints.predict' denied on resource '//aiplatform.googleapis.com/projects/1014193902033/locations/global/publishers/google/models/gemini-2.5-pro-tts' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMWExMzM1YS1mNDMyLTc3MDUtYWExOC0wYzBiYTA1NTliNzMSU3Byb2plY3RzLzEwMTQxOTM5MDIwMzMvbG9jYXRpb25zL2dsb2JhbC9wdWJsaXNoZXJzL2dvb2dsZS9tb2RlbHMvZ2VtaW5pLTIuNS1wcm8tdHRz .\",\n    \"status\": \"PERMISSION_D\nPhương án B: Gemini 3.8 Flash TTS · Kore (nữ)\n  bỏ qua: Cloud Gemini-TTS gemini-3.8-flash-tts: lỗi 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The model 'gemini-3.8-flash-tts' is not supported.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n\nPhương án B: Chirp 3 HD · Aoede (nữ) · tốc độ 1,1\n...\nPhương án C: Chirp 3 HD · Leda (nữ) · tốc độ 1,1\n...\nPhương án D: Chirp 3 HD · Charon (nam) · tốc độ 1,1\n...\nXong: 4/7 phương án, tổng 100.0s\n"
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 0,
+      "log": "Dùng mốc thời gian từ giọng đọc thật (99.965s).\nĐã tạo build/voice-test/video-16x9/index.html\nTổng thời lượng: 101.465s. Bước tiếp theo: npm run render\n"
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 170,
+      "log": "700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_calibration\",\"status\":\"end\",\"elapsedMs\":13102,\"durationMs\":1071,\"stagePhase\":\"calibrating\",\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":0,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\"}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_calibration\",\"status\":\"checkpoint\",\"elapsedMs\":13102,\"message\":\"resolved\",\"forceScreenshot\":false,\"multiplier\":1,\"p95Ms\":56}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"worker_resolution\",\"status\":\"checkpoint\",\"elapsedMs\":13104,\"message\":\"resolved\",\"workerCount\":1}\n[INFO] streaming-encode gate {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"enabled\":true,\"reason\":\"single_worker\",\"configFlag\":true,\"durationCapEnabled\":false,\"outputFormat\":\"mp4\",\"workerCount\":1,\"durationSeconds\":101.465,\"maxDurationSeconds\":240}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_strategy\",\"status\":\"checkpoint\",\"elapsedMs\":13104,\"message\":\"resolved\",\"workerCount\":1,\"forceScreenshot\":false,\"captureBeyondViewport\":null,\"useStreamingEncode\":true,\"useLayeredComposite\":false,\"usePageSideCompositing\":false,\"hasHdrContent\":false,\"hasShaderTransitions\":false,\"isPngSequence\":false}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_streaming\",\"status\":\"start\",\"elapsedMs\":13105,\"stagePhase\":\"capturing\",\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":0,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\"}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_streaming\",\"status\":\"checkpoint\",\"elapsedMs\":43105,\"message\":\"stage still running\",\"stagePhase\":\"capturing\",\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":622,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\",\"heartbeatIndex\":1,\"stageElapsedMs\":30000}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_streaming\",\"status\":\"checkpoint\",\"elapsedMs\":73107,\"message\":\"stage still running\",\"stagePhase\":\"capturing\",\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":1267,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\",\"heartbeatIndex\":2,\"stageElapsedMs\":60002}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_streaming\",\"status\":\"checkpoint\",\"elapsedMs\":133108,\"message\":\"stage still running\",\"stagePhase\":\"capturing\",\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":2558,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\",\"heartbeatIndex\":3,\"stageElapsedMs\":120003}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"capture_streaming\",\"status\":\"end\",\"elapsedMs\":155728,\"durationMs\":142623,\"stagePhase\":\"capturing\",\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":3044,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":155729,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":3044,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] Audio lowered by 1.5 dB to stay under −1 dBTP {\"audioLoweredDb\":1.5}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":164767,\"durationMs\":9038,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":3044,\"framesCompleted\":3044,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"fa700e26-c0e9-4da3-842a-7959b210e217\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":164830,\"message\":\"artifact validated\",\"totalElapsedMs\":164829}\n"
+    }
+  ],
+  "report": [
+    {
+      "letter": "A",
+      "label": "Gemini Flash (miễn phí) · Kore · hướng dẫn mới",
+      "ok": true,
+      "seconds": 24.128
+    },
+    {
+      "letter": null,
+      "label": "Gemini 2.5 Pro TTS · Kore (nữ)",
+      "ok": false,
+      "error": "Cloud Gemini-TTS gemini-2.5-pro-tts: lỗi 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission 'aiplatform.endpoints.predict' denied on resource '//aiplatform.googleapis.com/projects/1014193902033/locations/global/publishers/google/models/gemini-2.5-pro-tts' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMWExMzM1YS1mM2NjLTc1MTItYjBjNy1hYWU1YmJhNzcyNjg"
+    },
+    {
+      "letter": null,
+      "label": "Gemini 2.5 Pro TTS · Charon (nam)",
+      "ok": false,
+      "error": "Cloud Gemini-TTS gemini-2.5-pro-tts: lỗi 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Permission 'aiplatform.endpoints.predict' denied on resource '//aiplatform.googleapis.com/projects/1014193902033/locations/global/publishers/google/models/gemini-2.5-pro-tts' (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMWExMzM1YS1mNDMyLTc3MDUtYWExOC0wYzBiYTA1NTliNzM"
+    },
+    {
+      "letter": null,
+      "label": "Gemini 3.8 Flash TTS · Kore (nữ)",
+      "ok": false,
+      "error": "Cloud Gemini-TTS gemini-3.8-flash-tts: lỗi 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The model 'gemini-3.8-flash-tts' is not supported.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n"
+    },
+    {
+      "letter": "B",
+      "label": "Chirp 3 HD · Aoede (nữ) · tốc độ 1,1",
+      "ok": true,
+      "seconds": 21.989
+    },
+    {
+      "letter": "C",
+      "label": "Chirp 3 HD · Leda (nữ) · tốc độ 1,1",
+      "ok": true,
+      "seconds": 22.096
+    },
+    {
+      "letter": "D",
+      "label": "Chirp 3 HD · Charon (nam) · tốc độ 1,1",
+      "ok": true,
+      "seconds": 21.752
+    }
+  ],
+  "output": {
+    "file": "out/voice-test.mp4"
+  }
+}

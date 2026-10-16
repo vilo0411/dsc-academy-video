@@ -1,0 +1,131 @@
+{
+  "source": "gemini-api",
+  "voice": {
+    "provider": "gemini-api",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "chunked": true,
+    "chunkChars": 700,
+    "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+  },
+  "audio": "voice.wav",
+  "duration": 177.725,
+  "scenes": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 8.64
+    },
+    {
+      "id": "s02",
+      "start": 8.64,
+      "end": 16.19
+    },
+    {
+      "id": "s03",
+      "start": 16.19,
+      "end": 23.66
+    },
+    {
+      "id": "s04",
+      "start": 23.66,
+      "end": 32.061
+    },
+    {
+      "id": "s05",
+      "start": 32.061,
+      "end": 42.866
+    },
+    {
+      "id": "s06",
+      "start": 42.866,
+      "end": 49.656
+    },
+    {
+      "id": "s07",
+      "start": 49.656,
+      "end": 57.876
+    },
+    {
+      "id": "s08",
+      "start": 57.876,
+      "end": 68.707
+    },
+    {
+      "id": "s09",
+      "start": 68.707,
+      "end": 75.622
+    },
+    {
+      "id": "s10",
+      "start": 75.622,
+      "end": 80.262
+    },
+    {
+      "id": "s11",
+      "start": 80.262,
+      "end": 86.432
+    },
+    {
+      "id": "s12",
+      "start": 86.432,
+      "end": 95.822
+    },
+    {
+      "id": "s13",
+      "start": 95.822,
+      "end": 102.852
+    },
+    {
+      "id": "s14",
+      "start": 102.852,
+      "end": 109.835
+    },
+    {
+      "id": "s15",
+      "start": 109.835,
+      "end": 121.74
+    },
+    {
+      "id": "s16",
+      "start": 121.74,
+      "end": 132.15
+    },
+    {
+      "id": "s17",
+      "start": 132.15,
+      "end": 137.72
+    },
+    {
+      "id": "s18",
+      "start": 137.72,
+      "end": 147.287
+    },
+    {
+      "id": "s19",
+      "start": 147.287,
+      "end": 154.712
+    },
+    {
+      "id": "s20",
+      "start": 154.712,
+      "end": 158.992
+    },
+    {
+      "id": "s21",
+      "start": 158.992,
+      "end": 164.992
+    },
+    {
+      "id": "s22",
+      "start": 164.992,
+      "end": 173.933
+    },
+    {
+      "id": "s23",
+      "start": 173.933,
+      "end": 177.725
+    }
+  ],
+  "textHash": "90948b63e2d350dac5e0bd9750ebc5e2ed95ddc2"
+}

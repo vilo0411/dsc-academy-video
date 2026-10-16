@@ -1,0 +1,77 @@
+{
+  "id": "demo-toon",
+  "file": "videos/demo-toon/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-15T23:57:50.886Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 14,
+      "log": "Tạo giọng: gemini-api · gemini-3.1-flash-tts-preview · Kore · 4 cảnh\n[4]\nXong: videos/demo-toon/voice.wav (32.425s)\n"
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 43,
+      "log": "Tiếng động: giữ 3/3 (6 tiếng/phút).\nDựng xong videos/demo-toon/project/index.html: 32.4s, 4 khung, 4 lần chuyển cảnh, 0 gag, 117 từ có mốc (whisper), 3 tiếng động.\n"
+    },
+    {
+      "name": "check",
+      "ok": true,
+      "seconds": 11,
+      "log": "◆  Checking project\n\nLint\n  ⚠ timeline_track_too_dense: Track 3 has 12 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon/project/index.html [data-composition-id] t=0s\n    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.\n  0 error(s), 1 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ⚠ t=24.818, 24.942, 25.067s content_overlap #c3-p > svg:nth-of-type(1) > text:nth-of-type(1) inside div.end > h2:nth-of-type(1) \"BÁNH MÌ: 10 ĐỒNG!\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ℹ t=1.801, 5.404, 9.007s container_overflow #c1-d inside #c1 overflowed left 13.25px, right 8.83px, top 5.59px, bottom 6.83px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=12.61, 16.212s container_overflow #c2-d inside #c2 overflowed left 20.74px, right 25.34px, top 15.55px, bottom 10.37px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=19.815, 23.418s container_overflow #c3-d inside #c3 overflowed left 23.93px, right 14.67px, top 12.59px, bottom 9.12px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  0 error(s), 1 warning(s), 3 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 23/23 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check passed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-toon/project/.hyperframes/artifacts/checks/a292d2bf-69b9-49e6-ba02-bf7222a75a8b.json\nRevision: none (unversioned)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 69,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (155ms)\n[initSession:beginframe] GSAP proxy flush complete (171ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (291ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (303ms)\n[initSession:beginframe] applyVideoMetadataHints complete (303ms)\n[initSession:beginframe] media + fonts + tailwind ready (305ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (322ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (154ms)\n[initSession:beginframe] GSAP proxy flush complete (174ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (295ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (297ms)\n[initSession:beginframe] applyVideoMetadataHints complete (297ms)\n[initSession:beginframe] media + fonts + tailwind ready (298ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (302ms)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-SemiBold.otf (610 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-ExtraBold.otf (613 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Kore",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
+    },
+    "audio": "voice.wav",
+    "duration": 32.425,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 9.4
+      },
+      {
+        "id": "s02",
+        "start": 9.4,
+        "end": 17.4
+      },
+      {
+        "id": "s03",
+        "start": 17.4,
+        "end": 24.62
+      },
+      {
+        "id": "s04",
+        "start": 24.62,
+        "end": 32.425
+      }
+    ],
+    "textHash": "a28d2eda4a2e492bed22ca56bd4d9ea44a9c262b"
+  },
+  "output": {
+    "file": "out/demo-toon.mp4",
+    "duration": "32.433333",
+    "size": "7079656"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-16T00:00:07.875Z"
+}

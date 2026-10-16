@@ -1,0 +1,15 @@
+{
+  "id": "demo-shorts-split",
+  "file": "videos/demo-shorts-split/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-15T23:54:17.081Z",
+  "ok": false,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": false,
+      "seconds": 0,
+      "log": "Tạo giọng: gemini-api · gemini-2.5-flash · Puck · 4 cảnh\nfile:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/lib/tts-providers.mjs:23\n    throw new Error(`${label}: lỗi ${res.status} ${body.slice(0, 600)}`);\n          ^\n\nError: Gemini API gemini-2.5-flash: lỗi 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"This model only supports text output.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n\n    at withRetry (file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/lib/tts-providers.mjs:23:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async geminiApi (file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/lib/tts-providers.mjs:48:13)\n    at async synthScenes (file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/tts.mjs:81:37)\n    at async file:///home/runner/work/dsc-academy-video/dsc-academy-video/scripts/tts.mjs:117:13\n\nNode.js v22.23.3\n"
+    }
+  ]
+}

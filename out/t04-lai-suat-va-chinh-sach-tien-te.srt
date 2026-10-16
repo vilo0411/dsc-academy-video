@@ -1,0 +1,319 @@
+1
+00:00:00,000 --> 00:00:02,838
+Tin mới: Ngân hàng Nhà nước tăng lãi suất điều
+
+2
+00:00:02,838 --> 00:00:05,182
+hành. Trong danh sách theo dõi của An,
+
+3
+00:00:05,182 --> 00:00:07,341
+cổ phiếu Tổ Ấm Land giảm mạnh nhất.
+
+4
+00:00:07,341 --> 00:00:08,640
+Vì sao lại là nó?
+
+5
+00:00:08,640 --> 00:00:11,017
+Bài trước, ta biết lạm phát cao khiến Ngân
+
+6
+00:00:11,017 --> 00:00:13,054
+hàng Nhà nước có xu hướng thắt chặt.
+
+7
+00:00:13,054 --> 00:00:15,601
+Hôm nay, ta bật sáng ô tiền tệ trên bảng điều
+
+8
+00:00:15,600 --> 00:00:16,190
+khiển.
+
+9
+00:00:16,190 --> 00:00:18,615
+Lãi suất là giá của tiền. Khi lãi suất thay
+
+10
+00:00:18,615 --> 00:00:21,097
+đổi, chi phí vay vốn của doanh nghiệp và sức
+
+11
+00:00:21,097 --> 00:00:23,660
+hấp dẫn của tiết kiệm cũng thay đổi theo.
+
+12
+00:00:23,660 --> 00:00:25,989
+Ngân hàng Nhà nước điều hành bằng lãi suất
+
+13
+00:00:25,989 --> 00:00:28,318
+điều hành, gồm lãi suất tái cấp vốn và lãi
+
+14
+00:00:28,318 --> 00:00:30,702
+suất tái chiết khấu. Đây giống như lãi suất
+
+15
+00:00:30,702 --> 00:00:32,061
+gốc của cả hệ thống.
+
+16
+00:00:32,061 --> 00:00:34,071
+Hai mức này tạo thành một hành lang.
+
+17
+00:00:34,071 --> 00:00:36,640
+Lãi suất liên ngân hàng, tức lãi suất các ngân
+
+18
+00:00:36,640 --> 00:00:39,097
+hàng cho nhau vay, thường dao động bên trong
+
+19
+00:00:39,098 --> 00:00:41,555
+hành lang, nên là chỉ báo hằng ngày về thanh
+
+20
+00:00:41,555 --> 00:00:42,866
+khoản của hệ thống.
+
+21
+00:00:42,866 --> 00:00:45,046
+Khi Ngân hàng Nhà nước điều chỉnh lãi suất
+
+22
+00:00:45,046 --> 00:00:47,226
+gốc, lãi suất cho vay và huy động trong hệ
+
+23
+00:00:47,226 --> 00:00:48,627
+thống thường thay đổi theo,
+
+24
+00:00:48,627 --> 00:00:49,656
+sau một độ trễ.
+
+25
+00:00:49,656 --> 00:00:52,195
+Ngân hàng Nhà nước còn có các công cụ khác.
+
+26
+00:00:52,195 --> 00:00:54,556
+Nghiệp vụ thị trường mở, gọi tắt là OMO,
+
+27
+00:00:54,556 --> 00:00:57,154
+được dùng hằng ngày để bơm tiền vào hoặc hút
+
+28
+00:00:57,154 --> 00:00:57,876
+tiền về.
+
+29
+00:00:57,876 --> 00:01:00,227
+Dự trữ bắt buộc là phần tiền gửi ngân hàng
+
+30
+00:01:00,227 --> 00:01:02,802
+phải giữ lại. Tăng tỷ lệ này thì lượng tiền có
+
+31
+00:01:02,803 --> 00:01:05,266
+thể cho vay giảm. Còn trần lãi suất huy động
+
+32
+00:01:05,266 --> 00:01:07,729
+giới hạn mức lãi ngân hàng được trả cho tiền
+
+33
+00:01:07,729 --> 00:01:08,707
+gửi ngắn hạn.
+
+34
+00:01:08,707 --> 00:01:11,084
+Muốn theo dõi, hãy xem quyết định trên website
+
+35
+00:01:11,084 --> 00:01:13,306
+Ngân hàng Nhà nước, cùng lãi suất liên ngân
+
+36
+00:01:13,305 --> 00:01:15,622
+hàng qua đêm và khối lượng OMO mỗi ngày.
+
+37
+00:01:15,622 --> 00:01:18,861
+Vậy lãi suất đi vào thị trường chứng khoán ra
+
+38
+00:01:18,861 --> 00:01:20,262
+sao? Có ba kênh.
+
+39
+00:01:20,262 --> 00:01:22,790
+Một, chi phí vốn. Lãi suất tăng thì doanh
+
+40
+00:01:22,790 --> 00:01:25,072
+nghiệp đi vay phải trả lãi nhiều hơn,
+
+41
+00:01:25,072 --> 00:01:26,432
+và lợi nhuận giảm.
+
+42
+00:01:26,432 --> 00:01:28,862
+Hai, định giá. Lãi suất là nền của tỷ suất
+
+43
+00:01:28,862 --> 00:01:31,523
+chiết khấu. Lãi suất tăng thì giá trị hiện tại
+
+44
+00:01:31,523 --> 00:01:33,201
+của lợi nhuận tương lai giảm,
+
+45
+00:01:33,200 --> 00:01:35,822
+và chỉ số P trên E hợp lý cũng giảm theo.
+
+46
+00:01:35,822 --> 00:01:38,718
+Ba, dòng tiền. Khi gửi tiết kiệm cho lãi cao
+
+47
+00:01:38,718 --> 00:01:41,483
+hơn, một phần tiền rời khỏi cổ phiếu để về
+
+48
+00:01:41,483 --> 00:01:42,852
+kênh an toàn hơn.
+
+49
+00:01:42,852 --> 00:01:45,510
+Giờ hãy nhìn Tổ Ấm Land. Công ty có lợi nhuận
+
+50
+00:01:45,510 --> 00:01:47,813
+trước lãi vay bốn trăm tỷ đồng mỗi năm,
+
+51
+00:01:47,813 --> 00:01:49,835
+và đang vay hai nghìn tỷ đồng.
+
+52
+00:01:49,835 --> 00:01:52,200
+Lãi suất tám phần trăm thì tiền lãi là một
+
+53
+00:01:52,200 --> 00:01:54,790
+trăm sáu mươi tỷ, còn lại hai trăm bốn mươi tỷ
+
+54
+00:01:54,790 --> 00:01:57,267
+lợi nhuận trước thuế. Lãi suất lên mười phần
+
+55
+00:01:57,267 --> 00:01:59,857
+trăm, còn hai trăm tỷ. Lên mười hai phần trăm,
+
+56
+00:01:59,857 --> 00:02:01,740
+chỉ còn một trăm sáu mươi tỷ.
+
+57
+00:02:01,740 --> 00:02:03,656
+Lãi suất tăng bốn điểm phần trăm,
+
+58
+00:02:03,656 --> 00:02:05,165
+lợi nhuận mất một phần ba.
+
+59
+00:02:05,165 --> 00:02:07,778
+Doanh nghiệp càng vay nhiều so với lợi nhuận,
+
+60
+00:02:07,778 --> 00:02:09,694
+lợi nhuận càng nhạy với lãi suất.
+
+61
+00:02:09,694 --> 00:02:12,150
+Đó là lý do Tổ Ấm Land giảm mạnh nhất.
+
+62
+00:02:12,150 --> 00:02:14,174
+Bất động sản còn chịu tác động kép:
+
+63
+00:02:14,174 --> 00:02:16,776
+chủ đầu tư vay đắt hơn, và người mua nhà cũng
+
+64
+00:02:16,776 --> 00:02:17,720
+khó vay hơn.
+
+65
+00:02:17,720 --> 00:02:20,049
+Còn ngân hàng như Heo Đất thì không đơn giản
+
+66
+00:02:20,049 --> 00:02:22,378
+là được hay mất. Điều quan trọng là biên lãi
+
+67
+00:02:22,379 --> 00:02:24,761
+ròng, gọi tắt là NIM: lãi suất cho vay và lãi
+
+68
+00:02:24,761 --> 00:02:27,287
+suất huy động điều chỉnh nhanh chậm ra sao.
+
+69
+00:02:27,287 --> 00:02:29,757
+Câu hỏi cho bạn: ngành nào thường chịu tác
+
+70
+00:02:29,757 --> 00:02:32,051
+động bất lợi rõ nhất khi lãi suất tăng?
+
+71
+00:02:32,051 --> 00:02:34,712
+Đáp án nằm trong bài viết bên dưới video.
+
+72
+00:02:34,712 --> 00:02:37,751
+Ô tiền tệ trên bảng điều khiển đã sáng đèn đầu
+
+73
+00:02:37,751 --> 00:02:38,992
+tiên: lãi suất.
+
+74
+00:02:38,992 --> 00:02:42,004
+An ghi vào sổ tay: lãi suất là giá của tiền,
+
+75
+00:02:42,004 --> 00:02:44,992
+và doanh nghiệp vay nhiều thì nhạy nhất.
+
+76
+00:02:44,992 --> 00:02:47,956
+Lãi suất là giá của tiền. Vậy trong nền kinh
+
+77
+00:02:47,956 --> 00:02:50,786
+tế có bao nhiêu tiền, và tiền chảy đi đâu?
+
+78
+00:02:50,786 --> 00:02:53,933
+Bài sau, ta tìm hiểu cung tiền và tín dụng.
+
+79
+00:02:53,933 --> 00:02:56,402
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+80
+00:02:56,402 --> 00:02:57,725
+và làm bài quiz nhé.

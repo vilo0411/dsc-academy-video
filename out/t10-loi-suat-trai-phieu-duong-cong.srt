@@ -1,0 +1,367 @@
+1
+00:00:00,000 --> 00:00:02,241
+Siêu thị Giỏ Tre không thay đổi gì:
+
+2
+00:00:02,241 --> 00:00:05,187
+vẫn bán hàng như cũ, lợi nhuận kỳ vọng như cũ.
+
+3
+00:00:05,187 --> 00:00:07,877
+Vậy mà giá trị hợp lý của nó giảm gần chín
+
+4
+00:00:07,877 --> 00:00:09,280
+phần trăm. Vì sao?
+
+5
+00:00:09,280 --> 00:00:11,620
+Bài trước, ta học cách đọc chỉ báo sớm.
+
+6
+00:00:11,620 --> 00:00:14,320
+Ở bài tám, ta biết Chính phủ bù thâm hụt bằng
+
+7
+00:00:14,320 --> 00:00:15,880
+cách phát hành trái phiếu.
+
+8
+00:00:15,880 --> 00:00:18,520
+Hôm nay, ta tìm hiểu lợi suất của trái phiếu
+
+9
+00:00:18,520 --> 00:00:18,950
+đó.
+
+10
+00:00:18,950 --> 00:00:20,474
+Trái phiếu là một khoản vay.
+
+11
+00:00:20,474 --> 00:00:22,978
+Người mua trái phiếu cho tổ chức phát hành vay
+
+12
+00:00:22,979 --> 00:00:25,375
+tiền, nhận lãi định kỳ, và được hoàn gốc khi
+
+13
+00:00:25,374 --> 00:00:26,060
+đến hạn.
+
+14
+00:00:26,060 --> 00:00:28,211
+Lợi suất là tỷ suất sinh lời mỗi năm,
+
+15
+00:00:28,211 --> 00:00:30,769
+nếu bạn mua trái phiếu ở giá hiện tại và giữ
+
+16
+00:00:30,770 --> 00:00:31,950
+đến khi đáo hạn.
+
+17
+00:00:31,950 --> 00:00:34,537
+Giá trái phiếu và lợi suất luôn đi ngược chiều
+
+18
+00:00:34,537 --> 00:00:36,056
+nhau, như một cái bập bênh.
+
+19
+00:00:36,056 --> 00:00:38,024
+Vì tiền lãi và tiền gốc đã cố định,
+
+20
+00:00:38,024 --> 00:00:40,555
+mua với giá thấp hơn thì tỷ suất sinh lời cao
+
+21
+00:00:40,555 --> 00:00:41,030
+hơn.
+
+22
+00:00:41,030 --> 00:00:43,692
+Ví dụ, một trái phiếu trả lãi cố định năm phần
+
+23
+00:00:43,692 --> 00:00:46,296
+trăm mỗi năm. Nếu lãi suất thị trường lên sáu
+
+24
+00:00:46,295 --> 00:00:48,783
+phần trăm, không ai muốn mua nó với giá cũ,
+
+25
+00:00:48,783 --> 00:00:50,075
+nên giá phải giảm.
+
+26
+00:00:50,075 --> 00:00:52,709
+Ở Việt Nam, trái phiếu chính phủ do Kho bạc
+
+27
+00:00:52,709 --> 00:00:54,669
+Nhà nước phát hành qua đấu thầu,
+
+28
+00:00:54,670 --> 00:00:57,615
+phổ biến ở kỳ hạn năm, mười và mười lăm năm.
+
+29
+00:00:57,615 --> 00:01:00,253
+Lợi suất kỳ hạn mười năm thường được dùng làm
+
+30
+00:01:00,253 --> 00:01:02,891
+lãi suất phi rủi ro, tức mức sinh lời gần như
+
+31
+00:01:02,890 --> 00:01:05,352
+chắc chắn, làm mốc so sánh cho mọi tài sản
+
+32
+00:01:05,352 --> 00:01:05,895
+khác.
+
+33
+00:01:05,895 --> 00:01:08,050
+Lợi suất trái phiếu chính phủ có thể theo dõi
+
+34
+00:01:08,050 --> 00:01:10,109
+qua kết quả các phiên đấu thầu được công bố
+
+35
+00:01:10,109 --> 00:01:12,264
+định kỳ, và qua giao dịch trên thị trường thứ
+
+36
+00:01:12,264 --> 00:01:12,706
+cấp.
+
+37
+00:01:12,706 --> 00:01:15,317
+Nếu vẽ lợi suất của các kỳ hạn từ ngắn đến
+
+38
+00:01:15,317 --> 00:01:17,244
+dài, ta có đường cong lợi suất.
+
+39
+00:01:17,245 --> 00:01:19,172
+Bình thường, đường này dốc lên,
+
+40
+00:01:19,172 --> 00:01:21,971
+vì cho vay càng lâu thì đòi lãi càng cao.
+
+41
+00:01:21,971 --> 00:01:23,791
+Đường cong có bốn hình dạng:
+
+42
+00:01:23,791 --> 00:01:26,261
+dốc lên, dốc hơn, phẳng, và đảo ngược,
+
+43
+00:01:26,261 --> 00:01:29,241
+khi lợi suất ngắn hạn lại cao hơn dài hạn.
+
+44
+00:01:29,241 --> 00:01:31,654
+Ở Mỹ, đường cong đảo ngược được theo dõi như
+
+45
+00:01:31,654 --> 00:01:33,409
+một tín hiệu cảnh báo suy thoái.
+
+46
+00:01:33,409 --> 00:01:35,493
+Nhưng nó không phải lúc nào cũng đúng,
+
+47
+00:01:35,492 --> 00:01:37,881
+nên chỉ là một kim trên đồng hồ chu kỳ.
+
+48
+00:01:37,881 --> 00:01:40,638
+Lợi suất ảnh hưởng đến cổ phiếu qua ba kênh:
+
+49
+00:01:40,638 --> 00:01:42,581
+định giá, cạnh tranh dòng tiền,
+
+50
+00:01:42,581 --> 00:01:43,771
+và chi phí vốn.
+
+51
+00:01:43,771 --> 00:01:45,679
+Kênh quan trọng nhất là định giá.
+
+52
+00:01:45,679 --> 00:01:47,934
+Lợi suất là nền của tỷ suất chiết khấu,
+
+53
+00:01:47,933 --> 00:01:50,419
+nên lợi suất tăng thì P trên E hợp lý giảm,
+
+54
+00:01:50,419 --> 00:01:52,750
+như ta đã thấy ở bài một và bài bốn.
+
+55
+00:01:52,750 --> 00:01:55,207
+Hãy tính thử. Một trăm tỷ đồng lợi nhuận nhận
+
+56
+00:01:55,207 --> 00:01:57,609
+được sau năm năm. Chiết khấu ở mức mười phần
+
+57
+00:01:57,609 --> 00:02:00,011
+trăm, giá trị hôm nay là khoảng sáu mươi hai
+
+58
+00:02:00,011 --> 00:02:00,425
+tỷ.
+
+59
+00:02:00,425 --> 00:02:02,724
+Nếu lợi suất tăng và tỷ suất chiết khấu lên
+
+60
+00:02:02,724 --> 00:02:05,023
+mười hai phần trăm, giá trị hôm nay chỉ còn
+
+61
+00:02:05,022 --> 00:02:07,267
+khoảng năm mươi bảy tỷ. Giảm gần chín phần
+
+62
+00:02:07,268 --> 00:02:07,785
+trăm.
+
+63
+00:02:07,785 --> 00:02:09,572
+Đó là câu trả lời cho Giỏ Tre.
+
+64
+00:02:09,572 --> 00:02:12,312
+Doanh nghiệp không đổi, nhưng thước đo dùng để
+
+65
+00:02:12,312 --> 00:02:13,515
+định giá đã đổi.
+
+66
+00:02:13,515 --> 00:02:16,080
+Lợi nhuận càng nằm xa trong tương lai thì càng
+
+67
+00:02:16,080 --> 00:02:17,530
+nhạy với lợi suất. Vì vậy,
+
+68
+00:02:17,530 --> 00:02:20,039
+cổ phiếu tăng trưởng thường nhạy hơn cổ phiếu
+
+69
+00:02:20,039 --> 00:02:20,735
+giá trị.
+
+70
+00:02:20,735 --> 00:02:23,221
+Kênh thứ hai: khi trái phiếu chính phủ cho lợi
+
+71
+00:02:23,221 --> 00:02:25,005
+suất cao và gần như không rủi ro,
+
+72
+00:02:25,005 --> 00:02:27,275
+một phần tiền sẽ rời cổ phiếu để sang trái
+
+73
+00:02:27,275 --> 00:02:27,849
+phiếu.
+
+74
+00:02:27,849 --> 00:02:30,340
+Ngân hàng và công ty bảo hiểm còn nắm giữ
+
+75
+00:02:30,340 --> 00:02:31,980
+nhiều trái phiếu chính phủ,
+
+76
+00:02:31,980 --> 00:02:34,653
+nên lợi suất ảnh hưởng trực tiếp đến kết quả
+
+77
+00:02:34,653 --> 00:02:35,754
+đầu tư của họ.
+
+78
+00:02:35,754 --> 00:02:38,049
+Kênh thứ ba: lợi suất tăng kéo theo chi phí
+
+79
+00:02:38,049 --> 00:02:40,237
+phát hành trái phiếu và vay vốn của doanh
+
+80
+00:02:40,237 --> 00:02:41,394
+nghiệp tăng theo.
+
+81
+00:02:41,394 --> 00:02:43,556
+Câu hỏi cho bạn: đường cong lợi suất đảo ngược
+
+82
+00:02:43,556 --> 00:02:45,483
+là gì? Đáp án nằm trong bài viết bên dưới
+
+83
+00:02:45,482 --> 00:02:46,014
+video.
+
+84
+00:02:46,014 --> 00:02:49,040
+Ô tiền tệ trên bảng điều khiển đã sáng đủ ba
+
+85
+00:02:49,040 --> 00:02:51,284
+đèn, với đèn mới: trái phiếu.
+
+86
+00:02:51,284 --> 00:02:54,639
+An ghi vào sổ tay: lợi suất tăng thì P trên E
+
+87
+00:02:54,639 --> 00:02:55,784
+hợp lý giảm.
+
+88
+00:02:55,784 --> 00:02:58,326
+Lợi suất ở Mỹ và quyết định của Fed lan đến
+
+89
+00:02:58,326 --> 00:03:00,099
+Việt Nam như thế nào? Bài sau,
+
+90
+00:03:00,099 --> 00:03:02,004
+ta nhìn ra kinh tế thế giới.
+
+91
+00:03:02,004 --> 00:03:04,389
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+92
+00:03:04,389 --> 00:03:05,676
+và làm bài quiz nhé.

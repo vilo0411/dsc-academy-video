@@ -1,0 +1,347 @@
+1
+00:00:00,000 --> 00:00:02,760
+Mười năm trước, một bát phở giá khoảng ba mươi
+
+2
+00:00:02,760 --> 00:00:05,520
+nghìn đồng. Bây giờ, cùng bát phở đó có thể đã
+
+3
+00:00:05,520 --> 00:00:07,740
+năm mươi nghìn. Bát phở không to hơn,
+
+4
+00:00:07,740 --> 00:00:09,970
+chỉ là đồng tiền mua được ít hơn.
+
+5
+00:00:09,970 --> 00:00:12,301
+Bài trước, ta thấy ở giai đoạn đỉnh của chu
+
+6
+00:00:12,301 --> 00:00:13,873
+kỳ, giá cả bắt đầu leo thang.
+
+7
+00:00:13,872 --> 00:00:16,311
+Hôm nay, ta bật sáng ô thứ hai trên bảng điều
+
+8
+00:00:16,311 --> 00:00:17,320
+khiển: giá cả.
+
+9
+00:00:17,320 --> 00:00:19,938
+Lạm phát là khi mặt bằng giá chung của hàng
+
+10
+00:00:19,938 --> 00:00:22,556
+hoá và dịch vụ tăng liên tục trong một thời
+
+11
+00:00:22,557 --> 00:00:25,060
+gian, làm giảm sức mua của đồng tiền.
+
+12
+00:00:25,060 --> 00:00:27,631
+Lạm phát thấp và ổn định là bình thường khi
+
+13
+00:00:27,631 --> 00:00:30,321
+kinh tế tăng trưởng. Vấn đề chỉ xuất hiện khi
+
+14
+00:00:30,321 --> 00:00:31,935
+lạm phát quá cao, quá thấp,
+
+15
+00:00:31,935 --> 00:00:33,022
+hoặc khó đoán.
+
+16
+00:00:33,022 --> 00:00:34,828
+Lạm phát đến từ hai nguồn chính.
+
+17
+00:00:34,828 --> 00:00:37,311
+Lạm phát do cầu kéo, khi chi tiêu tăng nhanh
+
+18
+00:00:37,310 --> 00:00:39,849
+hơn khả năng sản xuất, thường đi kèm tín dụng
+
+19
+00:00:39,849 --> 00:00:41,397
+và cung tiền tăng mạnh.
+
+20
+00:00:41,397 --> 00:00:42,943
+Và lạm phát do chi phí đẩy,
+
+21
+00:00:42,943 --> 00:00:45,578
+khi xăng dầu, nguyên liệu hay tiền lương tăng,
+
+22
+00:00:45,578 --> 00:00:48,098
+và doanh nghiệp chuyển phần tăng đó sang giá
+
+23
+00:00:48,098 --> 00:00:48,577
+bán.
+
+24
+00:00:48,577 --> 00:00:51,311
+Để đo lạm phát, ta dùng chỉ số giá tiêu dùng,
+
+25
+00:00:51,311 --> 00:00:53,984
+gọi tắt là CPI. CPI theo dõi giá của một giỏ
+
+26
+00:00:53,985 --> 00:00:56,719
+hàng hoá và dịch vụ tiêu biểu mà các gia đình
+
+27
+00:00:56,719 --> 00:00:57,637
+thường mua.
+
+28
+00:00:57,637 --> 00:01:00,358
+Ở Việt Nam, giỏ CPI gồm mười một nhóm hàng,
+
+29
+00:01:00,358 --> 00:01:02,320
+như hàng ăn và dịch vụ ăn uống,
+
+30
+00:01:02,320 --> 00:01:04,029
+nhà ở và vật liệu xây dựng,
+
+31
+00:01:04,029 --> 00:01:05,738
+giao thông, giáo dục, y tế.
+
+32
+00:01:05,737 --> 00:01:07,446
+Mỗi nhóm có quyền số riêng,
+
+33
+00:01:07,446 --> 00:01:10,164
+phản ánh mức chi tiêu của các gia đình.
+
+34
+00:01:10,164 --> 00:01:12,318
+Cục Thống kê công bố CPI hằng tháng,
+
+35
+00:01:12,318 --> 00:01:15,070
+vào đầu tháng sau. Có ba cách so sánh cần phân
+
+36
+00:01:15,070 --> 00:01:15,619
+biệt.
+
+37
+00:01:15,619 --> 00:01:17,953
+So với tháng trước cho thấy biến động ngắn
+
+38
+00:01:17,953 --> 00:01:20,398
+hạn, dễ bị ảnh hưởng bởi mùa vụ như dịp Tết.
+
+39
+00:01:20,398 --> 00:01:22,954
+So với cùng kỳ năm trước là thước đo được theo
+
+40
+00:01:22,954 --> 00:01:25,455
+dõi nhiều nhất. Còn bình quân từ đầu năm dùng
+
+41
+00:01:25,455 --> 00:01:28,039
+để đối chiếu với mục tiêu lạm phát cả năm.
+
+42
+00:01:28,039 --> 00:01:30,633
+Nhưng giá thực phẩm tươi sống hay xăng dầu có
+
+43
+00:01:30,633 --> 00:01:33,284
+thể lên xuống rất mạnh, che mất xu hướng thật.
+
+44
+00:01:33,284 --> 00:01:35,839
+Vì vậy, người ta dùng thêm lạm phát lõi.
+
+45
+00:01:35,839 --> 00:01:38,320
+Lạm phát lõi loại bỏ những nhóm biến động mạnh
+
+46
+00:01:38,320 --> 00:01:39,830
+đó để thấy xu hướng giá nền.
+
+47
+00:01:39,831 --> 00:01:41,503
+Khi lạm phát lõi tăng bền vững,
+
+48
+00:01:41,503 --> 00:01:43,769
+áp lực giá đã lan rộng, và ngân hàng trung
+
+49
+00:01:43,769 --> 00:01:45,475
+ương có thể phải hành động.
+
+50
+00:01:45,476 --> 00:01:48,193
+Lạm phát đi vào giá cổ phiếu qua ba kênh:
+
+51
+00:01:48,193 --> 00:01:50,961
+lãi suất, biên lợi nhuận, và định giá.
+
+52
+00:01:50,961 --> 00:01:52,506
+Kênh mạnh nhất là lãi suất.
+
+53
+00:01:52,506 --> 00:01:54,967
+Lạm phát cao khiến Ngân hàng Nhà nước có xu
+
+54
+00:01:54,967 --> 00:01:57,085
+hướng thắt chặt, kéo lãi suất đi lên.
+
+55
+00:01:57,085 --> 00:01:58,651
+Ta sẽ nói kỹ ở bài sau.
+
+56
+00:01:58,651 --> 00:02:00,296
+Kênh thứ hai là biên lợi nhuận.
+
+57
+00:02:00,296 --> 00:02:02,578
+Doanh nghiệp không chuyển được chi phí tăng
+
+58
+00:02:02,578 --> 00:02:04,951
+sang giá bán thì phần lãi sẽ bị thu hẹp.
+
+59
+00:02:04,951 --> 00:02:07,556
+Kênh thứ ba là định giá. Khi lợi suất thực,
+
+60
+00:02:07,556 --> 00:02:09,313
+tức lãi suất trừ đi lạm phát,
+
+61
+00:02:09,312 --> 00:02:12,038
+tăng lên, mức định giá hợp lý của cổ phiếu sẽ
+
+62
+00:02:12,038 --> 00:02:12,591
+giảm.
+
+63
+00:02:12,591 --> 00:02:14,951
+Ví dụ, giá thép thế giới tăng hai mươi phần
+
+64
+00:02:14,951 --> 00:02:17,092
+trăm. Thép Lò Rèn bán được giá cao hơn,
+
+65
+00:02:17,092 --> 00:02:18,659
+nên doanh thu tăng theo.
+
+66
+00:02:18,659 --> 00:02:20,627
+Nhưng Xây dựng Cần Cẩu thì khác.
+
+67
+00:02:20,627 --> 00:02:23,149
+Thép chiếm ba mươi phần trăm chi phí công
+
+68
+00:02:23,149 --> 00:02:25,486
+trình, nên chi phí tăng sáu phần trăm,
+
+69
+00:02:25,486 --> 00:02:27,577
+trong khi giá hợp đồng đã cố định.
+
+70
+00:02:27,578 --> 00:02:30,346
+Biên lãi gộp từ mười phần trăm còn khoảng bốn
+
+71
+00:02:30,345 --> 00:02:31,764
+phẩy sáu phần trăm.
+
+72
+00:02:31,764 --> 00:02:34,426
+Cùng một mức lạm phát, hai doanh nghiệp bị ảnh
+
+73
+00:02:34,426 --> 00:02:36,452
+hưởng trái chiều. Khi đọc lạm phát,
+
+74
+00:02:36,452 --> 00:02:38,651
+hãy hỏi: doanh nghiệp đứng ở phía bán,
+
+75
+00:02:38,652 --> 00:02:39,654
+hay phía mua?
+
+76
+00:02:39,654 --> 00:02:42,072
+Câu hỏi cho bạn: CPI tăng bốn phần trăm so với
+
+77
+00:02:42,072 --> 00:02:43,649
+cùng kỳ năm trước nghĩa là gì?
+
+78
+00:02:43,649 --> 00:02:46,054
+Đáp án nằm trong bài viết bên dưới video.
+
+79
+00:02:46,054 --> 00:02:49,399
+Ô giá cả trên bảng điều khiển đã sáng hai đèn:
+
+80
+00:02:49,399 --> 00:02:51,104
+CPI và lạm phát lõi.
+
+81
+00:02:51,104 --> 00:02:53,031
+An ghi vào sổ tay dòng thứ ba:
+
+82
+00:02:53,031 --> 00:02:55,979
+xem lạm phát lõi để thấy xu hướng giá nền.
+
+83
+00:02:55,980 --> 00:02:58,946
+Lạm phát cao kéo dài thì ai sẽ đạp phanh?
+
+84
+00:02:58,946 --> 00:03:02,274
+Bài sau, ta tìm hiểu Ngân hàng Nhà nước và lãi
+
+85
+00:03:02,273 --> 00:03:02,885
+suất.
+
+86
+00:03:02,885 --> 00:03:05,661
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+87
+00:03:05,661 --> 00:03:07,118
+và làm bài quiz nhé.

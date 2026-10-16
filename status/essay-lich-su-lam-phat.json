@@ -1,0 +1,145 @@
+{
+  "id": "essay-lich-su-lam-phat",
+  "file": "videos/essay-lich-su-lam-phat/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-16T00:27:30.011Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 0,
+      "log": "Lời thoại không đổi — dùng lại giọng đọc đã có."
+    },
+    {
+      "name": "music",
+      "ok": true,
+      "seconds": 0,
+      "log": "Nhạc nền không đổi — dùng lại bản đã tạo.\n",
+      "blocking": false
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 2,
+      "log": "Âm thanh: giọng có, nhạc nền music.wav, 0 ambience, 0 stinger, 281 tiếng động.\nĐã tạo videos/essay-lich-su-lam-phat/project/index.html (84.748s, 15 cảnh)\n"
+    },
+    {
+      "name": "check",
+      "ok": false,
+      "seconds": 28,
+      "log": "◆  Checking project\n\nLint\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e3-p0\" for rotation between 20.29s and 20.29s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e3-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e4-p0\" for rotation between 24.18s and 24.18s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e4-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e5-p0\" for rotation between 28.22s and 28.22s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e5-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e5-p4\" for rotation between 30.61s and 30.61s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e5-p4 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e6-p1\" for rotation between 35.28s and 35.28s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e6-p1 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e6-p2\" for rotation between 35.80s and 35.80s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e6-p2 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e7-p1\" for rotation between 39.38s and 39.38s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e7-p1 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e9-p0\" for rotation between 53.22s and 53.22s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e9-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e10-p0\" for rotation between 56.60s and 56.60s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e10-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e12-p0\" for rotation between 67.22s and 67.22s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e12-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e12-p2\" for rotation between 69.72s and 69.72s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html #e12-p2 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ composition_file_too_large: This HTML composition file has 991 lines. Smaller sub-compositions are easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/index.html [data-composition-id] t=0s\n    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.\n  ⚠ timeline_track_too_dense: Track 1 has 15 timed elements in this HTML file. Smaller sub-compositio\n…\nllow-overflow.\n  ℹ t=42.374s canvas_overflow #e7-p0 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(1) inside #root overflowed left 371.33px \"98%\" — Text extends outside the composition canvas.\n        Fix: Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.\n  ℹ t=42.374s canvas_overflow #e7-p0 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(2) inside #root overflowed left 385.11px \"AUGUSTUS\" — Text extends outside the composition canvas.\n        Fix: Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.\n  ℹ t=42.374s canvas_overflow #e7-p0 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(1) inside #root overflowed left 371.33px \"98%\" — Text extends outside the composition canvas.\n        Fix: Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.\n  ℹ t=42.374s canvas_overflow #e7-p0 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(2) inside #root overflowed left 385.11px \"AUGUSTUS\" — Text extends outside the composition canvas.\n        Fix: Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.\n  ℹ t=42.374s container_overflow #e7-cam inside #scene-7 overflowed left 795.78px, top 336.97px, bottom 110.69px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=51.79s container_overflow #e8-cam inside #scene-8 overflowed left 121.09px, right 32.51px, bottom 86.4px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=70.623s container_overflow #e12-cam inside #scene-12 overflowed left 681.7px, top 273.03px, bottom 110.37px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  ℹ t=79.796s content_overlap #e14-p1-g0 inside #e14-p2 > div:nth-of-type(1) \"Lạ\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ℹ t=79.796s content_overlap #e14-p1-g1 inside #e14-p2 > div:nth-of-type(1) \"m\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ℹ t=79.796s content_overlap #e14-p1-g2 inside #e14-p2 > div:nth-of-type(1) \"ph\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ℹ t=79.796s content_overlap #e14-p1-g3 inside #e14-p2 > div:nth-of-type(1) \"át\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ℹ t=79.796s content_overlap #e14-p1-g4 inside #e14-p2 > div:nth-of-type(1) \"v\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ℹ t=79.796s content_overlap #e14-p1-g5 inside #e14-p2 > div:nth-of-type(1) \"à\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  61 error(s), 0 warning(s), 19 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 63/63 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check failed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lich-su-lam-phat/project/.hyperframes/artifacts/checks/74070f68-702e-4b06-b638-5235565b0388.json\nRevision: none (unversioned)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 288,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (172ms)\n[initSession:beginframe] GSAP proxy flush complete (181ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (317ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (319ms)\n[initSession:beginframe] applyVideoMetadataHints complete (319ms)\n[initSession:beginframe] media + fonts + tailwind ready (321ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (335ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (1ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (165ms)\n[initSession:beginframe] GSAP proxy flush complete (173ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (312ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (314ms)\n[initSession:beginframe] applyVideoMetadataHints complete (314ms)\n[initSession:beginframe] media + fonts + tailwind ready (315ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (329ms)\n[INFO] [Compiler] Embedded local font file: fonts/Oswald.ttf (168 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/RobotoMono.ttf (179 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/OldStandard-Regular.ttf (244 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/OldStandard-Bold.ttf (261 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    },
+    {
+      "name": "compress",
+      "ok": true,
+      "seconds": 0,
+      "log": "Nén lại còn 20.8 MB"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Kore",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are narrating a calm, cinematic Vietnamese history documentary in the style of a Vox video essay. Speak Vietnamese naturally at a moderately brisk, confident pace with a warm, curious tone; keep pauses short. Say dates and numbers clearly but without slowing down, and never sound like you are reading a list."
+    },
+    "audio": "voice.wav",
+    "duration": 82.748,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 6.36
+      },
+      {
+        "id": "s02",
+        "start": 6.36,
+        "end": 11.54
+      },
+      {
+        "id": "s03",
+        "start": 11.54,
+        "end": 19.82
+      },
+      {
+        "id": "s04",
+        "start": 19.82,
+        "end": 23.71
+      },
+      {
+        "id": "s05",
+        "start": 23.71,
+        "end": 27.75
+      },
+      {
+        "id": "s06",
+        "start": 27.75,
+        "end": 33.25
+      },
+      {
+        "id": "s07",
+        "start": 33.25,
+        "end": 38.21
+      },
+      {
+        "id": "s08",
+        "start": 38.21,
+        "end": 45.23
+      },
+      {
+        "id": "s09",
+        "start": 45.23,
+        "end": 52.751
+      },
+      {
+        "id": "s10",
+        "start": 52.751,
+        "end": 56.126
+      },
+      {
+        "id": "s11",
+        "start": 56.126,
+        "end": 60.706
+      },
+      {
+        "id": "s12",
+        "start": 60.706,
+        "end": 66.746
+      },
+      {
+        "id": "s13",
+        "start": 66.746,
+        "end": 73.256
+      },
+      {
+        "id": "s14",
+        "start": 73.256,
+        "end": 78.296
+      },
+      {
+        "id": "s15",
+        "start": 78.296,
+        "end": 82.748
+      }
+    ],
+    "textHash": "b1c045131c9152655eb17e176f922be77505ed2b"
+  },
+  "output": {
+    "file": "out/essay-lich-su-lam-phat.mp4",
+    "duration": "84.778000",
+    "size": "21804382"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-16T00:33:29.742Z"
+}

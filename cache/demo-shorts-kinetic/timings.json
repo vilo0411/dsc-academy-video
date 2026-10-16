@@ -1,0 +1,74 @@
+{
+  "source": "cloud-gemini",
+  "voice": {
+    "provider": "cloud-gemini",
+    "model": "gemini-2.5-pro-tts",
+    "voice": "Puck",
+    "style": "You are an energetic Vietnamese finance educator recording a TikTok short. Speak Vietnamese naturally at a fast, punchy pace with clear emphasis on key words and numbers. Keep pauses very short. Sound curious and confident, never salesy."
+  },
+  "audio": "voice.wav",
+  "duration": 43.226,
+  "scenes": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 2.566
+    },
+    {
+      "id": "s02",
+      "start": 2.566,
+      "end": 4.881
+    },
+    {
+      "id": "s03",
+      "start": 4.881,
+      "end": 7.284
+    },
+    {
+      "id": "s04",
+      "start": 7.284,
+      "end": 11.385
+    },
+    {
+      "id": "s05",
+      "start": 11.385,
+      "end": 14.853
+    },
+    {
+      "id": "s06",
+      "start": 14.853,
+      "end": 19.751
+    },
+    {
+      "id": "s07",
+      "start": 19.751,
+      "end": 24.05
+    },
+    {
+      "id": "s08",
+      "start": 24.05,
+      "end": 27.822
+    },
+    {
+      "id": "s09",
+      "start": 27.822,
+      "end": 30.84
+    },
+    {
+      "id": "s10",
+      "start": 30.84,
+      "end": 35.381
+    },
+    {
+      "id": "s11",
+      "start": 35.381,
+      "end": 39.281
+    },
+    {
+      "id": "s12",
+      "start": 39.281,
+      "end": 43.226
+    }
+  ],
+  "textHash": "45a4f6816e1201793a49c450c66df3455e35a72a"
+}

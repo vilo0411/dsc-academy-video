@@ -1,0 +1,25 @@
+{
+  "source": "gemini",
+  "model": "gemini-3.1-flash-tts-preview",
+  "voice": "Kore",
+  "audio": "voice.wav",
+  "duration": 15.88,
+  "scenes": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 6.23
+    },
+    {
+      "id": "s02",
+      "start": 6.23,
+      "end": 11.77
+    },
+    {
+      "id": "s03",
+      "start": 11.77,
+      "end": 15.88
+    }
+  ],
+  "textHash": "d0f4c259af2e43f727a4f3e6fddbe9c6c7c6fc8a"
+}

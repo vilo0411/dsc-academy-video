@@ -1,0 +1,197 @@
+{
+  "id": "t05-cung-tien-va-tin-dung",
+  "file": "videos/t05-cung-tien-va-tin-dung/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-16T00:48:19.397Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 0,
+      "log": "Lời thoại không đổi — dùng lại giọng đọc đã có."
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 0,
+      "log": "Dùng mốc thời gian từ giọng đọc thật (184.934s).\nĐã tạo videos/t05-cung-tien-va-tin-dung/project/index.html\nTổng thời lượng: 186.434s. Bước tiếp theo: npm run video -- t05-cung-tien-va-tin-dung\n"
+    },
+    {
+      "name": "check",
+      "ok": true,
+      "seconds": 9,
+      "log": "◆  Checking project\n\nLint\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"0.000\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"3.018\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"4.896\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"7.042\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"9.840\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"12.656\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"15.472\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"18.090\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"21.090\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /\n…\nex.html #scene-21 t=0s\n    Fix: Move <section id=\"scene-21\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-22\"> is a timeline element that contains nested <div id=\"panel-22\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html #scene-22 t=0s\n    Fix: Move <section id=\"scene-22\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-23\"> is a timeline element that contains nested <div id=\"panel-23\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html #scene-23 t=0s\n    Fix: Move <section id=\"scene-23\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-24\"> is a timeline element that contains nested <div id=\"panel-24\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html #scene-24 t=0s\n    Fix: Move <section id=\"scene-24\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-25\"> is a timeline element that contains nested <div id=\"panel-25\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html #scene-25 t=0s\n    Fix: Move <section id=\"scene-25\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-26\"> is a timeline element that contains nested <div id=\"panel-26\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html #scene-26 t=0s\n    Fix: Move <section id=\"scene-26\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-27\"> is a timeline element that contains nested <div id=\"panel-27\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/index.html #scene-27 t=0s\n    Fix: Move <section id=\"scene-27\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  0 error(s), 123 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ℹ t=51.787s container_overflow #panel-7 > div:nth-of-type(1) > div:nth-of-type(1) > svg:nth-of-type(1) > g:nth-of-type(1) inside #panel-7 > div:nth-of-type(1) > div:nth-of-type(1) > svg:nth-of-type(1) overflowed bottom 450px — Element extends outside a clipping layout container.\n        Fix: Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.\n  0 error(s), 0 warning(s), 1 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 67/67 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check passed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/t05-cung-tien-va-tin-dung/project/.hyperframes/artifacts/checks/826541df-eb7a-457c-bd88-c49f29c5ae4b.json\nRevision: none (unversioned)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 216,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (195ms)\n[initSession:beginframe] GSAP proxy flush complete (215ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (367ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (370ms)\n[initSession:beginframe] applyVideoMetadataHints complete (370ms)\n[initSession:beginframe] media + fonts + tailwind ready (371ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (378ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (186ms)\n[initSession:beginframe] GSAP proxy flush complete (208ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (359ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (360ms)\n[initSession:beginframe] applyVideoMetadataHints complete (360ms)\n[initSession:beginframe] media + fonts + tailwind ready (362ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (370ms)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-Regular.otf (591 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-SemiBold.otf (610 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-ExtraBold.otf (613 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Kore",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are a friendly Vietnamese financial educator recording a YouTube explainer. Speak Vietnamese naturally and conversationally at a lively, slightly brisk pace, like a confident presenter rather than someone reading slowly. Vary your intonation, lightly emphasize key terms, and keep pauses short and natural."
+    },
+    "audio": "voice.wav",
+    "duration": 184.934,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 9.84
+      },
+      {
+        "id": "s02",
+        "start": 9.84,
+        "end": 18.09
+      },
+      {
+        "id": "s03",
+        "start": 18.09,
+        "end": 24.34
+      },
+      {
+        "id": "s04",
+        "start": 24.34,
+        "end": 28.82
+      },
+      {
+        "id": "s05",
+        "start": 28.82,
+        "end": 39.12
+      },
+      {
+        "id": "s06",
+        "start": 39.12,
+        "end": 44.452
+      },
+      {
+        "id": "s07",
+        "start": 44.452,
+        "end": 51.127
+      },
+      {
+        "id": "s08",
+        "start": 51.127,
+        "end": 57.567
+      },
+      {
+        "id": "s09",
+        "start": 57.567,
+        "end": 62.937
+      },
+      {
+        "id": "s10",
+        "start": 62.937,
+        "end": 69.037
+      },
+      {
+        "id": "s11",
+        "start": 69.037,
+        "end": 77.661
+      },
+      {
+        "id": "s12",
+        "start": 77.661,
+        "end": 85.486
+      },
+      {
+        "id": "s13",
+        "start": 85.486,
+        "end": 89.086
+      },
+      {
+        "id": "s14",
+        "start": 89.086,
+        "end": 100.986
+      },
+      {
+        "id": "s15",
+        "start": 100.986,
+        "end": 104.226
+      },
+      {
+        "id": "s16",
+        "start": 104.226,
+        "end": 111.596
+      },
+      {
+        "id": "s17",
+        "start": 111.596,
+        "end": 117.385
+      },
+      {
+        "id": "s18",
+        "start": 117.385,
+        "end": 122.67
+      },
+      {
+        "id": "s19",
+        "start": 122.67,
+        "end": 130.88
+      },
+      {
+        "id": "s20",
+        "start": 130.88,
+        "end": 137.64
+      },
+      {
+        "id": "s21",
+        "start": 137.64,
+        "end": 143.98
+      },
+      {
+        "id": "s22",
+        "start": 143.98,
+        "end": 151.82
+      },
+      {
+        "id": "s23",
+        "start": 151.82,
+        "end": 158.705
+      },
+      {
+        "id": "s24",
+        "start": 158.705,
+        "end": 165.425
+      },
+      {
+        "id": "s25",
+        "start": 165.425,
+        "end": 169.815
+      },
+      {
+        "id": "s26",
+        "start": 169.815,
+        "end": 174.195
+      },
+      {
+        "id": "s27",
+        "start": 174.195,
+        "end": 181.225
+      },
+      {
+        "id": "s28",
+        "start": 181.225,
+        "end": 184.934
+      }
+    ],
+    "textHash": "aa0c2ba20d2691c9acefc02ce358e37316656f12"
+  },
+  "output": {
+    "file": "out/t05-cung-tien-va-tin-dung.mp4",
+    "duration": "186.466667",
+    "size": "29718979"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-16T00:52:04.312Z"
+}

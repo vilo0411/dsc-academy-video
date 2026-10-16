@@ -1,0 +1,66 @@
+{
+  "id": "test-ket-noi",
+  "file": "content/test-ket-noi.json",
+  "commit": "3f9fe283100751556d35b26ba39923ae4731fb52",
+  "startedAt": "2026-10-13T03:22:38.682Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 9,
+      "log": "Đang tạo giọng đọc: model=gemini-3.1-flash-tts-preview, voice=Kore, 3 cảnh…\nXong: build/test-ket-noi/voice.wav (15.9s). Mốc từng cảnh lưu ở build/test-ket-noi/timings.json\nNghe lại voice.wav trước khi dựng: kiểm tra phát âm số, thuật ngữ (P/E, EPS).\n"
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 0,
+      "log": "Dùng mốc thời gian từ giọng đọc thật (15.88s).\nĐã tạo build/test-ket-noi/video-16x9/index.html\nTổng thời lượng: 17.38s. Bước tiếp theo: npm run render\n"
+    },
+    {
+      "name": "check",
+      "ok": true,
+      "seconds": 16,
+      "log": "video-16x9/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ studio_missing_editable_id: <div class=\"cap\" data-start=\"11.770\" data-track-index=\"3\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/build/test-ket-noi/video-16x9/index.html [data-composition-id] t=0s\n    Fix: Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#fig-jump\" for attr between 12.04s and 12.04s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/build/test-ket-noi/video-16x9/index.html #fig-jump t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ timeline_track_too_dense: Track 3 has 5 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/build/test-ket-noi/video-16x9/index.html [data-composition-id] t=0s\n    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-0\"> is a timeline element that contains nested <div id=\"panel-0\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/build/test-ket-noi/video-16x9/index.html #scene-0 t=0s\n    Fix: Move <section id=\"scene-0\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-1\"> is a timeline element that contains nested <div id=\"panel-1\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/build/test-ket-noi/video-16x9/index.html #scene-1 t=0s\n    Fix: Move <section id=\"scene-1\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  ⚠ nested_structure_needs_subcomposition: <section id=\"scene-2\"> is a timeline element that contains nested <div id=\"panel-2\">. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/build/test-ket-noi/video-16x9/index.html #scene-2 t=0s\n    Fix: Move <section id=\"scene-2\"> and its contents into a sub-composition file and mount it with data-composition-src.\n  0 error(s), 10 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ⚠ t=16.414s rotation_pivot_drift #armL — Rotating element's bounding-box center drifts 226px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).\n        Fix: The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.\n  0 error(s), 1 warning(s), 0 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 37/37 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check passed\n[hyperframes] Using system Chrome at /usr/bin/google-chrome; HeadlessExperimental.beginFrame is unavailable in regular Chrome builds, so the perf-optimized capture path falls back to screenshot mode. Install chrome-headless-shell for the optimized path:\n  npx @puppeteer/browsers install chrome-headless-shell\n(Or set HYPERFRAMES_BROWSER_PATH to point at an existing chrome-headless-shell binary.)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 41,
+      "log": "mesCompleted\":0,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\"}\n[INFO] [Render] Calibration config {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"protocolTimeout\":30000,\"parentProtocolTimeout\":300000,\"forceScreenshot\":false,\"totalFrames\":522}\n[INFO] Launching browser for capture calibration... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Initializing calibration session... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Calibration session ready, capturing test frames... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Calibration: capturing test frame 1/5... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Calibration: capturing test frame 2/5... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Calibration: capturing test frame 3/5... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Calibration: capturing test frame 4/5... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Calibration: capturing test frame 5/5... {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] Calibration complete, estimated cost: 48ms/frame (p95) {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\"}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"capture_calibration\",\"status\":\"end\",\"elapsedMs\":9588,\"durationMs\":1018,\"stagePhase\":\"calibrating\",\"forceScreenshot\":false,\"totalFrames\":522,\"framesCompleted\":0,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\"}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"capture_calibration\",\"status\":\"checkpoint\",\"elapsedMs\":9589,\"message\":\"resolved\",\"forceScreenshot\":false,\"multiplier\":1,\"p95Ms\":48}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"worker_resolution\",\"status\":\"checkpoint\",\"elapsedMs\":9590,\"message\":\"resolved\",\"workerCount\":1}\n[INFO] streaming-encode gate {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"enabled\":true,\"reason\":\"single_worker\",\"configFlag\":true,\"durationCapEnabled\":false,\"outputFormat\":\"mp4\",\"workerCount\":1,\"durationSeconds\":17.38,\"maxDurationSeconds\":240}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"capture_strategy\",\"status\":\"checkpoint\",\"elapsedMs\":9591,\"message\":\"resolved\",\"workerCount\":1,\"forceScreenshot\":false,\"captureBeyondViewport\":null,\"useStreamingEncode\":true,\"useLayeredComposite\":false,\"usePageSideCompositing\":false,\"hasHdrContent\":false,\"hasShaderTransitions\":false,\"isPngSequence\":false}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"capture_streaming\",\"status\":\"start\",\"elapsedMs\":9591,\"stagePhase\":\"capturing\",\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":522,\"framesCompleted\":0,\"captureMode\":\"beginframe\",\"captureOperation\":\"beginFrame\"}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"capture_streaming\",\"status\":\"end\",\"elapsedMs\":34773,\"durationMs\":25182,\"stagePhase\":\"capturing\",\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":522,\"framesCompleted\":522,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"assemble\",\"status\":\"start\",\"elapsedMs\":34774,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":522,\"framesCompleted\":522,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"assemble\",\"status\":\"end\",\"elapsedMs\":35746,\"durationMs\":972,\"stagePhase\":\"capturing\",\"hasAudio\":true,\"workerCount\":1,\"forceScreenshot\":false,\"totalFrames\":522,\"framesCompleted\":522,\"captureMode\":\"beginframe\",\"captureOperation\":\"encode\"}\n[INFO] [Render:trace] {\"renderJobId\":\"81d99412-f036-4305-8a4a-b4118731d35e\",\"phase\":\"pipeline\",\"status\":\"checkpoint\",\"elapsedMs\":35812,\"message\":\"artifact validated\",\"totalElapsedMs\":35811}\n"
+    }
+  ],
+  "timings": {
+    "source": "gemini",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Kore",
+    "audio": "voice.wav",
+    "duration": 15.88,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 6.23
+      },
+      {
+        "id": "s02",
+        "start": 6.23,
+        "end": 11.77
+      },
+      {
+        "id": "s03",
+        "start": 11.77,
+        "end": 15.88
+      }
+    ],
+    "textHash": "d0f4c259af2e43f727a4f3e6fddbe9c6c7c6fc8a"
+  },
+  "output": {
+    "file": "out/test-ket-noi.mp4",
+    "duration": "17.400000",
+    "size": "3363420"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-13T03:23:45.294Z"
+}

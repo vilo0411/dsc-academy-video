@@ -1,0 +1,80 @@
+{
+  "id": "demo-shorts-micro",
+  "file": "videos/demo-shorts-micro/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-15T23:53:18.742Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 19,
+      "log": "Tạo giọng: cloud-gemini · gemini-2.5-pro-tts · Puck · 5 cảnh\n.....\nXong: videos/demo-shorts-micro/voice.wav (17.048s)\n"
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 1,
+      "log": "⚠ Không có Whisper: mốc từng từ chia đều theo cảnh (chữ có thể lệch lời một chút).\nDựng xong videos/demo-shorts-micro/project-9x16/index.html: 17.0s, 5 cảnh, 12 cụm phụ đề (clean), 6 tiếng động (21/phút), preset dsc.\n"
+    },
+    {
+      "name": "check",
+      "ok": false,
+      "seconds": 8,
+      "log": "◆  Checking project-9x16\n\nLint\n  ⚠ timeline_track_too_dense: Track 3 has 12 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-shorts-micro/project-9x16/index.html [data-composition-id] t=0s\n    Fix: Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate.\n  0 error(s), 1 warning(s), 0 info(s)\n\nRuntime\n  ◇ 0 errors, 0 warnings\n\nLayout\n  ✗ t=3.36, 3.484, 3.609, 3.733, 3.858, 3.982, 4.106, 4.231, 4.355, 4.48, 4.604, 4.729, 4.736, 4.853, 4.978, 5.102, 5.226, 5.351, 5.475, 5.6, 5.724, 5.849, 5.973, 6.097, 6.222, 6.346s content_overlap #c1-n inside #c1-l \"10 triệu\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  1 error(s), 0 warning(s), 0 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 47/47 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check failed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/demo-shorts-micro/project-9x16/.hyperframes/artifacts/checks/a2a5946d-8357-4577-bb72-bc9a706fcae7.json\nRevision: none (unversioned)\n[INFO] [Compiler] Fetched 7 font face(s) for \"EB Garamond\" from Google Fonts (cached to /home/runner/.cache/hyperframes/fonts/eb-garamond)\n[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 31,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (0ms)\n[initSession:beginframe] page.goto complete (258ms)\n[initSession:beginframe] GSAP proxy flush complete (281ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (403ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (404ms)\n[initSession:beginframe] applyVideoMetadataHints complete (405ms)\n[initSession:beginframe] media + fonts + tailwind ready (406ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (440ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (1ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (233ms)\n[initSession:beginframe] GSAP proxy flush complete (258ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (383ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (384ms)\n[initSession:beginframe] applyVideoMetadataHints complete (384ms)\n[initSession:beginframe] media + fonts + tailwind ready (385ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (387ms)\n[INFO] [Compiler] Fetched 7 font face(s) for \"EB Garamond\" from Google Fonts (cached to /home/runner/.cache/hyperframes/fonts/eb-garamond)\n[INFO] [Compiler] Injected deterministic @font-face rules for 1 requested font families\n[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-SemiBold.ttf (134 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/BeVietnamPro-ExtraBold.ttf (136 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/BarlowCondensed-SemiBold.ttf (107 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/BarlowCondensed-ExtraBold.ttf (108 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/PlayfairDisplay-Italic.ttf (272 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/DancingScript.ttf (131 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-SemiBold.otf (610 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/Inter-ExtraBold.otf (613 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    }
+  ],
+  "timings": {
+    "source": "cloud-gemini",
+    "voice": {
+      "provider": "cloud-gemini",
+      "model": "gemini-2.5-pro-tts",
+      "voice": "Puck",
+      "style": "You are an upbeat Vietnamese finance educator recording a 30-second TikTok. Speak fast and clearly, emphasize numbers, keep pauses very short."
+    },
+    "audio": "voice.wav",
+    "duration": 17.048,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 2.739
+      },
+      {
+        "id": "s02",
+        "start": 2.739,
+        "end": 6.32
+      },
+      {
+        "id": "s03",
+        "start": 6.32,
+        "end": 10.061
+      },
+      {
+        "id": "s04",
+        "start": 10.061,
+        "end": 14.402
+      },
+      {
+        "id": "s05",
+        "start": 14.402,
+        "end": 17.048
+      }
+    ],
+    "textHash": "0b05242a82017b635fc4f04586563ec3f6822c22"
+  },
+  "output": {
+    "file": "out/demo-shorts-micro.mp4",
+    "duration": "17.066667",
+    "size": "4334110"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-15T23:54:17.080Z"
+}

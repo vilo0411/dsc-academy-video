@@ -1,0 +1,400 @@
+{
+  "id": "essay-lam-phat-ho-so",
+  "file": "videos/essay-lam-phat-ho-so/script.json",
+  "commit": "03bd0f7432c566d426a1f2dfe442d032753dba0d",
+  "startedAt": "2026-10-16T00:00:07.876Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "tts",
+      "ok": true,
+      "seconds": 0,
+      "log": "Lời thoại không đổi — dùng lại giọng đọc đã có."
+    },
+    {
+      "name": "music",
+      "ok": true,
+      "seconds": 0,
+      "log": "Nhạc nền không đổi — dùng lại bản đã tạo.\n",
+      "blocking": false
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "seconds": 9,
+      "log": "Âm thanh: giọng có, nhạc nền music.wav, 0 ambience, 0 stinger, 1412 tiếng động.\nĐã tạo videos/essay-lam-phat-ho-so/project/index.html (389.514s, 66 cảnh)\n"
+    },
+    {
+      "name": "check",
+      "ok": false,
+      "seconds": 42,
+      "log": "◆  Checking project\n\nLint\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e3-p2\" for rotation between 16.53s and 16.53s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e3-p2 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e3-p3\" for rotation between 16.93s and 16.94s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e3-p3 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e4-p0\" for rotation between 20.52s and 20.52s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e4-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e6-p0\" for rotation between 31.47s and 31.47s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e6-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e8-p3\" for rotation between 43.79s and 43.79s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e8-p3 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e10-p3\" for rotation between 55.29s and 55.29s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e10-p3 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e18-p3\" for rotation between 101.19s and 101.20s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e18-p3 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e19-p0\" for rotation between 104.83s and 104.83s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e19-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e21-p0\" for rotation between 114.36s and 114.36s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e21-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e23-p2-w\" for x between 122.97s and 124.77s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e23-p2-w t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e23-p0\" for rotation between 122.36s and 122.36s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e23-p0 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e23-p1\" for rotation between 124.84s and 124.84s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e23-p1 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`.\n  ⚠ overlapping_gsap_tweens: GSAP tweens overlap on \"#e34-p3\" for rotation between 187.65s and 187.65s.\n    /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/index.html #e34-p3 t=0s\n    Fix: Shorten the earlier tween, move the later tween, or add `overwrite: \"aut\n…\n intentional layering with data-layout-allow-overlap.\n  ✗ t=122.251, 122.902, 123.552, 124.202, 124.853, 125.503, 126.153, 126.803, 127.454s content_overlap #e23-p0 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(2) inside #e23-p0 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(2) \"CHÂU ÂU\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=139.809, 140.459, 141.109, 141.76, 142.41s content_overlap #e26-p9 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(1) inside #e26-p9 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(1) \"HỒ SƠ\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=139.809, 140.459, 141.109, 141.76, 142.41s content_overlap #e26-p9 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(2) inside #e26-p9 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(2) \"04\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=139.809, 140.459, 141.109, 141.76, 142.41s content_overlap #e26-p10 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(1) inside #e26-p10 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(1) \"HỒ SƠ\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=139.809, 140.459, 141.109, 141.76, 142.41s content_overlap #e26-p10 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(2) inside #e26-p10 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(2) \"05\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=145.661, 146.312, 146.962, 147.612, 148.262, 148.913s content_overlap #e27-p0 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(1) inside #e27-p0 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(1) \"HỒ SƠ\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=145.661, 146.312, 146.962, 147.612, 148.262, 148.913s content_overlap #e27-p0 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(2) inside #e27-p0 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(2) \"04\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=149.563, 150.213, 150.864, 151.478, 151.514, 152.164, 152.814, 153.465, 154.115, 154.765s content_overlap #e28-p0 > svg:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(1) inside #e28-p0 > svg:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(1) \"BỒI THƯỜNG\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  ✗ t=162.568, 163.219, 163.869s content_overlap #e30-p1 > svg:nth-of-type(1) > g:nth-of-type(1) > g:nth-of-type(1) > text:nth-of-type(1) inside #e30-p1 > svg:nth-of-type(1) > g:nth-of-type(1) > g:nth-of-type(2) > text:nth-of-type(1) \"1000\" — Two text blocks overlap and may render unreadable.\n        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.\n  80 error(s), 0 warning(s), 0 info(s)\n\nMotion\n  ◇ 0 errors, 0 warnings\n\nContrast\n  ◇ 55/55 text checks pass WCAG AA\n\nSnapshots\n  ◇ disabled\n\n◇  Check failed\nReport: /home/runner/work/dsc-academy-video/dsc-academy-video/videos/essay-lam-phat-ho-so/project/.hyperframes/artifacts/checks/84af08b3-50fd-4127-928d-b74db9eea154.json\nRevision: none (unversioned)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n",
+      "blocking": false
+    },
+    {
+      "name": "render",
+      "ok": true,
+      "seconds": 1409,
+      "log": "[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (228ms)\n[initSession:beginframe] GSAP proxy flush complete (241ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (431ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (434ms)\n[initSession:beginframe] applyVideoMetadataHints complete (434ms)\n[initSession:beginframe] media + fonts + tailwind ready (436ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (465ms)\n[BrowserManager] Browser launched (HeadlessChrome/152.0.7977.30, beginframe, gl=--use-gl=angle --use-angle=swiftshader, headlessShell=true, platform=linux)\n[initSession:beginframe] warmup loop started (0ms)\n[initSession:beginframe] page.goto start (1ms)\n[initSession:beginframe] page.goto complete (206ms)\n[initSession:beginframe] GSAP proxy flush complete (218ms)\n[HyperFrames] render runtime fps {\"canonicalFps\":30,\"source\":\"render-options\",\"rawFpsSource\":\"render-options\",\"rawFps\":30}\n[initSession:beginframe] pollHfReady complete (452ms)\n[initSession:beginframe] pollSubCompositionTimelines complete (ready) (454ms)\n[initSession:beginframe] applyVideoMetadataHints complete (454ms)\n[initSession:beginframe] media + fonts + tailwind ready (455ms)\n[initSession:beginframe] static-frame dedup: disabled (capture mode beginframe, not screenshot) (485ms)\n[INFO] [Compiler] Embedded local font file: fonts/Oswald.ttf (168 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/RobotoMono.ttf (179 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/OldStandard-Regular.ttf (244 KB → data URI)\n[INFO] [Compiler] Embedded local font file: fonts/OldStandard-Bold.ttf (261 KB → data URI)\n[hyperframes] browserGpuMode probe → software (WebGL unavailable)\n"
+    },
+    {
+      "name": "compress",
+      "ok": true,
+      "seconds": 0,
+      "log": "Nén lại còn 80.6 MB"
+    }
+  ],
+  "timings": {
+    "source": "gemini-api",
+    "voice": {
+      "provider": "gemini-api",
+      "model": "gemini-3.1-flash-tts-preview",
+      "voice": "Laomedeia",
+      "chunked": true,
+      "chunkChars": 700,
+      "style": "You are an energetic, charismatic Vietnamese YouTube edutainment host. Speak Vietnamese with a bright, smiling, upbeat tone and a brisk, punchy pace. Sound genuinely curious on questions, excited on surprising facts, keep a lively rhythm and short pauses. Never sound like a news anchor or a slow documentary narrator."
+    },
+    "audio": "voice.wav",
+    "duration": 387.514,
+    "scenes": [
+      {
+        "id": "s01",
+        "start": 0,
+        "end": 6.42
+      },
+      {
+        "id": "s02",
+        "start": 6.42,
+        "end": 10.09
+      },
+      {
+        "id": "s03",
+        "start": 10.09,
+        "end": 14.22
+      },
+      {
+        "id": "s04",
+        "start": 14.22,
+        "end": 20.05
+      },
+      {
+        "id": "s05",
+        "start": 20.05,
+        "end": 28.82
+      },
+      {
+        "id": "s06",
+        "start": 28.82,
+        "end": 31
+      },
+      {
+        "id": "s07",
+        "start": 31,
+        "end": 34.56
+      },
+      {
+        "id": "s08",
+        "start": 34.56,
+        "end": 41.459
+      },
+      {
+        "id": "s09",
+        "start": 41.459,
+        "end": 46.304
+      },
+      {
+        "id": "s10",
+        "start": 46.304,
+        "end": 52.644
+      },
+      {
+        "id": "s11",
+        "start": 52.644,
+        "end": 58.864
+      },
+      {
+        "id": "s12",
+        "start": 58.864,
+        "end": 61.874
+      },
+      {
+        "id": "s13",
+        "start": 61.874,
+        "end": 69.114
+      },
+      {
+        "id": "s14",
+        "start": 69.114,
+        "end": 73.704
+      },
+      {
+        "id": "s15",
+        "start": 73.704,
+        "end": 80.974
+      },
+      {
+        "id": "s16",
+        "start": 80.974,
+        "end": 84.251
+      },
+      {
+        "id": "s17",
+        "start": 84.251,
+        "end": 92.956
+      },
+      {
+        "id": "s18",
+        "start": 92.956,
+        "end": 98.096
+      },
+      {
+        "id": "s19",
+        "start": 98.096,
+        "end": 104.356
+      },
+      {
+        "id": "s20",
+        "start": 104.356,
+        "end": 108.816
+      },
+      {
+        "id": "s21",
+        "start": 108.816,
+        "end": 113.886
+      },
+      {
+        "id": "s22",
+        "start": 113.886,
+        "end": 119.296
+      },
+      {
+        "id": "s23",
+        "start": 119.296,
+        "end": 121.886
+      },
+      {
+        "id": "s24",
+        "start": 121.886,
+        "end": 127.802
+      },
+      {
+        "id": "s25",
+        "start": 127.802,
+        "end": 131.987
+      },
+      {
+        "id": "s26",
+        "start": 131.987,
+        "end": 138.937
+      },
+      {
+        "id": "s27",
+        "start": 138.937,
+        "end": 145.317
+      },
+      {
+        "id": "s28",
+        "start": 145.317,
+        "end": 149.187
+      },
+      {
+        "id": "s29",
+        "start": 149.187,
+        "end": 155.117
+      },
+      {
+        "id": "s30",
+        "start": 155.117,
+        "end": 160.767
+      },
+      {
+        "id": "s31",
+        "start": 160.767,
+        "end": 164.357
+      },
+      {
+        "id": "s32",
+        "start": 164.357,
+        "end": 172.272
+      },
+      {
+        "id": "s33",
+        "start": 172.272,
+        "end": 179.262
+      },
+      {
+        "id": "s34",
+        "start": 179.262,
+        "end": 185.372
+      },
+      {
+        "id": "s35",
+        "start": 185.372,
+        "end": 190.072
+      },
+      {
+        "id": "s36",
+        "start": 190.072,
+        "end": 198.192
+      },
+      {
+        "id": "s37",
+        "start": 198.192,
+        "end": 201.052
+      },
+      {
+        "id": "s38",
+        "start": 201.052,
+        "end": 207.337
+      },
+      {
+        "id": "s39",
+        "start": 207.337,
+        "end": 212.472
+      },
+      {
+        "id": "s40",
+        "start": 212.472,
+        "end": 217.822
+      },
+      {
+        "id": "s41",
+        "start": 217.822,
+        "end": 223.472
+      },
+      {
+        "id": "s42",
+        "start": 223.472,
+        "end": 229.732
+      },
+      {
+        "id": "s43",
+        "start": 229.732,
+        "end": 235.442
+      },
+      {
+        "id": "s44",
+        "start": 235.442,
+        "end": 241.197
+      },
+      {
+        "id": "s45",
+        "start": 241.197,
+        "end": 247.582
+      },
+      {
+        "id": "s46",
+        "start": 247.582,
+        "end": 252.592
+      },
+      {
+        "id": "s47",
+        "start": 252.592,
+        "end": 257.712
+      },
+      {
+        "id": "s48",
+        "start": 257.712,
+        "end": 267.272
+      },
+      {
+        "id": "s49",
+        "start": 267.272,
+        "end": 274.412
+      },
+      {
+        "id": "s50",
+        "start": 274.412,
+        "end": 279.903
+      },
+      {
+        "id": "s51",
+        "start": 279.903,
+        "end": 289.258
+      },
+      {
+        "id": "s52",
+        "start": 289.258,
+        "end": 296.428
+      },
+      {
+        "id": "s53",
+        "start": 296.428,
+        "end": 300.648
+      },
+      {
+        "id": "s54",
+        "start": 300.648,
+        "end": 311.728
+      },
+      {
+        "id": "s55",
+        "start": 311.728,
+        "end": 319.248
+      },
+      {
+        "id": "s56",
+        "start": 319.248,
+        "end": 324.138
+      },
+      {
+        "id": "s57",
+        "start": 324.138,
+        "end": 330.753
+      },
+      {
+        "id": "s58",
+        "start": 330.753,
+        "end": 340.783
+      },
+      {
+        "id": "s59",
+        "start": 340.783,
+        "end": 343.563
+      },
+      {
+        "id": "s60",
+        "start": 343.563,
+        "end": 350.703
+      },
+      {
+        "id": "s61",
+        "start": 350.703,
+        "end": 360.643
+      },
+      {
+        "id": "s62",
+        "start": 360.643,
+        "end": 366.763
+      },
+      {
+        "id": "s63",
+        "start": 366.763,
+        "end": 372.778
+      },
+      {
+        "id": "s64",
+        "start": 372.778,
+        "end": 376.328
+      },
+      {
+        "id": "s65",
+        "start": 376.328,
+        "end": 383.168
+      },
+      {
+        "id": "s66",
+        "start": 383.168,
+        "end": 387.514
+      }
+    ],
+    "textHash": "8c93f4f01c016ea773f4bd8c2678bace8f127295"
+  },
+  "output": {
+    "file": "out/essay-lam-phat-ho-so.mp4",
+    "duration": "389.546000",
+    "size": "84476495"
+  },
+  "rendered": true,
+  "finishedAt": "2026-10-16T00:27:30.010Z"
+}

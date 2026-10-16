@@ -1,0 +1,343 @@
+1
+00:00:00,000 --> 00:00:03,060
+Quý này, Hàng không Cánh Diều vẫn bán vé đều
+
+2
+00:00:03,060 --> 00:00:05,772
+như mọi khi. Vậy mà báo cáo lại ghi lỗ.
+
+3
+00:00:05,772 --> 00:00:08,762
+Thủ phạm là một con số: tỷ giá tăng ba phần
+
+4
+00:00:08,762 --> 00:00:09,360
+trăm.
+
+5
+00:00:09,360 --> 00:00:12,251
+Bài trước, ta biết khi Ngân hàng Nhà nước mua
+
+6
+00:00:12,251 --> 00:00:14,435
+ngoại tệ, cung tiền tăng. Hôm nay,
+
+7
+00:00:14,435 --> 00:00:17,190
+ta mở ô đối ngoại trên bảng điều khiển.
+
+8
+00:00:17,190 --> 00:00:19,185
+Tỷ giá là giá của một đồng tiền,
+
+9
+00:00:19,185 --> 00:00:20,993
+tính bằng một đồng tiền khác.
+
+10
+00:00:20,992 --> 00:00:22,675
+Ở Việt Nam, khi nói tỷ giá,
+
+11
+00:00:22,676 --> 00:00:25,419
+ta thường nói về giá đô la Mỹ tính bằng tiền
+
+12
+00:00:25,418 --> 00:00:25,980
+đồng.
+
+13
+00:00:25,980 --> 00:00:29,101
+Lưu ý cách đọc: tỷ giá tăng nghĩa là cần nhiều
+
+14
+00:00:29,101 --> 00:00:31,204
+tiền đồng hơn để mua một đô la.
+
+15
+00:00:31,204 --> 00:00:33,150
+Tức là tiền đồng mất giá.
+
+16
+00:00:33,150 --> 00:00:34,702
+Việt Nam là nền kinh tế mở,
+
+17
+00:00:34,702 --> 00:00:37,288
+xuất nhập khẩu rất lớn so với quy mô nền kinh
+
+18
+00:00:37,288 --> 00:00:39,759
+tế. Vì vậy, tỷ giá chạm đến rất nhiều doanh
+
+19
+00:00:39,759 --> 00:00:40,411
+nghiệp.
+
+20
+00:00:40,411 --> 00:00:42,557
+Từ máy móc, nguyên liệu đến xăng dầu,
+
+21
+00:00:42,557 --> 00:00:44,935
+rất nhiều thứ Việt Nam nhập khẩu đều được
+
+22
+00:00:44,936 --> 00:00:46,636
+thanh toán bằng đô la Mỹ.
+
+23
+00:00:46,636 --> 00:00:48,971
+Mỗi ngày, Ngân hàng Nhà nước công bố tỷ giá
+
+24
+00:00:48,971 --> 00:00:51,414
+trung tâm. Các ngân hàng được giao dịch trong
+
+25
+00:00:51,414 --> 00:00:53,076
+một biên độ quanh mức này.
+
+26
+00:00:53,076 --> 00:00:55,504
+Tỷ giá chịu tác động của năm yếu tố,
+
+27
+00:00:55,504 --> 00:00:58,539
+giống như một cái cân. Bên tiền đồng mạnh lên
+
+28
+00:00:58,539 --> 00:01:01,756
+có thặng dư thương mại, vốn FDI và kiều hối.
+
+29
+00:01:01,756 --> 00:01:04,570
+Bên kia là chênh lệch lãi suất giữa tiền đồng
+
+30
+00:01:04,570 --> 00:01:07,259
+và đô la Mỹ, sức mạnh của đô la Mỹ trên thế
+
+31
+00:01:07,259 --> 00:01:10,010
+giới, đo bằng chỉ số DXY, và việc khối ngoại
+
+32
+00:01:10,010 --> 00:01:11,886
+mua hay bán ròng cổ phiếu.
+
+33
+00:01:11,886 --> 00:01:14,495
+Khi tỷ giá chịu áp lực, Ngân hàng Nhà nước có
+
+34
+00:01:14,495 --> 00:01:15,730
+ba công cụ chính.
+
+35
+00:01:15,730 --> 00:01:18,182
+Bán ngoại tệ từ dự trữ để tăng cung đô la.
+
+36
+00:01:18,182 --> 00:01:20,518
+Phát hành tín phiếu để hút tiền đồng về,
+
+37
+00:01:20,518 --> 00:01:22,095
+làm lãi suất ngắn hạn tăng,
+
+38
+00:01:22,095 --> 00:01:24,664
+như ta đã thấy ở bài bốn. Hoặc điều chỉnh tỷ
+
+39
+00:01:24,664 --> 00:01:25,965
+giá bán can thiệp.
+
+40
+00:01:25,965 --> 00:01:28,772
+Vì thế, tỷ giá và lãi suất luôn cần được đọc
+
+41
+00:01:28,772 --> 00:01:31,706
+cùng nhau. Giữ tỷ giá ổn định đôi khi phải trả
+
+42
+00:01:31,706 --> 00:01:33,615
+giá bằng lãi suất cao hơn.
+
+43
+00:01:33,615 --> 00:01:35,678
+Tiền đồng mất giá không xấu với tất cả.
+
+44
+00:01:35,678 --> 00:01:38,111
+Doanh nghiệp xuất khẩu có doanh thu bằng đô la
+
+45
+00:01:38,110 --> 00:01:38,995
+sẽ được lợi.
+
+46
+00:01:38,995 --> 00:01:40,398
+Còn doanh nghiệp nhập khẩu nguyên liệu,
+
+47
+00:01:40,398 --> 00:01:41,441
+hoặc có nợ vay bằng ngoại tệ,
+
+48
+00:01:41,441 --> 00:01:42,195
+sẽ chịu thiệt.
+
+49
+00:01:42,195 --> 00:01:43,690
+Chiều ngược lại cũng đúng.
+
+50
+00:01:43,690 --> 00:01:46,278
+Khi tiền đồng lên giá, doanh nghiệp nhập khẩu
+
+51
+00:01:46,278 --> 00:01:48,233
+và doanh nghiệp nợ đô la được lợi,
+
+52
+00:01:48,234 --> 00:01:50,612
+còn nhà xuất khẩu kém cạnh tranh hơn.
+
+53
+00:01:50,612 --> 00:01:52,647
+Hãy xem ba doanh nghiệp trong chuỗi bài.
+
+54
+00:01:52,647 --> 00:01:53,970
+Thuỷ sản Cá Bạc xuất khẩu.
+
+55
+00:01:53,970 --> 00:01:56,107
+Doanh thu đô la trước đây quy đổi được một
+
+56
+00:01:56,107 --> 00:01:58,397
+nghìn tỷ đồng, nay thành một nghìn không trăm
+
+57
+00:01:58,397 --> 00:01:59,207
+ba mươi tỷ.
+
+58
+00:01:59,207 --> 00:02:01,230
+Hàng không Cánh Diều có khoản nợ đô la,
+
+59
+00:02:01,230 --> 00:02:03,149
+quy đổi ra hai trăm năm mươi tỷ đồng.
+
+60
+00:02:03,149 --> 00:02:05,431
+Tỷ giá tăng ba phần trăm, khoản nợ thành hai
+
+61
+00:02:05,431 --> 00:02:07,237
+trăm năm mươi bảy phẩy năm tỷ.
+
+62
+00:02:07,237 --> 00:02:09,690
+Phần chênh lệch bảy phẩy năm tỷ đồng được ghi
+
+63
+00:02:09,690 --> 00:02:11,652
+nhận là lỗ tỷ giá. Bán vé không đổi,
+
+64
+00:02:11,653 --> 00:02:13,997
+nhưng lợi nhuận vẫn giảm. Đó là câu trả lời
+
+65
+00:02:13,997 --> 00:02:15,337
+cho câu hỏi đầu bài.
+
+66
+00:02:15,337 --> 00:02:17,620
+Còn Thép Lò Rèn nhập quặng sắt bằng đô la,
+
+67
+00:02:17,620 --> 00:02:19,447
+nên giá vốn tăng theo tỷ giá.
+
+68
+00:02:19,447 --> 00:02:21,779
+Khi đọc tỷ giá, hãy hỏi: doanh nghiệp thu bằng
+
+69
+00:02:21,779 --> 00:02:23,705
+đồng tiền nào, chi bằng đồng tiền nào,
+
+70
+00:02:23,705 --> 00:02:25,222
+và nợ bằng đồng tiền nào?
+
+71
+00:02:25,222 --> 00:02:28,132
+Một mẹo nhỏ: thuyết minh báo cáo tài chính
+
+72
+00:02:28,132 --> 00:02:31,181
+thường ghi rõ khoản vay theo từng loại tiền.
+
+73
+00:02:31,181 --> 00:02:34,091
+Đó là nơi đầu tiên nên tìm khi tỷ giá biến
+
+74
+00:02:34,091 --> 00:02:34,687
+động.
+
+75
+00:02:34,687 --> 00:02:36,800
+Câu hỏi cho bạn: doanh nghiệp nào thường bất
+
+76
+00:02:36,800 --> 00:02:38,048
+lợi khi tiền đồng mất giá?
+
+77
+00:02:38,048 --> 00:02:40,267
+Đáp án nằm trong bài viết bên dưới video.
+
+78
+00:02:40,267 --> 00:02:44,292
+Ô đối ngoại trên bảng điều khiển đã sáng đèn
+
+79
+00:02:44,292 --> 00:02:46,097
+đầu tiên: tỷ giá.
+
+80
+00:02:46,097 --> 00:02:48,423
+An ghi vào sổ tay: đọc tỷ giá cùng lãi suất,
+
+81
+00:02:48,423 --> 00:02:50,417
+và để ý doanh nghiệp nợ đô la Mỹ.
+
+82
+00:02:50,417 --> 00:02:53,637
+Ba trong năm yếu tố trên cái cân là dòng đô la
+
+83
+00:02:53,637 --> 00:02:56,437
+chảy vào Việt Nam. Vậy đô la đến từ đâu?
+
+84
+00:02:56,437 --> 00:02:59,417
+Bài sau, ta tìm hiểu thương mại và FDI.
+
+85
+00:02:59,417 --> 00:03:02,162
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+86
+00:03:02,162 --> 00:03:03,605
+và làm bài quiz nhé.

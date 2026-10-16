@@ -1,0 +1,307 @@
+1
+00:00:00,000 --> 00:00:02,563
+An muốn biết nền kinh tế đã đổi chiều hay
+
+2
+00:00:02,563 --> 00:00:05,313
+chưa. Nhưng số liệu GDP phải đợi hết quý mới
+
+3
+00:00:05,313 --> 00:00:07,751
+có. Có cách nào biết sớm hơn không?
+
+4
+00:00:07,750 --> 00:00:10,906
+Bài trước, cả năm ô trên bảng điều khiển đã có
+
+5
+00:00:10,906 --> 00:00:13,993
+đèn sáng. Hôm nay, ta quay lại đồng hồ chu kỳ
+
+6
+00:00:13,993 --> 00:00:16,850
+ở bài hai, và tìm cách đọc nó sớm hơn.
+
+7
+00:00:16,850 --> 00:00:18,958
+Chỉ báo kinh tế chia làm ba loại,
+
+8
+00:00:18,958 --> 00:00:21,832
+theo thời điểm chúng thay đổi so với nền kinh
+
+9
+00:00:21,832 --> 00:00:24,132
+tế: chỉ báo sớm, chỉ báo trùng khớp,
+
+10
+00:00:24,132 --> 00:00:25,340
+và chỉ báo trễ.
+
+11
+00:00:25,340 --> 00:00:27,593
+Chỉ báo sớm gồm PMI, đơn hàng mới,
+
+12
+00:00:27,593 --> 00:00:30,575
+cấp phép xây dựng, và tín dụng như ở bài năm.
+
+13
+00:00:30,575 --> 00:00:33,425
+Bản thân thị trường chứng khoán cũng là một
+
+14
+00:00:33,425 --> 00:00:36,193
+chỉ báo sớm, như ta đã thấy ở bài hai.
+
+15
+00:00:36,193 --> 00:00:39,093
+Chỉ báo trùng khớp như sản xuất công nghiệp và
+
+16
+00:00:39,093 --> 00:00:41,615
+bán lẻ. Còn chỉ báo trễ như thất nghiệp,
+
+17
+00:00:41,615 --> 00:00:43,254
+hay lạm phát lõi ở bài ba,
+
+18
+00:00:43,254 --> 00:00:46,278
+thường chỉ xác nhận khi xu hướng đã diễn ra.
+
+19
+00:00:46,278 --> 00:00:49,364
+Chỉ báo sớm được theo dõi nhiều nhất là PMI,
+
+20
+00:00:49,364 --> 00:00:51,928
+tức chỉ số nhà quản trị mua hàng.
+
+21
+00:00:51,928 --> 00:00:54,621
+PMI ngành sản xuất Việt Nam do S và P Global
+
+22
+00:00:54,621 --> 00:00:57,375
+công bố vào ngày làm việc đầu tiên mỗi tháng.
+
+23
+00:00:57,375 --> 00:01:00,190
+Tức là chỉ sau vài ngày, ta đã có tín hiệu của
+
+24
+00:01:00,190 --> 00:01:01,358
+cả tháng trước.
+
+25
+00:01:01,358 --> 00:01:03,666
+Doanh nghiệp được hỏi: so với tháng trước,
+
+26
+00:01:03,666 --> 00:01:05,535
+sản lượng, đơn hàng mới, việc làm,
+
+27
+00:01:05,535 --> 00:01:08,258
+thời gian giao hàng và tồn kho tăng hay giảm.
+
+28
+00:01:08,258 --> 00:01:11,014
+Có một chi tiết thú vị: thời gian giao hàng
+
+29
+00:01:11,014 --> 00:01:13,898
+kéo dài thường cho thấy nhà cung cấp đang bận
+
+30
+00:01:13,898 --> 00:01:16,718
+vì nhu cầu cao. Vì vậy, chỉ số này được tính
+
+31
+00:01:16,718 --> 00:01:18,314
+theo chiều ngược lại.
+
+32
+00:01:18,314 --> 00:01:21,218
+Cách đọc rất đơn giản. Mốc năm mươi là ranh
+
+33
+00:01:21,218 --> 00:01:23,311
+giới. Trên năm mươi là mở rộng,
+
+34
+00:01:23,311 --> 00:01:25,249
+dưới năm mươi là thu hẹp.
+
+35
+00:01:25,249 --> 00:01:27,720
+Càng xa mốc năm mươi, thay đổi càng mạnh.
+
+36
+00:01:27,720 --> 00:01:30,251
+PMI bốn mươi lăm nghĩa là thu hẹp mạnh hơn
+
+37
+00:01:30,252 --> 00:01:32,129
+nhiều so với bốn mươi chín.
+
+38
+00:01:32,129 --> 00:01:33,916
+Ba lưu ý khi đọc PMI. Một,
+
+39
+00:01:33,916 --> 00:01:35,703
+nhìn xu hướng nhiều tháng,
+
+40
+00:01:35,703 --> 00:01:38,359
+đừng phản ứng với một tháng đơn lẻ.
+
+41
+00:01:38,359 --> 00:01:40,994
+Hai, đơn hàng mới, nhất là đơn hàng xuất khẩu,
+
+42
+00:01:40,994 --> 00:01:42,483
+thường đi trước sản lượng.
+
+43
+00:01:42,483 --> 00:01:45,118
+Có đơn hàng thì vài tháng sau nhà máy mới chạy
+
+44
+00:01:45,117 --> 00:01:46,169
+hết công suất.
+
+45
+00:01:46,169 --> 00:01:48,551
+Ba, chỉ số giá đầu vào và giá đầu ra gợi ý áp
+
+46
+00:01:48,551 --> 00:01:50,759
+lực lạm phát sắp tới, nối với bài ba.
+
+47
+00:01:50,759 --> 00:01:53,782
+Ngoài PMI, hãy xem thêm sản xuất công nghiệp,
+
+48
+00:01:53,782 --> 00:01:55,932
+nhập khẩu máy móc như ở bài bảy,
+
+49
+00:01:55,932 --> 00:01:58,870
+lượng khách quốc tế, và doanh số bán lẻ.
+
+50
+00:01:58,871 --> 00:02:01,301
+Giờ hãy xem một ví dụ. PMI giả định đi từ bốn
+
+51
+00:02:01,301 --> 00:02:03,299
+mươi tám, lên bốn mươi chín phẩy năm,
+
+52
+00:02:03,298 --> 00:02:04,466
+rồi năm mươi mốt.
+
+53
+00:02:04,466 --> 00:02:07,224
+Quan trọng hơn, chỉ số đơn hàng mới đã vượt
+
+54
+00:02:07,224 --> 00:02:09,213
+năm mươi hai đến ba tháng liền.
+
+55
+00:02:09,213 --> 00:02:11,073
+Đây là tín hiệu phục hồi sớm,
+
+56
+00:02:11,073 --> 00:02:13,055
+trước khi GDP kịp xác nhận.
+
+57
+00:02:13,055 --> 00:02:15,311
+Kim đồng hồ chu kỳ nhích từ suy thoái sang
+
+58
+00:02:15,311 --> 00:02:17,567
+phục hồi. Và Thuỷ sản Cá Bạc thấy đơn hàng
+
+59
+00:02:17,566 --> 00:02:19,266
+xuất khẩu mới bắt đầu tăng.
+
+60
+00:02:19,266 --> 00:02:21,740
+Đó là câu trả lời cho An: muốn biết kinh tế
+
+61
+00:02:21,740 --> 00:02:24,041
+đổi chiều sớm, hãy theo dõi chỉ báo sớm,
+
+62
+00:02:24,041 --> 00:02:26,305
+đặc biệt là đơn hàng mới trong PMI.
+
+63
+00:02:26,305 --> 00:02:28,587
+Nhưng nhớ rằng chỉ báo sớm cũng có thể báo
+
+64
+00:02:28,587 --> 00:02:30,598
+sai. Hãy dùng nhiều chỉ báo cùng lúc,
+
+65
+00:02:30,598 --> 00:02:32,315
+thay vì tin vào một con số.
+
+66
+00:02:32,315 --> 00:02:34,701
+Câu hỏi cho bạn: PMI ở mức bốn mươi tám có
+
+67
+00:02:34,701 --> 00:02:37,087
+nghĩa là gì? Đáp án nằm trong bài viết bên
+
+68
+00:02:37,087 --> 00:02:37,962
+dưới video.
+
+69
+00:02:37,962 --> 00:02:40,860
+Ô tăng trưởng trên bảng điều khiển sáng thêm
+
+70
+00:02:40,860 --> 00:02:43,217
+ba đèn: PMI, sản xuất và bán lẻ.
+
+71
+00:02:43,217 --> 00:02:45,183
+An ghi vào sổ tay: PMI trên năm mươi là mở
+
+72
+00:02:45,183 --> 00:02:46,837
+rộng, và hãy xem đơn hàng mới.
+
+73
+00:02:46,837 --> 00:02:50,094
+Thị trường trái phiếu cũng dự báo nền kinh tế
+
+74
+00:02:50,094 --> 00:02:52,410
+theo cách riêng của nó. Bài sau,
+
+75
+00:02:52,411 --> 00:02:54,977
+ta tìm hiểu lợi suất trái phiếu.
+
+76
+00:02:54,977 --> 00:02:57,297
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+77
+00:02:57,297 --> 00:02:58,555
+và làm bài quiz nhé.

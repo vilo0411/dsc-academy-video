@@ -1,0 +1,319 @@
+1
+00:00:00,000 --> 00:00:02,754
+Hai siêu thị Giỏ Tre và Giỏ Mây bán cùng mặt
+
+2
+00:00:02,754 --> 00:00:05,570
+hàng, cùng quy mô, trên cùng một con phố.
+
+3
+00:00:05,570 --> 00:00:08,321
+Một ngày, tin tức báo kinh tế đang chững lại.
+
+4
+00:00:08,321 --> 00:00:10,094
+Cổ phiếu của cả hai đều giảm,
+
+5
+00:00:10,094 --> 00:00:12,300
+nhưng Giỏ Mây giảm mạnh hơn hẳn.
+
+6
+00:00:12,300 --> 00:00:14,926
+Cùng một tin tức, vì sao kết quả lại khác
+
+7
+00:00:14,926 --> 00:00:17,930
+nhau? Câu trả lời bắt đầu từ kinh tế vĩ mô.
+
+8
+00:00:17,930 --> 00:00:19,867
+Đây là An, một nhà đầu tư mới.
+
+9
+00:00:19,867 --> 00:00:22,837
+Trong mười hai bài của chuỗi Kinh tế vĩ mô cho
+
+10
+00:00:22,837 --> 00:00:25,670
+nhà đầu tư, An sẽ cùng bạn đi từng bước.
+
+11
+00:00:25,670 --> 00:00:28,444
+Sau mỗi bài, An bật sáng thêm một ô trên bảng
+
+12
+00:00:28,444 --> 00:00:30,046
+điều khiển vĩ mô. Hôm nay,
+
+13
+00:00:30,046 --> 00:00:32,330
+ta xem cả bảng trông như thế nào.
+
+14
+00:00:32,330 --> 00:00:35,065
+Trước hết, vi mô và vĩ mô khác nhau ra sao?
+
+15
+00:00:35,065 --> 00:00:36,846
+Vi mô nhìn vào từng chủ thể,
+
+16
+00:00:36,846 --> 00:00:39,327
+như một doanh nghiệp định giá sản phẩm,
+
+17
+00:00:39,326 --> 00:00:41,679
+hay một gia đình quyết định chi tiêu.
+
+18
+00:00:41,680 --> 00:00:44,033
+Còn vĩ mô nhìn toàn cảnh nền kinh tế:
+
+19
+00:00:44,033 --> 00:00:45,687
+tăng trưởng, mặt bằng giá,
+
+20
+00:00:45,687 --> 00:00:47,145
+lãi suất và tỷ giá.
+
+21
+00:00:47,145 --> 00:00:49,084
+Hãy hình dung vĩ mô như con nước.
+
+22
+00:00:49,084 --> 00:00:51,435
+Nước lên, thuyền nào cũng được nâng lên.
+
+23
+00:00:51,435 --> 00:00:53,492
+Nước rút, thuyền nào cũng hạ xuống.
+
+24
+00:00:53,492 --> 00:00:55,255
+Vĩ mô không quyết định tất cả,
+
+25
+00:00:55,255 --> 00:00:57,385
+nhưng chạm đến mọi doanh nghiệp.
+
+26
+00:00:57,385 --> 00:01:00,498
+Các biến số vĩ mô được chia thành năm nhóm.
+
+27
+00:01:00,498 --> 00:01:03,321
+Nhóm tăng trưởng gồm GDP, sản xuất công
+
+28
+00:01:03,322 --> 00:01:06,580
+nghiệp, PMI và bán lẻ. Nhóm giá cả gồm CPI và
+
+29
+00:01:06,579 --> 00:01:07,481
+lạm phát.
+
+30
+00:01:07,481 --> 00:01:09,005
+Nhóm tiền tệ gồm lãi suất,
+
+31
+00:01:09,005 --> 00:01:11,585
+cung tiền và tín dụng. Nhóm đối ngoại gồm tỷ
+
+32
+00:01:11,585 --> 00:01:13,637
+giá, cán cân thương mại và vốn FDI.
+
+33
+00:01:13,637 --> 00:01:16,217
+Cuối cùng là tài khoá, gồm thu chi ngân sách
+
+34
+00:01:16,217 --> 00:01:17,346
+và đầu tư công.
+
+35
+00:01:17,346 --> 00:01:20,503
+Vậy vĩ mô đi vào giá cổ phiếu bằng đường nào?
+
+36
+00:01:20,503 --> 00:01:23,590
+Về dài hạn, giá cổ phiếu do hai yếu tố quyết
+
+37
+00:01:23,589 --> 00:01:26,996
+định: lợi nhuận doanh nghiệp và mức định giá.
+
+38
+00:01:26,996 --> 00:01:30,221
+Mức định giá thường được đo bằng chỉ số P trên
+
+39
+00:01:30,221 --> 00:01:33,236
+E, tức giá cổ phiếu chia cho lợi nhuận trên
+
+40
+00:01:33,236 --> 00:01:35,199
+mỗi cổ phiếu. Hiểu đơn giản,
+
+41
+00:01:35,199 --> 00:01:38,354
+đó là số tiền nhà đầu tư sẵn sàng trả cho một
+
+42
+00:01:38,354 --> 00:01:39,656
+đồng lợi nhuận.
+
+43
+00:01:39,656 --> 00:01:41,126
+Khi kinh tế tăng trưởng tốt,
+
+44
+00:01:41,126 --> 00:01:42,649
+người dân chi tiêu nhiều hơn,
+
+45
+00:01:42,649 --> 00:01:44,067
+doanh nghiệp bán được hàng,
+
+46
+00:01:44,067 --> 00:01:45,262
+và lợi nhuận tăng.
+
+47
+00:01:45,262 --> 00:01:47,972
+Khi lãi suất thấp, vay vốn rẻ hơn và gửi tiết
+
+48
+00:01:47,972 --> 00:01:50,682
+kiệm kém hấp dẫn, nên nhà đầu tư sẵn sàng trả
+
+49
+00:01:50,682 --> 00:01:52,437
+giá cao hơn cho cổ phiếu.
+
+50
+00:01:52,437 --> 00:01:55,098
+Ngược lại, khi lạm phát cao đi kèm lãi suất
+
+51
+00:01:55,098 --> 00:01:57,697
+cao, cả lợi nhuận lẫn định giá có thể cùng
+
+52
+00:01:57,698 --> 00:01:58,257
+giảm.
+
+53
+00:01:58,257 --> 00:02:00,782
+Quay lại hai siêu thị. Khi kinh tế chững lại,
+
+54
+00:02:00,782 --> 00:02:03,277
+doanh thu của cả hai cùng giảm như nhau.
+
+55
+00:02:03,277 --> 00:02:05,474
+Nhưng Giỏ Mây đang vay năm trăm tỷ đồng.
+
+56
+00:02:05,474 --> 00:02:06,957
+Với lãi suất tám phần trăm,
+
+57
+00:02:06,957 --> 00:02:09,484
+mỗi năm họ phải trả bốn mươi tỷ đồng tiền lãi,
+
+58
+00:02:09,484 --> 00:02:11,107
+dù bán được nhiều hay ít.
+
+59
+00:02:11,107 --> 00:02:13,074
+Còn Giỏ Tre gần như không vay nợ.
+
+60
+00:02:13,074 --> 00:02:14,922
+Vì vậy, cùng một cơn gió vĩ mô,
+
+61
+00:02:14,922 --> 00:02:17,485
+lợi nhuận của Giỏ Mây bị bào mòn nhanh hơn,
+
+62
+00:02:17,485 --> 00:02:19,285
+và cổ phiếu giảm mạnh hơn.
+
+63
+00:02:19,285 --> 00:02:21,896
+Để theo dõi vĩ mô, bạn cần ba thói quen.
+
+64
+00:02:21,896 --> 00:02:24,834
+Một, xem xu hướng, so với kỳ trước và cùng kỳ
+
+65
+00:02:24,834 --> 00:02:27,772
+năm trước. Hai, hiểu chuỗi tác động đến ngành
+
+66
+00:02:27,771 --> 00:02:30,774
+và doanh nghiệp. Ba, so số liệu thực tế với kỳ
+
+67
+00:02:30,774 --> 00:02:32,330
+vọng của thị trường.
+
+68
+00:02:32,330 --> 00:02:34,370
+Bạn không cần dự báo đúng mọi con số.
+
+69
+00:02:34,370 --> 00:02:36,660
+Điều quan trọng là đọc đúng xu hướng.
+
+70
+00:02:36,660 --> 00:02:38,968
+Câu hỏi cho bạn: vĩ mô tác động đến giá cổ
+
+71
+00:02:38,968 --> 00:02:40,562
+phiếu qua hai kênh chính nào?
+
+72
+00:02:40,562 --> 00:02:43,340
+Đáp án nằm trong bài viết ngay bên dưới video.
+
+73
+00:02:43,340 --> 00:02:45,451
+An ghi vào sổ tay dòng đầu tiên:
+
+74
+00:02:45,451 --> 00:02:47,298
+vĩ mô tác động qua hai kênh,
+
+75
+00:02:47,299 --> 00:02:49,000
+lợi nhuận và định giá.
+
+76
+00:02:49,000 --> 00:02:51,003
+Bài sau, ta bật sáng ô đầu tiên:
+
+77
+00:02:51,003 --> 00:02:53,507
+nền kinh tế đang lớn nhanh hay chậm lại?
+
+78
+00:02:53,508 --> 00:02:56,450
+Đó là câu chuyện của GDP và chu kỳ kinh tế.
+
+79
+00:02:56,450 --> 00:02:58,719
+Hãy đọc tiếp bài viết bên dưới để xem chi tiết
+
+80
+00:02:58,719 --> 00:02:59,955
+và làm bài quiz nhé.

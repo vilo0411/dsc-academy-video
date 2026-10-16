@@ -1,0 +1,42 @@
+{
+  "id": "sound-test-upbeat",
+  "file": "content/sound-test-upbeat.json",
+  "commit": "492947c8cf509171e254385da11ebef7f30334e7",
+  "startedAt": "2026-10-14T07:42:56.647Z",
+  "ok": true,
+  "steps": [
+    {
+      "name": "sound-test",
+      "ok": true,
+      "seconds": 150,
+      "log": "✓ giọng A-Puck 24.0s\n✓ giọng B-Fenrir 24.6s\n✓ giọng C-Zephyr 23.8s\n✓ giọng D-Laomedeia 24.5s\n✓ nhạc 1-pizzicato\n✓ nhạc 2-lofi-funk\n✓ nhạc 3-indie-pop\n✓ demo A-Puck × 1-pizzicato\n✓ demo A-Puck × 2-lofi-funk\n✓ demo A-Puck × 3-indie-pop\n✓ demo B-Fenrir × 1-pizzicato\n✓ demo B-Fenrir × 2-lofi-funk\n✓ demo B-Fenrir × 3-indie-pop\n✓ demo C-Zephyr × 1-pizzicato\n✓ demo C-Zephyr × 2-lofi-funk\n✓ demo C-Zephyr × 3-indie-pop\n✓ demo D-Laomedeia × 1-pizzicato\n✓ demo D-Laomedeia × 2-lofi-funk\n✓ demo D-Laomedeia × 3-indie-pop\n"
+    }
+  ],
+  "report": {
+    "report": [
+      "giong-A-Puck.mp3  24.0s  (Puck) nam, sáng, vui",
+      "giong-B-Fenrir.mp3  24.6s  (Fenrir) nam, hào hứng hơn",
+      "giong-C-Zephyr.mp3  23.8s  (Zephyr) nữ, trong, tươi",
+      "giong-D-Laomedeia.mp3  24.5s  (Laomedeia) nữ, vui, nhẹ nhàng hơn",
+      "nhac-1-pizzicato.mp3  32.8s  pizzicato + marimba + vỗ tay, vui tò mò",
+      "nhac-2-lofi-funk.mp3  32.8s  lo-fi funk, bass slap, Rhodes — hiện đại, tự tin",
+      "nhac-3-indie-pop.mp3  32.8s  ukulele + glockenspiel, tươi sáng",
+      "demo-A-Puck-1-pizzicato.mp3  giọng A-Puck + nhạc 1-pizzicato + tiếng động",
+      "demo-A-Puck-2-lofi-funk.mp3  giọng A-Puck + nhạc 2-lofi-funk + tiếng động",
+      "demo-A-Puck-3-indie-pop.mp3  giọng A-Puck + nhạc 3-indie-pop + tiếng động",
+      "demo-B-Fenrir-1-pizzicato.mp3  giọng B-Fenrir + nhạc 1-pizzicato + tiếng động",
+      "demo-B-Fenrir-2-lofi-funk.mp3  giọng B-Fenrir + nhạc 2-lofi-funk + tiếng động",
+      "demo-B-Fenrir-3-indie-pop.mp3  giọng B-Fenrir + nhạc 3-indie-pop + tiếng động",
+      "demo-C-Zephyr-1-pizzicato.mp3  giọng C-Zephyr + nhạc 1-pizzicato + tiếng động",
+      "demo-C-Zephyr-2-lofi-funk.mp3  giọng C-Zephyr + nhạc 2-lofi-funk + tiếng động",
+      "demo-C-Zephyr-3-indie-pop.mp3  giọng C-Zephyr + nhạc 3-indie-pop + tiếng động",
+      "demo-D-Laomedeia-1-pizzicato.mp3  giọng D-Laomedeia + nhạc 1-pizzicato + tiếng động",
+      "demo-D-Laomedeia-2-lofi-funk.mp3  giọng D-Laomedeia + nhạc 2-lofi-funk + tiếng động",
+      "demo-D-Laomedeia-3-indie-pop.mp3  giọng D-Laomedeia + nhạc 3-indie-pop + tiếng động"
+    ],
+    "errors": 0
+  },
+  "output": {
+    "dir": "out/sound-test-upbeat/"
+  }
+}
